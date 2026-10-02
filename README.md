@@ -8,6 +8,10 @@ Static pages, published by GitHub Pages from `main` (root) under the custom doma
 | --- | --- |
 | `/` `/ru/` `/es/` `/pt/` `/fr/` `/fil/` | The home page in six languages: a complete page each, with its own title, description, canonical address and `hreflang` links. |
 | `/privacy` `/terms` `/support` | The legal pages, with the language anchors `#en #ru #es #pt #fr #fil`. The text is a byte-for-byte copy of the pages the App Store and the app link to today (`artypeace.github.io/bible-answer/…`). |
+| `/press/` | The press kit, in English: descriptions to copy, the facts, the app icon, news, contact. In the sitemap. |
+| `/feed.xml` | RSS 2.0 feed of the news in `tools/news.json` (the press page lists the same items). |
+| `/llms.txt` `/llms-full.txt` | A short and a full description for AI assistants (llmstxt.org format), built from the same strings as the site. |
+| `/<key>.txt` | The IndexNow key file (see below). |
 | `/links` | The page behind "link in bio": language choice, the App Store, the social accounts. Not in the sitemap, `noindex`. |
 | `404.html` | Any other address. |
 
@@ -26,6 +30,8 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/app-strings.json` | Words shared with the app (tagline, feelings, section names). Produced by `tools/extract_from_app.py` from the app's and the server's own sources; never edited by hand. |
 | `tools/site-strings.json` | The website's own copy, titles, descriptions and the example answer, in all six languages. |
 | `tools/build.py` | Turns the files above into pages, `sitemap.xml`, `robots.txt`. |
+| `tools/news.json` | The news items (id, date, title, summary). Add one and rebuild: it appears in `feed.xml` and on `/press/`. Articles will join the feed the same way. |
+| `tools/indexnow.py` | Sends changed addresses to the IndexNow engines (Bing, Yandex, ...). Run by `.github/workflows/indexnow.yml` after each deploy; `--dry-run` shows what it would send. |
 | `tools/make_og.py` | Draws the link-preview pictures `assets/og/og-<lang>.jpg` (1200×630). Needs Pillow, fontTools, brotli. |
 | `tools/optimize_screens.py` | Makes light web copies of the App Store screenshots. |
 | `tools/import_screens.py` | Brings the app's real screens (from its own screenshot run) into the site, then rebuilds. |
@@ -37,6 +43,9 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 * `contactEmail` — `support@bibleanswer.app` (Cloudflare Email Routing forwards it to `bibleanswerapp@gmail.com`). The legal pages carry their own copy of the address in their text (`bibleanswerapp@gmail.com`); change it there if you want them to match.
 * `social` — the accounts that exist (platform, language, handle, url). Only entries with a url are shown: in the footer and on `/links`, and listed in the structured data (`sameAs`). Add an entry when an account for another language is created.
 * `googleVerify`, `bingVerify`, `yandexVerify`, `pinterestVerify` — the codes the webmaster tools and Pinterest give for the "HTML tag" method; each empty value means no tag. (Google can instead be verified with a DNS TXT record in Cloudflare.)
+* `appLive` — `false` until the app is on the App Store. The press page, `llms.txt` and `llms-full.txt` then say "launching soon" instead of "on the App Store". Set `true` on release day and rebuild.
+* `requirements` — the OS versions named on the press page and in `llms.txt` (from the app's deployment targets).
+* `indexNowKey` — the IndexNow key; `build.py` publishes it as `/<key>.txt`. It is not a secret. To change it, edit the value, rebuild, and delete the old `<key>.txt`.
 * `macAvailable` — `true`: the Mac is shown like the other devices. `false` would put the "soon" badge back.
 * `showScreenshotSlots` — `false` hides the screenshots strip until real screenshots exist.
 
@@ -61,6 +70,12 @@ To use real screen recordings or screenshots instead, drop files into `assets/st
 
 * `assets/screens/README.md` — where the App Store screenshots go (per device and language). Until they are there, the page shows quiet placeholders.
 * `assets/badges/` — Apple's official "Download on the App Store" badges, one per language (already in place; see its README).
+
+### IndexNow, RSS and llms.txt
+
+* **IndexNow** tells Bing, Yandex, Naver and Seznam at once which pages changed. Google does not take part: it learns from `sitemap.xml` and Search Console. The workflow `indexnow.yml` runs after GitHub Pages has deployed a push and sends only the addresses of the pages whose files changed. Run it by hand (Actions → indexnow → Run workflow) to send every page once. Only addresses leave the repository; the site itself still makes no third-party request.
+* **feed.xml** is generated from `tools/news.json`; every page's `<head>` points to it.
+* **llms.txt / llms-full.txt** state the facts an assistant should repeat (free, no account, verses unchanged, how answers are made, languages, devices). Keep them true: they are built from `tools/app-strings.json`, `tools/site-strings.json` and `tools/config.json`, so a change to the app's words reaches them with the next build.
 
 ## Publishing, step by step
 

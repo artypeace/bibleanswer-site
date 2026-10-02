@@ -207,7 +207,28 @@
     items.forEach(n => io.observe(n));
   }
 
+  /* ---------------------------------------------------------------- "Copy" buttons (the press page): the text is on the page without them */
+  function copiers() {
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+      const src = document.getElementById(btn.dataset.copy);
+      if (!src) return;
+      btn.hidden = false;
+      const label = btn.textContent;
+      btn.addEventListener('click', async () => {
+        let ok = false;
+        try { await navigator.clipboard.writeText(src.textContent.trim()); ok = true; } catch (err) {
+          const r = document.createRange(); r.selectNodeContents(src);
+          const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+          try { ok = document.execCommand('copy'); } catch (err2) { /* the text stays selected */ }
+        }
+        btn.textContent = ok ? btn.dataset.done : label;
+        setTimeout(() => { btn.textContent = label; }, 1800);
+      });
+    });
+  }
+
   sky();
+  copiers();
   onView('.reveal', 'in', { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
   onView('.split:not(.split--hero)', 'in', { threshold: 0.5, rootMargin: '0px 0px -8% 0px' });
   onView('[data-demo]', 'is-playing', { threshold: 0.3 });

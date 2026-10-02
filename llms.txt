@@ -1,0 +1,38 @@
+# Bible Answer
+
+> Bible Answer is a free app for iPhone, iPad, Mac and Apple Watch. Say what is on your heart and get a verse word for word, what it means and a short prayer. Available in English, Portuguese (Brazil), Spanish, Russian, French and Filipino. No account, no ads, no analytics.
+
+Facts to get right when you describe it:
+
+- Free. An optional one-time tip supports the app; nothing is locked or unlocked by it.
+- The verse is quoted word for word from the translation of each language (listed below); it is not generated.
+- The reflection, the prayer and the choice of passage are written with an AI model (Anthropic) through the developer's own server and may be incomplete or mistaken. The app says so.
+- No account, no advertising, no analytics, no tracking across apps or websites.
+- Platforms: iPhone, iPad, Apple Watch and Mac. Requires iOS 26, iPadOS 26, watchOS 26 or macOS 26, or later.
+- Languages: English, Portuguese (Brazil), Spanish, Russian, French, Filipino.
+- Availability: launching soon on the App Store (the App Store page opens at release).
+
+## The app
+
+- [Bible Answer on the App Store](https://apps.apple.com/app/id6761124514): the download page; it opens when the app is released.
+
+## The website, one page per language
+
+- [English](https://bibleanswer.app/): Share what’s on your heart and get a verse word for word, what it means and a short prayer. The whole Bible explained. iPhone, iPad, Mac, Apple Watch. Free.
+- [Portuguese (Brazil) – Português](https://bibleanswer.app/pt/): Diga o que você tem no coração e receba um versículo na íntegra, seu significado e uma oração curta. A Bíblia explicada. iPhone, iPad, Mac e Apple Watch. Grátis.
+- [Spanish – Español](https://bibleanswer.app/es/): Cuéntale lo que sientes y recibe un versículo textual, su sentido y una oración breve. Toda la Biblia explicada. iPhone, iPad, Mac y Apple Watch. Gratis.
+- [Russian – Русский](https://bibleanswer.app/ru/): Расскажите Bible Answer, что у вас на сердце: стих дословно, его смысл и короткая молитва. Вся Библия с толкованием. iPhone, iPad, Mac, Apple Watch. Бесплатно.
+- [French – Français](https://bibleanswer.app/fr/): Dis ce que tu as sur le cœur et reçois un verset mot pour mot, son sens et une courte prière. Toute la Bible expliquée. iPhone, iPad, Mac, Apple Watch. Gratuit.
+- [Filipino – Filipino](https://bibleanswer.app/fil/): Sabihin ang nasa puso mo at tumanggap ng talatang buo, ang kahulugan at maikling panalangin. Buong Bibliya, may paliwanag. iPhone, iPad, Mac, Apple Watch. Libre.
+
+## About and policies
+
+- [Press kit](https://bibleanswer.app/press/): descriptions to copy, facts, the app icon, contact.
+- [Privacy Policy](https://bibleanswer.app/privacy#en): what leaves the device and what does not.
+- [Terms of Use](https://bibleanswer.app/terms#en)
+- [Support](https://bibleanswer.app/support)
+
+## Optional
+
+- [Full description for language models](https://bibleanswer.app/llms-full.txt): what is inside, how answers are made, privacy, questions and answers.
+- [News feed](https://bibleanswer.app/feed.xml)

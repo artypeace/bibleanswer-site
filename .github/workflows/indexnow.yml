@@ -1,0 +1,38 @@
+name: indexnow
+
+# After GitHub Pages has deployed a push, tell Bing, Yandex and the other IndexNow engines which pages changed.
+# Only addresses are sent (tools/indexnow.py). Google does not use IndexNow; it learns from sitemap.xml.
+# Run it by hand with "all" ticked to send every page once.
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Send every page in sitemap.xml
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Send the changed pages
+        if: github.event_name == 'workflow_run'
+        run: python3 tools/indexnow.py --changed HEAD~1 HEAD
+      - name: Send every page
+        if: github.event_name == 'workflow_dispatch' && inputs.all
+        run: python3 tools/indexnow.py --all

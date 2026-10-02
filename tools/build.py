@@ -5,7 +5,7 @@
     python3 tools/build.py --site-url https://example.test    # for a trial copy elsewhere
 
 It writes: index.html and <lang>/index.html for the six languages, links/index.html, 404.html,
-sitemap.xml, robots.txt, and the <head> block of privacy.html, terms.html and support.html
+sitemap.xml, robots.txt, press/index.html, feed.xml, llms.txt, llms-full.txt, the IndexNow key file, and the <head> block of privacy.html, terms.html and support.html
 (their text is never touched). Standard library only.
 
 Sources
@@ -18,7 +18,7 @@ a script, with its own title, description, canonical address and hreflang links.
 pages run (app.js) is cosmetic: reveal on scroll, parallax, the timing of the example.
 There is no analytics, no cookie, no third-party request; the Content-Security-Policy says so.
 """
-import argparse, base64, datetime, hashlib, html, json, pathlib, re
+import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -219,6 +219,7 @@ def head_common(lang, title, desc, canonical, og_image, robots, base, extra=''):
             f'<meta http-equiv="Content-Security-Policy" content="{CSP}">\n<title>{e(title)}</title>\n'
             f'<meta name="description" content="{e(desc)}">\n<meta name="robots" content="{robots}">\n'
             f'<link rel="canonical" href="{e(canonical)}">\n{alternates}'
+            f'<link rel="alternate" type="application/rss+xml" title="Bible Answer" href="{e(CFG["siteUrl"].rstrip("/") + "/feed.xml")}">\n'
             '<meta name="color-scheme" content="dark light">\n<meta name="theme-color" content="#0F1628">\n'
             f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}{extra}{icons_head(base)}')
 
@@ -531,7 +532,7 @@ def home(lang):
 </main>
 
 <footer class="foot">
-  <p><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
+  <p><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>
@@ -570,7 +571,7 @@ def links_page():
   <p class="links__store">{store_link("en", "../")}</p>
   <ul class="links__list">{"".join(row(l) for l in LANGS)}</ul>
   {follow_html}
-  <p class="links__foot"><a href="../support">Support</a><span class="dot">·</span><wbr><a href="../privacy#en">Privacy Policy</a><span class="dot">·</span><wbr><a href="../terms#en">Terms of Use</a></p>
+  <p class="links__foot"><a href="../support">Support</a><span class="dot">·</span><wbr><a href="../privacy#en">Privacy Policy</a><span class="dot">·</span><wbr><a href="../terms#en">Terms of Use</a><span class="dot">·</span><wbr><a href="../press/">Press</a></p>
 </main>
 </body>
 </html>
@@ -616,6 +617,7 @@ def legal_head(name, title):
     desc = title
     return ('<!-- site:head -->\n'
             f'<link rel="canonical" href="{e(url)}">\n<meta name="robots" content="index,follow">\n'
+            f'<link rel="alternate" type="application/rss+xml" title="Bible Answer" href="{e(site + "/feed.xml")}">\n'
             f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}'
             f'{og_head(title, desc, url, og)}{icons_head("/")}<!-- /site:head -->\n')
 
@@ -641,9 +643,303 @@ def sitemap(lastmod):
         rows.append(f'  <url>\n    <loc>{site}/{SITE[l]["path"]}</loc>{alts}{stamp}\n  </url>')
     for name in LEGAL:
         rows.append(f'  <url>\n    <loc>{site}/{name}</loc>{stamp}\n  </url>')
+    rows.append(f'  <url>\n    <loc>{site}/press/</loc>{stamp}\n  </url>')
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + '\n'.join(rows) + '\n</urlset>\n')
+
+
+# ------------------------------------------------------------------ what the press page, llms.txt and the feed say (one source)
+
+LANG_EN = {'en': 'English', 'pt': 'Portuguese (Brazil)', 'es': 'Spanish', 'ru': 'Russian', 'fr': 'French', 'fil': 'Filipino'}
+BIBLE_EN = {'en': 'Berean Standard Bible', 'pt': 'Bíblia Livre (CC BY 4.0)', 'es': 'Reina-Valera 1909', 'ru': 'Synodal Translation (Синодальный перевод)',
+            'fr': 'Louis Segond 1910', 'fil': 'ULB, unfoldingWord (CC BY-SA 4.0)'}
+xml = lambda s: html.escape(str(s), quote=False)
+
+
+def live():
+    return bool(CFG.get('appLive'))
+
+
+def counts():
+    ins = APP['en']['inside']
+    return dict(ins['counts'], plans=len(ins['plans']['items']), guide=len(ins['guide']['items']))
+
+
+def one_line():
+    return ('Bible Answer is a free app for iPhone, iPad, Mac and Apple Watch. Say what is on your heart and get a verse word for word, '
+            'what it means and a short prayer.')
+
+
+def short_text():
+    return ('Bible Answer is a free Bible app for iPhone, iPad, Mac and Apple Watch, in six languages. Say what is on your heart and it answers '
+            'with a verse quoted word for word, what it means and a short prayer. Around that sit the whole Bible with three readings of every verse, '
+            'a guide to the story, counsel by topic, reading plans, a verse for every day and a place to be quiet. '
+            'No account, no ads, no tracking.')
+
+
+def long_text():
+    c = counts()
+    return (f'Bible Answer is a free Bible app for iPhone, iPad, Apple Watch and Mac, in English, Portuguese (Brazil), Spanish, Russian, French and Filipino. '
+            'You say or type what you are going through, such as anxious, lost or grateful, and the app returns a passage quoted word for word from a '
+            'public-domain or openly licensed translation, a plain explanation of what it means and a short prayer. The reflection is written with an '
+            'AI model and may be incomplete or mistaken, and the app says so; the verse itself is never generated. '
+            f'The app also holds the whole Bible with three readings of every verse (biblical, symbolic and application), a guide to the whole story, '
+            f'advice gathered under {c["topics"]} topics, {c["plans"]} reading plans, a verse for every day on the Home Screen, Lock Screen and Apple Watch, '
+            'and music and nature sounds for quiet moments. There is no account, no advertising and no analytics. '
+            'Bible Answer is free; anyone who wishes to support it can leave a tip once, and nothing is locked or unlocked by it. '
+            'It is made by one independent developer.')
+
+
+def availability():
+    return 'On the App Store' if live() else 'App Store, launching soon'
+
+
+# ------------------------------------------------------------------ news: the feed and the press page read the same file
+
+def news_items():
+    path = HERE / 'news.json'
+    items = json.loads(path.read_text('utf-8')) if path.exists() else []
+    return sorted(items, key=lambda n: n['date'], reverse=True)
+
+
+def rfc822(date):
+    d = datetime.datetime.strptime(date, '%Y-%m-%d').replace(hour=9, tzinfo=datetime.timezone.utc)
+    return email.utils.format_datetime(d)
+
+
+def feed_xml():
+    site = CFG['siteUrl'].rstrip('/')
+    items = news_items()
+    built = rfc822(items[0]['date'] if items else (CFG.get('lastmod') or '2026-01-01'))
+    rows = ''.join(
+        f'    <item>\n      <title>{xml(n["title"])}</title>\n      <link>{site}/press/#{xml(n["id"])}</link>\n'
+        f'      <guid isPermaLink="false">bibleanswer.app:{xml(n["id"])}</guid>\n      <pubDate>{rfc822(n["date"])}</pubDate>\n'
+        f'      <description>{xml(n["summary"])}</description>\n    </item>\n' for n in items)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n'
+            '    <title>Bible Answer</title>\n'
+            f'    <link>{site}/</link>\n    <description>News from Bible Answer, the Bible app for iPhone, iPad, Mac and Apple Watch.</description>\n'
+            f'    <language>en</language>\n    <lastBuildDate>{built}</lastBuildDate>\n'
+            f'    <atom:link href="{site}/feed.xml" rel="self" type="application/rss+xml"/>\n{rows}  </channel>\n</rss>\n')
+
+
+# ------------------------------------------------------------------ /press
+
+def press_page():
+    site = CFG['siteUrl'].rstrip('/')
+    title = 'Bible Answer — Press kit'
+    desc = 'Facts, descriptions and pictures for writing about Bible Answer, the free Bible app for iPhone, iPad, Mac and Apple Watch.'
+    canonical, og = site + '/press/', f'{site}/assets/og/og-en.jpg'
+    c = counts()
+
+    def copybox(ident, label, text):
+        return (f'<div class="copybox"><div class="copybox__head"><h3>{e(label)}</h3>'
+                f'<button type="button" class="copybtn" data-copy="{ident}" data-done="Copied" hidden>Copy</button></div>'
+                f'<p id="{ident}">{e(text)}</p></div>')
+
+    texts = ''.join(f'<li><span>{e(LANG_EN[l])}</span><b>{e(BIBLE_EN[l])}</b></li>' for l in LANGS)
+    facts = [
+        ('Name', 'Bible Answer (two words)'),
+        ('What it is', 'A free Bible app: say what is on your heart, get a verse word for word, what it means and a short prayer'),
+        ('Platforms', f'iPhone, iPad, Apple Watch and Mac. Requires {CFG.get("requirements", "")}'),
+        ('Languages', ', '.join(LANG_EN[l] for l in LANGS)),
+        ('Price', 'Free. An optional one-time tip supports the app; nothing is locked or unlocked by it'),
+        ('Privacy', 'No account, no advertising, no analytics, no tracking across apps or websites'),
+        ('How answers are made', 'The verse is quoted from the translation unchanged. The reflection and the prayer are written with an AI model through the '
+                                 "app's own server, and the app says they may be incomplete or mistaken"),
+        ('Inside', f'The whole Bible with three readings of every verse; a guide of {c["guide"]} parts; {c["eras"]} eras, {c["people"]} people, {c["terms"]} words and {c["places"]} places explained; '
+                   f'advice under {c["topics"]} topics; {c["plans"]} reading plans; a verse for every day; prayers for the hour; music and sounds of nature'),
+        ('Version', '1.0'),
+        ('Availability', availability()),
+        ('Made by', 'One independent developer'),
+    ]
+    facts_html = ''.join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in facts)
+
+    pics = [f'<figure class="pic"><img src="../assets/press/bible-answer-icon-1024.png" width="160" height="160" alt="The Bible Answer app icon" loading="lazy">'
+            '<figcaption><b>App icon</b><span>1024 × 1024 PNG</span><a href="../assets/press/bible-answer-icon-1024.png" download>Download</a></figcaption></figure>',
+            f'<figure class="pic pic--wide"><img src="../assets/og/og-en.jpg" width="320" height="168" alt="Bible Answer: God’s Word for every moment" loading="lazy">'
+            '<figcaption><b>Link preview</b><span>1200 × 630 JPG</span><a href="../assets/og/og-en.jpg" download>Download</a></figcaption></figure>']
+    shots = [f'assets/screens/iphone/en/{n}.webp' for n in range(1, SHOTS['iphone'] + 1) if have(f'assets/screens/iphone/en/{n}.webp')]
+    shots_html = ''.join(f'<figure class="pic pic--shot"><img src="../{p}" width="160" height="347" alt="" loading="lazy">'
+                         f'<figcaption><b>iPhone screenshot {i}</b><a href="../{p}" download>Download</a></figcaption></figure>' for i, p in enumerate(shots, 1))
+    shots_note = ('' if shots else '<p class="doc__note">Screenshots: the official set will be on the App Store page. Real screenshots in every language will be added here, '
+                                    'and anything else you need, such as a screenshot in your language, you can ask for below.</p>')
+
+    news = ''.join(f'<li id="{e(n["id"])}"><time datetime="{e(n["date"])}">{e(n["date"])}</time><b>{e(n["title"])}</b><span>{e(n["summary"])}</span></li>' for n in news_items())
+    soc = social_links()
+    soc_html = f'<p class="doc__social">{" ".join(soc)}</p>' if soc else ''
+    cta = (f'<a class="btn btn--gold btn--small" href="{e(CFG["appStoreUrl"])}">Download on the App Store</a>' if live()
+           else f'<a class="btn btn--gold btn--small" href="mailto:{e(CFG["contactEmail"])}">Contact</a>')
+
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+{head_common(None, title, desc, canonical, og, "index,follow,max-image-preview:large", "../")}{og_head(title, desc, canonical, og)}<link rel="preload" href="../fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../site.css">
+<script>{BOOT}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<div class="sky" aria-hidden="true"><div class="sky__img"></div><div class="sky__veil"></div></div>
+
+<header class="nav">
+  <div class="nav__in">
+    <a class="mark" href="../">Bible Answer</a>
+    <nav class="nav__links" aria-label="Press kit">
+      <a href="#about">About</a>
+      <a href="#facts">Facts</a>
+      <a href="#pictures">Pictures</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__tools">{cta}</div>
+  </div>
+</header>
+
+<main class="doc" id="main">
+  <div class="doc__in">
+    <p class="doc__eyebrow">Press kit</p>
+    <h1>Writing about Bible Answer</h1>
+    <p class="doc__lede">Descriptions you can copy, the facts, and the app icon. Everything here is for editorial use. This page is in English; the app and the site are in six languages.</p>
+
+    <section id="about" aria-labelledby="h-about">
+      <h2 id="h-about">In a few words</h2>
+      {copybox("bp-line", "One line", one_line())}
+      {copybox("bp-short", "Short", short_text())}
+      {copybox("bp-long", "Long", long_text())}
+    </section>
+
+    <section id="facts" aria-labelledby="h-facts">
+      <h2 id="h-facts">Facts</h2>
+      <dl class="facts">{facts_html}</dl>
+      <h3 class="doc__sub">Bible texts, one for each language</h3>
+      <ul class="texts">{texts}</ul>
+      <p class="doc__note">Verses are quoted word for word from these translations. Please keep them unaltered and name the translation when you quote one.</p>
+    </section>
+
+    <section id="pictures" aria-labelledby="h-pics">
+      <h2 id="h-pics">Pictures</h2>
+      <div class="pics">{"".join(pics)}{shots_html}</div>
+      {shots_note}
+      <h3 class="doc__sub">Using the name and the icon</h3>
+      <p>Write the name as two words, Bible Answer. Use the icon as it is: no recolouring, cropping or effects. For the App Store badge, use Apple’s own artwork and follow
+      <a href="https://developer.apple.com/app-store/marketing/guidelines/" rel="noopener" target="_blank">Apple’s marketing guidelines</a>.</p>
+    </section>
+
+    <section id="news" aria-labelledby="h-news">
+      <h2 id="h-news">News</h2>
+      <ul class="news">{news}</ul>
+      <p><a href="{site}/feed.xml" type="application/rss+xml">RSS feed</a></p>
+    </section>
+
+    <section id="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact">Contact</h2>
+      <p>For an interview, a number, a quote or a screenshot in your language, write to <a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a>.</p>
+      {soc_html}
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <p><a href="../support">Support</a><span class="dot">·</span><wbr><a href="../privacy#en">Privacy Policy</a><span class="dot">·</span><wbr><a href="../terms#en">Terms of Use</a><span class="dot">·</span><wbr><a href="../">Bible Answer</a></p>
+</footer>
+<script src="../app.js" defer></script>
+</body>
+</html>
+'''
+
+
+# ------------------------------------------------------------------ llms.txt (short) and llms-full.txt (everything), for AI assistants
+
+def llms_facts():
+    return [
+        'Free. An optional one-time tip supports the app; nothing is locked or unlocked by it.',
+        'The verse is quoted word for word from the translation of each language (listed below); it is not generated.',
+        'The reflection, the prayer and the choice of passage are written with an AI model (Anthropic) through the developer\'s own server and may be incomplete or mistaken. The app says so.',
+        'No account, no advertising, no analytics, no tracking across apps or websites.',
+        f'Platforms: iPhone, iPad, Apple Watch and Mac. Requires {CFG.get("requirements", "")}.',
+        'Languages: ' + ', '.join(LANG_EN[l] for l in LANGS) + '.',
+        'Availability: ' + ('on the App Store.' if live() else 'launching soon on the App Store (the App Store page opens at release).'),
+    ]
+
+
+def llms_txt():
+    site = CFG['siteUrl'].rstrip('/')
+    out = ['# Bible Answer', '', f'> {one_line()} Available in ' + ', '.join(LANG_EN[l] for l in LANGS[:-1]) + f' and {LANG_EN[LANGS[-1]]}. No account, no ads, no analytics.', '',
+           'Facts to get right when you describe it:', ''] + [f'- {x}' for x in llms_facts()] + ['', '## The app', '']
+    out.append(f'- [Bible Answer on the App Store]({CFG["appStoreUrl"]}): ' + ('the download page.' if live() else 'the download page; it opens when the app is released.'))
+    out += ['', '## The website, one page per language', '']
+    out += [f'- [{LANG_EN[l] if l == "en" else LANG_EN[l] + " – " + APP[l]["name"]}]({site}/{SITE[l]["path"]}): {SITE[l]["metaDescription"]}' for l in LANGS]
+    out += ['', '## About and policies', '',
+            f'- [Press kit]({site}/press/): descriptions to copy, facts, the app icon, contact.',
+            f'- [Privacy Policy]({site}/privacy#en): what leaves the device and what does not.',
+            f'- [Terms of Use]({site}/terms#en)',
+            f'- [Support]({site}/support)',
+            '', '## Optional', '',
+            f'- [Full description for language models]({site}/llms-full.txt): what is inside, how answers are made, privacy, questions and answers.',
+            f'- [News feed]({site}/feed.xml)', '']
+    return '\n'.join(out)
+
+
+def llms_full():
+    site = CFG['siteUrl'].rstrip('/')
+    en = APP['en']; ins = en['inside']; c = counts()
+    S = SITE['en']
+    out = ['# Bible Answer: full description', '', f'> {one_line()}', '',
+           'This file is written for language models and for anyone who wants every fact in one place. The same facts are on https://bibleanswer.app/ and https://bibleanswer.app/press/.', '',
+           '## What it is', '',
+           short_text(), '',
+           '## How it works', '',
+           '1. Say or type what is on your heart, or tap a feeling (anxious, lost, grateful and others).',
+           '2. You get a passage quoted word for word, a plain explanation of what it means for you, a short prayer, and the context of the passage.',
+           '3. Read on: the whole Bible, three readings of every verse, a guide, advice by topic, reading plans.', '',
+           '## What is inside', '', f'### {ins["guide"]["title"]}', '', ins['guide']['lead'], '']
+    out += [f'- {i["title"]}: {i["summary"]}' for i in ins['guide']['items']]
+    out += ['', '### Three readings of every verse', '']
+    out += [f'- {x["name"]}: {x["caption"]}' for x in ins['lenses']]
+    out += ['', f'### Advice by topic ({c["topics"]} topics)', '', ins['advice']['lead'], '', ', '.join(ins['advice']['topics']) + '.', '', '### Reading plans', '']
+    out += [f'- {x["title"]} ({x["days"]} days): {x["summary"]}' for x in ins['plans']['items']]
+    out += ['', '### Also', '',
+            f'- Explained in the guide: {c["eras"]} eras, {c["people"]} people, {c["terms"]} words and {c["places"]} places.',
+            f'- {S["todayH"]} {S["todayP"]}',
+            f'- {S["quietH"]} {S["quietP"]}',
+            f'- {S["hoursH"]} {", ".join(en["hours"])}.',
+            f'- {S["alsoSearch"]}; verse cards to share.', '',
+            '## Platforms', '',
+            f'- iPhone: {S["iphoneP"]}', f'- iPad: {S["ipadP"]}', f'- Apple Watch: {S["watchP"]}', f'- Mac: {S["macSecP"]}',
+            f'- Requires {CFG.get("requirements", "")}.', '',
+            '## Languages and Bible texts', '', 'The app and the website are in six languages. Each uses one Bible translation, quoted unchanged:', '']
+    out += [f'- {LANG_EN[l]}: {BIBLE_EN[l]}' for l in LANGS]
+    out += ['', '## Privacy and data', '',
+            '- No account. There is nothing to sign up for.',
+            '- No advertising, no analytics, no tracking across apps or websites.',
+            '- When you ask a question, the text is sent to the developer\'s server, which passes it to an AI model provider (Anthropic) to write the reflection. It is not linked to a name, an email, a device identifier or an account. The server does not store the questions.',
+            '- Chapters of the Bible are fetched from a public Scripture service (bible.helloao.org) and kept on the device.',
+            '- A tip is validated by RevenueCat with an anonymous identifier made by the app.',
+            f'- Full text: {site}/privacy#en', '',
+            '## Questions and answers', '',
+            '**Is Bible Answer free?** Yes. If you wish to support it, you can leave a tip, once. Nothing is locked or unlocked by it.', '',
+            '**Does it need an account?** No.', '',
+            '**Are the verses written by AI?** No. Each verse is quoted word for word from the translation. The reflection, the prayer and the choice of passage are written with an AI model and may be incomplete or mistaken; the app says so.', '',
+            '**Which devices?** iPhone, iPad, Apple Watch and Mac.', '',
+            '**Which languages?** ' + ', '.join(LANG_EN[l] for l in LANGS) + '.', '',
+            '**Who makes it?** One independent developer.', '',
+            f'**Where can I get it?** {"On the App Store: " + CFG["appStoreUrl"] if live() else "It is launching soon on the App Store; the page " + CFG["appStoreUrl"] + " opens at release."}', '',
+            '## Links', '',
+            f'- Website: {site}/', f'- Press kit: {site}/press/', f'- Support: {site}/support', f'- Contact: {CFG["contactEmail"]}', '']
+    return '\n'.join(out)
+
+
+def write_extras():
+    (ROOT / 'press').mkdir(exist_ok=True)
+    (ROOT / 'press' / 'index.html').write_text(press_page(), encoding='utf-8')
+    (ROOT / 'feed.xml').write_text(feed_xml(), encoding='utf-8')
+    (ROOT / 'llms.txt').write_text(llms_txt(), encoding='utf-8')
+    (ROOT / 'llms-full.txt').write_text(llms_full(), encoding='utf-8')
+    key = CFG.get('indexNowKey')
+    if key:
+        (ROOT / f'{key}.txt').write_text(key, encoding='utf-8')
+    print('wrote press/index.html, feed.xml, llms.txt, llms-full.txt' + (f', {key}.txt' if key else ''))
 
 
 def main():
@@ -664,6 +960,7 @@ def main():
     (ROOT / '404.html').write_text(not_found(), encoding='utf-8')
     print('wrote links/index.html, 404.html')
     write_legal()
+    write_extras()
     (ROOT / 'sitemap.xml').write_text(sitemap(a.lastmod), encoding='utf-8')
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {CFG["siteUrl"].rstrip("/")}/sitemap.xml\n', encoding='utf-8')
     print('wrote sitemap.xml, robots.txt')

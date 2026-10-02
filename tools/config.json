@@ -37,5 +37,10 @@
       "url": "https://www.pinterest.com/bibleanswerapp/"
     }
   ],
-  "socialNote": "Only accounts with a url are shown. Planned language accounts: @bibleanswerapp_ru, _es, _br, _fr, _ph - add {platform, lang, handle, url} here when they exist."
+  "socialNote": "Only accounts with a url are shown. Planned language accounts: @bibleanswerapp_ru, _es, _br, _fr, _ph - add {platform, lang, handle, url} here when they exist.",
+  "appLive": false,
+  "appLiveNote": "false until the app is on the App Store: the press page, llms.txt and the feed then say 'launching soon' instead of 'on the App Store'",
+  "requirements": "iOS 26, iPadOS 26, watchOS 26 or macOS 26, or later",
+  "indexNowKey": "eab6ceeaf4f6ff3d0ddec3a41d2909bc",
+  "indexNowNote": "The IndexNow key: published as /<key>.txt so Bing, Yandex and others can check the site is yours. It is not a secret."
 }

@@ -17,7 +17,7 @@ SITE = CFG['siteUrl'].rstrip('/')
 LANGS = ['en', 'pt', 'es', 'ru', 'fr', 'fil']
 PATH = {'en': '', 'pt': 'pt', 'es': 'es', 'ru': 'ru', 'fr': 'fr', 'fil': 'fil'}
 PAGES = ['index.html'] + [f'{p}/index.html' for p in PATH.values() if p] + ['links/index.html', '404.html',
-                                                                              'privacy.html', 'terms.html', 'support.html']
+                                                                              'privacy.html', 'terms.html', 'support.html', 'press/index.html']
 problems = []
 
 
@@ -190,13 +190,43 @@ for lang in LANGS:
 # sitemap
 sm = (ROOT / 'sitemap.xml').read_text('utf-8')
 locs = re.findall(r'<loc>([^<]+)</loc>', sm)
-for need in [f'{SITE}/' + (PATH[l] + '/' if PATH[l] else '') for l in LANGS] + [f'{SITE}/privacy', f'{SITE}/terms', f'{SITE}/support']:
+for need in [f'{SITE}/' + (PATH[l] + '/' if PATH[l] else '') for l in LANGS] + [f'{SITE}/privacy', f'{SITE}/terms', f'{SITE}/support', f'{SITE}/press/']:
     if need not in locs:
         bad('sitemap.xml', f'{need} is not listed')
 if 'links' in ' '.join(locs):
     bad('sitemap.xml', '/links must stay out of the sitemap')
 if f'Sitemap: {SITE}/sitemap.xml' not in (ROOT / 'robots.txt').read_text('utf-8'):
     bad('robots.txt', 'does not name the sitemap')
+
+# feed, llms.txt, IndexNow key
+import xml.etree.ElementTree as ET
+try:
+    rss = ET.parse(ROOT / 'feed.xml').getroot()
+    items = rss.findall('./channel/item')
+    if rss.tag != 'rss' or not items:
+        bad('feed.xml', 'is not an RSS feed with items')
+    for it in items:
+        for tag in ('title', 'link', 'guid', 'pubDate', 'description'):
+            if it.find(tag) is None or not (it.find(tag).text or '').strip():
+                bad('feed.xml', f'an item has no {tag}')
+except (ET.ParseError, OSError) as err:
+    bad('feed.xml', f'does not parse: {err}')
+for name in ('llms.txt', 'llms-full.txt'):
+    path = ROOT / name
+    if not path.exists():
+        bad(name, 'missing')
+        continue
+    text = path.read_text('utf-8')
+    if not text.startswith('# '):
+        bad(name, 'must start with a "# " title')
+    for url in re.findall(r'\]\((https?://[^)\s]+)\)', text) + re.findall(r'(?<![(\w])(https://bibleanswer\.app[^\s)]*)', text):
+        if url.startswith(SITE):
+            rel_path = urldefrag(url)[0][len(SITE):].lstrip('/')
+            if rel_path and not resolves(rel_path):
+                bad(name, f'link does not resolve: {url}')
+key = CFG.get('indexNowKey')
+if key and ((ROOT / f'{key}.txt').read_text('utf-8') if (ROOT / f'{key}.txt').exists() else None) != key:
+    bad(f'{key}.txt', 'the IndexNow key file is missing or does not hold the key')
 
 # GitHub Pages
 if (ROOT / 'CNAME').read_text().strip() != SITE.split('://', 1)[1]:

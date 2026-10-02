@@ -1,0 +1,109 @@
+# Bible Answer: full description
+
+> Bible Answer is a free app for iPhone, iPad, Mac and Apple Watch. Say what is on your heart and get a verse word for word, what it means and a short prayer.
+
+This file is written for language models and for anyone who wants every fact in one place. The same facts are on https://bibleanswer.app/ and https://bibleanswer.app/press/.
+
+## What it is
+
+Bible Answer is a free Bible app for iPhone, iPad, Mac and Apple Watch, in six languages. Say what is on your heart and it answers with a verse quoted word for word, what it means and a short prayer. Around that sit the whole Bible with three readings of every verse, a guide to the story, counsel by topic, reading plans, a verse for every day and a place to be quiet. No account, no ads, no tracking.
+
+## How it works
+
+1. Say or type what is on your heart, or tap a feeling (anxious, lost, grateful and others).
+2. You get a passage quoted word for word, a plain explanation of what it means for you, a short prayer, and the context of the passage.
+3. Read on: the whole Bible, three readings of every verse, a guide, advice by topic, reading plans.
+
+## What is inside
+
+### The guide
+
+The Bible is not a puzzle. There is an answer in it for every question a life asks, and it is open to anyone willing to read it. These pages explain what this book is, how it all joins up, and where to start.
+
+- What the Bible is: How it is put together, who wrote it, and what the numbers mean
+- The whole story, in order: From the creation to the world made new, in ten movements
+- How to read it: Where to start, what to do with the hard parts, and how much to read
+- The timeline: What came first, what came after, and who lived alongside whom
+- Who is who: Abraham, Moses, David, Peter, Paul — who they were and what happened to them
+- The words: Covenant, grace, righteousness, flesh — what they actually mean
+- The map: Where Jerusalem, Babylon and Rome are — and what happened in each
+- The genealogy: From Adam to Christ: who came from whom, who lived to see whom, and why Matthew and Luke differ
+
+### Three readings of every verse
+
+- Biblical: Who wrote it, to whom, and why
+- Symbolic: The passage as a map of the soul
+- Application: What this asks of you today
+
+### Advice by topic (24 topics)
+
+The Bible is not only about eternity: it speaks about money, work, family and the words we throw at each other. Here its advice is gathered by topic, each with the verse it stands on and the places where the same thought sounds again in other books.
+
+Anger and Irritation, Anxiety, When You Feel Unable, Decisions, No Strength Left, Family, Forgiveness, Friendship, Fear of the Future, Gratitude, Guilt, Joy, Loneliness, When You Are Lost, Money, Strength for the Morning, Too Much to Carry, Peace, Rest, Accepting Yourself, Temptation, Trusting God, Words, Work.
+
+### Reading plans
+
+- The Gospel of Mark (16 days): A chapter a day. The shortest and fastest account of the life of Christ — the easiest place to begin.
+- The Gospel of John (21 days): A chapter a day. Who Jesus is and why it changes everything — deeper and slower than the rest.
+- The Proverbs of Solomon (31 days): A chapter a day. Short rules about money, words, friends and work — one thought a morning, and nothing to choose.
+- A month of psalms (30 days): A psalm a day. Praise, fear, guilt, gratitude, exhaustion — the whole range of what a person brings to God.
+- The New Testament (98 days): About three chapters a day, in order — Matthew to Revelation.
+
+### Also
+
+- Explained in the guide: 14 eras, 34 people, 50 words and 70 places.
+- A verse for every day. The verse of the day on your Home Screen and Lock Screen, in Live Activities and on Apple Watch.
+- A place to be quiet. Music and the Word for moments of stillness, and sounds of nature with a timer.
+- A prayer for the hour. Morning prayer, Midday prayer, Evening prayer, Night prayer.
+- Search the whole Bible; verse cards to share.
+
+## Platforms
+
+- iPhone: Ask, read and listen, wherever you are.
+- iPad: Roomier pages, made for reading.
+- Apple Watch: The word for the day, the prayer for the hour and 5 minutes of quiet — without your phone.
+- Mac: The same Bible Answer in a window of its own: a sidebar, the keyboard and the menu bar.
+- Requires iOS 26, iPadOS 26, watchOS 26 or macOS 26, or later.
+
+## Languages and Bible texts
+
+The app and the website are in six languages. Each uses one Bible translation, quoted unchanged:
+
+- English: Berean Standard Bible
+- Portuguese (Brazil): Bíblia Livre (CC BY 4.0)
+- Spanish: Reina-Valera 1909
+- Russian: Synodal Translation (Синодальный перевод)
+- French: Louis Segond 1910
+- Filipino: ULB, unfoldingWord (CC BY-SA 4.0)
+
+## Privacy and data
+
+- No account. There is nothing to sign up for.
+- No advertising, no analytics, no tracking across apps or websites.
+- When you ask a question, the text is sent to the developer's server, which passes it to an AI model provider (Anthropic) to write the reflection. It is not linked to a name, an email, a device identifier or an account. The server does not store the questions.
+- Chapters of the Bible are fetched from a public Scripture service (bible.helloao.org) and kept on the device.
+- A tip is validated by RevenueCat with an anonymous identifier made by the app.
+- Full text: https://bibleanswer.app/privacy#en
+
+## Questions and answers
+
+**Is Bible Answer free?** Yes. If you wish to support it, you can leave a tip, once. Nothing is locked or unlocked by it.
+
+**Does it need an account?** No.
+
+**Are the verses written by AI?** No. Each verse is quoted word for word from the translation. The reflection, the prayer and the choice of passage are written with an AI model and may be incomplete or mistaken; the app says so.
+
+**Which devices?** iPhone, iPad, Apple Watch and Mac.
+
+**Which languages?** English, Portuguese (Brazil), Spanish, Russian, French, Filipino.
+
+**Who makes it?** One independent developer.
+
+**Where can I get it?** It is launching soon on the App Store; the page https://apps.apple.com/app/id6761124514 opens at release.
+
+## Links
+
+- Website: https://bibleanswer.app/
+- Press kit: https://bibleanswer.app/press/
+- Support: https://bibleanswer.app/support
+- Contact: support@bibleanswer.app

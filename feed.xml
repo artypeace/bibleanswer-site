@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bible Answer</title>
+    <link>https://bibleanswer.app/</link>
+    <description>News from Bible Answer, the Bible app for iPhone, iPad, Mac and Apple Watch.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bibleanswer.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>bibleanswer.app is open in six languages</title>
+      <link>https://bibleanswer.app/press/#website-open</link>
+      <guid isPermaLink="false">bibleanswer.app:website-open</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+      <description>The Bible Answer website is live in English, Portuguese (Brazil), Spanish, Russian, French and Filipino, with a press kit, the privacy policy and support.</description>
+    </item>
+  </channel>
+</rss>
