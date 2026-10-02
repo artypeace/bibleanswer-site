@@ -380,3 +380,9 @@ body.solo{min-height:100vh;display:flex;align-items:center;justify-content:cente
 .links__foot{margin-top:34px;font-size:13px;color:var(--muted)}
 .links__foot a{color:var(--muted)}
 .links__foot .dot{margin:0 6px;opacity:.5}
+
+/* social links: footer line and the /links page */
+.foot__social a{color:var(--muted)}
+.soc__lang{font-size:10px;letter-spacing:.08em;opacity:.7;margin-left:3px}
+.links__follow{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:26px 0 0}
+.links__follow .pill{display:inline-flex;align-items:center;padding:10px 18px;font-size:14px}

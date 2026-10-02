@@ -84,7 +84,23 @@ def store_link(lang, base, cls=''):
 
 
 def social_meta():
-    return f'<meta name="p:domain_verify" content="{e(CFG["pinterestVerify"])}">\n' if CFG.get('pinterestVerify') else ''
+    """Site-ownership tags the search engines and Pinterest ask for; each appears only once its code is in config.json."""
+    tags = [('google-site-verification', 'googleVerify'), ('msvalidate.01', 'bingVerify'),
+            ('yandex-verification', 'yandexVerify'), ('p:domain_verify', 'pinterestVerify')]
+    return ''.join(f'<meta name="{n}" content="{e(CFG[k])}">\n' for n, k in tags if CFG.get(k))
+
+
+def social_accounts():
+    return [a for a in CFG.get('social', []) if a.get('url')]
+
+
+def social_links(cls=''):
+    """The accounts that exist, as links; a language other than English is marked (RU, ES, ...)."""
+    out = []
+    for a in social_accounts():
+        mark = '' if a['lang'] == 'en' else f' <span class="soc__lang">{e(a["lang"].upper())}</span>'
+        out.append(f'<a{cls} href="{e(a["url"])}" rel="me noopener" target="_blank">{e(a["platform"])}{mark}</a>')
+    return out
 
 
 def icons_head(base):
@@ -166,7 +182,7 @@ def home(lang):
 
     shots = [shot_file(d, lang, n) for d, k in SHOTS.items() for n in range(1, k + 1)]
     ld_app = {
-        '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', 'description': s['metaDescription'],
+        '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', **({'sameAs': [a['url'] for a in social_accounts()]} if social_accounts() else {}), 'description': s['metaDescription'],
         'applicationCategory': 'ReferenceApplication', 'operatingSystem': 'iOS', 'url': canonical, 'image': og,
         'inLanguage': [SITE[l]['hreflang'] for l in LANGS], 'downloadUrl': CFG['appStoreUrl'],
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
@@ -182,6 +198,8 @@ def home(lang):
         f'<li><a href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}"{current if l == lang else ""}>{e(APP[l]["name"])}</a></li>' for l in LANGS)
     lang_pills = ''.join(
         f'<a class="pill pill--lang" href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}"{current if l == lang else ""}>{e(APP[l]["name"])}</a>' for l in LANGS)
+    soc = social_links()
+    foot_social = (f'<p class="foot__social">' + '<span class="dot">·</span><wbr>'.join(soc) + '</p>\n  ') if soc else ''
     foot_langs = '<span class="dot">·</span><wbr>'.join(
         f'<a href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}">{e(APP[l]["name"])}</a>' for l in LANGS)
 
@@ -409,7 +427,7 @@ def home(lang):
 <footer class="foot">
   <p><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
-  <p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
+  {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>
 <script src="{base}app.js" defer></script>
 </body>
@@ -423,13 +441,12 @@ def links_page():
     site = CFG['siteUrl'].rstrip('/')
     title, desc = 'Bible Answer — Links', 'Bible Answer: the app, and the page in your language.'
     canonical, og = site + '/links/', f'{site}/assets/og/og-en.jpg'
-    handles = {h['lang']: h for h in CFG['social']}
 
     def row(l):
-        h = handles.get(l, {})
-        handle = e(h.get('handle', ''))
-        social = (f'<a class="links__handle" href="{e(h["url"])}" rel="me noopener">{handle}</a>' if h.get('url') else f'<span class="links__handle">{handle}</span>') if handle else ''
-        return (f'<li><a class="links__lang" href="../{SITE[l]["path"]}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}">{e(APP[l]["name"])}</a>{social}</li>')
+        return (f'<li><a class="links__lang" href="../{SITE[l]["path"]}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}">{e(APP[l]["name"])}</a></li>')
+
+    follow = social_links(' class="pill"')
+    follow_html = f'<p class="links__follow">{"".join(follow)}</p>' if follow else ''
 
     return f'''<!doctype html>
 <html lang="en">
@@ -446,6 +463,7 @@ def links_page():
   <p class="links__tag">{e(APP["en"]["tagline"])}</p>
   <p class="links__store">{store_link("en", "../")}</p>
   <ul class="links__list">{"".join(row(l) for l in LANGS)}</ul>
+  {follow_html}
   <p class="links__foot"><a href="../support">Support</a><span class="dot">·</span><wbr><a href="../privacy#en">Privacy Policy</a><span class="dot">·</span><wbr><a href="../terms#en">Terms of Use</a></p>
 </main>
 </body>

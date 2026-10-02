@@ -34,8 +34,8 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 ### Things to fill in (all in `tools/config.json`, then `python3 tools/build.py`)
 
 * `contactEmail` — `support@bibleanswer.app` (Cloudflare Email Routing forwards it to `bibleanswerapp@gmail.com`). The legal pages carry their own copy of the address in their text (`bibleanswerapp@gmail.com`); change it there if you want them to match.
-* `social[].url` — the links of the social accounts (`@bibleanswerapp`, `…_ru`, `…_es`, `…_br`, `…_fr`, `…_ph`). While a link is empty, `/links` shows the handle as plain text.
-* `pinterestVerify` — the content of the `p:domain_verify` tag Pinterest gives; empty means no tag.
+* `social` — the accounts that exist (platform, language, handle, url). Only entries with a url are shown: in the footer and on `/links`, and listed in the structured data (`sameAs`). Add an entry when an account for another language is created.
+* `googleVerify`, `bingVerify`, `yandexVerify`, `pinterestVerify` — the codes the webmaster tools and Pinterest give for the "HTML tag" method; each empty value means no tag. (Google can instead be verified with a DNS TXT record in Cloudflare.)
 * `showScreenshotSlots` — `false` hides the screenshots strip until real screenshots exist.
 
 ### Screenshots and Apple badges
