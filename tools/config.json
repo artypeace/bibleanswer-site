@@ -2,6 +2,8 @@
   "siteUrl": "https://bibleanswer.app",
   "appStoreUrl": "https://apps.apple.com/app/id6761124514",
   "appStoreId": "6761124514",
+  "macAvailable": true,
+  "macNote": "true: the Mac is shown like the other devices (no \"soon\" badge). false would show \"soon\" again.",
   "lastmod": "2026-10-02",
   "contactEmail": "support@bibleanswer.app",
   "pinterestVerify": "29b1f6d2f815cff551839a30f1aa5de5",

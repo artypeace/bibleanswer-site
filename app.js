@@ -178,11 +178,42 @@
     });
   }
 
+  /* ---------------------------------------------------------------- the Mac window: one section after another */
+  function mac() {
+    const w = document.querySelector('[data-mac]');
+    if (!w) return;
+    const scenes = [...w.querySelectorAll('.mscene, .macwin__shot')];
+    const items = [...w.querySelectorAll('.macwin__side li')];
+    if (scenes.length < 2) return;
+    let i = 0, timer = null;
+    const show = k => { i = k; scenes.forEach((s, j) => s.classList.toggle('on', j === k)); items.forEach((l, j) => l.classList.toggle('on', j === k)); };
+    const start = () => { if (!timer && !reduced) timer = setInterval(() => show((i + 1) % scenes.length), 4300); };
+    const stop = () => { clearInterval(timer); timer = null; };
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => (e.isIntersecting ? start() : stop())), { threshold: 0.35 }).observe(w);
+    show(0);
+  }
+
+  /* ---------------------------------------------------------------- the counts run up once, when they come into view */
+  function counters() {
+    const items = [...document.querySelectorAll('[data-count]')];
+    if (!items.length || reduced || !('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver(entries => entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      io.unobserve(en.target);
+      const el = en.target, n = +el.dataset.count, t0 = performance.now();
+      const tick = t => { const k = clamp((t - t0) / 1300, 0, 1); el.textContent = Math.round(n * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }), { threshold: 0.6 });
+    items.forEach(n => io.observe(n));
+  }
+
   sky();
   onView('.reveal', 'in', { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
   onView('.split:not(.split--hero)', 'in', { threshold: 0.5, rootMargin: '0px 0px -8% 0px' });
   onView('[data-demo]', 'is-playing', { threshold: 0.3 });
   story();
+  mac();
+  counters();
   scrollEffects();
   magnet();
 })();

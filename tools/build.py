@@ -33,8 +33,8 @@ ICONS = ['anxious', 'overwhelmed', 'selfworth', 'lost', 'courage', 'future', 'ex
          'morning', 'anger', 'guilt', 'trust', 'money', 'lonely', 'gratitude', 'joy', 'praise', 'goodnews', 'peace']
 GUIDE_ICONS = ['book', 'path', 'era', 'person', 'word', 'map', 'thread']    # order of site-strings guideChips
 DEMO_FEELING = 0                   # "I'm anxious and I can't settle." -> Philippians 4:6-7
-SHOTS = {'iphone': 4, 'ipad': 2}   # screenshot slots per language (see assets/screens/README.md)
-SHOT_SIZE = {'iphone': (1320, 2868), 'ipad': (2064, 2752)}
+SHOTS = {'iphone': 4, 'ipad': 2, 'mac': 3}   # screenshot slots per language (see assets/screens/README.md)
+SHOT_SIZE = {'iphone': (1320, 2868), 'ipad': (2064, 2752), 'mac': (2880, 1800)}
 
 BOOT = "document.documentElement.classList.add('js')"   # tells the stylesheet scripts run, so reveal-on-scroll may hide things
 BOOT_HASH = 'sha256-' + base64.b64encode(hashlib.sha256(BOOT.encode()).digest()).decode()
@@ -42,6 +42,15 @@ CSP = (f"default-src 'none'; script-src 'self' '{BOOT_HASH}'; style-src 'self' '
        "font-src 'self'; media-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'")
 
 e = lambda s: html.escape(str(s), quote=True)
+
+
+def days_label(n, lang):
+    """`16 days`, with the right word for the number (Russian has three forms)."""
+    if lang == 'ru':
+        w = 'день' if n % 10 == 1 and n % 100 != 11 else 'дня' if 2 <= n % 10 <= 4 and not 12 <= n % 100 <= 14 else 'дней'
+    else:
+        w = {'en': 'days', 'es': 'días', 'pt': 'dias', 'fr': 'jours', 'fil': 'araw'}[lang]
+    return f'{n} {w}'
 
 
 def split_words(text):
@@ -145,13 +154,15 @@ def shot_file(device, lang, n):
 STORY = ['read', 'guide', 'counsel', 'quiet', 'hours']   # the scenes of the pinned phone, in order
 
 
-def story_media(scene, lang, base):
+def story_media(scene, lang, base, inline=False):
     """A real screen recording or screenshot for one scene of the phone: assets/story/<scene>/<lang>.* or default.*
     (mp4/webm = video, webp/png/jpg = picture). Returns '' when none was added; the drawn scene is shown then."""
     for name in (lang, 'default'):
         vids = [f'assets/story/{scene}/{name}.{x}' for x in ('webm', 'mp4') if have(f'assets/story/{scene}/{name}.{x}')]
         if vids:
             poster = next((f'assets/story/{scene}/{name}-poster.{x}' for x in ('webp', 'jpg', 'png') if have(f'assets/story/{scene}/{name}-poster.{x}')), None)
+            if inline:   # the stacked layout does not play video: its picture, if there is one
+                return (f'<img class="sc-media" src="{base}{poster}" width="1320" height="2868" alt="" loading="lazy" decoding="async">' if poster else '')
             kinds = {'webm': 'video/webm', 'mp4': 'video/mp4'}
             srcs = ''.join(f'<source src="{base}{v}" type="{kinds[v.rsplit(".", 1)[1]]}">' for v in vids)
             pos = f' poster="{base}{poster}"' if poster else ''
@@ -162,12 +173,27 @@ def story_media(scene, lang, base):
     return ''
 
 
+MAC_SCENES = ['answer', 'bible', 'advice', 'listen']   # the sidebar's first four sections, in order
+
+
+def mac_shots(lang, base):
+    """The app's own Mac window, one picture per section: assets/mac/<scene>/<lang>.* or default.*"""
+    found = []
+    for sc in MAC_SCENES:
+        for name in (lang, 'default'):
+            p = next((f'assets/mac/{sc}/{name}.{x}' for x in ('webp', 'png', 'jpg') if have(f'assets/mac/{sc}/{name}.{x}')), None)
+            if p:
+                found.append(p)
+                break
+    return found
+
+
 def screens_section(lang, base):
     s = SITE[lang]
     found = {d: [shot_file(d, lang, n) for n in range(1, k + 1)] for d, k in SHOTS.items()}
     if not CFG.get('showScreenshotSlots', True) and not any(any(v) for v in found.values()):
         return ''
-    names = {'iphone': 'iPhone', 'ipad': 'iPad'}
+    names = {'iphone': 'iPhone', 'ipad': 'iPad', 'mac': 'Mac'}
     rows = []
     for device, files in found.items():
         w, h = SHOT_SIZE[device]
@@ -213,7 +239,7 @@ def home(lang):
     shots = [shot_file(d, lang, n) for d, k in SHOTS.items() for n in range(1, k + 1)]
     ld_app = {
         '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', **({'sameAs': [a['url'] for a in social_accounts()]} if social_accounts() else {}), 'description': s['metaDescription'],
-        'applicationCategory': 'ReferenceApplication', 'operatingSystem': 'iOS', 'url': canonical, 'image': og,
+        'applicationCategory': 'ReferenceApplication', 'operatingSystem': 'iOS, iPadOS, watchOS' + (', macOS' if CFG.get('macAvailable') else ''), 'url': canonical, 'image': og,
         'inLanguage': [SITE[l]['hreflang'] for l in LANGS], 'downloadUrl': CFG['appStoreUrl'],
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
     }
@@ -267,9 +293,10 @@ def home(lang):
     guide_chips = ''.join(f'<div class="chip-sm">{gicon(GUIDE_ICONS[i], base)}<span>{e(t)}</span></div>' for i, t in enumerate(s['guideChips']))
     topics = ''.join(f'<div class="topic"><b></b><span>{e(t)}</span></div>' for t in ap['topics'])
     hours = ''.join(f'<span class="pill">{e(t)}</span>' for t in ap['hours'])
+    mac_ok = bool(CFG.get('macAvailable'))
     devices = ''.join(
-        f'<article class="device{" device--soon" if k == "mac" else ""} reveal" style="--d:{d}s"><div class="device__art" aria-hidden="true">{ART[k]}</div>'
-        f'<h3>{t}{(" <span class=soon>" + e(s["soon"]) + "</span>") if k == "mac" else ""}</h3><p>{e(s[k + "P"])}</p></article>'
+        f'<article class="device{" device--soon" if k == "mac" and not mac_ok else ""} reveal" style="--d:{d}s"><div class="device__art" aria-hidden="true">{ART[k]}</div>'
+        f'<h3>{t}{(" <span class=soon>" + e(s["soon"]) + "</span>") if k == "mac" and not mac_ok else ""}</h3><p>{e(s["macSecP"] if k == "mac" and mac_ok else s[k + "P"])}</p></article>'
         for d, (k, t) in zip((0, .1, .2, .3), (('iphone', 'iPhone'), ('ipad', 'iPad'), ('watch', 'Apple Watch'), ('mac', 'Mac'))))
 
 
@@ -309,12 +336,61 @@ def home(lang):
               <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div><div class="eq">{eq}</div><div class="bar"><i></i></div>''',
         'hours': f'{plate("plate-hours", 520, 834, "sc-plate sc-plate--fill")}<div class="sc-veil"></div><div class="sc-hours">{hours}</div>',
     }
+    buttons_html = ''.join(f'<i class="phone__btn phone__btn--{side}" style="--t:{t};--l:{l}"></i>' for side, t, l in
+                           (('l', 206, 34), ('l', 270, 64), ('l', 350, 64), ('r', 300, 100), ('r', 560, 58)))   # action, volume, side, camera control
+    def card_for(key):
+        m = story_media(key, lang, base, inline=True)
+        if not m:
+            return cards[key]
+        return f'<div class="phone phone--inline" aria-hidden="true">{buttons_html}<div class="phone__body"><div class="phone__bezel"><div class="phone__screen"><i class="phone__island"></i>{m}</div></div></div></div>'
+    mac_icons = ('<path d="M4 5h16v11H9l-5 4z"/>', '<path d="M4 5h7a2 2 0 0 1 1 .4 2 2 0 0 1 1-.4h7v13h-7a2 2 0 0 0-1 .4 2 2 0 0 0-1-.4H4zM12 5.4v13"/>',
+                 '<path d="M12 3v18M5 6h11l3 3-3 3H5z"/>', '<path d="M5 10v4M9 7v10M13 4v16M17 8v8M21 11v2"/>', '<path d="M7 4h10v16l-5-4-5 4z"/>')
+    mac_files = mac_shots(lang, base)
+    if mac_files:
+        mac_inner = ''.join(f'<img class="macwin__shot{" on" if i == 0 else ""}" src="{base}{f}" width="2640" height="1698" alt="" loading="lazy" decoding="async">' for i, f in enumerate(mac_files))
+        mac_cls = ' macwin--real'
+    else:
+        side = ''.join(f'<li{" class=on" if i == 0 else ""}><svg viewBox="0 0 24 24" aria-hidden="true">{ic}</svg>{e(t)}</li>' for i, (ic, t) in enumerate(zip(mac_icons, ap['macSidebar'])))
+        mac_inner = (
+            f'<div class="macwin__bar"><i></i><i></i><i></i></div><ul class="macwin__side">{side}</ul><div class="macwin__main">'
+            f'<div class="mscene on"><div class="mq">{e(query)}</div><p class="sc-ref">{e(sample["reference"])}</p><p class="sc-verse">{e(sample["verse"])}</p>{skl_lines(3)}</div>'
+            f'<div class="mscene"><p class="sc-ref">{e(sample["reference"])}</p>{skl_lines(4)}<p class="sc-verse">{e(sample["verse"])}</p>{skl_lines(4)}<div class="lens">{lens}</div></div>'
+            f'<div class="mscene"><div class="topics">{topics_scene}</div></div>'
+            f'<div class="mscene mscene--listen"><div class="sc-bg" style="background-image:url({base}assets/plates/plate-galilee.webp)"></div><div class="sc-veil"></div>'
+            f'<div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div><div class="eq">{eq}</div><div class="bar"><i></i></div></div></div>')
+        mac_cls = ''
+    soon_line = '' if mac_ok else f'<p class="soonline"><span class="soon">{e(s["soon"])}</span></p>'
+    mac_html = (f'<section class="section macsec" id="mac" aria-labelledby="h-mac"><div class="wrap">{h2(s["macSecH"], "", "h-mac")}'
+                f'<p class="lede reveal" style="--d:.1s">{e(s["macSecP"])}</p>{soon_line}'
+                f'<div class="macwin{mac_cls} reveal" style="--d:.15s" data-mac aria-hidden="true">{mac_inner}</div></div></section>')
+    ins = ap['inside']; cn = ins['counts']
+    tile = lambda n, k: f'<div class="tile"><b data-count="{n}">{n}</b><span>{e(s[k])}</span></div>'
+    guide_rows = ''.join(f'<li><b>{e(i["title"])}</b><span>{e(i["summary"])}</span></li>' for i in ins['guide']['items'])
+    lens_boxes = ''.join(f'<div class="lensbox"><b>{e(x["name"])}</b><span>{e(x["caption"])}</span></div>' for x in ins['lenses'])
+    advice_chips = ''.join(f'<span class="pill">{e(t)}</span>' for t in ins['advice']['topics'])
+    plan_rows = ''.join(f'<li><b>{e(x["title"])}</b><span class="days">{e(days_label(x["days"], lang))}</span><span class="plansum">{e(x["summary"])}</span></li>' for x in ins['plans']['items'])
+    also = ''.join(f'<span class="pill">{e(t)}</span>' for t in (s['alsoSearch'], ap['macSidebar'][4], s['alsoShare']))
+    inside_html = f'''<section class="section inside" id="inside" aria-labelledby="h-inside"><div class="wrap">
+      {h2(s["insideH"], "", "h-inside")}
+      <p class="lede reveal" style="--d:.1s">{e(s["insideP"])}</p>
+      <div class="inblocks">
+        <article class="inblock reveal" id="inside-guide"><div class="inblock__head"><h3>{e(ins["guide"]["title"])}</h3><p>{e(ins["guide"]["lead"])}</p></div>
+          <div class="inblock__body"><ul class="inlist">{guide_rows}</ul><div class="tiles">{tile(cn["eras"], "tileEras")}{tile(cn["people"], "tilePeople")}{tile(cn["terms"], "tileTerms")}{tile(cn["places"], "tilePlaces")}</div></div></article>
+        <article class="inblock reveal" id="inside-readings"><div class="inblock__head"><h3>{e(s["readingsH"])}</h3><p>{e(s["readP"])}</p></div>
+          <div class="inblock__body"><div class="lensboxes">{lens_boxes}</div></div></article>
+        <article class="inblock reveal" id="inside-advice"><div class="inblock__head"><h3>{e(ins["advice"]["title"])}</h3><p>{e(ins["advice"]["lead"])}</p></div>
+          <div class="inblock__body"><div class="tiles tiles--one">{tile(cn["topics"], "tileTopics")}</div><div class="chips">{advice_chips}</div></div></article>
+        <article class="inblock reveal" id="inside-plans"><div class="inblock__head"><h3>{e(s["plansH"])}</h3><p>{e(ins["plans"]["lead"])}</p></div>
+          <div class="inblock__body"><ul class="plans">{plan_rows}</ul></div></article>
+      </div>
+      <p class="also reveal"><span class="also__h">{e(s["alsoH"])}</span>{also}</p>
+    </div></section>'''
     story_text = [('readH', 'readP', ''), ('guideH', 'guideP', ''), ('counselH', 'counselP', ''), ('quietH', 'quietP', ''),
                   ('hoursH', 'hoursP', f'<div class="hourlist">{hours}</div>')]
     steps_html = '\n'.join(
         f'        <div class="step feature{" feature--flip" if i % 2 else ""}" id="{key}" data-step="{i}">'
         f'<div class="feature__text"><div class="eyebrow">{i + 1:02d}</div>{h2(s[hk])}<p class="reveal">{e(s[pk])}</p>{extra}</div>'
-        f'<div class="reveal step__card" style="--d:.15s">{cards[key]}</div></div>'
+        f'<div class="reveal step__card" style="--d:.15s">{card_for(key)}</div></div>'
         for i, (key, (hk, pk, extra)) in enumerate(zip(STORY, story_text)))
     scenes_html = '\n'.join(
         f'              <div class="scene{" on" if i == 0 else ""}" data-scene="{key}">{story_media(key, lang, base) or scene_inner[key]}</div>' for i, key in enumerate(STORY))
@@ -391,16 +467,18 @@ def home(lang):
       <div class="stage" aria-hidden="true">
         <div class="phone">
           <div class="phone__glow"></div>
-          <div class="phone__body"><i class="phone__island"></i>
-            <div class="phone__screen">
+          {buttons_html}<div class="phone__body"><div class="phone__bezel">
+            <div class="phone__screen"><i class="phone__island"></i>
 {scenes_html}
             </div>
-          </div>
+          </div></div>
         </div>
         <ol class="story__dots">{dots_html}</ol>
       </div>
     </div>
   </section>
+
+  {inside_html}
 
   <section class="section today" id="today" aria-labelledby="h-today">
     <div class="wrap">
@@ -420,6 +498,8 @@ def home(lang):
       <div class="device-grid">{devices}</div>
     </div>
   </section>
+
+  {mac_html}
 
   {screens_section(lang, base)}
 

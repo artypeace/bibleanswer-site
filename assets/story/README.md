@@ -1,6 +1,6 @@
 # Real screens for the phone on the home page
 
-The pinned phone on the home page shows five scenes, one for each step of the story. Until a file is added here,
+The pinned phone on the home page shows five scenes, one for each step of the story. The real screens normally come from `python3 tools/import_screens.py` (the app's own screenshot run). Until a file is added here,
 a drawn scene made of the app's own words and engravings is shown. Add a real screen recording or screenshot and the
 page uses it instead (run `python3 tools/build.py`; nothing else to edit).
 

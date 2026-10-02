@@ -103,6 +103,148 @@
    "Work",
    "Money",
    "Words"
+  ],
+  "inside": {
+   "guide": {
+    "title": "The guide",
+    "lead": "The Bible is not a puzzle. There is an answer in it for every question a life asks, and it is open to anyone willing to read it. These pages explain what this book is, how it all joins up, and where to start.",
+    "items": [
+     {
+      "key": "intro",
+      "title": "What the Bible is",
+      "summary": "How it is put together, who wrote it, and what the numbers mean"
+     },
+     {
+      "key": "story",
+      "title": "The whole story, in order",
+      "summary": "From the creation to the world made new, in ten movements"
+     },
+     {
+      "key": "howto",
+      "title": "How to read it",
+      "summary": "Where to start, what to do with the hard parts, and how much to read"
+     },
+     {
+      "key": "timeline",
+      "title": "The timeline",
+      "summary": "What came first, what came after, and who lived alongside whom"
+     },
+     {
+      "key": "people",
+      "title": "Who is who",
+      "summary": "Abraham, Moses, David, Peter, Paul — who they were and what happened to them"
+     },
+     {
+      "key": "words",
+      "title": "The words",
+      "summary": "Covenant, grace, righteousness, flesh — what they actually mean"
+     },
+     {
+      "key": "map",
+      "title": "The map",
+      "summary": "Where Jerusalem, Babylon and Rome are — and what happened in each"
+     },
+     {
+      "key": "genealogy",
+      "title": "The genealogy",
+      "summary": "From Adam to Christ: who came from whom, who lived to see whom, and why Matthew and Luke differ"
+     }
+    ]
+   },
+   "lenses": [
+    {
+     "name": "Biblical",
+     "caption": "Who wrote it, to whom, and why"
+    },
+    {
+     "name": "Symbolic",
+     "caption": "The passage as a map of the soul"
+    },
+    {
+     "name": "Application",
+     "caption": "What this asks of you today"
+    }
+   ],
+   "advice": {
+    "title": "Advice",
+    "lead": "The Bible is not only about eternity: it speaks about money, work, family and the words we throw at each other. Here its advice is gathered by topic, each with the verse it stands on and the places where the same thought sounds again in other books.",
+    "topics": [
+     "Anger and Irritation",
+     "Anxiety",
+     "When You Feel Unable",
+     "Decisions",
+     "No Strength Left",
+     "Family",
+     "Forgiveness",
+     "Friendship",
+     "Fear of the Future",
+     "Gratitude",
+     "Guilt",
+     "Joy",
+     "Loneliness",
+     "When You Are Lost",
+     "Money",
+     "Strength for the Morning",
+     "Too Much to Carry",
+     "Peace",
+     "Rest",
+     "Accepting Yourself",
+     "Temptation",
+     "Trusting God",
+     "Words",
+     "Work"
+    ]
+   },
+   "plans": {
+    "title": "A reading plan",
+    "lead": "A day is done when the chapter is read, not when the evening comes. You can disappear for a fortnight and come back to the same chapter, waiting.",
+    "items": [
+     {
+      "id": "mark",
+      "title": "The Gospel of Mark",
+      "summary": "A chapter a day. The shortest and fastest account of the life of Christ — the easiest place to begin.",
+      "days": 16
+     },
+     {
+      "id": "john",
+      "title": "The Gospel of John",
+      "summary": "A chapter a day. Who Jesus is and why it changes everything — deeper and slower than the rest.",
+      "days": 21
+     },
+     {
+      "id": "proverbs",
+      "title": "The Proverbs of Solomon",
+      "summary": "A chapter a day. Short rules about money, words, friends and work — one thought a morning, and nothing to choose.",
+      "days": 31
+     },
+     {
+      "id": "psalms",
+      "title": "A month of psalms",
+      "summary": "A psalm a day. Praise, fear, guilt, gratitude, exhaustion — the whole range of what a person brings to God.",
+      "days": 30
+     },
+     {
+      "id": "newTestament",
+      "title": "The New Testament",
+      "summary": "About three chapters a day, in order — Matthew to Revelation.",
+      "days": 98
+     }
+    ]
+   },
+   "counts": {
+    "eras": 14,
+    "people": 34,
+    "terms": 50,
+    "places": 70,
+    "topics": 24
+   }
+  },
+  "macSidebar": [
+   "Answer",
+   "Bible",
+   "Advice",
+   "Listen",
+   "Saved Verses"
   ]
  },
  "pt": {
@@ -209,6 +351,148 @@
    "Trabalho",
    "Dinheiro",
    "Palavras"
+  ],
+  "inside": {
+   "guide": {
+    "title": "Guia",
+    "lead": "A Bíblia não é um enigma. Nela há resposta para qualquer pergunta da vida, e ela está aberta a quem quiser lê-la. Estas páginas explicam o que é este livro, como tudo nele se conecta e por onde começar.",
+    "items": [
+     {
+      "key": "intro",
+      "title": "O que é a Bíblia",
+      "summary": "Como está formada, quem a escreveu e o que significam os números"
+     },
+     {
+      "key": "story",
+      "title": "Toda a história, em ordem",
+      "summary": "Da criação ao mundo novo, em dez passos"
+     },
+     {
+      "key": "howto",
+      "title": "Como lê-la",
+      "summary": "Por onde começar, o que fazer com as passagens difíceis e quanto ler"
+     },
+     {
+      "key": "timeline",
+      "title": "A linha do tempo",
+      "summary": "O que veio antes, o que veio depois e quem viveu ao mesmo tempo"
+     },
+     {
+      "key": "people",
+      "title": "Quem é quem",
+      "summary": "Abraão, Moisés, Davi, Pedro, Paulo — quem foram e o que aconteceu com eles"
+     },
+     {
+      "key": "words",
+      "title": "As palavras",
+      "summary": "Aliança, graça, justiça, carne — o que significam de fato"
+     },
+     {
+      "key": "map",
+      "title": "O mapa",
+      "summary": "Onde ficam Jerusalém, Babilônia e Roma — e o que aconteceu em cada lugar"
+     },
+     {
+      "key": "genealogy",
+      "title": "A genealogia",
+      "summary": "De Adão a Cristo: quem veio de quem, quem conheceu quem e por que Mateus e Lucas diferem"
+     }
+    ]
+   },
+   "lenses": [
+    {
+     "name": "Bíblico",
+     "caption": "Quem escreveu, para quem e sobre o quê"
+    },
+    {
+     "name": "Simbólico",
+     "caption": "Uma leitura da alma"
+    },
+    {
+     "name": "Aplicação",
+     "caption": "O que isto diz para você hoje"
+    }
+   ],
+   "advice": {
+    "title": "Conselhos",
+    "lead": "A Bíblia não fala só do eterno: fala de dinheiro, de trabalho, de família e das palavras que dizemos uns aos outros. Aqui os conselhos dela estão reunidos por temas, cada um com o versículo em que se apoia e os lugares onde a mesma ideia ecoa em outros livros.",
+    "topics": [
+     "Raiva e irritação",
+     "Ansiedade",
+     "Quando você não acredita que consegue",
+     "Decisões",
+     "Sem forças",
+     "Família",
+     "Perdão",
+     "Amizade",
+     "Medo do futuro",
+     "Gratidão",
+     "Culpa",
+     "Alegria",
+     "Solidão",
+     "Quando você se perde",
+     "Dinheiro",
+     "Força para a manhã",
+     "Quando é demais",
+     "Paz",
+     "Descanso",
+     "Aceitar-se",
+     "Tentação",
+     "Confiar em Deus",
+     "Palavras",
+     "Trabalho"
+    ]
+   },
+   "plans": {
+    "title": "Plano de leitura",
+    "lead": "Um dia se cumpre quando o capítulo é lido, não quando cai a noite. Você pode sumir por duas semanas e voltar ao mesmo capítulo: ele espera.",
+    "items": [
+     {
+      "id": "mark",
+      "title": "O Evangelho de Marcos",
+      "summary": "Um capítulo por dia. O relato mais curto e rápido da vida de Cristo — por onde é mais fácil começar.",
+      "days": 16
+     },
+     {
+      "id": "john",
+      "title": "O Evangelho de João",
+      "summary": "Um capítulo por dia. Quem é Jesus e por que isso muda tudo — mais fundo e mais lento.",
+      "days": 21
+     },
+     {
+      "id": "proverbs",
+      "title": "Os Provérbios de Salomão",
+      "summary": "Um capítulo por dia. Regras curtas sobre dinheiro, palavras, amigos e trabalho — uma ideia por manhã, nada para escolher.",
+      "days": 31
+     },
+     {
+      "id": "psalms",
+      "title": "Salmos para um mês",
+      "summary": "Um salmo por dia. Louvor, medo, culpa, gratidão, cansaço — tudo o que se leva a Deus.",
+      "days": 30
+     },
+     {
+      "id": "newTestament",
+      "title": "O Novo Testamento",
+      "summary": "Cerca de três capítulos por dia, em ordem — de Mateus ao Apocalipse.",
+      "days": 98
+     }
+    ]
+   },
+   "counts": {
+    "eras": 14,
+    "people": 34,
+    "terms": 50,
+    "places": 70,
+    "topics": 24
+   }
+  },
+  "macSidebar": [
+   "Resposta",
+   "Bíblia",
+   "Conselhos",
+   "Ouvir",
+   "Versículos Salvos"
   ]
  },
  "es": {
@@ -315,6 +599,148 @@
    "El trabajo",
    "El dinero",
    "Las palabras"
+  ],
+  "inside": {
+   "guide": {
+    "title": "Guía",
+    "lead": "La Biblia no es un rompecabezas. En ella hay respuesta para cualquier pregunta de la vida, y está abierta a todo el que quiera leerla. Estas páginas explican qué es este libro, cómo se conecta todo y por dónde empezar.",
+    "items": [
+     {
+      "key": "intro",
+      "title": "Qué es la Biblia",
+      "summary": "Cómo está formada, quién la escribió y qué significan los números"
+     },
+     {
+      "key": "story",
+      "title": "Toda la historia, en orden",
+      "summary": "De la creación al mundo nuevo, en diez pasos"
+     },
+     {
+      "key": "howto",
+      "title": "Cómo leerla",
+      "summary": "Por dónde empezar, qué hacer con los pasajes difíciles y cuánto leer"
+     },
+     {
+      "key": "timeline",
+      "title": "La línea del tiempo",
+      "summary": "Qué fue antes, qué después y quién vivió al mismo tiempo que quién"
+     },
+     {
+      "key": "people",
+      "title": "Quién es quién",
+      "summary": "Abraham, Moisés, David, Pedro, Pablo — quiénes fueron y qué les ocurrió"
+     },
+     {
+      "key": "words",
+      "title": "Las palabras",
+      "summary": "Alianza, gracia, justicia, carne — qué significan realmente"
+     },
+     {
+      "key": "map",
+      "title": "El mapa",
+      "summary": "Dónde están Jerusalén, Babilonia y Roma — y qué ocurrió en cada lugar"
+     },
+     {
+      "key": "genealogy",
+      "title": "La genealogía",
+      "summary": "De Adam a Cristo: quién viene de quién, quién alcanzó a quién y por qué Mateo y Lucas difieren"
+     }
+    ]
+   },
+   "lenses": [
+    {
+     "name": "Bíblico",
+     "caption": "Quién lo escribió, a quién y sobre qué"
+    },
+    {
+     "name": "Simbólico",
+     "caption": "Una lectura del alma"
+    },
+    {
+     "name": "Aplicación",
+     "caption": "Qué significa para ti hoy"
+    }
+   ],
+   "advice": {
+    "title": "Consejos",
+    "lead": "La Biblia no habla solo de lo eterno: habla del dinero, del trabajo, de la familia y de las palabras que nos decimos. Aquí sus consejos están reunidos por temas, cada uno con el versículo en que se apoya y los lugares donde la misma idea resuena en otros libros.",
+    "topics": [
+     "Ira e irritación",
+     "La ansiedad",
+     "Cuando no crees que puedas",
+     "Decisiones",
+     "Cuando no queda fuerza",
+     "Familia",
+     "Perdón",
+     "Amistad",
+     "Miedo al futuro",
+     "Gratitud",
+     "Culpa",
+     "La alegría",
+     "Soledad",
+     "Cuando te pierdes",
+     "El dinero",
+     "Fuerza para la mañana",
+     "Cuando es demasiado",
+     "Paz",
+     "Descanso",
+     "Aceptarte a ti mismo",
+     "Tentación",
+     "Confiar en Dios",
+     "Las palabras",
+     "El trabajo"
+    ]
+   },
+   "plans": {
+    "title": "Plan de lectura",
+    "lead": "Un día se cumple cuando el capítulo está leído, no cuando cae la tarde. Puedes desaparecer dos semanas y volver al mismo capítulo: te espera.",
+    "items": [
+     {
+      "id": "mark",
+      "title": "El Evangelio de Marcos",
+      "summary": "Un capítulo al día. El relato más breve y rápido de la vida de Cristo: por donde es más fácil empezar.",
+      "days": 16
+     },
+     {
+      "id": "john",
+      "title": "El Evangelio de Juan",
+      "summary": "Un capítulo al día. Quién es Jesús y por qué lo cambia todo: más hondo y más lento.",
+      "days": 21
+     },
+     {
+      "id": "proverbs",
+      "title": "Los Proverbios de Salomón",
+      "summary": "Un capítulo al día. Reglas breves sobre el dinero, las palabras, los amigos y el trabajo: una idea por mañana, sin nada que elegir.",
+      "days": 31
+     },
+     {
+      "id": "psalms",
+      "title": "Salmos para un mes",
+      "summary": "Un salmo al día. Alabanza, miedo, culpa, gratitud, cansancio: todo lo que se lleva ante Dios.",
+      "days": 30
+     },
+     {
+      "id": "newTestament",
+      "title": "El Nuevo Testamento",
+      "summary": "Unos tres capítulos al día, en orden: de Mateo al Apocalipsis.",
+      "days": 98
+     }
+    ]
+   },
+   "counts": {
+    "eras": 14,
+    "people": 34,
+    "terms": 50,
+    "places": 70,
+    "topics": 24
+   }
+  },
+  "macSidebar": [
+   "Respuesta",
+   "Biblia",
+   "Consejos",
+   "Escuchar",
+   "Versículos Guardados"
   ]
  },
  "ru": {
@@ -421,6 +847,148 @@
    "Труд",
    "Деньги",
    "Слова"
+  ],
+  "inside": {
+   "guide": {
+    "title": "Путеводитель",
+    "lead": "Библия — не головоломка. В ней есть ответ на любой вопрос жизни, и она открыта каждому, кто захочет её прочитать. Эти страницы объясняют, что это за книга, как в ней всё связано и с чего начать.",
+    "items": [
+     {
+      "key": "intro",
+      "title": "Что такое Библия",
+      "summary": "Как она собрана, кто её писал и что значат номера глав и стихов"
+     },
+     {
+      "key": "story",
+      "title": "Вся история по порядку",
+      "summary": "От сотворения мира до нового — одним рассказом, за десять шагов"
+     },
+     {
+      "key": "howto",
+      "title": "Как её читать",
+      "summary": "С чего начать, что делать с трудными местами и сколько читать за раз"
+     },
+     {
+      "key": "timeline",
+      "title": "Лента времени",
+      "summary": "Что было раньше, что потом и кто жил в одно время с кем"
+     },
+     {
+      "key": "people",
+      "title": "Кто есть кто",
+      "summary": "Авраам, Моисей, Давид, Пётр, Павел — кто они были и что с ними произошло"
+     },
+     {
+      "key": "words",
+      "title": "Слова",
+      "summary": "Завет, благодать, праведность, плоть — что они значат на самом деле"
+     },
+     {
+      "key": "map",
+      "title": "Карта",
+      "summary": "Где Иерусалим, Вавилон и Рим — и что происходило в каждом из этих мест"
+     },
+     {
+      "key": "genealogy",
+      "title": "Родословная",
+      "summary": "От Адама до Христа: кто от кого, кто кого застал и почему у Матфея и Луки разные имена"
+     }
+    ]
+   },
+   "lenses": [
+    {
+     "name": "Библейское",
+     "caption": "Кто написал, кому и о чём"
+    },
+    {
+     "name": "Символическое",
+     "caption": "Прочтение как карты души"
+    },
+    {
+     "name": "Применение",
+     "caption": "О чём это для вас сегодня"
+    }
+   ],
+   "advice": {
+    "title": "Советы",
+    "lead": "Библия говорит не только о вечном — она говорит о деньгах, работе, семье и словах, которые мы бросаем друг другу. Здесь её советы собраны по темам: каждый — со стихом, на котором он стоит, и с местами, где та же мысль звучит в других книгах.",
+    "topics": [
+     "Гнев и раздражение",
+     "Тревога",
+     "Неверие в себя",
+     "Решения",
+     "Когда нет сил",
+     "Семья",
+     "Прощение",
+     "Дружба",
+     "Страх перед будущим",
+     "Благодарность",
+     "Вина",
+     "Радость",
+     "Одиночество",
+     "Когда вы потерялись",
+     "Деньги",
+     "Сила для утра",
+     "Когда слишком много",
+     "Мир в сердце",
+     "Покой",
+     "Принятие себя",
+     "Искушение",
+     "Доверие Богу",
+     "Слова",
+     "Труд"
+    ]
+   },
+   "plans": {
+    "title": "План чтения",
+    "lead": "День считается пройденным, когда глава прочитана, а не когда наступил вечер. Можно пропасть на две недели и вернуться к той же главе — она будет ждать.",
+    "items": [
+     {
+      "id": "mark",
+      "title": "Евангелие от Марка",
+      "summary": "По главе в день. Самый короткий и быстрый рассказ о жизни Христа — с чего проще всего начать.",
+      "days": 16
+     },
+     {
+      "id": "john",
+      "title": "Евангелие от Иоанна",
+      "summary": "По главе в день. Кто такой Иисус и почему это меняет всё — глубже и медленнее остальных.",
+      "days": 21
+     },
+     {
+      "id": "proverbs",
+      "title": "Притчи Соломона",
+      "summary": "По главе в день. Короткие правила о деньгах, словах, друзьях и труде — по одной мысли на утро, ничего выбирать не нужно.",
+      "days": 31
+     },
+     {
+      "id": "psalms",
+      "title": "Псалмы на месяц",
+      "summary": "По псалму в день. Хвала, страх, вина, благодарность, усталость — весь диапазон того, с чем приходят к Богу.",
+      "days": 30
+     },
+     {
+      "id": "newTestament",
+      "title": "Новый Завет",
+      "summary": "Около трёх глав в день, по порядку — от Матфея до Откровения.",
+      "days": 98
+     }
+    ]
+   },
+   "counts": {
+    "eras": 14,
+    "people": 34,
+    "terms": 50,
+    "places": 70,
+    "topics": 24
+   }
+  },
+  "macSidebar": [
+   "Ответ",
+   "Библия",
+   "Советы",
+   "Слушать",
+   "Сохранённые стихи"
   ]
  },
  "fr": {
@@ -527,6 +1095,148 @@
    "Le travail",
    "Argent",
    "Les mots"
+  ],
+  "inside": {
+   "guide": {
+    "title": "Le guide",
+    "lead": "La Bible n’est pas une énigme. On y trouve une réponse à toute question de la vie, et elle est ouverte à qui veut la lire. Ces pages expliquent ce qu’est ce livre, comment tout s’y relie et par où commencer.",
+    "items": [
+     {
+      "key": "intro",
+      "title": "Ce qu’est la Bible",
+      "summary": "Comment elle est composée, qui l’a écrite et ce que veulent dire les chiffres"
+     },
+     {
+      "key": "story",
+      "title": "Toute l’histoire, dans l’ordre",
+      "summary": "De la création au monde nouveau, en dix étapes"
+     },
+     {
+      "key": "howto",
+      "title": "Comment la lire",
+      "summary": "Par où commencer, que faire des passages difficiles et combien lire"
+     },
+     {
+      "key": "timeline",
+      "title": "La frise du temps",
+      "summary": "Ce qui vient avant, ce qui suit et qui a vécu en même temps que qui"
+     },
+     {
+      "key": "people",
+      "title": "Qui est qui",
+      "summary": "Abraham, Moïse, David, Pierre, Paul — qui ils étaient et ce qui leur est arrivé"
+     },
+     {
+      "key": "words",
+      "title": "Les mots",
+      "summary": "Alliance, grâce, justice, chair — ce qu’ils veulent vraiment dire"
+     },
+     {
+      "key": "map",
+      "title": "La carte",
+      "summary": "Où sont Jérusalem, Babylone et Rome — et ce qui s’est passé en chaque lieu"
+     },
+     {
+      "key": "genealogy",
+      "title": "La généalogie",
+      "summary": "D’Adam au Christ : qui vient de qui, qui a connu qui, et pourquoi Matthieu et Luc diffèrent"
+     }
+    ]
+   },
+   "lenses": [
+    {
+     "name": "Biblique",
+     "caption": "Qui l’a écrit, à qui et pourquoi"
+    },
+    {
+     "name": "Symbolique",
+     "caption": "Une lecture de l’âme"
+    },
+    {
+     "name": "Application",
+     "caption": "Ce que cela te dit aujourd’hui"
+    }
+   ],
+   "advice": {
+    "title": "Conseils",
+    "lead": "La Bible ne parle pas que de l’éternel : elle parle d’argent, de travail, de famille et des mots qu’on se lance. Ici, ses conseils sont rassemblés par thèmes, chacun avec le verset qui le fonde et les passages où la même pensée revient ailleurs.",
+    "topics": [
+     "Colère et irritation",
+     "L’anxiété",
+     "Quand tu doutes de toi",
+     "Décisions",
+     "À bout de forces",
+     "Famille",
+     "Le pardon",
+     "L’amitié",
+     "Peur de l’avenir",
+     "Gratitude",
+     "Culpabilité",
+     "La joie",
+     "Solitude",
+     "Quand tu as perdu ton chemin",
+     "Argent",
+     "Force pour le matin",
+     "Quand c’est trop",
+     "Paix",
+     "Le repos",
+     "S’accepter",
+     "Tentation",
+     "Faire confiance à Dieu",
+     "Les mots",
+     "Le travail"
+    ]
+   },
+   "plans": {
+    "title": "Plan de lecture",
+    "lead": "Un jour est fait quand le chapitre est lu, pas quand le soir tombe. Tu peux disparaître deux semaines et retrouver le même chapitre : il attend.",
+    "items": [
+     {
+      "id": "mark",
+      "title": "L’Évangile de Marc",
+      "summary": "Un chapitre par jour. Le récit le plus court et le plus rapide de la vie du Christ — le plus simple pour commencer.",
+      "days": 16
+     },
+     {
+      "id": "john",
+      "title": "L’Évangile de Jean",
+      "summary": "Un chapitre par jour. Qui est Jésus et pourquoi cela change tout — plus profond, plus lent.",
+      "days": 21
+     },
+     {
+      "id": "proverbs",
+      "title": "Les Proverbes de Salomon",
+      "summary": "Un chapitre par jour. De courtes règles sur l’argent, les paroles, les amis et le travail — une pensée par matin, rien à choisir.",
+      "days": 31
+     },
+     {
+      "id": "psalms",
+      "title": "Des psaumes pour un mois",
+      "summary": "Un psaume par jour. Louange, peur, culpabilité, gratitude, fatigue — tout ce qu’on apporte à Dieu.",
+      "days": 30
+     },
+     {
+      "id": "newTestament",
+      "title": "Le Nouveau Testament",
+      "summary": "Environ trois chapitres par jour, dans l’ordre — de Matthieu à l’Apocalypse.",
+      "days": 98
+     }
+    ]
+   },
+   "counts": {
+    "eras": 14,
+    "people": 34,
+    "terms": 50,
+    "places": 70,
+    "topics": 24
+   }
+  },
+  "macSidebar": [
+   "Réponse",
+   "Bible",
+   "Conseils",
+   "Écouter",
+   "Versets Sauvegardés"
   ]
  },
  "fil": {
@@ -633,6 +1343,148 @@
    "Trabaho",
    "Pera",
    "Mga Salita"
+  ],
+  "inside": {
+   "guide": {
+    "title": "Gabay",
+    "lead": "Hindi palaisipan ang Bibliya. Naroon ang sagot sa anumang tanong ng buhay, at bukas ito sa sinumang nais bumasa. Ipinapaliwanag ng mga pahinang ito kung ano ang aklat na ito, paano nagdudugtong ang lahat, at saan magsisimula.",
+    "items": [
+     {
+      "key": "intro",
+      "title": "Ano ang Bibliya",
+      "summary": "Paano ito binuo, sino ang sumulat, at ano ang ibig sabihin ng mga numero"
+     },
+     {
+      "key": "story",
+      "title": "Ang buong kuwento, sunod-sunod",
+      "summary": "Mula sa paglikha hanggang sa bagong mundo, sa sampung hakbang"
+     },
+     {
+      "key": "howto",
+      "title": "Paano ito basahin",
+      "summary": "Saan magsisimula, ano ang gagawin sa mahihirap na bahagi, at gaano karami"
+     },
+     {
+      "key": "timeline",
+      "title": "Guhit ng panahon",
+      "summary": "Ano ang nauna, ano ang sumunod, at sino ang magkapanahon"
+     },
+     {
+      "key": "people",
+      "title": "Sino ang sino",
+      "summary": "Abraham, Moises, David, Pedro, Pablo — sino sila at ano ang nangyari"
+     },
+     {
+      "key": "words",
+      "title": "Mga salita",
+      "summary": "Tipan, biyaya, katuwiran, laman — ano talaga ang ibig sabihin"
+     },
+     {
+      "key": "map",
+      "title": "Ang mapa",
+      "summary": "Nasaan ang Jerusalem, Babilonia at Roma — at ano ang nangyari sa bawat isa"
+     },
+     {
+      "key": "genealogy",
+      "title": "Talaan ng angkan",
+      "summary": "Mula kay Adan hanggang kay Cristo: sino ang nagmula kanino, sino ang inabot ng sino, at bakit magkaiba sina Mateo at Lucas"
+     }
+    ]
+   },
+   "lenses": [
+    {
+     "name": "Bibliya",
+     "caption": "Sino ang sumulat, para kanino at tungkol saan"
+    },
+    {
+     "name": "Simboliko",
+     "caption": "Pagbasa bilang mapa ng kaluluwa"
+    },
+    {
+     "name": "Paglalapat",
+     "caption": "Ano ang ibig sabihin nito para sa iyo ngayon"
+    }
+   ],
+   "advice": {
+    "title": "Mga payo",
+    "lead": "Hindi lang tungkol sa walang hanggan ang Bibliya — tungkol din ito sa pera, trabaho, pamilya at sa mga salitang binibitawan natin sa isa’t isa. Narito ang mga payo nito ayon sa paksa, bawat isa kasama ang talatang pinagbabatayan at ang mga lugar kung saan umaalingawngaw ang parehong isip.",
+    "topics": [
+     "Galit at Inis",
+     "Pagkabalisa",
+     "Kapag Hindi Mo Kaya",
+     "Mga Desisyon",
+     "Kapag Naubusan ng Lakas",
+     "Pamilya",
+     "Pagpapatawad",
+     "Pagkakaibigan",
+     "Takot sa Hinaharap",
+     "Pasasalamat",
+     "Ang Bigat ng Sala",
+     "Kagalakan",
+     "Kalungkutan",
+     "Kapag Naligaw Ka",
+     "Pera",
+     "Lakas para sa Umaga",
+     "Kapag Sobra Na",
+     "Kapayapaan",
+     "Pahinga",
+     "Pagtanggap sa Sarili",
+     "Tukso",
+     "Pagtitiwala sa Diyos",
+     "Mga Salita",
+     "Trabaho"
+    ]
+   },
+   "plans": {
+    "title": "Planong pagbasa",
+    "lead": "Tapos ang araw kapag nabasa ang kabanata, hindi kapag gumabi na. Puwede kang mawala nang dalawang linggo — naghihintay pa rin ito.",
+    "items": [
+     {
+      "id": "mark",
+      "title": "Ang Ebanghelyo ni Marcos",
+      "summary": "Isang kabanata bawat araw. Ang pinakamaikling salaysay ng buhay ni Cristo.",
+      "days": 16
+     },
+     {
+      "id": "john",
+      "title": "Ang Ebanghelyo ni Juan",
+      "summary": "Isang kabanata bawat araw. Kung sino si Jesus at bakit nito binabago ang lahat.",
+      "days": 21
+     },
+     {
+      "id": "proverbs",
+      "title": "Mga Kawikaan ni Solomon",
+      "summary": "Isang kabanata bawat araw. Maiikling tuntunin tungkol sa pera, salita, kaibigan at trabaho — isang isip bawat umaga.",
+      "days": 31
+     },
+     {
+      "id": "psalms",
+      "title": "Mga Awit sa loob ng buwan",
+      "summary": "Isang awit bawat araw. Papuri, takot, pagkakasala, pasasalamat, pagod.",
+      "days": 30
+     },
+     {
+      "id": "newTestament",
+      "title": "Ang Bagong Tipan",
+      "summary": "Mga tatlong kabanata bawat araw, mula Mateo hanggang Pahayag.",
+      "days": 98
+     }
+    ]
+   },
+   "counts": {
+    "eras": 14,
+    "people": 34,
+    "terms": 50,
+    "places": 70,
+    "topics": 24
+   }
+  },
+  "macSidebar": [
+   "Sagot",
+   "Bibliya",
+   "Mga payo",
+   "Makinig",
+   "Mga Na-save na Talata"
   ]
  }
 }

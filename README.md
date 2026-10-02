@@ -28,6 +28,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/build.py` | Turns the files above into pages, `sitemap.xml`, `robots.txt`. |
 | `tools/make_og.py` | Draws the link-preview pictures `assets/og/og-<lang>.jpg` (1200×630). Needs Pillow, fontTools, brotli. |
 | `tools/optimize_screens.py` | Makes light web copies of the App Store screenshots. |
+| `tools/import_screens.py` | Brings the app's real screens (from its own screenshot run) into the site, then rebuilds. |
 | `tools/sync_legal.py` | Re-copies the three legal pages from another folder, byte for byte. |
 | `site.css`, `app.js`, `fonts/` | Look and motion: the canvas sky, headings that rise word by word, the phone that follows the page (a pinned stage with five scenes), parallax. `app.js` is cosmetic; every page works without it, and with "reduce motion" or on a phone the story is a column of cards. |
 
@@ -36,7 +37,20 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 * `contactEmail` — `support@bibleanswer.app` (Cloudflare Email Routing forwards it to `bibleanswerapp@gmail.com`). The legal pages carry their own copy of the address in their text (`bibleanswerapp@gmail.com`); change it there if you want them to match.
 * `social` — the accounts that exist (platform, language, handle, url). Only entries with a url are shown: in the footer and on `/links`, and listed in the structured data (`sameAs`). Add an entry when an account for another language is created.
 * `googleVerify`, `bingVerify`, `yandexVerify`, `pinterestVerify` — the codes the webmaster tools and Pinterest give for the "HTML tag" method; each empty value means no tag. (Google can instead be verified with a DNS TXT record in Cloudflare.)
+* `macAvailable` — `true`: the Mac is shown like the other devices. `false` would put the "soon" badge back.
 * `showScreenshotSlots` — `false` hides the screenshots strip until real screenshots exist.
+
+### Real screens from the app
+
+The phone that follows the page, the Mac window and the "screens" strip show the app. Until real screens are added they are
+drawn from the app's own words and engravings (the frame itself is the one of the app's App Store screenshots). To use the
+real ones, run the app's screenshot tool (`tools/store-screenshots` in the app repository) and then
+
+    python3 tools/import_screens.py <the folder the tool wrote to> --default en
+    git add -A && git commit -m "Real app screens" && git push
+
+`--default en` lets a language that has no screens of its own show the English ones. Details: `tools/import_screens.py`,
+`assets/screens/README.md`, `assets/story/README.md`.
 
 ### The phone on the home page
 
