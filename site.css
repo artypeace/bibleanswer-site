@@ -50,8 +50,8 @@ button{cursor:pointer}
 .sky{position:absolute;left:0;top:0;width:100%;height:118vh;z-index:-1;pointer-events:none;overflow:hidden;
   transform:translate3d(0,calc(var(--scroll,0)*.28px),0);will-change:transform;
   -webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
-.sky__img{position:absolute;inset:0;background:url(assets/sky-dark.jpg) center 18%/cover no-repeat;opacity:var(--sky-o)}
-.sky__veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,22,40,.55) 0%,rgba(15,22,40,.08) 34%,rgba(15,22,40,.7) 76%,var(--bg) 100%)}
+.sky__img{position:absolute;inset:0;background:url(assets/sky-night.svg) center 30%/cover no-repeat;opacity:var(--sky-o)}
+.sky__veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,22,40,.24) 0%,rgba(15,22,40,.04) 34%,rgba(15,22,40,.65) 76%,var(--bg) 100%)}
 @media (prefers-color-scheme:light){
   .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}
 }
@@ -195,7 +195,7 @@ section[id],main[id]{scroll-margin-top:52px}
 .sheet{position:absolute;left:0;right:0;bottom:0;padding:16px 38px 28px;border-radius:26px 26px 0 0;background:color-mix(in srgb,var(--bg) 55%,#22304e);border-top:1px solid color-mix(in srgb,var(--ornament) 35%,transparent)}
 .sheet::before{content:"";display:block;width:40px;height:4px;margin:0 auto 16px;border-radius:2px;background:var(--skl)}
 .player{min-height:400px;display:flex;flex-direction:column;justify-content:flex-end;padding:34px 36px}
-.player__img{position:absolute;inset:0;background:url(assets/sky-dark.jpg) center 62%/cover;opacity:.95}
+.player__img{position:absolute;inset:0;background:url(assets/sky-night.svg) center 62%/cover;opacity:.95}
 @media (prefers-color-scheme:light){.player__img{filter:saturate(.9)}}
 .player__veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,22,40,.1),rgba(15,22,40,.78))}
 .play{position:absolute;left:50%;top:32%;translate:-50% -50%;width:88px;height:88px;display:flex;align-items:center;justify-content:center;border-radius:50%;
@@ -417,7 +417,7 @@ h1.split{font-size:clamp(54px,10.4vw,140px);line-height:.98}
 .stars{position:absolute;inset:0}
 .stars__cv{position:absolute;inset:0;width:100%;height:100%}
 .sky::after{content:"";position:absolute;inset:-18% -10% 12%;pointer-events:none;will-change:transform;
-  background:radial-gradient(38% 46% at 20% 38%,rgba(78,122,210,.26),transparent 72%),radial-gradient(32% 42% at 80% 28%,rgba(212,168,87,.15),transparent 72%);animation:drift 26s ease-in-out infinite alternate}
+  background:radial-gradient(38% 46% at 20% 38%,rgba(78,122,210,.12),transparent 72%),radial-gradient(32% 42% at 80% 28%,rgba(212,168,87,.08),transparent 72%);animation:drift 26s ease-in-out infinite alternate}
 @keyframes drift{from{transform:translate3d(-3%,0,0) scale(1)}to{transform:translate3d(4%,3%,0) scale(1.1)}}
 @media (prefers-color-scheme:light){.sky::after{display:none}}
 

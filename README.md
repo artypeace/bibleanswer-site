@@ -32,6 +32,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/build.py` | Turns the files above into pages, `sitemap.xml`, `robots.txt`. |
 | `tools/news.json` | The news items (id, date, title, summary). Add one and rebuild: it appears in `feed.xml` and on `/press/`. Articles will join the feed the same way. |
 | `tools/indexnow.py` | Sends changed addresses to the IndexNow engines (Bing, Yandex, ...). Run by `.github/workflows/indexnow.yml` after each deploy; `--dry-run` shows what it would send. |
+| `tools/make_sky.py` | Rebuilds `assets/sky-night.svg`: a deterministic vector star field with soft navy glows. Sharp at every display density; no raster upscaling. Standard library only. |
 | `tools/make_og.py` | Draws the link-preview pictures `assets/og/og-<lang>.jpg` (1200×630). Needs Pillow, fontTools, brotli. |
 | `tools/optimize_screens.py` | Makes light web copies of the App Store screenshots. |
 | `tools/import_screens.py` | Brings the app's real screens (from its own screenshot run) into the site, then rebuilds. |

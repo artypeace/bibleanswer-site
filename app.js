@@ -19,7 +19,8 @@
     if (!ctx) return;
 
     const light = matchMedia('(prefers-color-scheme: light)');
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // Match Retina density, with a pixel budget for very large displays.
+    let dpr = 1;
     let seed = 20260928;   // fixed seed: the same sky on every visit
     const rnd = () => { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let x = Math.imul(seed ^ (seed >>> 15), 1 | seed); x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x; return ((x ^ (x >>> 14)) >>> 0) / 4294967296; };
     let W = 0, H = 0, stars = [], shot = null, nextShot = 0, px = 0, py = 0, tx = 0, ty = 0, running = false;
@@ -27,12 +28,15 @@
     function layout() {
       W = host.clientWidth; H = host.clientHeight;
       if (!W || !H) return;
+      dpr = Math.min(window.devicePixelRatio || 1, 3, Math.sqrt(12000000 / (W * H)));
       cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const n = Math.round(Math.min(230, (W * H) / 8200));
+      seed = 20260928;
+      // The detailed field is static SVG; only a few stars gently breathe.
+      const n = Math.round(Math.min(90, (W * H) / 18000));
       stars = Array.from({ length: n }, () => {
         const q = rnd();
-        return { x: rnd(), y: rnd() * 0.92, z: q < 0.6 ? 0.3 : q < 0.9 ? 0.65 : 1, r: 0.5 + rnd() * 1.1, a: 0.35 + rnd() * 0.5, ph: rnd() * 6.283, sp: 0.4 + rnd() * 1.4, gold: rnd() < 0.12 };
+        return { x: rnd(), y: rnd() * 0.92, z: q < 0.6 ? 0.3 : q < 0.9 ? 0.65 : 1, r: 0.3 + rnd() * 0.6, a: 0.25 + rnd() * 0.4, ph: rnd() * 6.283, sp: 0.4 + rnd() * 1.4, gold: rnd() < 0.12 };
       });
     }
 
@@ -44,7 +48,7 @@
         const x = ((s.x * W + drift + px * s.z * 20) % W + W) % W;
         const y = s.y * H + py * s.z * 12;
         ctx.globalAlpha = s.a * (reduced ? 1 : 0.55 + 0.45 * Math.sin(t * 0.001 * s.sp + s.ph));
-        ctx.fillStyle = s.gold ? '#E8C47A' : '#FFF3D6';
+        ctx.fillStyle = s.gold ? '#E8CFA0' : '#DFEAFE';
         ctx.beginPath(); ctx.arc(x, y, s.r * (0.8 + s.z * 0.5), 0, 6.283); ctx.fill();
       }
       if (!reduced) {
@@ -79,13 +83,14 @@
 
     layout();
     draw(0);
+    // Resize the static canvas even when Reduce Motion is enabled.
+    let rz;
+    addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { layout(); draw(performance.now()); wake(); }, 150); });
     if (reduced) return;
     wake();
     addEventListener('scroll', wake, { passive: true });
     document.addEventListener('visibilitychange', wake);
     if (light.addEventListener) light.addEventListener('change', wake);
-    let rz;
-    addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { layout(); draw(performance.now()); wake(); }, 150); });
     if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
       addEventListener('pointermove', e => { tx = (e.clientX / innerWidth - 0.5) * 2; ty = (e.clientY / innerHeight - 0.5) * 2; }, { passive: true });
     }
