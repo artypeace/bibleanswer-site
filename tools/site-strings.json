@@ -89,7 +89,11 @@
   "readingGuides": "Reading guides",
   "skyPause": "Pause sky",
   "skyPlay": "Play sky",
-  "skyEdited": "Adapted"
+  "skyEdited": "Adapted",
+  "readingGuidesLabel": "Reading guides",
+  "readingGuidesH": "A little more time with the Word.",
+  "readingGuidesP": "A passage in context. A question to carry. A small step for an ordinary day.",
+  "readingGuidesAll": "Explore the reading guides"
  },
  "ru": {
   "htmlLang": "ru",
@@ -181,7 +185,11 @@
   "readingGuides": "Статьи",
   "skyPause": "Остановить небо",
   "skyPlay": "Оживить небо",
-  "skyEdited": "Обработано"
+  "skyEdited": "Обработано",
+  "readingGuidesLabel": "Статьи",
+  "readingGuidesH": "Чуть больше времени рядом с Писанием.",
+  "readingGuidesP": "Отрывок в контексте, вопрос для размышления и небольшой шаг для обычного дня.",
+  "readingGuidesAll": "Все статьи"
  },
  "es": {
   "htmlLang": "es",
@@ -273,7 +281,11 @@
   "readingGuides": "Guías de lectura (EN)",
   "skyPause": "Pausar el cielo",
   "skyPlay": "Animar el cielo",
-  "skyEdited": "Adaptado"
+  "skyEdited": "Adaptado",
+  "readingGuidesLabel": "Artículos",
+  "readingGuidesH": "Un poco más de tiempo con la Palabra.",
+  "readingGuidesP": "Un pasaje en contexto, una pregunta y un pequeño paso para el día a día.",
+  "readingGuidesAll": "Leer los artículos en inglés"
  },
  "pt": {
   "htmlLang": "pt-BR",
@@ -365,7 +377,11 @@
   "readingGuides": "Guias de leitura (EN)",
   "skyPause": "Pausar o céu",
   "skyPlay": "Animar o céu",
-  "skyEdited": "Adaptado"
+  "skyEdited": "Adaptado",
+  "readingGuidesLabel": "Artigos",
+  "readingGuidesH": "Um pouco mais de tempo com a Palavra.",
+  "readingGuidesP": "Uma passagem em contexto, uma pergunta e um pequeno passo para o dia a dia.",
+  "readingGuidesAll": "Ler os artigos em inglês"
  },
  "fr": {
   "htmlLang": "fr",
@@ -457,7 +473,11 @@
   "readingGuides": "Guides de lecture (EN)",
   "skyPause": "Mettre le ciel en pause",
   "skyPlay": "Animer le ciel",
-  "skyEdited": "Adapté"
+  "skyEdited": "Adapté",
+  "readingGuidesLabel": "Articles",
+  "readingGuidesH": "Un peu plus de temps avec la Parole.",
+  "readingGuidesP": "Un passage dans son contexte, une question et un petit pas pour le quotidien.",
+  "readingGuidesAll": "Lire les articles en anglais"
  },
  "fil": {
   "htmlLang": "fil",
@@ -549,6 +569,10 @@
   "readingGuides": "Mga gabay sa pagbabasa (EN)",
   "skyPause": "I-pause ang langit",
   "skyPlay": "I-play ang langit",
-  "skyEdited": "Inedit"
+  "skyEdited": "Inedit",
+  "readingGuidesLabel": "Mga artikulo",
+  "readingGuidesH": "Kaunting oras kasama ang Salita.",
+  "readingGuidesP": "Isang talata sa konteksto, isang tanong, at isang maliit na hakbang sa araw-araw.",
+  "readingGuidesAll": "Basahin ang mga artikulo sa English"
  }
 }

@@ -103,11 +103,13 @@ def watch(screen):
       </linearGradient>
       <clipPath id="display"><rect x="143" y="467" width="416" height="496" rx="94"/></clipPath>
     ''', f'''
-      <path d="M172 431c-26-160-35-247-10-334 15-52 66-82 190-82s175 30 190 82c25 87 16 174-10 334Z" fill="url(#band)" stroke="#525a5e" stroke-opacity=".6" stroke-width="3"/>
-      <path d="M169 998c-23 146-33 243-6 343 15 54 78 86 189 86s174-32 189-86c27-100 17-197-6-343Z" fill="url(#band)" stroke="#434c51" stroke-opacity=".5" stroke-width="3"/>
-      <path d="M196 64c-37 133-26 235-8 337M508 64c37 133 26 235 8 337M187 1055c-19 133-18 228 17 309M516 1055c19 133 18 228-17 309" fill="none" stroke="#61696d" stroke-opacity=".18" stroke-width="3"/>
-      <g fill="#11181c" stroke="#434b50" stroke-width="2">
-        <ellipse cx="352" cy="1155" rx="10" ry="17"/><ellipse cx="352" cy="1224" rx="10" ry="17"/><ellipse cx="352" cy="1293" rx="10" ry="17"/>
+      <path d="M202 430V112Q202 28 270 28H432Q500 28 500 112V430Z" fill="url(#band)" stroke="#586064" stroke-opacity=".5" stroke-width="3"/>
+      <path d="M199 997H503L486 1332Q483 1418 414 1418H288Q219 1418 216 1332Z" fill="url(#band)" stroke="#586064" stroke-opacity=".5" stroke-width="3"/>
+      <path d="M217 124V383M485 124V383M215 1070L230 1322M487 1070L472 1322" fill="none" stroke="#798184" stroke-opacity=".15" stroke-width="3"/>
+      <rect x="268" y="80" width="166" height="38" rx="19" fill="#101619" stroke="#454e52" stroke-width="2"/>
+      <rect x="310" y="162" width="82" height="40" rx="20" fill="#4a5357" stroke="#71797c" stroke-width="2"/>
+      <g fill="#11181c" stroke="#485157" stroke-width="2">
+        <ellipse cx="351" cy="1123" rx="11" ry="18"/><ellipse cx="351" cy="1192" rx="11" ry="18"/><ellipse cx="351" cy="1261" rx="11" ry="18"/><ellipse cx="351" cy="1330" rx="11" ry="18"/>
       </g>
       <rect x="611" y="529" width="64" height="105" rx="22" fill="url(#metal)" stroke="#94a0a9" stroke-width="3"/>
       <path d="M653 543v76M660 543v76M666 549v64" stroke="#1c262f" stroke-width="3"/>

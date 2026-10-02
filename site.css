@@ -732,3 +732,28 @@ h1.split{font-size:clamp(54px,10.4vw,140px);line-height:.98}
 @media(max-width:860px){.sky-caption{bottom:16px;flex-wrap:wrap;justify-content:center;gap:8px 18px;text-align:center}.sky-credit{font-size:11px}.sky-toggle{min-height:44px}.hero__hint{bottom:78px}}
 @media(prefers-color-scheme:light){.sky--real .sky__video,.sky-caption{display:none}.sky--real .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}}
 @media(prefers-reduced-motion:reduce){.sky--real .sky__video{display:none}.sky--real.is-ready .sky__img{opacity:var(--sky-o)}}
+
+/* Consistent original iPhone housings around complete native app screens. */
+.inblock__visual .content-iphone{height:520px;width:auto;max-width:100%;filter:drop-shadow(0 20px 25px rgba(0,0,0,.24))}
+.daily-preview .content-iphone{height:460px;width:auto;max-width:100%;filter:drop-shadow(0 18px 22px rgba(0,0,0,.2))}
+.daily-preview--watch .device-product{height:430px}
+.nav__reading{display:none}
+.home-guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:44px;text-align:left}
+.home-guide{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--chip-stroke);border-radius:25px;background:var(--glass);color:var(--text);box-shadow:0 14px 40px rgba(0,0,0,.08);transition:transform .25s,border-color .25s}
+.home-guide:hover{transform:translateY(-5px);border-color:var(--gold);text-decoration:none}
+.home-guide__image{height:205px;overflow:hidden;background:var(--cream)}
+.home-guide__image img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+.home-guide__body{padding:26px;position:relative;flex:1;padding-bottom:54px}
+.home-guide__meta{font-size:11px;color:var(--gold);line-height:1.6;letter-spacing:.045em}
+.home-guide h3{font:500 clamp(28px,2.7vw,35px)/1.13 var(--serif);margin:16px 0}
+.home-guide__body>p:last-of-type{font-size:14px;line-height:1.65;color:var(--muted)}
+.home-guide__arrow{position:absolute;bottom:20px;right:26px;font-size:26px;color:var(--gold)}
+.reading-guides__all{margin-top:32px}
+.reading-guides__language{display:inline-block;border:1px solid var(--chip-stroke);padding:1px 6px;border-radius:5px;margin-left:5px}
+@media(max-width:960px){.nav__links{gap:18px}.home-guide__body{padding:22px;padding-bottom:54px}}
+@media(max-width:760px){.home-guides{grid-template-columns:1fr;max-width:470px;margin:30px auto 0}.home-guide__image{height:210px}.home-guide h3{font-size:34px}.nav__reading{display:block;font-size:12px;color:var(--gold)}.nav__tools{gap:13px}.inblock__visual .content-iphone{height:475px}.daily-preview .content-iphone{height:480px}.daily-preview--watch .device-product{height:455px}}
+@media(max-width:380px){.nav__reading{font-size:11px}.nav__tools{gap:9px}}
+@media(prefers-reduced-motion:reduce){.home-guide{transition:none}.home-guide:hover{transform:none}}
+
+@media(max-width:1100px){.nav__links{display:none}.nav__in{grid-template-columns:minmax(0,1fr) auto}.nav__reading{display:block;font-size:12px;color:var(--gold)}}
+@media(max-width:380px){.nav .mark{font-size:12px;letter-spacing:.22em}.nav__in{gap:8px}}

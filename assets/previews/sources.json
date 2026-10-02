@@ -1,0 +1,320 @@
+[
+  {
+    "language": "en",
+    "device": "watch",
+    "embeddedScreenSHA256": "b4ccde18c7589f466eb07e033246ea206e41cf970bba6b2488cafb46fa1d2dcd"
+  },
+  {
+    "language": "ru",
+    "device": "watch",
+    "embeddedScreenSHA256": "75d7e2f0550fcdc546f9415513737365a5c9cb8e6a2e9edaf021855bb6c82629"
+  },
+  {
+    "language": "es",
+    "device": "watch",
+    "embeddedScreenSHA256": "a50aba222d1e8e3f7914f1380062d51d5cf9e8dfab8702500373c5f23727f51f"
+  },
+  {
+    "language": "pt",
+    "device": "watch",
+    "embeddedScreenSHA256": "9acc3fba6266651cf37730d327083be4751c5416a28ff2e9713badf18186eacc"
+  },
+  {
+    "language": "fr",
+    "device": "watch",
+    "embeddedScreenSHA256": "2dde2a59f1ae4198fb700d1ba4f0743ab31fefacf0f292333c2bbdd0b0d4db14"
+  },
+  {
+    "language": "fil",
+    "device": "watch",
+    "embeddedScreenSHA256": "d66164af0b5246b06e20b0bf749bcecaf48a9c5d195a5128353c6889255a00d8"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/story/guide/en.webp",
+    "output": "assets/previews/story/guide/en.svg",
+    "sourceSHA256": "c3c042601c7edf730d9b245bbd8fab006bfa4590d2cedd2f2f03f0b290596fa8",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/story/guide/ru.webp",
+    "output": "assets/previews/story/guide/ru.svg",
+    "sourceSHA256": "9a98b5702e0c1c4e7d2b1fc2b7af704c0e4719f8df367025ade04e93091d116a",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/story/guide/es.webp",
+    "output": "assets/previews/story/guide/es.svg",
+    "sourceSHA256": "6864df97d5bc1a247b8ce0ea6a3e85436eda326e2266d33b2cb558a9026f10eb",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/story/guide/pt.webp",
+    "output": "assets/previews/story/guide/pt.svg",
+    "sourceSHA256": "022e530c9793f4de847c5a8bb75a79652f47cf905e3702480c2693aac2b2974c",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/story/guide/fr.webp",
+    "output": "assets/previews/story/guide/fr.svg",
+    "sourceSHA256": "789646fd484dea8ff7aafda473f3b432ac76e32bc78f0b5970b3395eb3320d1b",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/story/guide/fil.webp",
+    "output": "assets/previews/story/guide/fil.svg",
+    "sourceSHA256": "e20cf1de229476f738015b159279f86f28cba4cb69f206838879bf1120e8417e",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/story/read/en.webp",
+    "output": "assets/previews/story/read/en.svg",
+    "sourceSHA256": "e9c36e613841e9983ada550717549d066be871b745371d407ea28f74f7662021",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/story/read/ru.webp",
+    "output": "assets/previews/story/read/ru.svg",
+    "sourceSHA256": "7d46569a43934c1549ec8d9aad435b0ea7f868e584de32a350d69d67982bad78",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/story/read/es.webp",
+    "output": "assets/previews/story/read/es.svg",
+    "sourceSHA256": "2e7da6058c988a40d05d68d2b0a72b1e60fd45cad48855293f28a8175df26aa8",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/story/read/pt.webp",
+    "output": "assets/previews/story/read/pt.svg",
+    "sourceSHA256": "48114b43e255fd69840517e4add17d453824997092de550df88394e8d150a962",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/story/read/fr.webp",
+    "output": "assets/previews/story/read/fr.svg",
+    "sourceSHA256": "8f41032e528a2008ba803e6d10fc08db865ac62135fc78167281e89ea939715a",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/story/read/fil.webp",
+    "output": "assets/previews/story/read/fil.svg",
+    "sourceSHA256": "a025d797bbce5a935439402b0019f51904c5e9c9a2323bb1478882e50d700d9c",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/story/hours/en.webp",
+    "output": "assets/previews/story/hours/en.svg",
+    "sourceSHA256": "5524268891b912e7dca6a339cf0a12c69a4339a7d962045fd1369852dde8d380",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/story/hours/ru.webp",
+    "output": "assets/previews/story/hours/ru.svg",
+    "sourceSHA256": "0c37f71808c863b6cab449d64a3cb7924c09e3bfc55eda00a272f603ca52ff45",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/story/hours/es.webp",
+    "output": "assets/previews/story/hours/es.svg",
+    "sourceSHA256": "d5007ccf6330564858b9d80dd2774575d69e6d186790fb18dd2f4c847f5f8656",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/story/hours/pt.webp",
+    "output": "assets/previews/story/hours/pt.svg",
+    "sourceSHA256": "0601bedc8d8c3138f8de6b3a17477696530ac6f54a0814733535cb3be05cbf08",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/story/hours/fr.webp",
+    "output": "assets/previews/story/hours/fr.svg",
+    "sourceSHA256": "d08601a4b2a5d6438edf30fc23b139403bbcfb7cd8a964d25c557d034f5d8f84",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/story/hours/fil.webp",
+    "output": "assets/previews/story/hours/fil.svg",
+    "sourceSHA256": "3546b9a7dce3a081d2d84241d88f16d2453e14fdecca2785e87f454aa5569dd1",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/inside/advice-money/en.webp",
+    "output": "assets/previews/inside/advice-money/en.svg",
+    "sourceSHA256": "d40557393099b5de395efd194f0d062f1e2dd6f3f5b2afb711436af94f2e93c1",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/inside/advice-money/ru.webp",
+    "output": "assets/previews/inside/advice-money/ru.svg",
+    "sourceSHA256": "b2e71623dc54d8d84fc4b6a6d82c2a019d6b85b7c256445f6d8ec1a0cbbed850",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/inside/advice-money/es.webp",
+    "output": "assets/previews/inside/advice-money/es.svg",
+    "sourceSHA256": "0cc725666b17b76f436c8690794528d4ccee0208678c6eb7b554c259a768ed1f",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/inside/advice-money/pt.webp",
+    "output": "assets/previews/inside/advice-money/pt.svg",
+    "sourceSHA256": "b1aef70ca754318f1882a8b1ad486aa27da92c613e963ed7eeaaf1203be6ab5d",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/inside/advice-money/fr.webp",
+    "output": "assets/previews/inside/advice-money/fr.svg",
+    "sourceSHA256": "cf6c6c7bb03f90c4a274fdf1bbd6e3ed18b37327117030738799cd3fbd1cca6f",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/inside/advice-money/fil.webp",
+    "output": "assets/previews/inside/advice-money/fil.svg",
+    "sourceSHA256": "6d653b69bd52159ef624e8927f7d7f7d431845696ffbfd3696debf9a78e66859",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/inside/plans/en.webp",
+    "output": "assets/previews/inside/plans/en.svg",
+    "sourceSHA256": "b676c6391801bc45ff041b4ab91c3e5c1b682c6391bb67f7dded4d3a37d9a660",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/inside/plans/ru.webp",
+    "output": "assets/previews/inside/plans/ru.svg",
+    "sourceSHA256": "8c79c58d7b474886d7ff5fe076fd614e61d7951ddb812951268e6c05db9369ff",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/inside/plans/es.webp",
+    "output": "assets/previews/inside/plans/es.svg",
+    "sourceSHA256": "02518f5f6683c3185e0183e9e30a012496821fc4afcb4a02fb7d7148003c39bc",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/inside/plans/pt.webp",
+    "output": "assets/previews/inside/plans/pt.svg",
+    "sourceSHA256": "1b81b46902a2f4a582132423cf4204781c2b16e5088526436df6744be37bfe79",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/inside/plans/fr.webp",
+    "output": "assets/previews/inside/plans/fr.svg",
+    "sourceSHA256": "22922b2a99a879b8bbea34ca50dac4f5b94f011577ec5e3539bb1d6883d20dc1",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/inside/plans/fil.webp",
+    "output": "assets/previews/inside/plans/fil.svg",
+    "sourceSHA256": "d78cac3ad11a6e6a86205fb29e9adea5a409a2e40cee76fe3511756e2080b509",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/today/verse/en.webp",
+    "output": "assets/previews/today/verse/en.svg",
+    "sourceSHA256": "cc7553c4aa88db155143eef3f8c2ba362df23015e7a728317a38e271188b7179",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/today/verse/ru.webp",
+    "output": "assets/previews/today/verse/ru.svg",
+    "sourceSHA256": "2b41305ec3fbc044ba4e69bb74c7cbe668ce82e6317a92870b74b526f32d2632",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/today/verse/es.webp",
+    "output": "assets/previews/today/verse/es.svg",
+    "sourceSHA256": "387b8cfcc445173384e211bbd6f3614943dca22c313d1462225dadeca30c08fc",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/today/verse/pt.webp",
+    "output": "assets/previews/today/verse/pt.svg",
+    "sourceSHA256": "d23c1a600e180bc5059ca9780f0897e1470a1a51e53c434f2f4ddc45992ff368",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/today/verse/fr.webp",
+    "output": "assets/previews/today/verse/fr.svg",
+    "sourceSHA256": "1d0553fd94bb62508c750bc3cd7c6972180cdee7434682417df9d48de555e4f0",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/today/verse/fil.webp",
+    "output": "assets/previews/today/verse/fil.svg",
+    "sourceSHA256": "9ea17060697c8085e8ac04fb70af06e8f3eeca98fcc1c8799c2205cef30e786a",
+    "screenPixels": "unchanged"
+  }
+]

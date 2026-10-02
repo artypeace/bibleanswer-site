@@ -98,8 +98,11 @@ def real_screen_frame(path, base, alt):
     """A complete native screenshot, with a simple physical phone frame."""
     if not have(path):
         raise FileNotFoundError(path)
-    return (f'<div class="screen-preview"><img src="{base}{path}" width="1320" height="2868" '
-            f'alt="{e(alt)}" loading="lazy" decoding="async"><i class="screen-preview__island" aria-hidden="true"></i></div>')
+    framed = path.replace('assets/', 'assets/previews/', 1).replace('.webp', '.svg')
+    if not have(framed):
+        raise FileNotFoundError(framed)
+    return (f'<img class="device-product content-iphone" src="{base}{framed}" width="1450" height="3000" '
+            f'alt="{e(alt)}" loading="lazy" decoding="async">')
 
 
 def inside_visual(section, lang, base, title):
@@ -236,12 +239,20 @@ def screens_section(lang, base):
             if path:
                 alt = s['shotAlt'].format(device=names[device], n=n)
                 figs.append(f'<figure class="shot shot--{device} reveal" style="--d:{(n - 1) * 0.08:.2f}s"><img src="{base}{path}" width="{w}" height="{h}" loading="lazy" decoding="async" alt="{e(alt)}"></figure>')
-            else:
-                figs.append(f'<figure class="shot shot--{device} reveal" style="--d:{(n - 1) * 0.08:.2f}s" aria-hidden="true"><div class="shot__ph"><img src="{base}assets/icon.png" width="64" height="64" alt=""></div></figure>')
+
         rows.append(f'<div class="shots shots--{device}">{"".join(figs)}</div>')
     return (f'<section class="section screens" id="screens" aria-labelledby="h-screens"><div class="wrap">'
             f'<h2 id="h-screens" class="reveal">{e(s["screensH"])}</h2>{"".join(rows)}</div></section>')
 
+
+
+def reading_guides_section(lang, base):
+    s = SITE[lang]
+    article_lang = 'ru' if lang == 'ru' else 'en'
+    guides = [a for a in build_articles.load(ROOT) if a['lang'] == article_lang][:3]
+    mark = '' if lang in ('en', 'ru') else '<span class="reading-guides__language">English</span>'
+    cards = ''.join(f'<a class="home-guide reveal" href="/{build_articles.path(a)}"><div class="home-guide__image"><img src="{base}assets/plates/{a["plate"]}.webp" alt="" width="900" height="600" loading="lazy" decoding="async"></div><div class="home-guide__body"><p class="home-guide__meta">{e(a["category"])} · {build_articles.duration(ROOT,a)} {build_articles.UI[article_lang]["reading"]} {mark}</p><h3>{e(a["title"])}</h3><p>{e(a["lead"])}</p><span class="home-guide__arrow" aria-hidden="true">↗</span></div></a>' for a in guides)
+    return f'<section class="section reading-guides" id="reading-guides" aria-labelledby="h-reading-guides"><div class="wrap">{h2(s["readingGuidesH"], "", "h-reading-guides")}<p class="lede reveal">{e(s["readingGuidesP"])}</p><div class="home-guides">{cards}</div><p class="reading-guides__all"><a class="btn btn--ghost" href="/{build_articles.hub(article_lang)}">{e(s["readingGuidesAll"])}</a></p></div></section>'
 
 def head_common(lang, title, desc, canonical, og_image, robots, base, extra=''):
     alternates = ''
@@ -319,7 +330,7 @@ def home(lang):
             <div class="prayer part" style="--i:7"><div class="head"><i></i><h3 class="label">{e(ap["prayer"])}</h3><i></i></div><p>{e(sample["prayer"])}</p></div>
             {block(ap["context"], sample["context"], True, 8)}
             <div class="diamond part" style="--i:9"><i></i><b></b><i></i></div>
-            <p class="fine part" style="--i:10">{e(s["fine"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
+            <p class="fine part" style="--i:10"><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
           </div>
         </div>
       </article>'''
@@ -465,10 +476,11 @@ def home(lang):
       <a href="#read">{e(s["navRead"])}</a>
       <a href="#guide">{e(s["navGuide"])}</a>
       <a href="#devices">{e(s["navDevices"])}</a>
-      <a href="#private">{e(s["navPrivacy"])}</a>
+      <a href="#reading-guides">{e(s["readingGuidesLabel"])}</a>
     </nav>
     <div class="nav__tools">
       <details class="langmenu"><summary aria-label="{e(ap["name"])}">{e(ap["name"])}</summary><ul>{lang_items}</ul></details>
+      <a class="nav__reading" href="#reading-guides">{e(s["readingGuidesLabel"])}</a>
       {store_nav}
     </div>
   </div>
@@ -534,6 +546,8 @@ def home(lang):
   </section>
 
   {inside_html}
+
+  {reading_guides_section(lang, base)}
 
   <section class="section today" id="today" aria-labelledby="h-today">
     <div class="wrap">
@@ -1025,7 +1039,7 @@ def main():
 
     empty = [f'{d}/{l}/{n}' for l in LANGS for d, k in SHOTS.items() for n in range(1, k + 1) if not shot_file(d, l, n)]
     if empty:
-        print(f'note: {len(empty)} screenshot slots are empty (assets/screens/README.md says where they go)')
+        print(f'note: {len(empty)} missing screenshot slots are omitted (assets/screens/README.md says where they go)')
     if not any(have(f'assets/badges/app-store-{l}.svg') for l in LANGS):
         print('note: no Apple badge files in assets/badges/ - the pages show a plain "Download on the App Store" button')
 

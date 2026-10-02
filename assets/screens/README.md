@@ -1,7 +1,6 @@
 # Screenshots
 
-The home page of every language has a "screens" strip (iPhone, iPad, Mac). Until a file exists, a quiet placeholder
-with the app icon is shown in its place; as soon as a file is there, the page picks it up on the next
+The home page of every language has a "screens" strip (iPhone, iPad, Mac). Only existing real screenshots are displayed; missing slots are omitted. As soon as a file is there, the page picks it up on the next
 `python3 tools/build.py` (nothing else to edit).
 
 **The easy way:** the app repository already makes the App Store screenshots (`tools/store-screenshots/`, with its own
