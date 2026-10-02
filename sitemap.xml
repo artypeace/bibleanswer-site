@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bibleanswer.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/privacy</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/terms</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/support</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+</urlset>

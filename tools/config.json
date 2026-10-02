@@ -1,0 +1,42 @@
+{
+  "siteUrl": "https://bibleanswer.app",
+  "appStoreUrl": "https://apps.apple.com/app/id6761124514",
+  "appStoreId": "6761124514",
+  "lastmod": "2026-10-02",
+  "contactEmail": "bibleanswerapp@gmail.com",
+  "contactEmailNote": "Switch to support@bibleanswer.app once Vladimir confirms forwarding to bibleanswerapp@gmail.com works.",
+  "pinterestVerify": "",
+  "showScreenshotSlots": true,
+  "social": [
+    {
+      "lang": "en",
+      "handle": "@bibleanswerapp",
+      "url": ""
+    },
+    {
+      "lang": "ru",
+      "handle": "@bibleanswerapp_ru",
+      "url": ""
+    },
+    {
+      "lang": "es",
+      "handle": "@bibleanswerapp_es",
+      "url": ""
+    },
+    {
+      "lang": "pt",
+      "handle": "@bibleanswerapp_br",
+      "url": ""
+    },
+    {
+      "lang": "fr",
+      "handle": "@bibleanswerapp_fr",
+      "url": ""
+    },
+    {
+      "lang": "fil",
+      "handle": "@bibleanswerapp_ph",
+      "url": ""
+    }
+  ]
+}
