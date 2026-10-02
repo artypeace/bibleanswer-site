@@ -1,0 +1,266 @@
+{
+  "screens": "Native iPhone simulator captures; visually reviewed before import.",
+  "processing": "Proportional downscaling and WebP encoding only.",
+  "files": [
+    {
+      "sourceFile": "en-advice-money.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "40e747fd23451bbcb52f44aa0a72e61dc1c7176b1448a6cde50692d871fcde06",
+      "output": "assets/inside/advice-money/en.webp",
+      "outputSha256": "d40557393099b5de395efd194f0d062f1e2dd6f3f5b2afb711436af94f2e93c1"
+    },
+    {
+      "sourceFile": "en-plans.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "49d38b0c93c92a91ac445e7a9a763df07ba00ecf40996b23fe9b2df05659f9d1",
+      "output": "assets/inside/plans/en.webp",
+      "outputSha256": "b676c6391801bc45ff041b4ab91c3e5c1b682c6391bb67f7dded4d3a37d9a660"
+    },
+    {
+      "sourceFile": "en-verse.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "8aed600b8a786dd7cf45c2d9fd6a1482503eaa77cf391bb972ae82d77634e343",
+      "output": "assets/today/verse/en.webp",
+      "outputSha256": "cc7553c4aa88db155143eef3f8c2ba362df23015e7a728317a38e271188b7179"
+    },
+    {
+      "sourceFile": "ru-advice-money.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "3151c5bcd4bd9369605c677c354dd349934c36a5bd09a01228f9e23b47d6cba2",
+      "output": "assets/inside/advice-money/ru.webp",
+      "outputSha256": "b2e71623dc54d8d84fc4b6a6d82c2a019d6b85b7c256445f6d8ec1a0cbbed850"
+    },
+    {
+      "sourceFile": "ru-plans.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "265353362f4892bc75ab74f3c9d115c85ce47e36171a15c7c3fda86a67c5cc06",
+      "output": "assets/inside/plans/ru.webp",
+      "outputSha256": "8c79c58d7b474886d7ff5fe076fd614e61d7951ddb812951268e6c05db9369ff"
+    },
+    {
+      "sourceFile": "ru-verse.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "4e6983d47ff054217f6caf60d099d5a85646895ced60205c9cd13028f1353a62",
+      "output": "assets/today/verse/ru.webp",
+      "outputSha256": "2b41305ec3fbc044ba4e69bb74c7cbe668ce82e6317a92870b74b526f32d2632"
+    },
+    {
+      "sourceFile": "es-advice-money.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "291e4eee6a9e50814c11472910d6298e9a7d31e4f75bf8ce9a4c5dcc829bf2fd",
+      "output": "assets/inside/advice-money/es.webp",
+      "outputSha256": "0cc725666b17b76f436c8690794528d4ccee0208678c6eb7b554c259a768ed1f"
+    },
+    {
+      "sourceFile": "es-plans.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "b856b56afbb296acce64f288ffb3e7eb7dce6e14809b376aa6c480b34eac221c",
+      "output": "assets/inside/plans/es.webp",
+      "outputSha256": "02518f5f6683c3185e0183e9e30a012496821fc4afcb4a02fb7d7148003c39bc"
+    },
+    {
+      "sourceFile": "es-verse.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "5f558133718a35590d06b8e5108929316ad681b29bd9b21f329cedbe14180615",
+      "output": "assets/today/verse/es.webp",
+      "outputSha256": "387b8cfcc445173384e211bbd6f3614943dca22c313d1462225dadeca30c08fc"
+    },
+    {
+      "sourceFile": "pt-advice-money.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "5695a6e25500229e3151e09bc68dfb0ee1c999248ee184f56f5aea185b1c1af5",
+      "output": "assets/inside/advice-money/pt.webp",
+      "outputSha256": "b1aef70ca754318f1882a8b1ad486aa27da92c613e963ed7eeaaf1203be6ab5d"
+    },
+    {
+      "sourceFile": "pt-plans.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "fa39d40097d29c458dd8e0c6016b905568dc30e376be5a6dcec650c5b47649f2",
+      "output": "assets/inside/plans/pt.webp",
+      "outputSha256": "1b81b46902a2f4a582132423cf4204781c2b16e5088526436df6744be37bfe79"
+    },
+    {
+      "sourceFile": "pt-verse.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "359b99c42e7545c6c9bb9e241a762d6ceab72b57fdfddc19892f4c5878bc3406",
+      "output": "assets/today/verse/pt.webp",
+      "outputSha256": "d23c1a600e180bc5059ca9780f0897e1470a1a51e53c434f2f4ddc45992ff368"
+    },
+    {
+      "sourceFile": "fr-advice-money.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "6f859cbcf33445a27bd612ae786d4184047fbfb24c86afbc10d4f7d8272516bf",
+      "output": "assets/inside/advice-money/fr.webp",
+      "outputSha256": "cf6c6c7bb03f90c4a274fdf1bbd6e3ed18b37327117030738799cd3fbd1cca6f"
+    },
+    {
+      "sourceFile": "fr-plans.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "522b593c5099ce0502a2c3eb7c3391a5ff22cba25617c4c38a40f073eaad841e",
+      "output": "assets/inside/plans/fr.webp",
+      "outputSha256": "22922b2a99a879b8bbea34ca50dac4f5b94f011577ec5e3539bb1d6883d20dc1"
+    },
+    {
+      "sourceFile": "fr-verse.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "8ebec87e99c2adf80c5e25bb11daaae25eaafb7dbc4a391567ba584f63d32060",
+      "output": "assets/today/verse/fr.webp",
+      "outputSha256": "1d0553fd94bb62508c750bc3cd7c6972180cdee7434682417df9d48de555e4f0"
+    },
+    {
+      "sourceFile": "fil-advice-money.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "c3340fd32dd01c8e86bf81d7c00d486403cb6c70313c2c2df055c0be327590a4",
+      "output": "assets/inside/advice-money/fil.webp",
+      "outputSha256": "6d653b69bd52159ef624e8927f7d7f7d431845696ffbfd3696debf9a78e66859"
+    },
+    {
+      "sourceFile": "fil-plans.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "f940a1d0f49cc1c6bfe28e84ef37582ce43fc19372394e6d330cc0f7e6126363",
+      "output": "assets/inside/plans/fil.webp",
+      "outputSha256": "d78cac3ad11a6e6a86205fb29e9adea5a409a2e40cee76fe3511756e2080b509"
+    },
+    {
+      "sourceFile": "fil-verse.png",
+      "sourceSize": [
+        1320,
+        2868
+      ],
+      "sourceSha256": "1f109948e935d3fbd4e9ea6a1381940326b4adc33c81c02eb824b483789a0a60",
+      "output": "assets/today/verse/fil.webp",
+      "outputSha256": "9ea17060697c8085e8ac04fb70af06e8f3eeca98fcc1c8799c2205cef30e786a"
+    },
+    {
+      "sourceFile": "plate-gate.jpg",
+      "sourceSize": [
+        1100,
+        1188
+      ],
+      "sourceSha256": "e436ad6c0354d7dfd32f2c0d46307714a0c754830a39d171976e725cd71d8c66",
+      "output": "assets/plates/plate-gate.webp",
+      "outputSha256": "0163fcc0cd1df22eb2a8794a106d80c4fa198850c03d648230bba718eeaec778"
+    },
+    {
+      "sourceFile": "plate-script.jpg",
+      "sourceSize": [
+        1100,
+        223
+      ],
+      "sourceSha256": "69c713b2b5558880a70b5fdb16660b462419262e551ad2e2a80e725a03195562",
+      "output": "assets/plates/plate-script.webp",
+      "outputSha256": "3828c2fb5c336f51b91a60f8f3e006a93f069cd83e1b7795a43008f58707beaa"
+    },
+    {
+      "sourceFile": "plate-mite.jpg",
+      "sourceSize": [
+        1200,
+        442
+      ],
+      "sourceSha256": "7ef91d35809adcacf58849e2ec545f212319171b987e2c0066a6d7ad6192c248",
+      "output": "assets/plates/plate-mite.webp",
+      "outputSha256": "794559b6f4346994a4c8b1341741784c84b399c007e8faedadf32fa6223421df"
+    },
+    {
+      "sourceFile": "plate-plan-mark.jpg",
+      "sourceSize": [
+        1100,
+        344
+      ],
+      "sourceSha256": "10220e017a9da0e672e5a3a2d3bdb1cfe4f135d825fc98f57140ff433c2cfd5d",
+      "output": "assets/plates/plate-plan-mark.webp",
+      "outputSha256": "d7251e564de243a987b24834b955b08b22e26e88f61678eb353e8fc917a4c8f8"
+    },
+    {
+      "sourceFile": "plate-plan-john.jpg",
+      "sourceSize": [
+        1100,
+        344
+      ],
+      "sourceSha256": "8db53fd70f095b675aa8bbd28c6e796f6d3b1dc2e9d4b9656c9c1ae8191c3c65",
+      "output": "assets/plates/plate-plan-john.webp",
+      "outputSha256": "4e692de96e5892750d5c17c7e1c21946fa6331c968cc3afce5317c6ef82bf3cb"
+    },
+    {
+      "sourceFile": "plate-kind-poetry.jpg",
+      "sourceSize": [
+        1200,
+        712
+      ],
+      "sourceSha256": "e47ee162ef231397bddc5c0e5b926604bad4d80df356540dcb93c8dc2ee7aa8a",
+      "output": "assets/plates/plate-kind-poetry.webp",
+      "outputSha256": "57de1e2427679dec2523794c2646e748a030b64cf1818e54324aa52e1bd3cbf2"
+    },
+    {
+      "sourceFile": "plate-plan-psalms.jpg",
+      "sourceSize": [
+        1100,
+        344
+      ],
+      "sourceSha256": "cd09cade288c9457498a8fec18617300b34619d916ee778fa7f0bea85a507211",
+      "output": "assets/plates/plate-plan-psalms.webp",
+      "outputSha256": "b533e674e07e01d805459d21c0cbf0fa9f379f47ecf2f0c8b1196baeebde413d"
+    },
+    {
+      "sourceFile": "plate-plan-nt.jpg",
+      "sourceSize": [
+        1100,
+        344
+      ],
+      "sourceSha256": "84616fab9bf78b0f3da1f0bda951639ccf19cb101f912cb968fd571a6d6d9f17",
+      "output": "assets/plates/plate-plan-nt.webp",
+      "outputSha256": "2e0154888ed2429e01ffaa4859de1a1bb56d32ff7fb82ff943012812746978db"
+    }
+  ]
+}

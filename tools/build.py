@@ -81,70 +81,41 @@ def gicon(name, base):
     return icon(name, base, 'guide', 'guide')
 
 
-def device_art(name, shapes):
-    """Decorative device silhouettes, with the site's own metal and glass colours."""
-    for material in ('metal', 'glass', 'shine'):
-        shapes = shapes.replace('@' + material, f'url(#device-{name}-{material})')
-    return f'''<svg class="device-icon" viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-      <defs>
-        <linearGradient id="device-{name}-metal" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop stop-color="currentColor" stop-opacity=".26"/>
-          <stop offset=".48" stop-color="currentColor" stop-opacity=".045"/>
-          <stop offset="1" stop-color="currentColor" stop-opacity=".16"/>
-        </linearGradient>
-        <linearGradient id="device-{name}-glass" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop stop-color="var(--device-glass-top)"/>
-          <stop offset="1" stop-color="var(--device-glass-bottom)"/>
-        </linearGradient>
-        <linearGradient id="device-{name}-shine" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop stop-color="currentColor" stop-opacity=".14"/>
-          <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
-        </linearGradient>
-      </defs>{shapes}</svg>'''
+def device_product(name, lang, base):
+    """An original vector housing containing an unaltered real app screenshot."""
+    dimensions = {'iphone': (1450, 3000), 'ipad': (2196, 2884), 'watch': (720, 1450), 'mac': (3000, 1950)}
+    width, height = dimensions[name]
+    return (f'<img class="device-product" src="{base}assets/devices/{name}/{lang}.svg" '
+            f'width="{width}" height="{height}" alt="" loading="lazy" decoding="async">')
 
 
-ART = {
-    'iphone': device_art('iphone', '''
-      <path d="M52.5 29v10m0 7v13M107.5 39v17" stroke-opacity=".55"/>
-      <rect x="55" y="8" width="50" height="104" rx="12" fill="@metal"/>
-      <rect x="58.5" y="11.5" width="43" height="97" rx="8.5" fill="@glass" stroke-opacity=".32" stroke-width=".7"/>
-      <path d="M59 28v-8a8 8 0 0 1 8-8h27L59 67Z" fill="@shine" stroke="none"/>
-      <rect x="70" y="17" width="20" height="5" rx="2.5" fill="currentColor" fill-opacity=".38" stroke="none"/>
-      <path d="M73 103h14" stroke-opacity=".45" stroke-width="1.5"/>
-      <path d="M68 9.3h24" stroke-opacity=".65" stroke-width=".6"/>
-    '''),
-    'ipad': device_art('ipad', '''
-      <path d="M121.5 27v11M105 5.5h10" stroke-opacity=".5"/>
-      <rect x="39" y="8" width="82" height="104" rx="9" fill="@metal"/>
-      <rect x="42.5" y="11.5" width="75" height="97" rx="5.5" fill="@glass" stroke-opacity=".32" stroke-width=".7"/>
-      <path d="M43 41V18a6 6 0 0 1 6-6h60L43 80Z" fill="@shine" stroke="none"/>
-      <circle cx="80" cy="9.7" r=".65" fill="currentColor" fill-opacity=".65" stroke="none"/>
-      <path d="M69 103h22" stroke-opacity=".45" stroke-width="1.5"/>
-      <path d="M49 9.3h58" stroke-opacity=".6" stroke-width=".6"/>
-    '''),
-    'watch': device_art('watch', '''
-      <path d="M66 29V11a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v18M66 91v18a6 6 0 0 0 6 6h16a6 6 0 0 0 6-6V91" fill="@metal" stroke-opacity=".5"/>
-      <path d="M69 14h22M69 106h22" stroke-opacity=".18" stroke-width=".7"/>
-      <rect x="107.5" y="44" width="4" height="13" rx="2" fill="@metal" stroke-opacity=".8"/>
-      <path d="M108 65v10" stroke-opacity=".5" stroke-width="1.8"/>
-      <rect x="54" y="29" width="52" height="62" rx="16" fill="@metal"/>
-      <rect x="57.5" y="32.5" width="45" height="55" rx="12.5" fill="@glass" stroke-opacity=".32" stroke-width=".7"/>
-      <path d="M58 56V46a13 13 0 0 1 13-13h19L58 72Z" fill="@shine" stroke="none"/>
-      <circle cx="80" cy="60" r="18" stroke-opacity=".24" stroke-width=".9"/>
-      <path d="M80 44v2m16 14h-2M80 76v-2m-16-14h2" stroke-opacity=".6"/>
-      <path d="M80 49v11l8 5" stroke-width="1.7"/>
-      <circle cx="80" cy="60" r="1.7" fill="currentColor" stroke="none"/>
-    '''),
-    'mac': device_art('mac', '''
-      <rect x="25" y="20" width="110" height="74" rx="6" fill="@metal"/>
-      <rect x="29" y="24" width="102" height="64" rx="2.5" fill="@glass" stroke-opacity=".32" stroke-width=".7"/>
-      <path d="M30 48V27a2 2 0 0 1 2-2h93L30 81Z" fill="@shine" stroke="none"/>
-      <circle cx="80" cy="22" r=".7" fill="currentColor" fill-opacity=".6" stroke="none"/>
-      <path d="M11 95h138l-5.5 7.5a4.5 4.5 0 0 1-3.5 1.8H20a4.5 4.5 0 0 1-3.5-1.8Z" fill="@metal"/>
-      <path d="M68 95v1.2a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V95" stroke-opacity=".4" stroke-width=".8"/>
-      <path d="M21 102h118M34 21.4h92" stroke-opacity=".5" stroke-width=".6"/>
-    '''),
-}
+def real_screen_frame(path, base, alt):
+    """A complete native screenshot, with a simple physical phone frame."""
+    if not have(path):
+        raise FileNotFoundError(path)
+    return (f'<div class="screen-preview"><img src="{base}{path}" width="1320" height="2868" '
+            f'alt="{e(alt)}" loading="lazy" decoding="async"><i class="screen-preview__island" aria-hidden="true"></i></div>')
+
+
+def inside_visual(section, lang, base, title):
+    paths = {'guide': 'assets/story/guide', 'readings': 'assets/story/read',
+             'advice': 'assets/inside/advice-money', 'plans': 'assets/inside/plans'}
+    plates = {'guide': 'plate-gate', 'readings': 'plate-script', 'advice': 'plate-mite', 'plans': 'plate-plan-john'}
+    alt = SITE[lang]['previewAlt'].format(section=title)
+    return (f'<figure class="inblock__visual inblock__visual--{section}">'
+            f'<img class="inblock__plate" src="{base}assets/plates/{plates[section]}.webp" alt="" loading="lazy" decoding="async">'
+            f'{real_screen_frame(paths[section] + "/" + lang + ".webp", base, alt)}</figure>')
+
+
+def daily_previews(lang, base):
+    s, ap = SITE[lang], APP[lang]
+    verse = real_screen_frame(f'assets/today/verse/{lang}.webp', base, s['previewAlt'].format(section=s['todayVerseLabel']))
+    prayer = real_screen_frame(f'assets/story/hours/{lang}.webp', base, s['previewAlt'].format(section=ap['hours'][0]))
+    watch = device_product('watch', lang, base).replace('alt=""', f'alt="{e(s["previewAlt"].format(section="Apple Watch"))}"')
+    return '<div class="daily-previews">' + ''.join(
+        f'<figure class="daily-preview daily-preview--{name}"><div class="daily-preview__art">{media}</div>'
+        f'<figcaption>{e(caption)}</figcaption></figure>'
+        for name, media, caption in [('verse', verse, s['todayVerseLabel']), ('prayer', prayer, ap['hours'][0]), ('watch', watch, 'Apple Watch')]) + '</div>'
 
 
 # ------------------------------------------------------------------ shared pieces
@@ -354,9 +325,9 @@ def home(lang):
     hours = ''.join(f'<span class="pill">{e(t)}</span>' for t in ap['hours'])
     mac_ok = bool(CFG.get('macAvailable'))
     devices = ''.join(
-        f'<article class="device{" device--soon" if k == "mac" and not mac_ok else ""} reveal" style="--d:{d}s"><div class="device__art" aria-hidden="true">{ART[k]}</div>'
+        f'<article class="device{" device--soon" if k == "mac" and not mac_ok else ""}"><div class="device__art" aria-hidden="true">{device_product(k, lang, base)}</div>'
         f'<h3>{t}{(" <span class=soon>" + e(s["soon"]) + "</span>") if k == "mac" and not mac_ok else ""}</h3><p>{e(s["macSecP"] if k == "mac" and mac_ok else s[k + "P"])}</p></article>'
-        for d, (k, t) in zip((0, .1, .2, .3), (('iphone', 'iPhone'), ('ipad', 'iPad'), ('watch', 'Apple Watch'), ('mac', 'Mac'))))
+        for k, t in (('iphone', 'iPhone'), ('ipad', 'iPad'), ('watch', 'Apple Watch'), ('mac', 'Mac')))
 
 
     topics_scene = ''.join(f'<div class="topic topic--s"><span class="topic__t"><b></b>{e(t)}</span><i class="skl"></i><i class="skl" style="width:68%"></i></div>' for t in ap['topics'])
@@ -424,22 +395,28 @@ def home(lang):
                 f'<div class="macwin{mac_cls} reveal" style="--d:.15s" data-mac aria-hidden="true">{mac_inner}</div></div></section>')
     ins = ap['inside']; cn = ins['counts']
     tile = lambda n, k: f'<div class="tile"><b data-count="{n}">{n}</b><span>{e(s[k])}</span></div>'
-    guide_rows = ''.join(f'<li><b>{e(i["title"])}</b><span>{e(i["summary"])}</span></li>' for i in ins['guide']['items'])
-    lens_boxes = ''.join(f'<div class="lensbox"><b>{e(x["name"])}</b><span>{e(x["caption"])}</span></div>' for x in ins['lenses'])
+    guide_icons = {'intro': 'book', 'story': 'path', 'howto': 'book', 'timeline': 'era', 'people': 'person', 'words': 'word', 'map': 'map', 'genealogy': 'thread'}
+    guide_rows = ''.join(f'<li>{gicon(guide_icons[i["key"]], base)}<div><b>{e(i["title"])}</b><span>{e(i["summary"])}</span></div></li>' for i in ins['guide']['items'])
+    lens_boxes = ''.join(f'<div class="lensbox"><i class="lensbox__number" aria-hidden="true">{n:02d}</i><div><b>{e(x["name"])}</b><span>{e(x["caption"])}</span></div></div>' for n, x in enumerate(ins['lenses'], 1))
     advice_chips = ''.join(f'<span class="pill">{e(t)}</span>' for t in ins['advice']['topics'])
-    plan_rows = ''.join(f'<li><b>{e(x["title"])}</b><span class="days">{e(days_label(x["days"], lang))}</span><span class="plansum">{e(x["summary"])}</span></li>' for x in ins['plans']['items'])
+    plan_plates = {'mark': 'plate-plan-mark', 'john': 'plate-plan-john', 'proverbs': 'plate-kind-poetry', 'psalms': 'plate-plan-psalms', 'newTestament': 'plate-plan-nt'}
+    plan_rows = ''.join(f'<li><img class="plan__plate" src="{base}assets/plates/{plan_plates[x["id"]]}.webp" alt="" loading="lazy" decoding="async"><div class="plan__words"><b>{e(x["title"])}</b><span class="plansum">{e(x["summary"])}</span></div><span class="days">{e(days_label(x["days"], lang))}</span></li>' for x in ins['plans']['items'])
     also = ''.join(f'<span class="pill">{e(t)}</span>' for t in (s['alsoSearch'], ap['macSidebar'][4], s['alsoShare']))
     inside_html = f'''<section class="section inside" id="inside" aria-labelledby="h-inside"><div class="wrap">
       {h2(s["insideH"], "", "h-inside")}
       <p class="lede reveal" style="--d:.1s">{e(s["insideP"])}</p>
       <div class="inblocks">
-        <article class="inblock reveal" id="inside-guide"><div class="inblock__head"><h3>{e(ins["guide"]["title"])}</h3><p>{e(ins["guide"]["lead"])}</p></div>
+        <article class="inblock inblock--guide reveal" id="inside-guide"><div class="inblock__head"><span class="inblock__index" aria-hidden="true">01</span><h3>{e(ins["guide"]["title"])}</h3><p>{e(ins["guide"]["lead"])}</p></div>
+          {inside_visual('guide', lang, base, ins['guide']['title'])}
           <div class="inblock__body"><ul class="inlist">{guide_rows}</ul><div class="tiles">{tile(cn["eras"], "tileEras")}{tile(cn["people"], "tilePeople")}{tile(cn["terms"], "tileTerms")}{tile(cn["places"], "tilePlaces")}</div></div></article>
-        <article class="inblock reveal" id="inside-readings"><div class="inblock__head"><h3>{e(s["readingsH"])}</h3><p>{e(s["readP"])}</p></div>
+        <article class="inblock inblock--flip reveal" id="inside-readings"><div class="inblock__head"><span class="inblock__index" aria-hidden="true">02</span><h3>{e(s["readingsH"])}</h3><p>{e(s["readP"])}</p></div>
+          {inside_visual('readings', lang, base, s['readingsH'])}
           <div class="inblock__body"><div class="lensboxes">{lens_boxes}</div></div></article>
-        <article class="inblock reveal" id="inside-advice"><div class="inblock__head"><h3>{e(ins["advice"]["title"])}</h3><p>{e(ins["advice"]["lead"])}</p></div>
+        <article class="inblock inblock--advice reveal" id="inside-advice"><div class="inblock__head"><span class="inblock__index" aria-hidden="true">03</span><h3>{e(ins["advice"]["title"])}</h3><p>{e(ins["advice"]["lead"])}</p></div>
+          {inside_visual('advice', lang, base, ins['advice']['title'])}
           <div class="inblock__body"><div class="tiles tiles--one">{tile(cn["topics"], "tileTopics")}</div><div class="chips">{advice_chips}</div></div></article>
-        <article class="inblock reveal" id="inside-plans"><div class="inblock__head"><h3>{e(s["plansH"])}</h3><p>{e(ins["plans"]["lead"])}</p></div>
+        <article class="inblock inblock--flip reveal" id="inside-plans"><div class="inblock__head"><span class="inblock__index" aria-hidden="true">04</span><h3>{e(s["plansH"])}</h3><p>{e(ins["plans"]["lead"])}</p></div>
+          {inside_visual('plans', lang, base, s['plansH'])}
           <div class="inblock__body"><ul class="plans">{plan_rows}</ul></div></article>
       </div>
       <p class="also reveal"><span class="also__h">{e(s["alsoH"])}</span>{also}</p>
@@ -543,11 +520,7 @@ def home(lang):
     <div class="wrap">
       {h2(s["todayH"], "", "h-today")}
       <p class="lede reveal" style="--d:.1s">{e(s["todayP"])}</p>
-      <div class="mini-grid" aria-hidden="true">
-        <div class="mini mini--widget reveal"><span class="label">{e(ap["tagline"])}</span><span class="skl"></span><span class="skl" style="width:84%"></span><span class="skl" style="width:62%"></span></div>
-        <div class="mini mini--lock reveal" style="--d:.1s"><span class="clock">9:41</span><span class="skl" style="width:70%"></span><span class="skl" style="width:50%"></span></div>
-        <div class="mini mini--watch reveal" style="--d:.2s"><span class="ring"></span>{icon("peace", base)}</div>
-      </div>
+      {daily_previews(lang, base)}
     </div>
   </section>
 

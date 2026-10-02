@@ -35,6 +35,8 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/make_sky.py` | Rebuilds `assets/sky-night.svg`: a deterministic vector star field with soft navy glows. Sharp at every display density; no raster upscaling. Standard library only. |
 | `tools/make_og.py` | Draws the link-preview pictures `assets/og/og-<lang>.jpg` (1200×630). Needs Pillow, fontTools, brotli. |
 | `tools/optimize_screens.py` | Makes light web copies of the App Store screenshots. |
+| `tools/import_feature_previews.py` | Imports reviewed native screens for Advice, Reading plans and Verse of the Day, plus the app’s plate artwork. Pillow required. |
+| `tools/make_device_previews.py` | Regenerates original vector device housings containing real native screens in all six languages. Pillow required. |
 | `tools/import_screens.py` | Brings the app's real screens (from its own screenshot run) into the site, then rebuilds. |
 | `tools/sync_legal.py` | Re-copies the three legal pages from another folder, byte for byte. |
 | `site.css`, `app.js`, `fonts/` | Look and motion: the canvas sky, headings that rise word by word, the phone that follows the page (a pinned stage with five scenes), parallax. `app.js` is cosmetic; every page works without it, and with "reduce motion" or on a phone the story is a column of cards. |
@@ -61,6 +63,15 @@ real ones, run the app's screenshot tool (`tools/store-screenshots` in the app r
 
 `--default en` lets a language that has no screens of its own show the English ones. Details: `tools/import_screens.py`,
 `assets/screens/README.md`, `assets/story/README.md`.
+
+### Illustrated feature sections and daily screens
+
+The four “Everything inside” sections combine complete native app screenshots,
+artwork from the app, and text. “A verse for every day” shows the native verse sheet,
+Morning prayer, and the Apple Watch app. All six languages have their own screens.
+The device cards use original vector housings containing real app screenshots.
+See `assets/inside/README.md`, `assets/today/verse/README.md` and
+`assets/devices/README.md` for source details and regeneration.
 
 ### The phone on the home page
 

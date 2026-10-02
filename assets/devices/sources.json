@@ -1,0 +1,290 @@
+[
+  {
+    "language": "en",
+    "device": "iphone",
+    "sourceFile": "en-home.png",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceSHA256": "25c4aa9fff1520455f2cc82a16f2e46573339eea39fc9208c43b3d73f426ce93",
+    "output": "assets/devices/iphone/en.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "en",
+    "device": "ipad",
+    "sourceFile": "en-home.png",
+    "sourceSize": [
+      2064,
+      2752
+    ],
+    "sourceSHA256": "0be2035a682499cae5cfa123e28c1e2469345335d304b30538d7b736e28d72da",
+    "output": "assets/devices/ipad/en.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "en",
+    "device": "watch",
+    "sourceFile": "01-word.png",
+    "sourceSize": [
+      416,
+      496
+    ],
+    "sourceSHA256": "97141853ee56a3d0d7ea9e580d4925b42fa549d53c6d00dd8f2543a52ac36c2b",
+    "output": "assets/devices/watch/en.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "en",
+    "device": "mac",
+    "sourceFile": "en-home.png",
+    "sourceSize": [
+      2640,
+      1696
+    ],
+    "sourceSHA256": "e62825a825eb650e80f1777dae3749587b635e2910817999eae556189e6cdb6b",
+    "output": "assets/devices/mac/en.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "sourceFile": "ru-home.png",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceSHA256": "0ff73092140c9b1c2558865148a5d045a4e1e78abd6d6f9c4421944a1cdc0e27",
+    "output": "assets/devices/iphone/ru.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "ru",
+    "device": "ipad",
+    "sourceFile": "ru-home.png",
+    "sourceSize": [
+      2064,
+      2752
+    ],
+    "sourceSHA256": "0d33301f4c2a15eb23abcc5822446b68c6cfec50e53929f7fb0adb42044609b2",
+    "output": "assets/devices/ipad/ru.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "ru",
+    "device": "watch",
+    "sourceFile": "01-word.png",
+    "sourceSize": [
+      416,
+      496
+    ],
+    "sourceSHA256": "f10ede0e752458ad077031312c91718b1bf970dab9f5cc8f50b1f01d4c676e26",
+    "output": "assets/devices/watch/ru.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "ru",
+    "device": "mac",
+    "sourceFile": "ru-home.png",
+    "sourceSize": [
+      2640,
+      1696
+    ],
+    "sourceSHA256": "26c796e6148e538134c5a976a3357f483df23ac8ac608487bb2d03e123e1cf61",
+    "output": "assets/devices/mac/ru.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "sourceFile": "es-home.png",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceSHA256": "19d219e9a276d235f32d43b3a231a7ec9e243c5ff32008feb43d1a00ba00eff1",
+    "output": "assets/devices/iphone/es.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "es",
+    "device": "ipad",
+    "sourceFile": "es-home.png",
+    "sourceSize": [
+      2064,
+      2752
+    ],
+    "sourceSHA256": "e61279a9f749bbb450172e9ddd898ba8afc96a11262e360f2275355253b9be5c",
+    "output": "assets/devices/ipad/es.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "es",
+    "device": "watch",
+    "sourceFile": "01-word.png",
+    "sourceSize": [
+      416,
+      496
+    ],
+    "sourceSHA256": "503069d088b8b5f63fdd5946ad65fe7daf9130f8b46651de58520ce86f58919f",
+    "output": "assets/devices/watch/es.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "es",
+    "device": "mac",
+    "sourceFile": "es-home.png",
+    "sourceSize": [
+      2640,
+      1696
+    ],
+    "sourceSHA256": "f203e9f04a45b9bacade8c5a4a2fabd532e64de86ac2f114ae5cf7a84602a865",
+    "output": "assets/devices/mac/es.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "sourceFile": "ptBR-home.png",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceSHA256": "2669ea26284469585f319d94bf717aacdec4dd3eadc5565c193b20d95136a998",
+    "output": "assets/devices/iphone/pt.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "pt",
+    "device": "ipad",
+    "sourceFile": "ptBR-home.png",
+    "sourceSize": [
+      2064,
+      2752
+    ],
+    "sourceSHA256": "b9782bbdd43f837157add2af558d80f10a47195163d77e6617751e486fbec687",
+    "output": "assets/devices/ipad/pt.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "pt",
+    "device": "watch",
+    "sourceFile": "01-word.png",
+    "sourceSize": [
+      416,
+      496
+    ],
+    "sourceSHA256": "b54a170df2dbea1de8e7de217b26b31758dfa01021e84ee076d901102784e30f",
+    "output": "assets/devices/watch/pt.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "pt",
+    "device": "mac",
+    "sourceFile": "ptBR-home.png",
+    "sourceSize": [
+      2640,
+      1696
+    ],
+    "sourceSHA256": "de5ca94ccb4dc4cebf478d87f7a7c39a77e41491553d3c6bf0032769f474cc43",
+    "output": "assets/devices/mac/pt.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "sourceFile": "fr-home.png",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceSHA256": "e68e3f7e3ee2b3ce8f1f49e98a5c53170357b86918be548eb4f3f2b256fbb36e",
+    "output": "assets/devices/iphone/fr.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fr",
+    "device": "ipad",
+    "sourceFile": "fr-home.png",
+    "sourceSize": [
+      2064,
+      2752
+    ],
+    "sourceSHA256": "43bceecce50c0c01b4974a020a9183c5b2f36a9a2fc7882f89b4b4d9c6048499",
+    "output": "assets/devices/ipad/fr.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fr",
+    "device": "watch",
+    "sourceFile": "01-word.png",
+    "sourceSize": [
+      416,
+      496
+    ],
+    "sourceSHA256": "efc35a21ccf927c98b875180e3ed83f94c4ae94695b298280ce4a104efbbe4cd",
+    "output": "assets/devices/watch/fr.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fr",
+    "device": "mac",
+    "sourceFile": "fr-home.png",
+    "sourceSize": [
+      2640,
+      1696
+    ],
+    "sourceSHA256": "82bd42743b8ae71ee387f426d67dede7f888fe1797ad2e38e745fefa96f79a97",
+    "output": "assets/devices/mac/fr.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "sourceFile": "fil-home.png",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceSHA256": "de063961c16d3dbd9a4d20115bc459bbf8d4db9496ee8c7f9a2dfd85eceaad70",
+    "output": "assets/devices/iphone/fil.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fil",
+    "device": "ipad",
+    "sourceFile": "fil-home.png",
+    "sourceSize": [
+      2064,
+      2752
+    ],
+    "sourceSHA256": "2474040a853c64f3818e1091edccdbc3d4734ad095a6280ac627dda1e96f9a48",
+    "output": "assets/devices/ipad/fil.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fil",
+    "device": "watch",
+    "sourceFile": "01-word.png",
+    "sourceSize": [
+      416,
+      496
+    ],
+    "sourceSHA256": "e7aa79959a8def34fc968e90dae670faa570f4dddc5612d585fdd342c53ffdb6",
+    "output": "assets/devices/watch/fil.svg",
+    "housing": "original vector illustration"
+  },
+  {
+    "language": "fil",
+    "device": "mac",
+    "sourceFile": "fil-home.png",
+    "sourceSize": [
+      2640,
+      1696
+    ],
+    "sourceSHA256": "6e0e39a1746682eb3605fadafc72c7ef2785afa18ca58ae5a170b001826da1b1",
+    "output": "assets/devices/mac/fil.svg",
+    "housing": "original vector illustration"
+  }
+]
