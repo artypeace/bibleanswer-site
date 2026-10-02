@@ -281,8 +281,10 @@ html.js .demo.is-playing .demo__answer .part{animation:rise 1.1s var(--ease) bot
 @media (max-width:560px){.device-grid{grid-template-columns:1fr}}
 .device{padding:28px 24px 30px;border-radius:28px;background:var(--chip);border:1px solid var(--chip-stroke);transition:transform .4s var(--ease),border-color .3s}
 .device:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--ornament) 50%,transparent)}
-.device__art{height:104px;margin-bottom:22px;color:var(--gold)}
-.device__art svg{height:100%;width:auto}
+.device__art{--device-glass-top:color-mix(in srgb,var(--bg) 84%,var(--gold));--device-glass-bottom:var(--bg);
+  display:flex;align-items:center;justify-content:center;height:132px;margin-bottom:24px;color:var(--gold);
+  background:radial-gradient(ellipse at 50% 64%,color-mix(in srgb,var(--gold) 7%,transparent),transparent 68%)}
+.device__art svg{width:176px;height:132px;flex:none;filter:drop-shadow(0 10px 12px color-mix(in srgb,var(--bg) 45%,transparent))}
 .device h3{margin:0 0 8px;font:500 27px/1.15 var(--serif)}
 .device p{margin:0;font-size:15.5px;line-height:1.5;color:color-mix(in srgb,var(--text) 72%,transparent)}
 
