@@ -1013,6 +1013,18 @@ def write_extras():
     print('wrote press/index.html, feed.xml, llms.txt, llms-full.txt' + (f', {key}.txt' if key else ''))
 
 
+def version_stylesheets():
+    """Refresh cached CSS when its content changes."""
+    versions = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:12]
+                for name in ('site.css', 'articles.css')}
+    pattern = re.compile(r'href="([^"?]*?)(site\.css|articles\.css)(?:\?[^" ]*)?"')
+    for page in ROOT.rglob('*.html'):
+        source = page.read_text('utf-8')
+        updated = pattern.sub(lambda m: f'href="{m[1]}{m[2]}?v={versions[m[2]]}"', source)
+        if updated != source:
+            page.write_text(updated, encoding='utf-8')
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument('--site-url', help='override siteUrl from tools/config.json (for a trial copy)')
@@ -1033,6 +1045,7 @@ def main():
     write_legal()
     write_extras()
     build_articles.write(ROOT, CFG, head_common, og_head)
+    version_stylesheets()
     (ROOT / 'sitemap.xml').write_text(sitemap(a.lastmod), encoding='utf-8')
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {CFG["siteUrl"].rstrip("/")}/sitemap.xml\n', encoding='utf-8')
     print('wrote sitemap.xml, robots.txt')

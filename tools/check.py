@@ -91,6 +91,7 @@ def local_file(page, ref):
             ref = u.path
         else:
             return None
+    ref = u.path
     if not ref:
         return pathlib.Path(page)
     base = pathlib.PurePosixPath(page).parent
