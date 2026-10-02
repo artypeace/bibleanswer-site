@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Brings the app's real screens into the website, from the app's own App Store screenshot run
+"""Brings the app's real screens into the website. Two ways.
+
+A. From a folder of screenshots by hand (an iPhone screenshot of each screen, saved as is):
+
+    python3 tools/import_screens.py --lang ru --read read.png --guide guide.png --counsel advice.png --quiet player.png --hours prayer.png
+    (Mac window: --mac-answer a.png --mac-bible b.png --mac-advice c.png --mac-listen d.png;  --default makes it the picture for every language without its own)
+
+B. From the app's own App Store screenshot run
 (tools/store-screenshots in the app repository: shoot.sh makes the raw screens, storeframes makes the frames):
 
     python3 tools/import_screens.py ~/store-screenshots          # the folder shoot.sh writes to ($STORE_WORK)
@@ -54,11 +61,36 @@ def save(src, dst, width, ratio=None):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('work', help='the folder shoot.sh writes to (STORE_WORK): raw/, out/, out-ipad/')
+    ap.add_argument('work', nargs='?', help='the folder shoot.sh writes to (STORE_WORK): raw/, out/, out-ipad/ ...')
+    for scene in STORY:
+        ap.add_argument(f'--{scene}', metavar='PNG', help=f'one screenshot for the "{scene}" scene of the phone (with --lang)')
+    for scene in MAC_STORY:
+        ap.add_argument(f'--mac-{scene}', metavar='PNG', help=f'one window screenshot for the "{scene}" section of the Mac window (with --lang)')
     ap.add_argument('--lang', nargs='*', choices=list(LANGS), help='only these site languages (default: all that are there)')
     ap.add_argument('--default', choices=list(LANGS), help='also use this language\'s screens for every language without its own')
     ap.add_argument('--no-build', action='store_true')
     a = ap.parse_args()
+    hand = {sc: getattr(a, sc) for sc in STORY if getattr(a, sc)}
+    hand_mac = {sc: getattr(a, f'mac_{sc}') for sc in MAC_STORY if getattr(a, f'mac_{sc}')}
+    if hand or hand_mac:
+        if not a.lang or len(a.lang) != 1:
+            sys.exit('with single screenshots give exactly one language: --lang ru')
+        lang = a.lang[0]
+        for scene, path in hand.items():
+            kb = save(pathlib.Path(path).expanduser(), ROOT / f'assets/story/{scene}/{lang}.webp', WIDTH['story'], 1320 / 2868)
+            print(f'{lang:3} phone {scene} {kb}KB')
+            if a.default == lang:
+                save(pathlib.Path(path).expanduser(), ROOT / f'assets/story/{scene}/default.webp', WIDTH['story'], 1320 / 2868)
+        for scene, path in hand_mac.items():
+            kb = save(pathlib.Path(path).expanduser(), ROOT / f'assets/mac/{scene}/{lang}.webp', WIDTH['macwin'], 2640 / 1698)
+            print(f'{lang:3} mac {scene} {kb}KB')
+            if a.default == lang:
+                save(pathlib.Path(path).expanduser(), ROOT / f'assets/mac/{scene}/default.webp', WIDTH['macwin'], 2640 / 1698)
+        if not a.no_build:
+            subprocess.check_call([sys.executable, str(ROOT / 'tools' / 'build.py')])
+        return
+    if not a.work:
+        sys.exit('give the folder of the screenshot run, or single screenshots (--read ... --lang ru); see --help')
     work = pathlib.Path(a.work).expanduser()
     raw, out, out_ipad = work / 'raw', work / 'out', work / 'out-ipad'
     raw_mac, out_mac = work / 'raw-mac', work / 'out-mac'
