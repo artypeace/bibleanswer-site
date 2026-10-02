@@ -9,7 +9,8 @@ Static pages, published by GitHub Pages from `main` (root) under the custom doma
 | `/` `/ru/` `/es/` `/pt/` `/fr/` `/fil/` | The home page in six languages: a complete page each, with its own title, description, canonical address and `hreflang` links. |
 | `/privacy` `/terms` `/support` | The legal pages, with the language anchors `#en #ru #es #pt #fr #fil`. The text is a byte-for-byte copy of the pages the App Store and the app link to today (`artypeace.github.io/bible-answer/…`). |
 | `/press/` | The press kit, in English: descriptions to copy, the facts, the app icon, news, contact. In the sitemap. |
-| `/feed.xml` | RSS 2.0 feed of the news in `tools/news.json` (the press page lists the same items). |
+| `/articles/`, `/ru/articles/` | Reading-guide indexes and four original guides in English / Russian. Static HTML, matching language alternatives, Article / BreadcrumbList data and local share cards. |
+| `/feed.xml` | RSS 2.0 feed of English reading guides plus news in `tools/news.json` (the press page lists the news). |
 | `/llms.txt` `/llms-full.txt` | A short and a full description for AI assistants (llmstxt.org format), built from the same strings as the site. |
 | `/<key>.txt` | The IndexNow key file (see below). |
 | `/links` | The page behind "link in bio": language choice, the App Store, the social accounts. Not in the sitemap, `noindex`. |
@@ -30,7 +31,11 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/app-strings.json` | Words shared with the app (tagline, feelings, section names). Produced by `tools/extract_from_app.py` from the app's and the server's own sources; never edited by hand. |
 | `tools/site-strings.json` | The website's own copy, titles, descriptions and the example answer, in all six languages. |
 | `tools/build.py` | Turns the files above into pages, `sitemap.xml`, `robots.txt`. |
-| `tools/news.json` | The news items (id, date, title, summary). Add one and rebuild: it appears in `feed.xml` and on `/press/`. Articles will join the feed the same way. |
+| `tools/articles.json`, `tools/build_articles.py` | Original guide content and the static page renderer. Dates belong to articles, not rebuilds. |
+| `tools/article-verses/` | Exact JSON stdout from the social workspace’s `tools/verse.py`; source quotations are never edited or translated by hand. |
+| `articles.css` | Styles loaded only by reading-guide pages; the landing page remains unchanged except for a footer link. |
+| `tools/make_article_og.py` | Regenerates the eight 1200×630 JPEG share cards from existing local artwork and fonts. Optional Pillow / fontTools; ordinary builds do not need them. |
+| `tools/news.json` | The news items (id, date, title, summary). Add one and rebuild: it appears in `feed.xml` and on `/press/`. English reading guides from `tools/articles.json` are included in the same feed. |
 | `tools/indexnow.py` | Sends changed addresses to the IndexNow engines (Bing, Yandex, ...). Run by `.github/workflows/indexnow.yml` after each deploy; `--dry-run` shows what it would send. |
 | `tools/make_sky.py` | Rebuilds `assets/sky-night.svg`: a deterministic vector star field with soft navy glows. Sharp at every display density; no raster upscaling. Standard library only. |
 | `tools/make_og.py` | Draws the link-preview pictures `assets/og/og-<lang>.jpg` (1200×630). Needs Pillow, fontTools, brotli. |
@@ -122,3 +127,29 @@ Search engines: add the site in Google Search Console and Bing Webmaster Tools a
 ## Not part of this repository
 
 `artypeace.github.io` (the user site) stays as it is: it serves `app-ads.txt` for another app and the privacy, terms and support addresses the App Store and the app link to today. No custom domain is attached to it.
+
+### Adding a reading guide
+
+The first set covers starting to read the Bible, forgiveness after an apology,
+gratitude on a hard day, and wisdom before a decision. Every guide has an English
+and Russian page. Other landing-page languages link to the English index, with
+EN visible in the label; no untranslated article pages are generated.
+
+Add one matching language pair to `tools/articles.json`, with a stable `key`, a
+slug for each language, the actual publication date, title, description, lead,
+local plate and sections. Supported blocks are paragraph, passage, steps and
+practice. Passage blocks name a JSON file in `tools/article-verses/`. Obtain
+new quotations through `tools/verse.py` in the social workspace, preserving its
+stdout. This is the same text source the app uses.
+
+Use original context and examples; compare every quotation with its source and
+avoid turning a reflection into a claim the passage makes. The index explains
+AI assistance and the translation used; author data names Bible Answer and
+does not invent a human biography or credentials.
+
+Generate matching share cards with `python3 tools/make_article_og.py` (Pillow
+and fontTools), or supply an equivalent Cormorant variable TTF with `--font`.
+Then run the normal build and check. The indexes, related guides, reciprocal
+hreflang, sitemap and English RSS entries are generated from the content.
+Keep publication dates stable; update a guide’s date when its content materially
+changes. No arbitrary word-count target or tracking script is required.

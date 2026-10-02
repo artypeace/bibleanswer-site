@@ -1,0 +1,81 @@
+/* Reading guides extend the existing website. No landing-page selectors. */
+.article-site{--reading:720px}
+.article-site .sky{height:900px;transform:none;will-change:auto}
+.article-nav{position:relative;z-index:2;border-bottom:1px solid var(--glass-line);background:var(--glass)}
+.article-nav__in{max-width:1200px;margin:auto;padding:20px var(--pad);display:flex;align-items:center;gap:36px}
+.article-nav nav{display:flex;align-items:center;gap:24px;font-size:14px}
+.article-nav nav a{color:var(--text)}
+.article-nav .article-languages{margin-left:auto;gap:3px;border:1px solid var(--glass-line);padding:4px;border-radius:999px}
+.article-languages a{border-radius:999px;padding:8px 13px;font-size:12px}
+.article-languages a[aria-current]{background:var(--gold-soft);color:var(--gold)}
+.article-skip{position:absolute;left:12px;top:-90px;z-index:10;background:var(--bg);padding:16px}
+.article-skip:focus{top:8px}
+.guide-index,.reading-guide{max-width:1200px;margin:auto;padding:0 var(--pad)}
+.guide-index__hero{max-width:780px;padding:86px 0 58px}
+.article-site h1{font-size:clamp(44px,6vw,82px);line-height:1.05}
+.guide-index__hero>p:last-child{max-width:640px;color:var(--muted);font-size:20px;line-height:1.6;margin-top:24px;text-wrap:pretty}
+.article-kicker{color:var(--gold);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;line-height:1.8}
+.article-kicker span{color:var(--muted);letter-spacing:0;text-transform:none;white-space:nowrap}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.guide-card{display:block;color:var(--text);border:1px solid var(--glass-line);border-radius:24px;overflow:hidden;background:var(--glass);transition:border-color .2s,transform .2s}
+.guide-card:hover{transform:translateY(-3px);border-color:var(--gold-hair);text-decoration:none}
+.guide-card__image{height:200px;overflow:hidden;background:#e5d7ba}
+.guide-card__image img{width:100%;height:100%;object-fit:cover;filter:sepia(.15)}
+.guide-card__body{position:relative;padding:26px 30px 44px}
+.guide-card h2{font-size:clamp(30px,3vw,40px);line-height:1.1;text-wrap:pretty}
+.guide-card__body>p:not(.article-kicker){font-size:16px;line-height:1.65;color:var(--muted);margin-bottom:0}
+.guide-card__arrow{position:absolute;right:26px;bottom:20px;font-size:23px;color:var(--gold)}
+.guide-method{max-width:780px;padding:32px 0 16px;margin:20px 0 30px;scroll-margin-top:24px}
+.guide-method h2{font-size:30px;line-height:1.2}
+.guide-method p{font-size:15px;line-height:1.8;color:var(--muted)}
+.article-breadcrumbs{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted);padding-top:42px}
+.article-hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,.8fr);gap:56px;align-items:center;padding:32px 0 60px}
+.article-hero h1{font-size:clamp(44px,5.4vw,72px)}
+.article-lead{max-width:640px;font-size:19px;line-height:1.65;color:var(--muted);margin:24px 0}
+.article-byline{font-size:12px;line-height:1.8;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.article-hero figure{margin:0;border:1px solid var(--gold-hair);border-radius:26px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(2deg);background:#e5d7ba}
+.article-hero figure img{width:100%;height:280px;object-fit:cover}
+.article-layout{display:grid;grid-template-columns:230px minmax(0,var(--reading));gap:56px;align-items:start}
+.article-toc{position:sticky;top:28px;padding:22px 0}
+.article-toc h2{font:500 12px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--gold);margin-bottom:18px}
+.article-toc nav{display:flex;flex-direction:column;gap:15px;border-left:1px solid var(--gold-hair);padding-left:18px}
+.article-toc a{font-size:13px;line-height:1.5;color:var(--muted)}
+.article-toc a:hover{color:var(--gold)}
+.article-prose{min-width:0;border-top:1px solid var(--gold-hair);padding-top:4px}
+.article-prose section{padding:32px 0 12px;scroll-margin-top:26px}
+.article-prose h2{font-size:clamp(30px,3.2vw,42px);line-height:1.17;text-wrap:pretty;margin:0 0 24px}
+.article-prose p,.article-steps li{font-size:18px;line-height:1.9;color:color-mix(in srgb,var(--text) 88%,var(--bg));margin:0 0 22px;text-wrap:pretty}
+.article-verse{margin:28px 0;padding:28px 30px;background:var(--gold-soft);border-left:2px solid var(--gold);border-radius:0 18px 18px 0}
+.article-verse blockquote{font:500 clamp(25px,2.6vw,32px)/1.48 var(--serif);margin:0;color:var(--text);text-wrap:pretty}
+.article-verse figcaption{margin-top:22px;color:var(--gold);font-size:12px;line-height:1.6;font-weight:500}
+.article-verse figcaption span{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:6px}
+.article-passage{border:1px solid var(--glass-line);border-radius:18px;padding:18px 22px;margin:26px 0;background:var(--glass)}
+.article-passage summary{font-size:14px;line-height:1.7;color:var(--gold);cursor:pointer}
+.article-passage .article-verse{margin-bottom:0;padding:20px 0 4px;background:none;border:none}
+.article-passage blockquote{font-size:25px;line-height:1.55}
+.article-steps{padding-left:25px;margin:24px 0}
+.article-steps li{padding-left:8px;margin-bottom:14px}
+.article-steps li::marker{color:var(--gold)}
+.article-practice{padding:28px 30px;margin:30px 0;border:1px solid var(--gold-hair);border-radius:20px;background:var(--glass)}
+.article-practice h3{font:500 26px/1.25 var(--serif);margin:0 0 18px;color:var(--gold)}
+.article-practice ul{padding-left:20px;margin:0}
+.article-practice li{font-size:16px;line-height:1.8;margin:10px 0}
+.article-practice li::marker{color:var(--gold)}
+.article-prose .article-method-note{font-size:12px;color:var(--muted);border-top:1px solid var(--glass-line);padding-top:24px;line-height:1.8;margin-top:26px}
+.article-app{display:flex;align-items:center;gap:24px;padding:30px 36px;margin:64px 0 40px;border:1px solid var(--gold-hair);border-radius:24px;background:var(--glass)}
+.article-app>img{border-radius:15px;width:64px;height:64px;flex:none}
+.article-app h2{font-size:29px;line-height:1.2}
+.article-app p{font-size:14px;color:var(--muted);line-height:1.6;margin:9px 0 0}
+.article-app .btn{margin-left:auto;flex:none;font-size:14px}
+.article-related{margin:64px 0 44px}
+.article-related>h2{font-size:36px;margin-bottom:28px}
+.article-related .guide-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.article-related .guide-card__image{height:140px}
+.article-related .guide-card__body{padding:22px 22px 42px}
+.article-related .guide-card h2{font-size:28px}
+.article-related .guide-card__body>p:not(.article-kicker){font-size:14px}
+.article-related .article-kicker{font-size:10px;letter-spacing:.08em}
+.article-footer{padding-top:32px}
+@media(max-width:900px){.article-layout{grid-template-columns:180px minmax(0,1fr);gap:28px}.article-hero{gap:32px}.article-related .guide-grid{grid-template-columns:1fr 1fr}.article-hero figure img{height:240px}.article-app{padding:26px;flex-wrap:wrap}.article-app .btn{margin-left:88px}}
+@media(max-width:650px){.article-nav__in{gap:12px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}.article-nav .mark{font-size:12px;letter-spacing:.2em}.article-nav__in>nav:not(.article-languages){order:3;flex-basis:100%;font-size:13px;gap:22px}.article-nav .article-languages{gap:0}.article-languages a{padding:6px 9px;font-size:11px}.guide-index__hero{padding:54px 0 36px}.guide-index__hero>p:last-child{font-size:18px}.guide-grid,.article-related .guide-grid{grid-template-columns:1fr}.guide-card__image{height:180px}.guide-card__body{padding:24px 24px 44px}.article-breadcrumbs{padding-top:26px}.article-hero{grid-template-columns:1fr;padding-bottom:36px;gap:28px}.article-hero figure{max-width:440px;transform:none}.article-hero figure img{height:200px}.article-lead{font-size:18px}.article-layout{grid-template-columns:1fr;gap:12px}.article-toc{position:static;padding:0 0 20px}.article-toc nav{gap:11px}.article-prose p,.article-steps li{font-size:17px;line-height:1.85}.article-prose section{padding-top:28px}.article-verse{padding:24px 22px}.article-practice{padding:24px}.article-app{gap:18px;margin-top:40px;padding:24px}.article-app>div{flex:1;min-width:170px}.article-app .btn{margin-left:0;width:100%}.article-app h2{font-size:27px}.article-related{margin-top:42px}}
+@media(prefers-reduced-motion:reduce){.guide-card{transition:none}.guide-card:hover{transform:none}}

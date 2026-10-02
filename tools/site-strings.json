@@ -85,7 +85,8 @@
   "alsoShare": "Verse cards to share",
   "previewAlt": "{section} in Bible Answer",
   "todayVerseLabel": "Verse of the Day",
-  "insideNavLabel": "Explore the app"
+  "insideNavLabel": "Explore the app",
+  "readingGuides": "Reading guides"
  },
  "ru": {
   "htmlLang": "ru",
@@ -173,7 +174,8 @@
   "alsoShare": "Открытки со стихами, чтобы делиться",
   "previewAlt": "{section} в приложении Bible Answer",
   "todayVerseLabel": "Стих дня",
-  "insideNavLabel": "Разделы приложения"
+  "insideNavLabel": "Разделы приложения",
+  "readingGuides": "Статьи"
  },
  "es": {
   "htmlLang": "es",
@@ -261,7 +263,8 @@
   "alsoShare": "Tarjetas de versículos para compartir",
   "previewAlt": "{section} en Bible Answer",
   "todayVerseLabel": "Versículo del Día",
-  "insideNavLabel": "Explora la aplicación"
+  "insideNavLabel": "Explora la aplicación",
+  "readingGuides": "Guías de lectura (EN)"
  },
  "pt": {
   "htmlLang": "pt-BR",
@@ -349,7 +352,8 @@
   "alsoShare": "Cartões de versículos para compartilhar",
   "previewAlt": "{section} no Bible Answer",
   "todayVerseLabel": "Versículo do Dia",
-  "insideNavLabel": "Explore o aplicativo"
+  "insideNavLabel": "Explore o aplicativo",
+  "readingGuides": "Guias de leitura (EN)"
  },
  "fr": {
   "htmlLang": "fr",
@@ -437,7 +441,8 @@
   "alsoShare": "Cartes de verset à partager",
   "previewAlt": "{section} dans Bible Answer",
   "todayVerseLabel": "Verset du Jour",
-  "insideNavLabel": "Explore l’application"
+  "insideNavLabel": "Explore l’application",
+  "readingGuides": "Guides de lecture (EN)"
  },
  "fil": {
   "htmlLang": "fil",
@@ -525,6 +530,7 @@
   "alsoShare": "Mga kard ng talata na maibabahagi",
   "previewAlt": "{section} sa Bible Answer",
   "todayVerseLabel": "Talata ng Araw",
-  "insideNavLabel": "Tuklasin ang app"
+  "insideNavLabel": "Tuklasin ang app",
+  "readingGuides": "Mga gabay sa pagbabasa (EN)"
  }
 }

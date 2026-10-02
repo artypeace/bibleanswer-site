@@ -3,10 +3,38 @@
   <channel>
     <title>Bible Answer</title>
     <link>https://bibleanswer.app/</link>
-    <description>News from Bible Answer, the Bible app for iPhone, iPad, Mac and Apple Watch.</description>
+    <description>Reading guides and news from Bible Answer.</description>
     <language>en</language>
     <lastBuildDate>Fri, 02 Oct 2026 09:00:00 +0000</lastBuildDate>
     <atom:link href="https://bibleanswer.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Where to start reading the Bible</title>
+      <link>https://bibleanswer.app/articles/where-to-start-reading-the-bible/</link>
+      <guid isPermaLink="true">https://bibleanswer.app/articles/where-to-start-reading-the-bible/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Choose a manageable first Bible reading, explore the Gospel of John, and use four simple questions to understand a passage before applying it.</description>
+    </item>
+    <item>
+      <title>What comes after “I’m sorry”?</title>
+      <link>https://bibleanswer.app/articles/forgiveness-after-apology/</link>
+      <guid isPermaLink="true">https://bibleanswer.app/articles/forgiveness-after-apology/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Read Ephesians 4:25–32 in context and explore what kindness, honest words, and a concrete repair can add to an apology in an ordinary conversation.</description>
+    </item>
+    <item>
+      <title>Gratitude on a hard day</title>
+      <link>https://bibleanswer.app/articles/gratitude-on-a-hard-day/</link>
+      <guid isPermaLink="true">https://bibleanswer.app/articles/gratitude-on-a-hard-day/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Read 1 Thessalonians 5:14–22 alongside its words about patience and care, then try an honest prayer that names both a difficulty and a gift.</description>
+    </item>
+    <item>
+      <title>Asking for wisdom before a decision</title>
+      <link>https://bibleanswer.app/articles/asking-for-wisdom-decisions/</link>
+      <guid isPermaLink="true">https://bibleanswer.app/articles/asking-for-wisdom-decisions/</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Read James 1:2–8 in context, understand its invitation to ask for wisdom, and use a simple reflection to name one missing piece of information.</description>
+    </item>
     <item>
       <title>bibleanswer.app is open in six languages</title>
       <link>https://bibleanswer.app/press/#website-open</link>

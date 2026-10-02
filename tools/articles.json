@@ -1,0 +1,876 @@
+[
+  {
+    "key": "start",
+    "lang": "en",
+    "slug": "where-to-start-reading-the-bible",
+    "title": "Where to start reading the Bible",
+    "seo_title": "Where to Start Reading the Bible: A Gentle Guide",
+    "description": "Choose a manageable first Bible reading, explore the Gospel of John, and use four simple questions to understand a passage before applying it.",
+    "category": "Getting started",
+    "lead": "Begin with one book, one passage, and a question you can carry into the day. You do not have to understand the whole Bible before you begin.",
+    "plate": "plate-plan-john",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "first-book",
+        "title": "Choose a first book you can stay with",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The Bible contains several kinds of writing: narrative, poetry, letters, and more. Reading from the first page is one possible approach, but it is not the only useful starting point. If you want to become familiar with Jesus, a Gospel offers a clear focus. You can follow its people, conversations, and events instead of moving between unrelated verses."
+          },
+          {
+            "type": "paragraph",
+            "text": "The Gospel of John is one possible beginning. Near its close, the writer explains why these particular signs have been recorded. That gives you a question to keep beside the whole book: what is this account showing about Jesus, and how does it invite its reader to respond?"
+          },
+          {
+            "type": "passage",
+            "source": "en-JHN-20-30-31.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "This is a suggested starting point, not a required order. If a church or trusted reader has given you another plan, you can use the same reading questions with it. Choose a pace that lets you notice what the text actually says."
+          }
+        ]
+      },
+      {
+        "id": "first-reading",
+        "title": "Try John 1:1–5 as a first reading",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Read the opening slowly. Its language introduces the Word, God, creation, life, and light. Some of those ideas will become clearer as you continue. Write down a question rather than forcing an immediate explanation for every phrase."
+          },
+          {
+            "type": "passage",
+            "source": "en-JHN-1-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "A verse number helps you find a sentence again; it is not a signal that the sentence stands alone. After reading these five verses, continue through the rest of John 1. Notice how the opening connects with the people and events that follow. You can return to a difficult phrase after you have heard more of the chapter."
+          }
+        ]
+      },
+      {
+        "id": "reading-questions",
+        "title": "Use four questions before applying the passage",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Observe: which words, people, actions, or contrasts are actually on the page?",
+              "Locate: who is speaking, and what comes immediately before and after?",
+              "Ask: what is clear, and which question needs more reading or help?",
+              "Respond: what small response follows from this passage, rather than from an idea you brought to it?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Keep observation and reflection separate in your notes. For example, the text uses the image of light. A personal reflection might concern where you need guidance today. The reflection can be meaningful without becoming a claim that the verse predicts the outcome of a particular choice."
+          }
+        ]
+      },
+      {
+        "id": "small-plan",
+        "title": "Build a small plan you can return to",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "For a simple first week, read John 1 through John 7 in order, one chapter per reading. If a chapter is too much for one sitting, pause at a paragraph and resume there. These seven readings are an editorial suggestion, not a named plan promised inside the app."
+          },
+          {
+            "type": "paragraph",
+            "text": "After each reading, write one observation and one question. At the end of the week, look back before adding a new book. Which question has the following chapter helped you answer? Which one would you like to discuss with someone? Missing a day does not require starting the whole sequence again."
+          },
+          {
+            "type": "practice",
+            "title": "For your next reading",
+            "items": [
+              "Open John 1 and read the first paragraph twice.",
+              "Name one thing the passage says about the Word.",
+              "Read on, and keep one unanswered question beside you."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-the-guide",
+        "title": "Use a guide when the text feels unfamiliar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A book overview can help you find your bearings. A map can help with a place name; a glossary can help with an unfamiliar word. Use these tools to return to the passage with a clearer question. They work best alongside the text you are reading."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer brings the Bible reader, The Guide, and reading plans together. When you use an interpretation or a devotional reflection, compare it with the whole passage. The quotation, its context, and your own response are three different things worth keeping clear."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "forgiveness",
+    "lang": "en",
+    "slug": "forgiveness-after-apology",
+    "title": "What comes after “I’m sorry”?",
+    "seo_title": "Forgiveness After an Apology: Reading Ephesians 4",
+    "description": "Read Ephesians 4:25–32 in context and explore what kindness, honest words, and a concrete repair can add to an apology in an ordinary conversation.",
+    "category": "Forgiveness",
+    "lead": "An apology can open a conversation. Ephesians 4 helps us consider the words and actions that come next.",
+    "plate": "plate-script",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "A short answer from Ephesians 4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ephesians 4:32 connects forgiveness with kindness and compassion, and grounds it in God’s forgiveness in Christ. The surrounding paragraph also addresses truthfulness, anger, work, and speech. Read together, these instructions give us more to consider than whether the word “sorry” has been spoken."
+          },
+          {
+            "type": "passage",
+            "source": "en-EPH-4-32.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "The passage does not supply a script for every damaged relationship. It does invite a way of treating people. An apology can become part of that way of life when it names the wrong honestly, listens to its effect, and begins an appropriate change."
+          }
+        ]
+      },
+      {
+        "id": "read-the-context",
+        "title": "Read the paragraph around the verse",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In Ephesians 4:25–32, truthful speech replaces falsehood. A person who has stolen is told to stop stealing, work, and become able to share. Speech is measured by whether it helps the listener. These are changes in conduct as well as changes in words."
+          },
+          {
+            "type": "passage",
+            "source": "en-EPH-4-25-32.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "This context matters when we reflect on an apology. The instruction about stealing is specific; it is not a universal checklist for every conflict. Yet it shows a concrete movement from a harmful action toward a different action. We can ask what that movement might look like in the situation we are actually facing."
+          }
+        ]
+      },
+      {
+        "id": "name-your-part",
+        "title": "Name your part without deciding the other person’s response",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine you dismissed someone’s concern in a family conversation. “Sorry you were upset” leaves your own conduct unnamed. You might instead describe what you did, acknowledge why it hurt, and ask whether you have understood the concern. These are ordinary communication examples, not quotations from the passage."
+          },
+          {
+            "type": "paragraph",
+            "text": "Keep the explanation proportionate. Background can clarify an event, but it can also become a long argument for why the other person should stop feeling hurt. Listen before adding another explanation. You may learn that the effect of your words was different from what you intended."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Name the action you are responsible for.",
+              "Listen to what the other person wants you to understand.",
+              "Offer a concrete change or repair that fits the action."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "repair-and-trust",
+        "title": "Let repair have a shape",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A repair might mean correcting a false statement, returning something, keeping an agreed boundary, or changing how you handle the next conversation. Choose something specific enough to follow through on. An impressive promise is less useful than a modest action you can actually take."
+          },
+          {
+            "type": "paragraph",
+            "text": "Forgiveness, reconciliation, and restored trust are related, but they describe different things. Do not use this verse to demand immediate access to someone or to decide how quickly they must feel safe with you. Trust involves what happens over time. Kindness can include respecting the time and space another person asks for."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "One question for today",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "After the apology",
+            "items": [
+              "What action have I clearly acknowledged?",
+              "What have I heard without trying to correct the other person’s reaction?",
+              "What one repair can I offer and follow through on?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Return to Ephesians 4:25–32 before closing the conversation in your mind. Ask which instruction is most relevant to your part in it: truthful words, helpful speech, putting away malice, or kindness. Begin there rather than using the passage to grade the other person."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "lang": "en",
+    "slug": "gratitude-on-a-hard-day",
+    "title": "Gratitude on a hard day",
+    "seo_title": "Bible Verses About Gratitude on a Hard Day",
+    "description": "Read 1 Thessalonians 5:14–22 alongside its words about patience and care, then try an honest prayer that names both a difficulty and a gift.",
+    "category": "Prayer & gratitude",
+    "lead": "A difficult day can hold both a real burden and something received with thanks. Read the passage with room for both.",
+    "plate": "plate-kind-poetry",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "What does the passage say about gratitude?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In 1 Thessalonians 5:16–18, joy, prayer, and thanksgiving appear together. The instruction is brief, but it belongs to a larger series of words about how the community should live. Reading that larger paragraph helps us consider gratitude alongside care for other people."
+          },
+          {
+            "type": "passage",
+            "source": "en-1TH-5-16-18.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "These verses invite a continuing practice of prayer and thanks. They do not explain the cause of every painful event. When reflecting on them, avoid adding a claim that you know why a particular hardship happened or that a person should feel happy about it."
+          }
+        ]
+      },
+      {
+        "id": "care-in-the-context",
+        "title": "Notice the care surrounding these words",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Before the instructions about joy and gratitude, the paragraph speaks of encouraging the fainthearted, helping the weak, and being patient with everyone. It also rejects repaying evil for evil and calls for seeking what is good. Those instructions keep people and their needs in view."
+          },
+          {
+            "type": "passage",
+            "source": "en-1TH-5-14-22.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "That setting changes an ordinary conversation. If someone tells you their day has been hard, moving straight to “be thankful” may skip the listening and support the same passage calls for. You can receive their difficulty seriously and, when they want to, make room for thanks together."
+          }
+        ]
+      },
+      {
+        "id": "honest-notes",
+        "title": "Make two honest notes",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Try writing two sentences. The first names a difficulty without tidying it up: an unresolved conversation, a plan that fell through, a task that is still unfinished. The second names a specific gift: a message from a friend, help with a task, a quiet meal, or a person who listened."
+          },
+          {
+            "type": "paragraph",
+            "text": "The second sentence does not cancel the first. There is no need to compare your burden with someone else’s or argue yourself into a brighter mood. Specific words help the prayer stay connected to the day you actually lived."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you cannot identify a gift right now, you can begin with the first sentence and ask for help noticing. Treat this exercise as an invitation. It is not a test of whether you have enough faith."
+          }
+        ]
+      },
+      {
+        "id": "bring-both-to-prayer",
+        "title": "Bring both into prayer",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Use your two sentences as a starting point. Speak plainly about what is difficult, give thanks for what you have received, and ask for what you need. The following is an original prayer prompt rather than a biblical quotation or a required formula."
+          },
+          {
+            "type": "practice",
+            "title": "An honest prayer prompt",
+            "items": [
+              "Name the difficulty before God.",
+              "Give thanks for one specific gift.",
+              "Ask for wisdom, strength, or someone’s help with the next step."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "The paragraph also directs attention outward. Consider whether gratitude for someone’s help might become a message of thanks, or whether your own experience helps you notice a person who needs encouragement. A small act can give the reflection a place in your day."
+          }
+        ]
+      },
+      {
+        "id": "return-to-the-text",
+        "title": "Return without forcing a result",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Read 1 Thessalonians 5:14–22 again and choose one instruction to keep beside you. It may be prayer, thanks, patience, or care for someone who is weak. You do not need to complete every possible response in one evening."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer’s Bible reader and Prayer of the Hour can help you return to Scripture and prayer. This exercise stands on its own; it does not depend on a particular mood, streak, or app feature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wisdom",
+    "lang": "en",
+    "slug": "asking-for-wisdom-decisions",
+    "title": "Asking for wisdom before a decision",
+    "seo_title": "Bible Verses About Decisions: Asking for Wisdom",
+    "description": "Read James 1:2–8 in context, understand its invitation to ask for wisdom, and use a simple reflection to name one missing piece of information.",
+    "category": "Wisdom & decisions",
+    "lead": "When the whole path is unclear, a useful beginning may be a prayer and a question you can answer.",
+    "plate": "plate-gate",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Begin with the invitation to ask",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "James 1:5 invites a person who lacks wisdom to ask God. It describes God as generous and willing to give without finding fault. That is a meaningful starting point when you feel unsure: you can bring the lack itself into prayer rather than pretending you already know."
+          },
+          {
+            "type": "passage",
+            "source": "en-JAS-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "The verse does not name a particular job, place, relationship, or timetable. Applying it to a decision requires care. Asking for wisdom is not the same as claiming that the first feeling after a prayer identifies the only acceptable option."
+          }
+        ]
+      },
+      {
+        "id": "trials-and-faith",
+        "title": "Read the invitation within James 1:2–8",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The paragraph begins with trials, the testing of faith, and perseverance. The request for wisdom appears within that discussion. The following verses address asking in faith and warn about a divided, unstable posture. All of that belongs beside verse 5 when we read it."
+          },
+          {
+            "type": "passage",
+            "source": "en-JAS-1-2-8.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "This setting points beyond the wish for a fast answer. It asks us to consider how we meet difficulty and where we place our trust. Do not use the warning as a quick diagnosis of another person’s uncertainty. An unanswered practical question does not by itself tell you everything about someone’s faith."
+          }
+        ]
+      },
+      {
+        "id": "name-the-decision",
+        "title": "Name the decision before searching for certainty",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A vague question such as “What should I do with my life?” can contain several smaller questions. Write the decision you actually have to make now. Then separate what you know from what you assume. For example, you may know that two options are available while still needing to ask about their everyday responsibilities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Notice which parts are a matter of principle, which are facts you can investigate, and which involve preferences or trade-offs. This is an editorial exercise for an ordinary choice. It is not a promise that every decision can be resolved by a list."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "State the present choice in one sentence.",
+              "List one relevant fact you know and one question you have not answered.",
+              "Identify someone or something that can help you answer that question."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prayer-and-information",
+        "title": "Let prayer and attention work together",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Bring the decision into prayer, including the motives you can already see: care for someone, fear of failure, desire for approval, or reluctance to change. Ask for wisdom about the way you are approaching the choice as well as about its outcome."
+          },
+          {
+            "type": "paragraph",
+            "text": "Then give the missing question a practical next step. You might request clarification, read the information already available, or speak with someone who understands the situation. Gather what can reasonably be known before treating an assumption as a sign."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sometimes the next step is deciding. Sometimes it is learning enough to decide responsibly. The passage is an invitation to ask God for wisdom within a life of faith; the research step is our suggested way of attending to an everyday choice."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "A small reflection before you choose",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Prayer and one useful question",
+            "items": [
+              "What am I asking God for in this decision?",
+              "Which motive needs an honest look?",
+              "What one piece of information can I seek next?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Return to James 1:2–8 after writing your answer. Keep its words distinct from the plan you have made. You can take a considered step without presenting your preference as a direct quotation from God."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "start",
+    "lang": "ru",
+    "slug": "s-chego-nachat-chitat-bibliyu",
+    "title": "С чего начать читать Библию",
+    "seo_title": "С чего начать читать Библию: спокойный первый шаг",
+    "description": "Выберите первое чтение Библии, познакомьтесь с Евангелием от Иоанна и попробуйте четыре вопроса, которые помогают понять отрывок в контексте.",
+    "category": "Первое чтение",
+    "lead": "Начните с одной книги, одного отрывка и вопроса, к которому можно вернуться в течение дня. Понимать всю Библию заранее не обязательно.",
+    "plate": "plate-plan-john",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "first-book",
+        "title": "Выберите книгу, с которой сможете побыть",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В Библии есть разные виды текста: повествование, поэзия, послания и другие. Начать с первой страницы — один из возможных путей. Если вам хочется познакомиться с Иисусом, можно начать с Евангелия: следить за людьми, разговорами и событиями одной книги, а не переходить между отдельными стихами."
+          },
+          {
+            "type": "paragraph",
+            "text": "Один из вариантов — Евангелие от Иоанна. Ближе к его завершению автор объясняет, для чего записаны эти знамения. Это помогает держать рядом с чтением важный вопрос: что рассказ показывает об Иисусе и к какому ответу приглашает читателя?"
+          },
+          {
+            "type": "passage",
+            "source": "ru-JHN-20-30-31.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Это предложение для начала, а не обязательный порядок. Если в вашей общине или в разговоре с человеком, которому вы доверяете, появился другой план, те же вопросы можно использовать с ним. Выберите темп, в котором вы успеваете заметить, что говорится в самом тексте."
+          }
+        ]
+      },
+      {
+        "id": "first-reading",
+        "title": "Попробуйте начать с Иоанна 1:1–5",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Прочитайте начало неспешно. Здесь появляются Слово, Бог, творение, жизнь и свет. Некоторые связи станут понятнее по мере чтения. Запишите вопрос, вместо того чтобы требовать от себя немедленного объяснения каждой фразы."
+          },
+          {
+            "type": "passage",
+            "source": "ru-JHN-1-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Номер стиха помогает снова найти предложение, но не означает, что оно существует отдельно от остального текста. После первых пяти стихов прочитайте первую главу дальше. Посмотрите, как её начало связано с людьми и событиями, которые появляются затем. К трудному месту можно вернуться, когда вы прочитаете больше."
+          }
+        ]
+      },
+      {
+        "id": "reading-questions",
+        "title": "Задайте четыре вопроса перед применением",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Наблюдение: какие слова, люди, действия или противопоставления действительно есть в отрывке?",
+              "Контекст: кто говорит и что находится непосредственно до и после?",
+              "Вопрос: что уже понятно, а что требует дальнейшего чтения или помощи?",
+              "Ответ: какой небольшой шаг следует из этого отрывка, а не из мысли, с которой вы к нему пришли?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Полезно разделять наблюдение и личное размышление в записях. Например, в тексте есть образ света. Ваше размышление может касаться того, где вам сейчас нужно направление. Оно может быть важным для вас, но само по себе не превращает стих в предсказание результата конкретного выбора."
+          }
+        ]
+      },
+      {
+        "id": "small-plan",
+        "title": "Составьте небольшой план, к которому легко вернуться",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Для первой недели можно последовательно прочитать Иоанна 1–7: по одной главе за чтение. Если глава велика для одного раза, остановитесь на абзаце и продолжите оттуда. Это наш простой вариант начала, а не название определённого плана внутри приложения."
+          },
+          {
+            "type": "paragraph",
+            "text": "После чтения запишите одно наблюдение и один вопрос. В конце недели вернитесь к заметкам, прежде чем выбирать новую книгу. На что следующая глава уже помогла ответить? Что хотелось бы обсудить с другим человеком? Пропущенный день не требует начинать всё сначала."
+          },
+          {
+            "type": "practice",
+            "title": "Для следующего чтения",
+            "items": [
+              "Откройте Иоанна 1 и дважды прочитайте первый абзац.",
+              "Назовите одну мысль, которую отрывок говорит о Слове.",
+              "Прочитайте дальше и сохраните один открытый вопрос."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-the-guide",
+        "title": "Обращайтесь к справочнику, когда встречаете незнакомое",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Обзор книги помогает сориентироваться. Карта может прояснить название места, а словарь — незнакомое слово. Используйте их, чтобы вернуться к самому отрывку с более точным вопросом. Справочные материалы особенно полезны рядом с текстом, который вы читаете."
+          },
+          {
+            "type": "paragraph",
+            "text": "В Bible Answer рядом находятся чтение Библии, Путеводитель и планы чтения. Обращаясь к толкованию или размышлению, сопоставляйте его с целым отрывком. Дословная цитата, её контекст и ваш личный ответ заслуживают отдельного внимания."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "forgiveness",
+    "lang": "ru",
+    "slug": "proshchenie-posle-izvineniya",
+    "title": "Что идёт после «простите»?",
+    "seo_title": "Прощение после извинения: читаем Ефесянам 4",
+    "description": "Прочитайте Ефесянам 4:25–32 в контексте и подумайте, как доброта, честные слова и конкретное исправление могут продолжить обычный разговор после извинения.",
+    "category": "Прощение",
+    "lead": "Извинение может открыть разговор. Четвёртая глава Ефесянам помогает подумать о словах и поступках, которые последуют за ним.",
+    "plate": "plate-script",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Короткий ответ из четвёртой главы Ефесянам",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ефесянам 4:32 соединяет прощение с добротой и состраданием, обращая читателя к Божьему прощению во Христе. В окружающем абзаце говорится также о правде, гневе, труде и речи. Вместе эти наставления предлагают больше, чем проверку, прозвучало ли слово «простите»."
+          },
+          {
+            "type": "passage",
+            "source": "ru-EPH-4-32.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Отрывок не даёт готового сценария для всех трудных отношений. Он приглашает к определённому обращению с людьми. Извинение может стать частью такого обращения, если честно назвать свой поступок, выслушать, как он повлиял на другого, и начать подходящее изменение."
+          }
+        ]
+      },
+      {
+        "id": "read-the-context",
+        "title": "Прочитайте абзац вокруг стиха",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В Ефесянам 4:25–32 правдивая речь противопоставляется лжи. Тому, кто крал, предлагается перестать, трудиться и иметь возможность делиться. Слова оцениваются по тому, что они дают слушающему. Речь идёт о поступках вместе со словами."
+          },
+          {
+            "type": "passage",
+            "source": "ru-EPH-4-25-32.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Этот контекст важен для размышления об извинении. Наставление о краже относится к конкретному действию и не служит универсальным списком для каждого конфликта. При этом оно показывает движение от вредящего поступка к другому поступку. Можно спросить, как такое движение выглядело бы именно в вашей ситуации."
+          }
+        ]
+      },
+      {
+        "id": "name-your-part",
+        "title": "Назовите свою часть, не определяя ответ другого человека",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Представьте, что в семейном разговоре вы отмахнулись от чьей-то тревоги. Фраза «простите, что вы расстроились» оставляет ваш поступок неназванным. Можно описать, что вы сделали, признать, почему это задело, и спросить, правильно ли вы поняли важное для человека. Это примеры обычного разговора, а не цитаты из Библии."
+          },
+          {
+            "type": "paragraph",
+            "text": "Объяснение бывает полезным, но может превратиться в длинный довод о том, почему другому уже пора перестать переживать. Прежде чем объяснять дальше, выслушайте. Возможно, действие ваших слов отличалось от того, что вы собирались ими выразить."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Назовите поступок, за который отвечаете.",
+              "Выслушайте, что другой человек хочет донести.",
+              "Предложите конкретное изменение или исправление, связанное с поступком."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "repair-and-trust",
+        "title": "Пусть исправление будет конкретным",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Иногда это означает исправить ложное утверждение, вернуть вещь, соблюдать договорённую границу или иначе провести следующий разговор. Выберите действие, которое можно выполнить. Небольшой реальный шаг полезнее впечатляющего обещания, которому трудно следовать."
+          },
+          {
+            "type": "paragraph",
+            "text": "Прощение, примирение и восстановленное доверие связаны, но описывают разные вещи. Не используйте этот стих, чтобы требовать немедленной близости или решать, как быстро человеку должно стать спокойно рядом с вами. Доверие связано с тем, что происходит со временем. Доброта может выражаться и в уважении к просьбе о времени и пространстве."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Один вопрос на сегодня",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "После извинения",
+            "items": [
+              "Какой поступок я ясно признал?",
+              "Что я услышал, не пытаясь исправить чужую реакцию?",
+              "Какое одно исправление могу предложить и выполнить?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Вернитесь к Ефесянам 4:25–32, прежде чем мысленно закрывать разговор. Что особенно относится к вашей части: правдивые слова, полезная речь, отказ от злобы или доброта? Начните с этого, а не с оценки другого человека при помощи отрывка."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "lang": "ru",
+    "slug": "blagodarnost-v-trudnyy-den",
+    "title": "Благодарность в трудный день",
+    "seo_title": "Стихи из Библии о благодарности в трудный день",
+    "description": "Прочитайте 1 Фессалоникийцам 5:14–22 рядом с наставлениями о терпении и заботе. Попробуйте честную молитву, в которой есть место и трудности, и дару.",
+    "category": "Молитва и благодарность",
+    "lead": "В трудном дне могут быть и настоящая тяжесть, и то, что вы принимаете с благодарностью. Прочитайте отрывок, оставив место обоим.",
+    "plate": "plate-kind-poetry",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Что этот отрывок говорит о благодарности?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В 1 Фессалоникийцам 5:16–18 радость, молитва и благодарность стоят рядом. Короткое наставление принадлежит более широкому разговору о жизни общины. Чтение всего абзаца помогает увидеть благодарность рядом с заботой о других людях."
+          },
+          {
+            "type": "passage",
+            "source": "ru-1TH-5-16-18.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Эти стихи приглашают к постоянству в молитве и благодарении. Они не объясняют причину каждого болезненного события. Размышляя над ними, не стоит добавлять утверждение, будто вам известно, зачем произошла конкретная трудность или что человек обязан радоваться самому событию."
+          }
+        ]
+      },
+      {
+        "id": "care-in-the-context",
+        "title": "Заметьте заботу вокруг этих слов",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Перед наставлениями о радости и благодарности говорится об утешении малодушных, поддержке слабых и терпении ко всем. Здесь же отвергается воздаяние злом за зло и предлагается искать добро. Люди и их нужды остаются в поле зрения всего отрывка."
+          },
+          {
+            "type": "passage",
+            "source": "ru-1TH-5-14-22.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Этот контекст влияет на обычный разговор. Когда человек рассказывает о тяжёлом дне, немедленный совет благодарить может пропустить слушание и поддержку, к которым приглашает тот же абзац. Можно серьёзно принять трудность, а затем, если человек хочет, вместе оставить место благодарности."
+          }
+        ]
+      },
+      {
+        "id": "honest-notes",
+        "title": "Сделайте две честные записи",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Попробуйте написать два предложения. Первое называет трудность без попытки её пригладить: неоконченный разговор, сорвавшийся план, незавершённую работу. Второе называет конкретный дар: сообщение друга, помощь с делом, спокойную трапезу или человека, который выслушал."
+          },
+          {
+            "type": "paragraph",
+            "text": "Второе предложение не отменяет первого. Не нужно сравнивать свою тяжесть с чужой или спорить с собой до появления более светлого настроения. Конкретные слова помогают молитве оставаться связанной с днём, который вы действительно прожили."
+          },
+          {
+            "type": "paragraph",
+            "text": "Если сейчас не получается назвать дар, можно начать с первой записи и попросить помощи замечать. Эта практика — приглашение, а не проверка, достаточно ли у вас веры."
+          }
+        ]
+      },
+      {
+        "id": "bring-both-to-prayer",
+        "title": "Принесите в молитву и то, и другое",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Используйте записи как начало. Прямо назовите, что трудно, поблагодарите за полученное и попросите о том, что нужно. Следующие пункты — наш вариант молитвенного размышления, а не библейская цитата или обязательная формула."
+          },
+          {
+            "type": "practice",
+            "title": "Для честной молитвы",
+            "items": [
+              "Назовите трудность перед Богом.",
+              "Поблагодарите за один конкретный дар.",
+              "Попросите мудрости, сил или чьей-то помощи для следующего шага."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Абзац обращает внимание и к другим людям. Может ли благодарность за помощь стать коротким сообщением человеку? Помогает ли собственный опыт заметить того, кто нуждается в ободрении? Небольшой поступок даёт размышлению место в повседневности."
+          }
+        ]
+      },
+      {
+        "id": "return-to-the-text",
+        "title": "Вернитесь к тексту без требования к результату",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Снова прочитайте 1 Фессалоникийцам 5:14–22 и выберите одно наставление, с которым хочется побыть: молитву, благодарность, терпение или заботу о слабом. Не обязательно выполнить все возможные ответы за один вечер."
+          },
+          {
+            "type": "paragraph",
+            "text": "Чтение Библии и Молитва часа в Bible Answer помогают возвращаться к Писанию и молитве. Саму практику можно использовать независимо от приложения, определённого настроения или количества дней подряд."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wisdom",
+    "lang": "ru",
+    "slug": "mudrost-pered-resheniem",
+    "title": "Просить мудрости перед решением",
+    "seo_title": "Библия о решениях: просить мудрости по Иакова 1",
+    "description": "Прочитайте Иакова 1:2–8 в контексте, подумайте о просьбе к Богу о мудрости и найдите один недостающий факт перед следующим шагом в вашем выборе.",
+    "category": "Мудрость и решения",
+    "lead": "Когда весь путь неясен, полезным началом могут стать молитва и вопрос, на который вы способны найти ответ.",
+    "plate": "plate-gate",
+    "date": "2026-10-02",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Начните с приглашения просить",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Иакова 1:5 приглашает человека, которому недостаёт мудрости, просить у Бога. Стих говорит о Боге, Который даёт без упрёка. Когда вы не уверены, с этого можно начать: принести в молитву саму нехватку понимания, не изображая, будто ответ уже известен."
+          },
+          {
+            "type": "passage",
+            "source": "ru-JAS-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Здесь не названы конкретная работа, место, отношения или срок. Применение к решению требует внимания. Просить мудрости — не то же самое, что считать первое чувство после молитвы указанием на единственный допустимый вариант."
+          }
+        ]
+      },
+      {
+        "id": "trials-and-faith",
+        "title": "Прочитайте просьбу в контексте Иакова 1:2–8",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Абзац начинается с испытаний, веры и терпения. Просьба о мудрости появляется внутри этого разговора. Следующие стихи говорят о просьбе с верою и предупреждают о нетвёрдости человека с двоящимися мыслями. Всё это находится рядом с пятым стихом и заслуживает чтения вместе."
+          },
+          {
+            "type": "passage",
+            "source": "ru-JAS-1-2-8.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Такой контекст предлагает подумать не только о быстром ответе, но и о том, как мы встречаем трудность и на что опираемся. Не превращайте предупреждение в поспешную оценку чужой неуверенности. Нерешённый практический вопрос сам по себе не рассказывает всё о вере человека."
+          }
+        ]
+      },
+      {
+        "id": "name-the-decision",
+        "title": "Назовите решение до поиска полной уверенности",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "За большим вопросом «что мне делать с жизнью?» могут скрываться несколько меньших. Запишите, какой выбор стоит перед вами сейчас. Затем отделите известное от предположений. Например, вы знаете, что доступны два варианта, но ещё не уточнили, какие повседневные обязанности связаны с каждым."
+          },
+          {
+            "type": "paragraph",
+            "text": "Заметьте, что относится к принципам, какие факты можно выяснить, а где речь о предпочтениях и неизбежных компромиссах. Это наш вариант размышления над обычным выбором, а не обещание решить любую ситуацию с помощью списка."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Опишите сегодняшний выбор одним предложением.",
+              "Назовите один известный факт и один открытый вопрос.",
+              "Подумайте, кто или что может помочь ответить на этот вопрос."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prayer-and-information",
+        "title": "Соедините молитву с вниманием к ситуации",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Принесите выбор в молитву вместе с мотивами, которые уже заметны: заботой о человеке, страхом неудачи, желанием одобрения или нежеланием менять привычное. Попросите мудрости в самом подходе к решению, а не только в его результате."
+          },
+          {
+            "type": "paragraph",
+            "text": "Затем дайте открытому вопросу практический следующий шаг. Можно попросить уточнение, прочитать доступную информацию или поговорить с тем, кто понимает обстоятельства. Выясните то, что возможно узнать, прежде чем принимать предположение за знак."
+          },
+          {
+            "type": "paragraph",
+            "text": "Иногда следующим шагом становится решение. Иногда — получение знаний, нужных для ответственного выбора. Отрывок приглашает просить Бога о мудрости в жизни веры; поиск недостающей информации — предложенный нами способ внимательно отнестись к повседневной ситуации."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Небольшое размышление перед выбором",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Молитва и один полезный вопрос",
+            "items": [
+              "О чём я прошу Бога в этом решении?",
+              "Какой мотив стоит честно рассмотреть?",
+              "Какую одну недостающую информацию могу получить дальше?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "После записи снова прочитайте Иакова 1:2–8. Разделяйте слова отрывка и составленный вами план. Можно сделать обдуманный шаг, не представляя своё предпочтение дословным указанием Бога."
+          }
+        ]
+      }
+    ]
+  }
+]

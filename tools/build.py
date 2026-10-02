@@ -19,6 +19,7 @@ pages run (app.js) is cosmetic: reveal on scroll, parallax, the timing of the ex
 There is no analytics, no cookie, no third-party request; the Content-Security-Policy says so.
 """
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
+import build_articles
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -578,7 +579,7 @@ def home(lang):
 </main>
 
 <footer class="foot">
-  <p><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
+  <p><a href="{'/ru/articles/' if lang == 'ru' else '/articles/'}" lang="{'ru' if lang == 'ru' else 'en'}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>
@@ -690,6 +691,7 @@ def sitemap(lastmod):
     for name in LEGAL:
         rows.append(f'  <url>\n    <loc>{site}/{name}</loc>{stamp}\n  </url>')
     rows.append(f'  <url>\n    <loc>{site}/press/</loc>{stamp}\n  </url>')
+    rows.extend(build_articles.sitemap_rows(ROOT, CFG))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + '\n'.join(rows) + '\n</urlset>\n')
@@ -762,9 +764,14 @@ def feed_xml():
         f'    <item>\n      <title>{xml(n["title"])}</title>\n      <link>{site}/press/#{xml(n["id"])}</link>\n'
         f'      <guid isPermaLink="false">bibleanswer.app:{xml(n["id"])}</guid>\n      <pubDate>{rfc822(n["date"])}</pubDate>\n'
         f'      <description>{xml(n["summary"])}</description>\n    </item>\n' for n in items)
+    guides = [a for a in build_articles.load(ROOT) if a['lang'] == 'en']
+    rows = ''.join(f'    <item>\n      <title>{xml(a["title"])}</title>\n      <link>{site}/{build_articles.path(a)}</link>\n'
+                   f'      <guid isPermaLink="true">{site}/{build_articles.path(a)}</guid>\n      <pubDate>{rfc822(a["date"])}</pubDate>\n'
+                   f'      <description>{xml(a["description"])}</description>\n    </item>\n' for a in guides) + rows
+    built = rfc822(max([a['date'] for a in guides] + [n['date'] for n in items]))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n'
             '    <title>Bible Answer</title>\n'
-            f'    <link>{site}/</link>\n    <description>News from Bible Answer, the Bible app for iPhone, iPad, Mac and Apple Watch.</description>\n'
+            f'    <link>{site}/</link>\n    <description>Reading guides and news from Bible Answer.</description>\n'
             f'    <language>en</language>\n    <lastBuildDate>{built}</lastBuildDate>\n'
             f'    <atom:link href="{site}/feed.xml" rel="self" type="application/rss+xml"/>\n{rows}  </channel>\n</rss>\n')
 
@@ -1007,6 +1014,7 @@ def main():
     print('wrote links/index.html, 404.html')
     write_legal()
     write_extras()
+    build_articles.write(ROOT, CFG, head_common, og_head)
     (ROOT / 'sitemap.xml').write_text(sitemap(a.lastmod), encoding='utf-8')
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {CFG["siteUrl"].rstrip("/")}/sitemap.xml\n', encoding='utf-8')
     print('wrote sitemap.xml, robots.txt')

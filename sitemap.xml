@@ -82,4 +82,74 @@
     <loc>https://bibleanswer.app/press/</loc>
     <lastmod>2026-10-02</lastmod>
   </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/where-to-start-reading-the-bible/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/forgiveness-after-apology/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/gratitude-on-a-hard-day/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/asking-for-wisdom-decisions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <lastmod>2026-10-02</lastmod>
+  </url>
 </urlset>
