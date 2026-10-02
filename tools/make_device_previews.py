@@ -159,7 +159,7 @@ def main():
             'mac': args.screens / f'raw-mac/{tag}-home.png',
         }
         for name, maker in [('iphone', phone), ('ipad', tablet), ('watch', watch), ('mac', laptop)]:
-            screen, size = screenshot(sources[name], {'iphone': 400, 'ipad': 640, 'watch': 416, 'mac': 800}[name])
+            screen, size = screenshot(sources[name], {'iphone': 720, 'ipad': 640, 'watch': 416, 'mac': 800}[name])
             destination = output / name / f'{lang}.svg'
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(maker(screen), encoding='utf-8')

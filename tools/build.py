@@ -81,12 +81,16 @@ def gicon(name, base):
     return icon(name, base, 'guide', 'guide')
 
 
-def device_product(name, lang, base):
+def device_product(name, lang, base, alt='', priority=False):
     """An original vector housing containing an unaltered real app screenshot."""
     dimensions = {'iphone': (1450, 3000), 'ipad': (2196, 2884), 'watch': (720, 1450), 'mac': (3000, 1950)}
     width, height = dimensions[name]
-    return (f'<img class="device-product" src="{base}assets/devices/{name}/{lang}.svg" '
-            f'width="{width}" height="{height}" alt="" loading="lazy" decoding="async">')
+    path = f'assets/devices/{name}/{lang}.svg'
+    if not have(path):
+        raise FileNotFoundError(path)
+    loading = 'loading="eager" fetchpriority="high"' if priority else 'loading="lazy"'
+    return (f'<img class="device-product" src="{base}{path}" '
+            f'width="{width}" height="{height}" alt="{e(alt)}" {loading} decoding="async">')
 
 
 def real_screen_frame(path, base, alt):
@@ -405,6 +409,12 @@ def home(lang):
     inside_html = f'''<section class="section inside" id="inside" aria-labelledby="h-inside"><div class="wrap">
       {h2(s["insideH"], "", "h-inside")}
       <p class="lede reveal" style="--d:.1s">{e(s["insideP"])}</p>
+      <nav class="inside-nav" aria-label="{e(s['insideNavLabel'])}">
+        <a href="#inside-guide">{gicon('book', base)}{e(ins['guide']['title'])}</a>
+        <a href="#inside-readings">{gicon('word', base)}{e(s['readingsH'])}</a>
+        <a href="#inside-advice">{gicon('path', base)}{e(ins['advice']['title'])}</a>
+        <a href="#inside-plans">{gicon('era', base)}{e(s['plansH'])}</a>
+      </nav>
       <div class="inblocks">
         <article class="inblock inblock--guide reveal" id="inside-guide"><div class="inblock__head"><span class="inblock__index" aria-hidden="true">01</span><h3>{e(ins["guide"]["title"])}</h3><p>{e(ins["guide"]["lead"])}</p></div>
           {inside_visual('guide', lang, base, ins['guide']['title'])}
@@ -467,13 +477,17 @@ def home(lang):
   <section class="hero" aria-labelledby="h-hero">
     <div class="hero__fx" aria-hidden="true"><div class="hero__glow"></div></div>
     <div class="hero__in" id="heroIn">
-      <img class="hero__icon rise" style="--i:0" src="{base}assets/icon.png" width="96" height="96" alt="Bible Answer">
+      <div class="hero__copy">
+      <div class="hero__identity"><img class="hero__icon" src="{base}assets/icon.png" width="64" height="64" alt=""><span class="eyebrow">Bible Answer</span></div>
       <h1 id="h-hero" class="split split--hero grad">{split_words(ap["tagline"])}</h1>
       <p class="hero__sub rise" style="--i:2">{e(ap["subtitle"])}</p>
       <div class="hero__cta rise" style="--i:3">
         {store}
         <a class="link" href="#ask">{e(s["seeHow"])}</a>
       </div>
+      <p class="hero__devices">iPhone <span>·</span> iPad <span>·</span> Mac <span>·</span> Apple Watch</p>
+      </div>
+      <figure class="hero__preview">{device_product('iphone', lang, base, s['previewAlt'].format(section=ap['prompt']), priority=True)}</figure>
     </div>
     <svg class="hero__hint ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
   </section>
@@ -555,7 +569,8 @@ def home(lang):
   </section>
 
   <section class="section cta" aria-label="{e(s["storeText"])}">
-    <div class="wrap">
+    <div class="wrap cta__card">
+      <img class="cta__icon" src="{base}assets/icon.png" width="64" height="64" alt="" loading="lazy">
       {h2(ap["tagline"], "grad")}
       <p class="reveal" style="--d:.1s">{store}</p>
     </div>
