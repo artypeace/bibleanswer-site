@@ -33,7 +33,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 
 ### Things to fill in (all in `tools/config.json`, then `python3 tools/build.py`)
 
-* `contactEmail` — now `bibleanswerapp@gmail.com`. Switch to `support@bibleanswer.app` once forwarding from it is confirmed to work. (The legal pages carry their own copy of the address in their text; change them there if you want them to match.)
+* `contactEmail` — `support@bibleanswer.app` (Cloudflare Email Routing forwards it to `bibleanswerapp@gmail.com`). The legal pages carry their own copy of the address in their text (`bibleanswerapp@gmail.com`); change it there if you want them to match.
 * `social[].url` — the links of the social accounts (`@bibleanswerapp`, `…_ru`, `…_es`, `…_br`, `…_fr`, `…_ph`). While a link is empty, `/links` shows the handle as plain text.
 * `pinterestVerify` — the content of the `p:domain_verify` tag Pinterest gives; empty means no tag.
 * `showScreenshotSlots` — `false` hides the screenshots strip until real screenshots exist.
