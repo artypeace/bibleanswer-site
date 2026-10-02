@@ -93,7 +93,7 @@
   "readingGuidesLabel": "Reading guides",
   "readingGuidesH": "A little more time with the Word.",
   "readingGuidesP": "A passage in context. A question to carry. A small step for an ordinary day.",
-  "readingGuidesAll": "Explore the reading guides"
+  "readingGuidesAll": "All reading guides"
  },
  "ru": {
   "htmlLang": "ru",
@@ -278,14 +278,14 @@
   "previewAlt": "{section} en Bible Answer",
   "todayVerseLabel": "Versículo del Día",
   "insideNavLabel": "Explora la aplicación",
-  "readingGuides": "Guías de lectura (EN)",
+  "readingGuides": "Artículos",
   "skyPause": "Pausar el cielo",
   "skyPlay": "Animar el cielo",
   "skyEdited": "Adaptado",
   "readingGuidesLabel": "Artículos",
   "readingGuidesH": "Un poco más de tiempo con la Palabra.",
   "readingGuidesP": "Un pasaje en contexto, una pregunta y un pequeño paso para el día a día.",
-  "readingGuidesAll": "Leer los artículos en inglés"
+  "readingGuidesAll": "Todos los artículos"
  },
  "pt": {
   "htmlLang": "pt-BR",
@@ -374,14 +374,14 @@
   "previewAlt": "{section} no Bible Answer",
   "todayVerseLabel": "Versículo do Dia",
   "insideNavLabel": "Explore o aplicativo",
-  "readingGuides": "Guias de leitura (EN)",
+  "readingGuides": "Artigos",
   "skyPause": "Pausar o céu",
   "skyPlay": "Animar o céu",
   "skyEdited": "Adaptado",
   "readingGuidesLabel": "Artigos",
   "readingGuidesH": "Um pouco mais de tempo com a Palavra.",
   "readingGuidesP": "Uma passagem em contexto, uma pergunta e um pequeno passo para o dia a dia.",
-  "readingGuidesAll": "Ler os artigos em inglês"
+  "readingGuidesAll": "Todos os artigos"
  },
  "fr": {
   "htmlLang": "fr",
@@ -470,14 +470,14 @@
   "previewAlt": "{section} dans Bible Answer",
   "todayVerseLabel": "Verset du Jour",
   "insideNavLabel": "Explore l’application",
-  "readingGuides": "Guides de lecture (EN)",
+  "readingGuides": "Articles",
   "skyPause": "Mettre le ciel en pause",
   "skyPlay": "Animer le ciel",
   "skyEdited": "Adapté",
   "readingGuidesLabel": "Articles",
   "readingGuidesH": "Un peu plus de temps avec la Parole.",
   "readingGuidesP": "Un passage dans son contexte, une question et un petit pas pour le quotidien.",
-  "readingGuidesAll": "Lire les articles en anglais"
+  "readingGuidesAll": "Tous les articles"
  },
  "fil": {
   "htmlLang": "fil",
@@ -566,13 +566,13 @@
   "previewAlt": "{section} sa Bible Answer",
   "todayVerseLabel": "Talata ng Araw",
   "insideNavLabel": "Tuklasin ang app",
-  "readingGuides": "Mga gabay sa pagbabasa (EN)",
+  "readingGuides": "Mga artikulo",
   "skyPause": "I-pause ang langit",
   "skyPlay": "I-play ang langit",
   "skyEdited": "Inedit",
   "readingGuidesLabel": "Mga artikulo",
   "readingGuidesH": "Kaunting oras kasama ang Salita.",
   "readingGuidesP": "Isang talata sa konteksto, isang tanong, at isang maliit na hakbang sa araw-araw.",
-  "readingGuidesAll": "Basahin ang mga artikulo sa English"
+  "readingGuidesAll": "Lahat ng artikulo"
  }
 }

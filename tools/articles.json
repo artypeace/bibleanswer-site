@@ -872,5 +872,3889 @@
         ]
       }
     ]
+  },
+  {
+    "key": "start",
+    "lang": "es",
+    "slug": "por-donde-empezar-a-leer-la-biblia",
+    "title": "Por dónde empezar a leer la Biblia",
+    "seo_title": "Por dónde empezar a leer la Biblia: guía para principiantes",
+    "description": "Elige una primera lectura de la Biblia, conoce el Evangelio de Juan y usa cuatro preguntas sencillas para comprender un pasaje en su contexto.",
+    "category": "Primeros pasos",
+    "lead": "Empieza con un libro, un pasaje y una pregunta que puedas llevar contigo durante el día. No necesitas comprender toda la Biblia antes de comenzar.",
+    "plate": "plate-plan-john",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "first-book",
+        "title": "Elige un primer libro que puedas seguir",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "La Biblia reúne distintas formas de escritura: relatos, poesía, cartas y otras. Leer desde la primera página es una posibilidad, pero no es el único comienzo útil. Si quieres conocer a Jesús, un Evangelio ofrece un enfoque claro. Puedes seguir a sus personajes, conversaciones y acontecimientos, en lugar de saltar entre versículos aislados."
+          },
+          {
+            "type": "paragraph",
+            "text": "El Evangelio de Juan es un posible punto de partida. Cerca del final, el autor explica por qué ha registrado esas señales. Esto te da una pregunta para acompañar todo el libro: ¿qué muestra este relato sobre Jesús y cómo invita al lector a responder?"
+          },
+          {
+            "type": "passage",
+            "source": "es-JHN-20-30-31.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Es una propuesta, no un orden obligatorio. Si una iglesia o alguien de confianza te ha recomendado otro plan, puedes usar las mismas preguntas con él. Elige un ritmo que te permita observar lo que realmente dice el texto."
+          }
+        ]
+      },
+      {
+        "id": "first-reading",
+        "title": "Prueba Juan 1:1–5 como primera lectura",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lee el comienzo despacio. Su lenguaje presenta la Palabra, Dios, la creación, la vida y la luz. Algunas ideas se aclararán al avanzar. Anota una pregunta en lugar de exigir una explicación inmediata para cada frase."
+          },
+          {
+            "type": "passage",
+            "source": "es-JHN-1-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "El número de un versículo ayuda a encontrar una oración; no significa que esa oración esté separada de las demás. Después de estos cinco versículos, continúa por el resto de Juan 1. Observa cómo el comienzo se relaciona con las personas y los hechos que siguen. Puedes volver a una expresión difícil después de leer más del capítulo."
+          }
+        ]
+      },
+      {
+        "id": "reading-questions",
+        "title": "Haz cuatro preguntas antes de aplicar el pasaje",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Observa: ¿qué palabras, personas, acciones o contrastes aparecen realmente?",
+              "Sitúa: ¿quién habla y qué ocurre antes y después?",
+              "Pregunta: ¿qué está claro y qué necesita más lectura o ayuda?",
+              "Responde: ¿qué pequeño paso nace del pasaje, en vez de una idea que ya traías?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Distingue la observación de la reflexión en tus notas. Por ejemplo, el texto usa la imagen de la luz. Una reflexión personal puede ser dónde necesitas orientación hoy. Puede tener valor sin convertirse en la afirmación de que el versículo predice el resultado de una decisión concreta."
+          }
+        ]
+      },
+      {
+        "id": "small-plan",
+        "title": "Prepara un plan pequeño al que puedas volver",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Durante una primera semana sencilla, lee Juan 1 a Juan 7 en orden, un capítulo por lectura. Si un capítulo es demasiado para una sesión, detente al terminar un párrafo y continúa desde allí. Estas siete lecturas son una propuesta editorial, no un plan específico que se prometa dentro de la app."
+          },
+          {
+            "type": "paragraph",
+            "text": "Después de cada lectura, escribe una observación y una pregunta. Al terminar la semana, revisa tus notas antes de añadir otro libro. ¿Qué pregunta ha respondido el capítulo siguiente? ¿Cuál quieres conversar con alguien? Perder un día no exige comenzar todo otra vez."
+          },
+          {
+            "type": "practice",
+            "title": "Para tu próxima lectura",
+            "items": [
+              "Abre Juan 1 y lee el primer párrafo dos veces.",
+              "Nombra algo que el pasaje dice sobre la Palabra.",
+              "Continúa leyendo y conserva una pregunta pendiente."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-the-guide",
+        "title": "Busca una guía cuando el texto te resulte desconocido",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Una presentación del libro ayuda a orientarte. Un mapa aclara un lugar; un glosario, una palabra desconocida. Usa estas herramientas para volver al pasaje con una pregunta más clara. Son más útiles junto al texto que estás leyendo."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer reúne la lectura de la Biblia, la Guía y los planes de lectura. Cuando uses una interpretación o reflexión devocional, compárala con el pasaje completo. La cita, su contexto y tu respuesta personal son tres cosas que conviene distinguir."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "forgiveness",
+    "lang": "es",
+    "slug": "perdon-despues-de-pedir-disculpas",
+    "title": "¿Qué viene después de pedir perdón?",
+    "seo_title": "Perdón en la Biblia: qué viene después de pedir disculpas",
+    "description": "Lee Efesios 4:25–32 en contexto y reflexiona sobre las disculpas, la reparación y la confianza con preguntas concretas para una conversación.",
+    "category": "Perdón",
+    "lead": "Una disculpa puede abrir una conversación. Efesios 4 nos ayuda a pensar en las palabras y acciones que vienen después.",
+    "plate": "plate-script",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Una respuesta breve desde Efesios 4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Efesios 4:32 relaciona el perdón con la bondad y la compasión, y lo fundamenta en el perdón de Dios en Cristo. El párrafo también habla de verdad, enojo, trabajo y palabras. Leídas juntas, estas instrucciones invitan a considerar algo más que si alguien ya dijo que lo siente."
+          },
+          {
+            "type": "passage",
+            "source": "es-EPH-4-32.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "El pasaje no ofrece un guion para toda relación dañada. Sí invita a una manera de tratar a las personas. Una disculpa puede formar parte de ella cuando reconoce honestamente el daño, escucha su efecto y comienza un cambio apropiado."
+          }
+        ]
+      },
+      {
+        "id": "read-the-context",
+        "title": "Lee el párrafo alrededor del versículo",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "En Efesios 4:25–32, la verdad sustituye a la mentira. Quien ha robado debe dejar de hacerlo, trabajar y poder compartir. Las palabras se valoran por el bien que hacen a quien escucha. Son cambios de conducta, además de cambios de expresión."
+          },
+          {
+            "type": "passage",
+            "source": "es-EPH-4-25-32.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Este contexto importa al pensar en una disculpa. La instrucción sobre el robo es concreta, no una lista universal para todo conflicto. Sin embargo, muestra un paso de una acción dañina hacia otra distinta. Podemos preguntar cómo sería ese paso en nuestra situación real."
+          }
+        ]
+      },
+      {
+        "id": "name-your-part",
+        "title": "Reconoce tu parte sin decidir la respuesta ajena",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagina que desestimaste una preocupación en una conversación familiar. Decir que lamentas que la otra persona se haya molestado deja sin nombrar tu conducta. Puedes explicar lo que hiciste, reconocer por qué dolió y preguntar si comprendiste su preocupación. Son ejemplos de comunicación cotidiana, no citas del pasaje."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mantén la explicación proporcionada. Los antecedentes aclaran lo ocurrido, pero también pueden convertirse en un argumento largo para que la otra persona deje de sentirse herida. Escucha antes de añadir otra explicación. Tal vez el efecto de tus palabras fue distinto de tu intención."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Nombra la acción de la que eres responsable.",
+              "Escucha lo que la otra persona necesita que comprendas.",
+              "Ofrece un cambio o una reparación concreta que corresponda a esa acción."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "repair-and-trust",
+        "title": "Dale una forma concreta a la reparación",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Reparar puede significar corregir una afirmación falsa, devolver algo, respetar un límite acordado o cambiar la próxima conversación. Elige una acción que puedas cumplir. Una promesa impresionante ayuda menos que un paso modesto que realmente puedes dar."
+          },
+          {
+            "type": "paragraph",
+            "text": "Perdón, reconciliación y recuperación de la confianza están relacionados, pero describen cosas distintas. No uses el versículo para exigir acceso inmediato a alguien ni para decidir cuándo debe sentirse seguro contigo. La confianza depende de lo que ocurre con el tiempo. La bondad también puede respetar el espacio que otra persona necesita."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Una pregunta para hoy",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Después de la disculpa",
+            "items": [
+              "¿Qué acción he reconocido claramente?",
+              "¿Qué he escuchado sin intentar corregir la reacción de la otra persona?",
+              "¿Qué reparación puedo ofrecer y cumplir?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Vuelve a Efesios 4:25–32 antes de dar la conversación por terminada en tu mente. Pregunta qué instrucción se relaciona con tu parte: hablar con verdad, usar palabras útiles, abandonar la malicia o actuar con bondad. Empieza por allí, sin usar el pasaje para evaluar a la otra persona."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "lang": "es",
+    "slug": "gratitud-en-un-dia-dificil",
+    "title": "Gratitud en un día difícil",
+    "seo_title": "Gratitud en la Biblia: dar gracias en un día difícil",
+    "description": "Lee 1 Tesalonicenses 5:14–22 y descubre cómo la gratitud convive con la oración, la paciencia y el cuidado de otros, sin negar un día difícil.",
+    "category": "Oración y gratitud",
+    "lead": "En un día difícil pueden convivir una carga real y algo recibido con gratitud. Lee el pasaje dejando espacio para ambos.",
+    "plate": "plate-kind-poetry",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "¿Qué dice el pasaje sobre la gratitud?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "En 1 Tesalonicenses 5:16–18 aparecen juntos el gozo, la oración y la gratitud. La instrucción es breve, pero pertenece a una serie más amplia sobre la vida de la comunidad. Leer el párrafo completo permite considerar la gratitud junto al cuidado de otras personas."
+          },
+          {
+            "type": "passage",
+            "source": "es-1TH-5-16-18.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Estos versículos invitan a una práctica continua de oración y agradecimiento. No explican la causa de cada acontecimiento doloroso. Al reflexionar, evita afirmar que conoces por qué ocurrió una dificultad o que alguien debe sentirse feliz por ella."
+          }
+        ]
+      },
+      {
+        "id": "care-in-the-context",
+        "title": "Observa el cuidado que rodea estas palabras",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Antes de hablar del gozo y la gratitud, el párrafo invita a animar a los desalentados, ayudar a los débiles y tener paciencia con todos. También rechaza devolver mal por mal y llama a buscar el bien. Las personas y sus necesidades siguen presentes."
+          },
+          {
+            "type": "passage",
+            "source": "es-1TH-5-14-22.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Este contexto cambia una conversación corriente. Si alguien te cuenta que tuvo un día difícil, pasar directamente a exigir gratitud puede omitir la escucha y el apoyo que pide el mismo pasaje. Puedes tomar en serio su dificultad y, si quiere, abrir juntos un espacio para agradecer."
+          }
+        ]
+      },
+      {
+        "id": "honest-notes",
+        "title": "Escribe dos notas honestas",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Prueba escribir dos frases. La primera nombra una dificultad sin maquillarla: una conversación pendiente, un plan frustrado o una tarea sin terminar. La segunda nombra un regalo concreto: un mensaje de amistad, ayuda con una tarea, una comida tranquila o alguien que escuchó."
+          },
+          {
+            "type": "paragraph",
+            "text": "La segunda frase no cancela la primera. No necesitas comparar tu carga con la de otra persona ni discutir contigo para sentirte mejor. Las palabras concretas conectan la oración con el día que realmente viviste."
+          },
+          {
+            "type": "paragraph",
+            "text": "Si ahora no puedes identificar un regalo, empieza por la primera frase y pide ayuda para observar. Este ejercicio es una invitación, no una prueba de que tengas suficiente fe."
+          }
+        ]
+      },
+      {
+        "id": "bring-both-to-prayer",
+        "title": "Lleva las dos cosas a la oración",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Usa ambas frases como comienzo. Habla con sencillez de lo difícil, agradece lo recibido y pide lo que necesitas. La propuesta siguiente es una invitación original a orar, no una cita bíblica ni una fórmula obligatoria."
+          },
+          {
+            "type": "practice",
+            "title": "Una invitación a orar con honestidad",
+            "items": [
+              "Nombra la dificultad ante Dios.",
+              "Da gracias por un regalo concreto.",
+              "Pide sabiduría, fuerzas o ayuda para el siguiente paso."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "El párrafo también dirige la atención hacia afuera. Piensa si agradecer una ayuda puede convertirse en un mensaje, o si tu experiencia te permite observar a alguien que necesita ánimo. Una pequeña acción da lugar a la reflexión en tu día."
+          }
+        ]
+      },
+      {
+        "id": "return-to-the-text",
+        "title": "Vuelve al texto sin forzar un resultado",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lee de nuevo 1 Tesalonicenses 5:14–22 y elige una instrucción para acompañarte. Puede ser orar, agradecer, tener paciencia o cuidar de alguien débil. No tienes que completar todas las respuestas posibles en una noche."
+          },
+          {
+            "type": "paragraph",
+            "text": "La lectura bíblica y la Oración de la hora de Bible Answer pueden ayudarte a volver a la Escritura y la oración. Este ejercicio también vale por sí mismo; no depende de un estado de ánimo, una racha ni una función de la app."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wisdom",
+    "lang": "es",
+    "slug": "pedir-sabiduria-para-tomar-decisiones",
+    "title": "Pedir sabiduría antes de decidir",
+    "seo_title": "Cómo pedir sabiduría a Dios para tomar decisiones",
+    "description": "Lee Santiago 1:2–8 en contexto y reflexiona sobre una decisión con oración, motivos honestos y una pregunta práctica que puedas investigar.",
+    "category": "Decisiones",
+    "lead": "Cuando una decisión pesa, empieza con una petición de sabiduría y una pregunta concreta sobre el siguiente paso.",
+    "plate": "plate-gate",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Comienza con la invitación a pedir",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Santiago 1:5 invita a quien necesita sabiduría a pedírsela a Dios. Presenta a Dios como generoso, dispuesto a dar sin reproches. Cuando no estás seguro, puedes llevar esa necesidad a la oración sin fingir que ya sabes."
+          },
+          {
+            "type": "passage",
+            "source": "es-JAS-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "El versículo no señala un empleo, lugar, relación o plazo concreto. Aplicarlo a una decisión exige cuidado. Pedir sabiduría no equivale a afirmar que la primera sensación después de orar revela la única opción aceptable."
+          }
+        ]
+      },
+      {
+        "id": "trials-and-faith",
+        "title": "Lee la invitación dentro de Santiago 1:2–8",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El párrafo comienza con las pruebas, la fe puesta a prueba y la perseverancia. Allí aparece la petición de sabiduría. Los versículos siguientes hablan de pedir con fe y advierten sobre una disposición dividida e inestable. Todo esto acompaña al versículo 5."
+          },
+          {
+            "type": "passage",
+            "source": "es-JAS-1-2-8.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "El contexto va más allá del deseo de una respuesta rápida. Invita a considerar cómo afrontamos las dificultades y en quién confiamos. No conviertas la advertencia en un diagnóstico apresurado de la incertidumbre ajena. Una pregunta práctica pendiente no explica por sí sola toda la fe de alguien."
+          }
+        ]
+      },
+      {
+        "id": "name-the-decision",
+        "title": "Nombra la decisión antes de buscar certeza",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Una pregunta amplia sobre qué hacer con tu vida puede contener varias preguntas menores. Escribe la decisión que realmente debes tomar ahora. Distingue lo que sabes de lo que supones. Por ejemplo, puedes saber que hay dos opciones y aún necesitar preguntar por sus responsabilidades cotidianas."
+          },
+          {
+            "type": "paragraph",
+            "text": "Observa qué aspectos son principios, cuáles son hechos investigables y cuáles implican preferencias o concesiones. Es un ejercicio editorial para una elección cotidiana, no una promesa de que toda decisión se resuelva con una lista."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Expresa la elección presente en una frase.",
+              "Anota un hecho relevante que conozcas y una pregunta sin responder.",
+              "Identifica quién o qué puede ayudarte a responderla."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prayer-and-information",
+        "title": "Deja que la oración y la atención trabajen juntas",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lleva la decisión a la oración, incluidos los motivos que ya observas: cuidar de alguien, temer al fracaso, buscar aprobación o resistirte al cambio. Pide sabiduría sobre tu manera de elegir, además del resultado."
+          },
+          {
+            "type": "paragraph",
+            "text": "Después, da un paso práctico hacia la pregunta pendiente. Puedes pedir una aclaración, leer la información disponible o conversar con alguien que entienda la situación. Reúne lo que razonablemente pueda saberse antes de tratar una suposición como una señal."
+          },
+          {
+            "type": "paragraph",
+            "text": "A veces el siguiente paso es decidir; otras veces, aprender lo necesario para hacerlo responsablemente. El pasaje invita a pedir sabiduría a Dios en una vida de fe. Investigar es nuestra propuesta para prestar atención a una elección cotidiana."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Una pequeña reflexión antes de elegir",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Oración y una pregunta útil",
+            "items": [
+              "¿Qué le estoy pidiendo a Dios en esta decisión?",
+              "¿Qué motivo necesita una mirada honesta?",
+              "¿Qué información puedo buscar a continuación?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Vuelve a Santiago 1:2–8 después de escribir. Distingue sus palabras del plan que has preparado. Puedes dar un paso meditado sin presentar tu preferencia como una cita directa de Dios."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "start",
+    "lang": "pt",
+    "slug": "por-onde-comecar-a-ler-a-biblia",
+    "title": "Por onde começar a ler a Bíblia",
+    "seo_title": "Por onde começar a ler a Bíblia: guia para iniciantes",
+    "description": "Escolha uma primeira leitura da Bíblia, conheça o Evangelho de João e use quatro perguntas simples para entender uma passagem em seu contexto.",
+    "category": "Primeiros passos",
+    "lead": "Comece com um livro, uma passagem e uma pergunta para levar ao longo do dia. Você não precisa entender toda a Bíblia antes de começar.",
+    "plate": "plate-plan-john",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "first-book",
+        "title": "Escolha um primeiro livro que você consiga acompanhar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A Bíblia reúne diferentes formas de escrita: narrativas, poesia, cartas e outras. Ler desde a primeira página é uma possibilidade, mas não é o único começo útil. Para conhecer Jesus, um Evangelho oferece um foco claro. Você pode acompanhar pessoas, conversas e acontecimentos, em vez de passar entre versículos isolados."
+          },
+          {
+            "type": "paragraph",
+            "text": "O Evangelho de João é um começo possível. Perto do final, o autor explica por que registrou aqueles sinais. Isso oferece uma pergunta para acompanhar o livro inteiro: o que o relato mostra sobre Jesus e como convida quem lê a responder?"
+          },
+          {
+            "type": "passage",
+            "source": "pt-JHN-20-30-31.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Essa é uma sugestão, não uma ordem obrigatória. Se uma igreja ou alguém de confiança indicou outro plano, você pode usar as mesmas perguntas com ele. Escolha um ritmo que permita perceber o que o texto realmente diz."
+          }
+        ]
+      },
+      {
+        "id": "first-reading",
+        "title": "Experimente João 1:1–5 na primeira leitura",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Leia o início devagar. A linguagem apresenta a Palavra, Deus, a criação, a vida e a luz. Algumas ideias ficarão mais claras conforme você continuar. Anote uma pergunta, em vez de exigir uma explicação imediata para cada expressão."
+          },
+          {
+            "type": "passage",
+            "source": "pt-JHN-1-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "O número de um versículo ajuda a localizar uma frase; não indica que ela exista sozinha. Depois desses cinco versículos, continue pelo restante de João 1. Observe como o início se liga às pessoas e aos acontecimentos seguintes. Você pode voltar a uma expressão difícil depois de conhecer mais do capítulo."
+          }
+        ]
+      },
+      {
+        "id": "reading-questions",
+        "title": "Faça quatro perguntas antes de aplicar a passagem",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Observe: quais palavras, pessoas, ações ou contrastes estão realmente no texto?",
+              "Situe: quem fala e o que acontece imediatamente antes e depois?",
+              "Pergunte: o que está claro e qual dúvida precisa de mais leitura ou ajuda?",
+              "Responda: que pequeno passo nasce da passagem, em vez de uma ideia que você já trouxe?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Separe observação e reflexão nas anotações. O texto, por exemplo, usa a imagem da luz. Uma reflexão pessoal pode tratar de onde você precisa de orientação hoje. Ela pode ser significativa sem afirmar que o versículo prevê o resultado de uma escolha específica."
+          }
+        ]
+      },
+      {
+        "id": "small-plan",
+        "title": "Monte um plano pequeno ao qual você possa voltar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Para uma primeira semana simples, leia João 1 a João 7 em ordem, um capítulo por leitura. Se um capítulo for longo para uma sessão, pare ao terminar um parágrafo e retome dali. Essas sete leituras são uma sugestão editorial, não um plano específico prometido dentro do app."
+          },
+          {
+            "type": "paragraph",
+            "text": "Depois de cada leitura, anote uma observação e uma pergunta. No fim da semana, revise antes de acrescentar outro livro. Qual dúvida o capítulo seguinte ajudou a responder? Qual você gostaria de conversar com alguém? Perder um dia não exige recomeçar toda a sequência."
+          },
+          {
+            "type": "practice",
+            "title": "Para sua próxima leitura",
+            "items": [
+              "Abra João 1 e leia o primeiro parágrafo duas vezes.",
+              "Nomeie algo que a passagem diz sobre a Palavra.",
+              "Continue lendo e mantenha uma pergunta em aberto."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-the-guide",
+        "title": "Use um guia quando o texto parecer desconhecido",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Uma apresentação do livro ajuda a se localizar. Um mapa esclarece um lugar; um glossário, uma palavra desconhecida. Use essas ferramentas para voltar à passagem com uma pergunta mais clara. Elas funcionam melhor junto ao texto que você lê."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer reúne a leitura da Bíblia, o Guia e os planos de leitura. Ao usar uma interpretação ou reflexão devocional, compare com a passagem completa. A citação, seu contexto e sua resposta pessoal são três coisas que vale a pena distinguir."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "forgiveness",
+    "lang": "pt",
+    "slug": "perdao-depois-do-pedido-de-desculpas",
+    "title": "O que vem depois de pedir desculpas?",
+    "seo_title": "Perdão na Bíblia: depois do pedido de desculpas",
+    "description": "Leia Efésios 4:25–32 em contexto e reflita sobre pedir desculpas, reparar o dano e reconstruir a confiança com perguntas para uma conversa real.",
+    "category": "Perdão",
+    "lead": "Um pedido de desculpas pode abrir uma conversa. Efésios 4 ajuda a pensar nas palavras e nas ações que vêm depois.",
+    "plate": "plate-script",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Uma resposta breve em Efésios 4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Efésios 4:32 relaciona o perdão com bondade e compaixão, fundamentando-o no perdão de Deus em Cristo. O parágrafo também fala de verdade, ira, trabalho e palavras. Juntas, essas orientações convidam a considerar mais do que a presença de um pedido de desculpas."
+          },
+          {
+            "type": "passage",
+            "source": "pt-EPH-4-32.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "A passagem não fornece um roteiro para toda relação ferida. Ela convida a uma maneira de tratar as pessoas. Pedir desculpas pode fazer parte desse caminho quando reconhece honestamente o erro, escuta seu efeito e inicia uma mudança adequada."
+          }
+        ]
+      },
+      {
+        "id": "read-the-context",
+        "title": "Leia o parágrafo ao redor do versículo",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Em Efésios 4:25–32, a verdade substitui a mentira. Quem roubava deve parar, trabalhar e poder repartir. As palavras são avaliadas pelo bem que fazem a quem escuta. São mudanças de comportamento, além de mudanças na fala."
+          },
+          {
+            "type": "passage",
+            "source": "pt-EPH-4-25-32.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Esse contexto importa quando pensamos em um pedido de desculpas. A orientação sobre roubar é específica, não uma lista universal para todo conflito. Mesmo assim, mostra um movimento de uma ação prejudicial para outra diferente. Podemos perguntar como esse movimento seria na situação que enfrentamos."
+          }
+        ]
+      },
+      {
+        "id": "name-your-part",
+        "title": "Reconheça sua parte sem decidir a reação da outra pessoa",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine que você desconsiderou uma preocupação numa conversa familiar. Lamentar apenas que a outra pessoa tenha ficado chateada não nomeia sua conduta. Você pode descrever o que fez, reconhecer por que machucou e perguntar se entendeu a preocupação. São exemplos cotidianos de comunicação, não citações da passagem."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mantenha a explicação proporcional. O contexto ajuda a esclarecer um fato, mas também pode virar um argumento longo para que a outra pessoa deixe de se sentir magoada. Escute antes de explicar novamente. O efeito de suas palavras pode ter sido diferente de sua intenção."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Nomeie a ação pela qual você é responsável.",
+              "Escute o que a outra pessoa precisa que você entenda.",
+              "Ofereça uma mudança ou reparação concreta que corresponda à ação."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "repair-and-trust",
+        "title": "Dê uma forma concreta à reparação",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Reparar pode significar corrigir uma afirmação falsa, devolver algo, respeitar um limite combinado ou mudar a próxima conversa. Escolha algo que você consiga cumprir. Uma promessa impressionante é menos útil do que uma ação modesta que você realmente possa realizar."
+          },
+          {
+            "type": "paragraph",
+            "text": "Perdão, reconciliação e confiança restaurada estão relacionados, mas descrevem coisas diferentes. Não use o versículo para exigir acesso imediato a alguém nem para decidir quando a pessoa deve se sentir segura com você. A confiança envolve o que acontece ao longo do tempo. Bondade pode incluir respeitar o espaço que alguém pede."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Uma pergunta para hoje",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Depois do pedido de desculpas",
+            "items": [
+              "Qual ação reconheci claramente?",
+              "O que ouvi sem tentar corrigir a reação da outra pessoa?",
+              "Que reparação posso oferecer e cumprir?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Volte a Efésios 4:25–32 antes de encerrar a conversa em sua mente. Pergunte qual orientação se relaciona com sua parte: palavras verdadeiras, fala que ajuda, abandono da maldade ou bondade. Comece por aí, sem usar a passagem para avaliar a outra pessoa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "lang": "pt",
+    "slug": "gratidao-em-um-dia-dificil",
+    "title": "Gratidão em um dia difícil",
+    "seo_title": "Gratidão na Bíblia: agradecer em um dia difícil",
+    "description": "Leia 1 Tessalonicenses 5:14–22 e veja como gratidão, oração, paciência e cuidado caminham juntos, sem apagar as dificuldades de um dia.",
+    "category": "Oração e gratidão",
+    "lead": "Um dia difícil pode conter uma carga real e algo recebido com gratidão. Leia a passagem deixando espaço para ambos.",
+    "plate": "plate-kind-poetry",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "O que a passagem diz sobre gratidão?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Em 1 Tessalonicenses 5:16–18, alegria, oração e gratidão aparecem juntas. A orientação é breve, mas pertence a uma série maior sobre a vida da comunidade. Ler o parágrafo inteiro permite considerar a gratidão junto ao cuidado com outras pessoas."
+          },
+          {
+            "type": "passage",
+            "source": "pt-1TH-5-16-18.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Esses versículos convidam a uma prática contínua de oração e agradecimento. Não explicam a causa de cada acontecimento doloroso. Ao refletir, evite afirmar que sabe por que uma dificuldade ocorreu ou que alguém deve se sentir feliz por ela."
+          }
+        ]
+      },
+      {
+        "id": "care-in-the-context",
+        "title": "Observe o cuidado ao redor dessas palavras",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Antes das orientações sobre alegria e gratidão, o parágrafo fala de encorajar os desanimados, ajudar os fracos e ter paciência com todos. Também rejeita devolver mal por mal e chama a buscar o bem. As pessoas e suas necessidades continuam em vista."
+          },
+          {
+            "type": "passage",
+            "source": "pt-1TH-5-14-22.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Esse contexto muda uma conversa comum. Se alguém conta que teve um dia difícil, exigir gratidão imediatamente pode pular a escuta e o apoio que a mesma passagem pede. Você pode levar a dificuldade a sério e, se a pessoa quiser, abrir espaço para agradecer junto."
+          }
+        ]
+      },
+      {
+        "id": "honest-notes",
+        "title": "Faça duas anotações honestas",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Experimente escrever duas frases. A primeira nomeia uma dificuldade sem enfeitar: uma conversa pendente, um plano que não deu certo ou uma tarefa inacabada. A segunda nomeia um presente concreto: mensagem de um amigo, ajuda com uma tarefa, uma refeição tranquila ou alguém que ouviu."
+          },
+          {
+            "type": "paragraph",
+            "text": "A segunda frase não cancela a primeira. Não é preciso comparar seu peso com o de outra pessoa nem discutir consigo para se animar. Palavras específicas ligam a oração ao dia que você realmente viveu."
+          },
+          {
+            "type": "paragraph",
+            "text": "Se não consegue identificar um presente agora, comece pela primeira frase e peça ajuda para perceber. Trate o exercício como um convite, não como teste de ter fé suficiente."
+          }
+        ]
+      },
+      {
+        "id": "bring-both-to-prayer",
+        "title": "Leve as duas coisas à oração",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Use as duas frases como começo. Fale com simplicidade sobre a dificuldade, agradeça o que recebeu e peça o que precisa. A proposta abaixo é um convite original à oração, não uma citação bíblica nem uma fórmula obrigatória."
+          },
+          {
+            "type": "practice",
+            "title": "Um convite à oração honesta",
+            "items": [
+              "Nomeie a dificuldade diante de Deus.",
+              "Agradeça um presente específico.",
+              "Peça sabedoria, forças ou ajuda para o próximo passo."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "O parágrafo também dirige a atenção para fora. Pense se agradecer uma ajuda pode se tornar uma mensagem ou se sua experiência ajuda a notar alguém que precisa de encorajamento. Uma pequena ação dá lugar à reflexão no seu dia."
+          }
+        ]
+      },
+      {
+        "id": "return-to-the-text",
+        "title": "Volte ao texto sem forçar um resultado",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Leia 1 Tessalonicenses 5:14–22 novamente e escolha uma orientação para levar consigo. Pode ser oração, gratidão, paciência ou cuidado com alguém fraco. Você não precisa cumprir todas as respostas possíveis numa noite."
+          },
+          {
+            "type": "paragraph",
+            "text": "A leitura bíblica e a Oração da hora de Bible Answer ajudam a voltar à Escritura e à oração. O exercício também vale por si: não depende de humor, sequência diária ou recurso do app."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wisdom",
+    "lang": "pt",
+    "slug": "pedir-sabedoria-para-tomar-decisoes",
+    "title": "Pedir sabedoria antes de decidir",
+    "seo_title": "Como pedir sabedoria a Deus para tomar decisões",
+    "description": "Leia Tiago 1:2–8 em contexto e reflita sobre uma decisão com oração, atenção aos seus motivos e uma pergunta prática para investigar.",
+    "category": "Decisões",
+    "lead": "Quando uma decisão pesa, comece com um pedido de sabedoria e uma pergunta concreta sobre o próximo passo.",
+    "plate": "plate-gate",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Comece com o convite a pedir",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Tiago 1:5 convida quem precisa de sabedoria a pedir a Deus. Apresenta Deus como generoso, disposto a dar sem censurar. Quando você está inseguro, pode levar essa necessidade à oração, em vez de fingir que já sabe."
+          },
+          {
+            "type": "passage",
+            "source": "pt-JAS-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "O versículo não aponta um emprego, lugar, relacionamento ou prazo específico. Aplicá-lo a uma decisão exige cuidado. Pedir sabedoria não equivale a afirmar que a primeira sensação depois da oração revela a única opção aceitável."
+          }
+        ]
+      },
+      {
+        "id": "trials-and-faith",
+        "title": "Leia o convite dentro de Tiago 1:2–8",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "O parágrafo começa com provações, a fé sendo testada e a perseverança. O pedido de sabedoria aparece nessa conversa. Os versículos seguintes tratam de pedir com fé e alertam para uma postura dividida e instável. Tudo isso acompanha o versículo 5."
+          },
+          {
+            "type": "passage",
+            "source": "pt-JAS-1-2-8.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Esse contexto vai além do desejo de uma resposta rápida. Convida a pensar em como enfrentamos a dificuldade e em quem confiamos. Não transforme o alerta num diagnóstico apressado da insegurança de outra pessoa. Uma pergunta prática pendente não explica toda a fé de alguém."
+          }
+        ]
+      },
+      {
+        "id": "name-the-decision",
+        "title": "Nomeie a decisão antes de procurar certeza",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Uma pergunta ampla sobre o que fazer da vida pode conter várias perguntas menores. Escreva a decisão que precisa tomar agora. Separe o que sabe do que supõe. Você pode saber que há duas opções e ainda precisar perguntar pelas responsabilidades cotidianas de cada uma."
+          },
+          {
+            "type": "paragraph",
+            "text": "Observe o que envolve princípios, o que são fatos investigáveis e o que envolve preferências ou concessões. É um exercício editorial para uma escolha cotidiana, não uma promessa de que toda decisão possa ser resolvida com uma lista."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Expresse a escolha presente numa frase.",
+              "Anote um fato relevante conhecido e uma pergunta ainda sem resposta.",
+              "Identifique quem ou o que pode ajudar a responder à pergunta."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prayer-and-information",
+        "title": "Deixe oração e atenção trabalharem juntas",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Leve a decisão à oração, incluindo os motivos que já percebe: cuidar de alguém, medo de fracassar, desejo de aprovação ou resistência à mudança. Peça sabedoria sobre sua maneira de escolher, além do resultado."
+          },
+          {
+            "type": "paragraph",
+            "text": "Depois, dê à pergunta pendente um próximo passo prático. Peça esclarecimento, leia a informação disponível ou converse com alguém que conhece a situação. Reúna o que pode ser razoavelmente conhecido antes de tratar uma suposição como sinal."
+          },
+          {
+            "type": "paragraph",
+            "text": "Às vezes, o próximo passo é decidir; outras vezes, aprender o necessário para decidir com responsabilidade. A passagem convida a pedir sabedoria a Deus numa vida de fé. Investigar é nossa sugestão para prestar atenção a uma escolha cotidiana."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Uma pequena reflexão antes de escolher",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Oração e uma pergunta útil",
+            "items": [
+              "O que estou pedindo a Deus nesta decisão?",
+              "Qual motivo precisa de um olhar honesto?",
+              "Que informação posso buscar a seguir?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Volte a Tiago 1:2–8 depois de escrever. Distinga as palavras do texto do plano que você preparou. Você pode dar um passo ponderado sem apresentar sua preferência como uma citação direta de Deus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "start",
+    "lang": "fr",
+    "slug": "par-ou-commencer-a-lire-la-bible",
+    "title": "Par où commencer à lire la Bible ?",
+    "seo_title": "Par où commencer à lire la Bible : guide pour débutants",
+    "description": "Choisis une première lecture de la Bible, découvre l’Évangile de Jean et utilise quatre questions simples pour comprendre un passage dans son contexte.",
+    "category": "Premiers pas",
+    "lead": "Commence par un livre, un passage et une question à garder dans ta journée. Tu n’as pas besoin de comprendre toute la Bible avant de commencer.",
+    "plate": "plate-plan-john",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "first-book",
+        "title": "Choisis un premier livre que tu peux suivre",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "La Bible rassemble plusieurs formes d’écriture : récits, poésie, lettres et d’autres encore. Lire depuis la première page est une possibilité, mais pas le seul début utile. Pour connaître Jésus, un Évangile offre un point de départ clair. Tu peux suivre ses personnages, ses conversations et ses événements plutôt que passer entre des versets isolés."
+          },
+          {
+            "type": "paragraph",
+            "text": "L’Évangile de Jean est un début possible. Vers la fin, l’auteur explique pourquoi il a rapporté ces signes. Cela donne une question pour accompagner tout le livre : que montre ce récit sur Jésus et comment invite-t-il son lecteur à répondre ?"
+          },
+          {
+            "type": "passage",
+            "source": "fr-JHN-20-30-31.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "C’est une proposition, pas un ordre obligatoire. Si une Église ou une personne de confiance t’a proposé un autre parcours, tu peux utiliser les mêmes questions. Choisis un rythme qui te laisse remarquer ce que le texte dit réellement."
+          }
+        ]
+      },
+      {
+        "id": "first-reading",
+        "title": "Essaie Jean 1:1–5 comme première lecture",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lis le début lentement. Son langage présente la Parole, Dieu, la création, la vie et la lumière. Certaines idées deviendront plus claires en avançant. Note une question plutôt que chercher une explication immédiate pour chaque expression."
+          },
+          {
+            "type": "passage",
+            "source": "fr-JHN-1-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Le numéro d’un verset aide à retrouver une phrase ; il ne signifie pas qu’elle existe seule. Après ces cinq versets, continue le reste de Jean 1. Observe comment le début rejoint les personnes et les événements suivants. Tu peux revenir à une expression difficile après avoir lu davantage du chapitre."
+          }
+        ]
+      },
+      {
+        "id": "reading-questions",
+        "title": "Pose quatre questions avant d’appliquer le passage",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Observe : quels mots, personnages, actes ou contrastes sont réellement dans le texte ?",
+              "Situe : qui parle et que trouve-t-on juste avant et après ?",
+              "Interroge : qu’est-ce qui est clair et quelle question demande plus de lecture ou d’aide ?",
+              "Réponds : quel petit pas vient du passage plutôt que d’une idée que tu y apportais ?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Distingue l’observation de la réflexion dans tes notes. Le texte utilise, par exemple, l’image de la lumière. Une réflexion personnelle peut concerner le domaine où tu cherches une direction aujourd’hui. Elle peut être utile sans affirmer que le verset prédit le résultat d’un choix particulier."
+          }
+        ]
+      },
+      {
+        "id": "small-plan",
+        "title": "Prépare un petit parcours auquel revenir",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Pour une première semaine simple, lis Jean 1 à Jean 7 dans l’ordre, un chapitre par lecture. Si un chapitre est trop long pour une séance, arrête-toi à la fin d’un paragraphe et reprends là. Ces sept lectures sont une proposition éditoriale, pas un parcours précis promis dans l’app."
+          },
+          {
+            "type": "paragraph",
+            "text": "Après chaque lecture, note une observation et une question. À la fin de la semaine, relis tes notes avant d’ajouter un livre. Quelle question le chapitre suivant a-t-il éclairée ? Laquelle aimerais-tu discuter avec quelqu’un ? Manquer un jour ne t’oblige pas à tout recommencer."
+          },
+          {
+            "type": "practice",
+            "title": "Pour ta prochaine lecture",
+            "items": [
+              "Ouvre Jean 1 et lis deux fois le premier paragraphe.",
+              "Nomme une chose que le passage dit sur la Parole.",
+              "Continue à lire et garde une question ouverte."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-the-guide",
+        "title": "Utilise un guide quand le texte paraît peu familier",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Une présentation du livre aide à se repérer. Une carte éclaire un lieu ; un glossaire, un mot inconnu. Utilise ces outils pour revenir au passage avec une question plus claire. Ils sont surtout utiles à côté du texte que tu lis."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer réunit la lecture de la Bible, le Guide et les plans de lecture. Quand tu utilises une interprétation ou une réflexion spirituelle, compare-la au passage complet. La citation, son contexte et ta réponse personnelle sont trois choses à garder distinctes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "forgiveness",
+    "lang": "fr",
+    "slug": "pardon-apres-les-excuses",
+    "title": "Que vient-il après les excuses ?",
+    "seo_title": "Le pardon dans la Bible : que faire après les excuses ?",
+    "description": "Lis Éphésiens 4:25–32 dans son contexte et réfléchis aux excuses, à la réparation et à la confiance avec des questions pour une conversation réelle.",
+    "category": "Pardon",
+    "lead": "Des excuses peuvent ouvrir une conversation. Éphésiens 4 nous aide à réfléchir aux paroles et aux actes qui suivent.",
+    "plate": "plate-script",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Une réponse brève dans Éphésiens 4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Éphésiens 4:32 relie le pardon à la bonté et à la compassion, en le fondant sur le pardon de Dieu en Christ. Le paragraphe parle aussi de vérité, de colère, de travail et de paroles. Ensemble, ces instructions invitent à considérer davantage que le simple fait d’avoir présenté des excuses."
+          },
+          {
+            "type": "passage",
+            "source": "fr-EPH-4-32.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Le passage ne fournit pas un scénario pour toute relation blessée. Il invite à une manière de traiter les personnes. Des excuses peuvent en faire partie lorsqu’elles nomment honnêtement le tort, écoutent son effet et commencent un changement approprié."
+          }
+        ]
+      },
+      {
+        "id": "read-the-context",
+        "title": "Lis le paragraphe autour du verset",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dans Éphésiens 4:25–32, la vérité remplace le mensonge. Celui qui volait est appelé à arrêter, à travailler et à pouvoir partager. Les paroles sont évaluées selon l’aide qu’elles apportent à celui qui écoute. Ce sont des changements de conduite autant que de langage."
+          },
+          {
+            "type": "passage",
+            "source": "fr-EPH-4-25-32.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Ce contexte compte lorsqu’on réfléchit à des excuses. L’instruction sur le vol est précise ; elle n’est pas une liste universelle pour tous les conflits. Elle montre néanmoins un mouvement d’un acte nuisible vers un acte différent. On peut demander à quoi ce mouvement ressemblerait dans notre situation réelle."
+          }
+        ]
+      },
+      {
+        "id": "name-your-part",
+        "title": "Reconnais ta part sans décider de la réaction de l’autre",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine que tu as écarté une inquiétude dans une conversation familiale. Regretter seulement que l’autre se soit vexé laisse ta conduite sans nom. Tu peux décrire ton acte, reconnaître pourquoi il a blessé et demander si tu as compris l’inquiétude. Ce sont des exemples ordinaires de communication, pas des citations du passage."
+          },
+          {
+            "type": "paragraph",
+            "text": "Garde l’explication proportionnée. Le contexte peut éclairer un événement, mais aussi devenir un long argument pour que l’autre cesse de se sentir blessé. Écoute avant d’ajouter une explication. L’effet de tes paroles a peut-être différé de ton intention."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Nomme l’acte dont tu es responsable.",
+              "Écoute ce que l’autre souhaite que tu comprennes.",
+              "Propose un changement ou une réparation concrète correspondant à cet acte."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "repair-and-trust",
+        "title": "Donne une forme concrète à la réparation",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Réparer peut signifier corriger une affirmation fausse, rendre quelque chose, respecter une limite convenue ou changer la prochaine conversation. Choisis une action que tu peux tenir. Une promesse impressionnante est moins utile qu’un geste modeste réellement possible."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pardon, réconciliation et confiance retrouvée sont liés, mais différents. N’utilise pas le verset pour exiger un accès immédiat à quelqu’un ni pour décider quand il doit se sentir en sécurité avec toi. La confiance concerne ce qui arrive dans la durée. La bonté peut respecter le temps et l’espace demandés."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Une question pour aujourd’hui",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Après les excuses",
+            "items": [
+              "Quel acte ai-je clairement reconnu ?",
+              "Qu’ai-je entendu sans chercher à corriger la réaction de l’autre ?",
+              "Quelle réparation puis-je proposer et tenir ?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Reviens à Éphésiens 4:25–32 avant de clore mentalement la conversation. Demande quelle instruction concerne ta part : la vérité, des paroles utiles, l’abandon de la malveillance ou la bonté. Commence là, plutôt qu’utiliser le passage pour évaluer l’autre."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "lang": "fr",
+    "slug": "gratitude-dans-une-journee-difficile",
+    "title": "La gratitude dans une journée difficile",
+    "seo_title": "La gratitude dans la Bible : remercier un jour difficile",
+    "description": "Lis 1 Thessaloniciens 5:14–22 et découvre comment gratitude, prière, patience et attention aux autres peuvent accompagner une journée difficile.",
+    "category": "Prière et gratitude",
+    "lead": "Une journée difficile peut contenir une peine réelle et quelque chose reçu avec gratitude. Lis le passage en faisant place aux deux.",
+    "plate": "plate-kind-poetry",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Que dit le passage sur la gratitude ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dans 1 Thessaloniciens 5:16–18, joie, prière et gratitude apparaissent ensemble. L’instruction est brève, mais appartient à une série plus large sur la vie de la communauté. Lire tout le paragraphe permet de considérer la gratitude avec l’attention aux autres."
+          },
+          {
+            "type": "passage",
+            "source": "fr-1TH-5-16-18.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Ces versets invitent à une pratique continue de prière et de reconnaissance. Ils n’expliquent pas la cause de chaque événement douloureux. Évite d’ajouter que tu sais pourquoi une épreuve précise est arrivée ou qu’une personne devrait s’en réjouir."
+          }
+        ]
+      },
+      {
+        "id": "care-in-the-context",
+        "title": "Remarque l’attention autour de ces paroles",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Avant la joie et la gratitude, le paragraphe parle d’encourager les personnes abattues, d’aider les faibles et d’être patient envers tous. Il refuse aussi de rendre le mal pour le mal et appelle à chercher le bien. Les personnes et leurs besoins restent présents."
+          },
+          {
+            "type": "passage",
+            "source": "fr-1TH-5-14-22.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Ce contexte change une conversation ordinaire. Si quelqu’un raconte une journée pénible, demander immédiatement de remercier peut oublier l’écoute et le soutien appelés par le même passage. Tu peux prendre sa difficulté au sérieux et, s’il le souhaite, faire place à la gratitude ensemble."
+          }
+        ]
+      },
+      {
+        "id": "honest-notes",
+        "title": "Écris deux notes honnêtes",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Essaie deux phrases. La première nomme une difficulté sans l’arranger : une conversation inachevée, un projet manqué ou une tâche encore ouverte. La seconde nomme un don précis : un message amical, de l’aide, un repas calme ou une personne qui a écouté."
+          },
+          {
+            "type": "paragraph",
+            "text": "La seconde phrase n’annule pas la première. Tu n’as pas besoin de comparer ta peine à celle de quelqu’un ni de te convaincre d’être de meilleure humeur. Des mots précis relient la prière à la journée réellement vécue."
+          },
+          {
+            "type": "paragraph",
+            "text": "Si tu ne vois aucun don pour l’instant, commence par la première phrase et demande de l’aide pour remarquer. Cet exercice est une invitation, pas un test pour savoir si ta foi suffit."
+          }
+        ]
+      },
+      {
+        "id": "bring-both-to-prayer",
+        "title": "Apporte les deux dans la prière",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Utilise les deux phrases pour commencer. Parle simplement de la difficulté, remercie pour ce que tu as reçu et demande ce dont tu as besoin. La proposition suivante est une invitation originale à prier, pas une citation biblique ni une formule obligatoire."
+          },
+          {
+            "type": "practice",
+            "title": "Une invitation à prier honnêtement",
+            "items": [
+              "Nomme la difficulté devant Dieu.",
+              "Remercie pour un don précis.",
+              "Demande sagesse, force ou aide pour le prochain pas."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Le paragraphe tourne aussi l’attention vers les autres. La gratitude pour une aide peut devenir un message de remerciement. Ton expérience peut te rendre attentif à quelqu’un qui a besoin d’encouragement. Un petit geste donne une place à la réflexion dans ta journée."
+          }
+        ]
+      },
+      {
+        "id": "return-to-the-text",
+        "title": "Reviens au texte sans forcer un résultat",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Relis 1 Thessaloniciens 5:14–22 et choisis une instruction à garder près de toi : prière, reconnaissance, patience ou aide à une personne faible. Tu n’as pas à accomplir toutes les réponses possibles en une soirée."
+          },
+          {
+            "type": "paragraph",
+            "text": "La lecture biblique et la Prière de l’heure de Bible Answer aident à revenir à l’Écriture et à la prière. L’exercice vaut aussi par lui-même ; il ne dépend pas d’une humeur, d’une série de jours ou d’une fonction de l’app."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wisdom",
+    "lang": "fr",
+    "slug": "demander-la-sagesse-pour-decider",
+    "title": "Demander la sagesse avant de décider",
+    "seo_title": "Comment demander à Dieu la sagesse pour une décision",
+    "description": "Lis Jacques 1:2–8 dans son contexte et examine une décision avec la prière, un regard honnête sur tes motifs et une question concrète à explorer.",
+    "category": "Décisions",
+    "lead": "Quand une décision pèse, commence par une demande de sagesse et une question précise sur le prochain pas.",
+    "plate": "plate-gate",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Commence par l’invitation à demander",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Jacques 1:5 invite celui qui manque de sagesse à la demander à Dieu. Il présente Dieu comme généreux, prêt à donner sans reproche. Quand tu hésites, tu peux apporter ce manque à la prière au lieu de prétendre savoir déjà."
+          },
+          {
+            "type": "passage",
+            "source": "fr-JAS-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Le verset ne désigne pas un emploi, un lieu, une relation ou un calendrier précis. L’appliquer à une décision demande du soin. Demander la sagesse ne signifie pas que la première impression après la prière révèle la seule option acceptable."
+          }
+        ]
+      },
+      {
+        "id": "trials-and-faith",
+        "title": "Lis l’invitation dans Jacques 1:2–8",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Le paragraphe commence par les épreuves, la foi éprouvée et la persévérance. La demande de sagesse apparaît dans cette discussion. Les versets suivants parlent de demander avec foi et avertissent d’une attitude divisée et instable. Tout cela accompagne le verset 5."
+          },
+          {
+            "type": "passage",
+            "source": "fr-JAS-1-2-8.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Ce contexte dépasse le désir d’une réponse rapide. Il invite à considérer notre manière d’affronter les difficultés et de placer notre confiance. Ne fais pas de l’avertissement un diagnostic rapide de l’incertitude d’autrui. Une question pratique sans réponse ne dit pas tout de la foi d’une personne."
+          }
+        ]
+      },
+      {
+        "id": "name-the-decision",
+        "title": "Nomme la décision avant de chercher la certitude",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Une question vaste sur quoi faire de ta vie peut contenir plusieurs petites questions. Écris le choix que tu dois faire maintenant. Sépare ce que tu sais de ce que tu supposes. Tu peux savoir que deux options existent tout en devant demander leurs responsabilités quotidiennes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Remarque ce qui relève d’un principe, d’un fait à vérifier ou d’une préférence et d’un compromis. C’est un exercice éditorial pour un choix ordinaire, pas une promesse de résoudre toute décision avec une liste."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Exprime le choix présent en une phrase.",
+              "Note un fait pertinent connu et une question encore ouverte.",
+              "Identifie une personne ou une ressource pouvant éclairer cette question."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prayer-and-information",
+        "title": "Laisse la prière et l’attention travailler ensemble",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Apporte le choix à la prière, avec les motifs déjà visibles : prendre soin d’une personne, craindre l’échec, chercher l’approbation ou résister au changement. Demande la sagesse pour ta manière de choisir autant que pour son résultat."
+          },
+          {
+            "type": "paragraph",
+            "text": "Donne ensuite un pas concret à la question ouverte. Demande une précision, lis les informations disponibles ou parle à quelqu’un qui connaît la situation. Rassemble ce qu’on peut raisonnablement savoir avant de traiter une supposition comme un signe."
+          },
+          {
+            "type": "paragraph",
+            "text": "Parfois, le prochain pas est de décider ; parfois, d’apprendre assez pour décider de façon responsable. Le passage invite à demander la sagesse à Dieu dans une vie de foi. La recherche d’informations est notre proposition pour prêter attention à un choix quotidien."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Une petite réflexion avant de choisir",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "La prière et une question utile",
+            "items": [
+              "Que suis-je en train de demander à Dieu pour cette décision ?",
+              "Quel motif demande un regard honnête ?",
+              "Quelle information puis-je chercher maintenant ?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Reviens à Jacques 1:2–8 après avoir écrit. Distingue ses mots du plan que tu as préparé. Tu peux avancer de façon réfléchie sans présenter ta préférence comme une citation directe de Dieu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "start",
+    "lang": "fil",
+    "slug": "saan-magsisimulang-magbasa-ng-bibliya",
+    "title": "Saan magsisimulang magbasa ng Bibliya?",
+    "seo_title": "Paano magsimulang magbasa ng Bibliya: gabay sa baguhan",
+    "description": "Pumili ng unang babasahin sa Bibliya, kilalanin ang Ebanghelyo ni Juan, at gumamit ng apat na tanong upang maunawaan ang talata sa konteksto nito.",
+    "category": "Unang pagbabasa",
+    "lead": "Magsimula sa isang aklat, isang talata, at isang tanong na madadala mo sa araw mo. Hindi mo kailangang maunawaan ang buong Bibliya bago magsimula.",
+    "plate": "plate-plan-john",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "first-book",
+        "title": "Pumili ng unang aklat na kaya mong sundan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "May iba't ibang uri ng pagsulat sa Bibliya: mga salaysay, tula, liham, at iba pa. Maaari kang magsimula sa unang pahina, pero hindi iyon ang tanging makabuluhang simula. Kung gusto mong makilala si Jesus, malinaw na pokus ang isang Ebanghelyo. Masusundan mo ang mga tao, usapan, at pangyayari sa halip na palipat-lipat sa magkakahiwalay na talata."
+          },
+          {
+            "type": "paragraph",
+            "text": "Isang posibleng simula ang Ebanghelyo ni Juan. Malapit sa dulo, ipinaliliwanag ng sumulat kung bakit niya itinala ang mga tandang iyon. May tanong ka nang madadala sa buong aklat: ano ang ipinakikita ng salaysay tungkol kay Jesus, at paano nito inaanyayahan ang mambabasa na tumugon?"
+          },
+          {
+            "type": "passage",
+            "source": "fil-JHN-20-30-31.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Mungkahi ito, hindi sapilitang pagkakasunod-sunod. Kung may ibinigay na ibang plano ang iyong simbahan o isang taong pinagkakatiwalaan mo, magagamit mo pa rin ang parehong mga tanong. Pumili ng bilis na nagbibigay ng panahon upang mapansin ang aktuwal na sinasabi ng teksto."
+          }
+        ]
+      },
+      {
+        "id": "first-reading",
+        "title": "Subukan ang Juan 1:1–5 bilang unang babasahin",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Basahin nang dahan-dahan ang simula. Ipinapakilala ng wika nito ang Salita, Diyos, paglikha, buhay, at liwanag. May mga ideyang magiging mas malinaw habang nagpapatuloy ka. Isulat ang isang tanong sa halip na piliting ipaliwanag agad ang bawat parirala."
+          },
+          {
+            "type": "passage",
+            "source": "fil-JHN-1-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Tinutulungan ka ng numero ng talata na mahanap muli ang isang pangungusap; hindi nito sinasabing hiwalay iyon sa lahat. Pagkatapos ng limang talata, ituloy ang natitirang bahagi ng Juan 1. Pansinin ang ugnayan ng simula sa mga taong susunod. Maaari mong balikan ang mahirap na parirala matapos mabasa ang higit pa sa kabanata."
+          }
+        ]
+      },
+      {
+        "id": "reading-questions",
+        "title": "Magtanong ng apat na bagay bago isabuhay ang talata",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Magmasid: anong mga salita, tao, kilos, o paghahambing ang talagang nasa teksto?",
+              "Hanapin ang konteksto: sino ang nagsasalita, at ano ang nasa unahan at kasunod?",
+              "Magtanong: ano ang malinaw, at anong tanong ang nangangailangan ng pagbabasa o tulong?",
+              "Tumugon: anong maliit na hakbang ang nagmumula sa talata, sa halip na sa ideyang dala mo na?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Ihiwalay ang pagmamasid sa personal na pagninilay sa iyong mga tala. Halimbawa, gumagamit ang teksto ng larawan ng liwanag. Maaari mong pagnilayan kung saan ka nangangailangan ng gabay ngayon. Makabuluhan iyon kahit hindi mo sabihing hinuhulaan ng talata ang resulta ng isang partikular na pasiya."
+          }
+        ]
+      },
+      {
+        "id": "small-plan",
+        "title": "Bumuo ng maliit na planong mababalikan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Para sa isang simpleng unang linggo, basahin ang Juan 1 hanggang Juan 7 nang sunod-sunod, isang kabanata bawat pagbabasa. Kung mahaba iyon sa isang upuan, huminto sa dulo ng talataan at magpatuloy mula roon. Mungkahing pang-editoryal ang pitong babasahing ito, hindi isang tiyak na planong ipinapangako sa loob ng app."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pagkatapos ng pagbabasa, isulat ang isang napansin at isang tanong. Sa dulo ng linggo, balikan ang mga tala bago magdagdag ng aklat. Aling tanong ang naliwanagan sa susunod na kabanata? Alin ang nais mong pag-usapan sa isang tao? Hindi kailangang magsimulang muli dahil may nalaktawang araw."
+          },
+          {
+            "type": "practice",
+            "title": "Para sa susunod mong pagbabasa",
+            "items": [
+              "Buksan ang Juan 1 at basahin nang dalawang beses ang unang talataan.",
+              "Tukuyin ang isang sinasabi ng talata tungkol sa Salita.",
+              "Magpatuloy at magtira ng isang tanong na hindi pa nasasagot."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-the-guide",
+        "title": "Gumamit ng gabay kapag hindi pamilyar ang teksto",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Makakatulong ang pagpapakilala sa aklat upang malaman kung nasaan ka sa kuwento. Nililinaw ng mapa ang isang lugar; ng talahulugan, ang di-pamilyar na salita. Gamitin ang mga ito upang bumalik sa talata na may mas malinaw na tanong. Pinakamabisa silang kasabay ng mismong tekstong binabasa."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pinagsasama ng Bible Answer ang pagbabasa ng Bibliya, Gabay, at mga planong pagbasa. Ihambing sa buong talata ang ginagamit mong paliwanag o pagninilay. Magkakaibang bagay ang sipi, konteksto nito, at personal mong tugon; mabuting panatilihing malinaw ang mga ito."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "forgiveness",
+    "lang": "fil",
+    "slug": "pagpapatawad-pagkatapos-ng-paghingi-ng-tawad",
+    "title": "Ano ang kasunod ng paghingi ng tawad?",
+    "seo_title": "Pagpapatawad sa Bibliya: matapos humingi ng tawad",
+    "description": "Basahin ang Efeso 4:25–32 sa konteksto at pagnilayan ang paghingi ng tawad, pagwawasto, at tiwala sa pamamagitan ng mga tanong para sa tunay na usapan.",
+    "category": "Pagpapatawad",
+    "lead": "Maaaring magbukas ng usapan ang paghingi ng tawad. Tinutulungan tayo ng Efeso 4 na isipin ang mga salita at kilos na susunod.",
+    "plate": "plate-script",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Isang maikling sagot mula sa Efeso 4",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Iniuugnay ng Efeso 4:32 ang pagpapatawad sa kabaitan at malasakit, batay sa pagpapatawad ng Diyos kay Cristo. Kasama rin sa talataan ang katotohanan, galit, trabaho, at pananalita. Kapag binasa nang magkakasama, higit ang pinagninilayan kaysa kung nasabi na ang paghingi ng tawad."
+          },
+          {
+            "type": "passage",
+            "source": "fil-EPH-4-32.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Hindi nagbibigay ang talata ng iisang iskrip para sa bawat nasaktang relasyon. Nag-aanyaya ito ng paraan ng pagtrato sa mga tao. Bahagi nito ang paghingi ng tawad kapag tapat na kinikilala ang mali, pinakikinggan ang epekto, at sinisimulan ang angkop na pagbabago."
+          }
+        ]
+      },
+      {
+        "id": "read-the-context",
+        "title": "Basahin ang talataan sa paligid ng sipi",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa Efeso 4:25–32, pinapalitan ng katotohanan ang kasinungalingan. Ang nagnanakaw ay pinatitigil, pinagtatrabaho, at tinuturuan upang makapagbahagi. Sinusukat ang pananalita sa tulong nito sa nakikinig. Pagbabago ito ng kilos pati ng mga salita."
+          },
+          {
+            "type": "passage",
+            "source": "fil-EPH-4-25-32.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Mahalaga ang kontekstong ito sa pagninilay tungkol sa paghingi ng tawad. Tiyak ang utos tungkol sa pagnanakaw; hindi ito pangkalahatang listahan para sa lahat ng alitan. Ngunit makikita rito ang paglipat mula sa nakapipinsalang kilos tungo sa ibang kilos. Ano kaya ang anyo nito sa tunay mong sitwasyon?"
+          }
+        ]
+      },
+      {
+        "id": "name-your-part",
+        "title": "Kilalanin ang bahagi mo nang hindi pinipili ang tugon ng iba",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Isiping binale-wala mo ang alalahanin ng isang kapamilya. Kung ang pinagsisisihan mo lamang ay ang pagsama ng loob niya, hindi mo pa pinangalanan ang iyong ginawa. Maaari mong sabihin ang kilos mo, kilalanin kung bakit masakit, at itanong kung naunawaan mo ang alalahanin. Mga halimbawa ito ng karaniwang usapan, hindi mga sipi sa Bibliya."
+          },
+          {
+            "type": "paragraph",
+            "text": "Panatilihing angkop ang haba ng paliwanag. Nakalilinaw ang pinagmulan, pero maaari ring maging mahabang argumento para tumigil sa pagkasaktan ang iba. Makinig bago magpaliwanag muli. Maaaring iba sa intensiyon mo ang epekto ng sinabi mo."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Pangalanan ang kilos na pananagutan mo.",
+              "Pakinggan ang nais ipaintindi ng kausap.",
+              "Mag-alok ng tiyak na pagbabago o pagwawastong angkop sa ginawa."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "repair-and-trust",
+        "title": "Gawing konkreto ang pagwawasto",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Maaaring itama ang maling pahayag, ibalik ang isang bagay, igalang ang napagkasunduang hangganan, o baguhin ang susunod na usapan. Pumili ng kayang tuparin. Mas kapaki-pakinabang ang maliit na aktuwal na kilos kaysa malaking pangako na hindi maisasagawa."
+          },
+          {
+            "type": "paragraph",
+            "text": "Magkaugnay pero magkaiba ang pagpapatawad, pagkakasundo, at muling pagtitiwala. Huwag gamitin ang talata upang humingi ng agarang paglapit sa isang tao o magtakda kung kailan siya dapat makaramdam ng kaligtasan sa piling mo. Nabubuo ang tiwala sa paglipas ng panahon. Kasama sa kabaitan ang paggalang sa oras at espasyong hinihingi ng iba."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Isang tanong para sa araw na ito",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Matapos humingi ng tawad",
+            "items": [
+              "Anong kilos ang malinaw kong kinilala?",
+              "Ano ang pinakinggan ko nang hindi itinatama ang reaksiyon ng iba?",
+              "Anong pagwawasto ang maiaalok at matutupad ko?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Balikan ang Efeso 4:25–32 bago tapusin sa isip ang usapan. Aling tagubilin ang para sa bahagi mo: katotohanan, nakatutulong na salita, paglayo sa masamang hangarin, o kabaitan? Magsimula roon sa halip na gamitin ang talata upang husgahan ang kausap."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gratitude",
+    "lang": "fil",
+    "slug": "pasasalamat-sa-isang-mahirap-na-araw",
+    "title": "Pasasalamat sa isang mahirap na araw",
+    "seo_title": "Pasasalamat sa Bibliya sa gitna ng mahirap na araw",
+    "description": "Basahin ang 1 Tesalonica 5:14–22 at pagnilayan ang pasasalamat kasama ng panalangin, pagtitiis, at malasakit nang hindi itinatanggi ang hirap ng araw.",
+    "category": "Panalangin at pasasalamat",
+    "lead": "Maaaring may tunay na bigat at may natanggap na biyaya sa iisang mahirap na araw. Basahin ang talata na may puwang para sa dalawa.",
+    "plate": "plate-kind-poetry",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Ano ang sinasabi ng talata tungkol sa pasasalamat?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Magkasama ang kagalakan, panalangin, at pasasalamat sa 1 Tesalonica 5:16–18. Maikli ang tagubilin pero bahagi ito ng mas malawak na usapan tungkol sa pamumuhay ng komunidad. Sa buong talataan, nakikita ang pasasalamat kasama ng pag-aalaga sa ibang tao."
+          },
+          {
+            "type": "passage",
+            "source": "fil-1TH-5-16-18.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Nag-aanyaya ang mga talata ng patuloy na panalangin at pasasalamat. Hindi nila ipinapaliwanag ang sanhi ng bawat masakit na pangyayari. Huwag idagdag na alam mo kung bakit nangyari ang isang hirap o na dapat masaya ang isang tao dahil dito."
+          }
+        ]
+      },
+      {
+        "id": "care-in-the-context",
+        "title": "Pansinin ang malasakit sa paligid ng mga salita",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Bago ang tagubilin sa kagalakan at pasasalamat, may paghimok sa pinanghihinaan ng loob, pagtulong sa mahihina, at pagtitiis sa lahat. Tinatanggihan din ang pagganti ng masama sa masama at hinihikayat ang paggawa ng mabuti. Nananatiling mahalaga ang mga tao at pangangailangan nila."
+          },
+          {
+            "type": "passage",
+            "source": "fil-1TH-5-14-22.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Binabago ng kontekstong ito ang ordinaryong usapan. Kapag may nagsabi ng hirap ng araw niya, maaaring malaktawan ng agarang paghingi ng pasasalamat ang pakikinig at tulong na hinihingi rin ng talata. Maaari mong seryosohin ang hirap niya at, kung nais niya, magbigay ng puwang para magpasalamat nang magkasama."
+          }
+        ]
+      },
+      {
+        "id": "honest-notes",
+        "title": "Sumulat ng dalawang tapat na tala",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Subukan ang dalawang pangungusap. Pangalanan sa una ang hirap nang hindi pinapaganda: usapang hindi pa tapos, planong hindi natuloy, o gawaing naiwan. Pangalanan sa ikalawa ang tiyak na natanggap: mensahe ng kaibigan, tulong sa gawain, tahimik na pagkain, o isang taong nakinig."
+          },
+          {
+            "type": "paragraph",
+            "text": "Hindi binubura ng ikalawang pangungusap ang una. Hindi kailangang ikumpara ang bigat mo sa iba o piliting sumaya. Iniuugnay ng tiyak na mga salita ang panalangin sa araw na talagang naranasan mo."
+          },
+          {
+            "type": "paragraph",
+            "text": "Kung wala ka pang matukoy na biyaya, magsimula sa unang pangungusap at humingi ng tulong upang makapansin. Paanyaya ang pagsasanay, hindi pagsusulit kung sapat ang pananampalataya mo."
+          }
+        ]
+      },
+      {
+        "id": "bring-both-to-prayer",
+        "title": "Dalhin ang dalawa sa panalangin",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Gamitin ang dalawang pangungusap bilang simula. Sabihin nang simple ang mahirap, magpasalamat sa natanggap, at humingi ng kailangan. Orihinal na mungkahi sa pagdarasal ang nasa ibaba, hindi sipi sa Bibliya o kinakailangang pormula."
+          },
+          {
+            "type": "practice",
+            "title": "Isang tapat na simula ng panalangin",
+            "items": [
+              "Pangalanan ang hirap sa harap ng Diyos.",
+              "Magpasalamat sa isang tiyak na natanggap.",
+              "Humingi ng karunungan, lakas, o tulong para sa susunod na hakbang."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Itinuturo rin ng talataan ang pansin sa iba. Maaaring maging mensahe ng pasasalamat ang pagkilala sa tulong. Maaaring tumulong ang karanasan mo upang mapansin ang taong nangangailangan ng paghimok. Nagbibigay ang maliit na kilos ng lugar sa pagninilay sa araw mo."
+          }
+        ]
+      },
+      {
+        "id": "return-to-the-text",
+        "title": "Balikan ang teksto nang hindi pinipilit ang resulta",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Basahin muli ang 1 Tesalonica 5:14–22 at pumili ng isang tagubiling dadalhin mo: panalangin, pasasalamat, pagtitiis, o pagtulong sa mahina. Hindi mo kailangang gawin ang bawat posibleng tugon sa isang gabi."
+          },
+          {
+            "type": "paragraph",
+            "text": "Makakatulong ang pagbabasa ng Bibliya at Panalangin ng Oras sa Bible Answer upang bumalik sa Kasulatan at panalangin. May kabuluhan din ang pagsasanay nang mag-isa; hindi ito nakasalalay sa damdamin, sunod-sunod na araw, o isang tampok ng app."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wisdom",
+    "lang": "fil",
+    "slug": "humingi-ng-karunungan-sa-pagpapasiya",
+    "title": "Humingi ng karunungan bago magpasiya",
+    "seo_title": "Paano humingi ng karunungan sa Diyos sa pagpapasiya",
+    "description": "Basahin ang Santiago 1:2–8 sa konteksto at suriin ang isang pasiya sa panalangin, tapat na pagtingin sa motibo, at isang tanong na maaari mong alamin.",
+    "category": "Mga pasiya",
+    "lead": "Kapag mabigat ang isang pasiya, magsimula sa paghingi ng karunungan at isang tiyak na tanong tungkol sa susunod na hakbang.",
+    "plate": "plate-gate",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "short-answer",
+        "title": "Magsimula sa paanyayang humingi",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Inaanyayahan ng Santiago 1:5 ang kulang sa karunungan na humingi sa Diyos. Inilalarawan ang Diyos bilang mapagbigay at hindi nanunumbat. Kapag hindi ka sigurado, maaari mong dalhin sa panalangin ang mismong pangangailangan sa halip na magkunwaring alam mo na."
+          },
+          {
+            "type": "passage",
+            "source": "fil-JAS-1-5.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Walang pinapangalanang tiyak na trabaho, lugar, relasyon, o iskedyul ang talata. Kailangang maingat ang paggamit nito sa pasiya. Ang paghingi ng karunungan ay hindi pag-angking ang unang pakiramdam matapos magdasal ang tanging katanggap-tanggap na pagpili."
+          }
+        ]
+      },
+      {
+        "id": "trials-and-faith",
+        "title": "Basahin ang paanyaya sa Santiago 1:2–8",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Nagsisimula ang talataan sa mga pagsubok, pagsubok ng pananampalataya, at pagtitiis. Sa usapang iyon lumilitaw ang paghingi ng karunungan. Kasunod ang paghingi nang may pananampalataya at babala laban sa hati at pabago-bagong paninindigan. Kasama ang lahat ng iyon sa pagbasa sa talata 5."
+          },
+          {
+            "type": "passage",
+            "source": "fil-JAS-1-2-8.json",
+            "expanded": true
+          },
+          {
+            "type": "paragraph",
+            "text": "Higit ito sa paghahanap ng mabilis na sagot. Ipinapaisip kung paano natin hinaharap ang hirap at saan inilalagay ang tiwala. Huwag gawing mabilis na pagsusuri sa pananampalataya ng iba ang babala. Hindi ipinapaliwanag ng isang praktikal na tanong na wala pang sagot ang buong pananampalataya ng tao."
+          }
+        ]
+      },
+      {
+        "id": "name-the-decision",
+        "title": "Pangalanan ang pasiya bago maghanap ng katiyakan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Maaaring maraming mas maliit na tanong ang nasa malawak na tanong tungkol sa buhay. Isulat ang pasiyang kailangan mong gawin ngayon. Ihiwalay ang alam sa inaakala. Maaaring alam mong may dalawang pagpipilian pero kailangan mo pang alamin ang pang-araw-araw na pananagutan sa bawat isa."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pansinin kung alin ang prinsipyo, alin ang impormasyong masisiyasat, at alin ang kagustuhan o kompromiso. Mungkahing pang-editoryal ito para sa ordinaryong pagpili, hindi pangakong malulutas ang bawat pasiya sa listahan."
+          },
+          {
+            "type": "steps",
+            "items": [
+              "Isulat sa isang pangungusap ang kasalukuyang pagpili.",
+              "Magtala ng isang mahalagang alam at isang tanong na bukas pa.",
+              "Tukuyin kung sino o ano ang maaaring makatulong sumagot."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prayer-and-information",
+        "title": "Pagsamahin ang panalangin at maingat na pagtingin",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dalhin ang pasiya sa panalangin, kasama ang nakikita mong mga motibo: malasakit, takot mabigo, hangad na tanggapin, o pag-aatubiling magbago. Humingi ng karunungan tungkol sa paraan ng pagpili pati sa resulta."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pagkatapos, bigyan ng konkretong hakbang ang tanong. Humingi ng paglilinaw, basahin ang impormasyong mayroon, o kausapin ang nakauunawa sa sitwasyon. Alamin ang kayang malaman bago ituring na tanda ang isang palagay."
+          },
+          {
+            "type": "paragraph",
+            "text": "Minsan ang susunod na hakbang ay pagpili; minsan, pag-alam ng sapat upang makapili nang responsable. Paanyaya ang talata na humingi ng karunungan sa Diyos sa buhay ng pananampalataya. Ang pangangalap ng impormasyon ay mungkahi naming paraan ng pagtingin sa ordinaryong pasiya."
+          }
+        ]
+      },
+      {
+        "id": "one-next-step",
+        "title": "Isang maliit na pagninilay bago pumili",
+        "blocks": [
+          {
+            "type": "practice",
+            "title": "Panalangin at isang kapaki-pakinabang na tanong",
+            "items": [
+              "Ano ang hinihingi ko sa Diyos sa pasiyang ito?",
+              "Aling motibo ang kailangang tingnan nang tapat?",
+              "Anong impormasyon ang maaari kong alamin ngayon?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Balikan ang Santiago 1:2–8 matapos sumulat. Ihiwalay ang mga salita nito sa binuo mong plano. Maaari kang gumawa ng pinag-isipang hakbang nang hindi ipinakikitang direktang sipi sa Diyos ang iyong kagustuhan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bible-verses-for-anxiety",
+    "title": "Bible verses for anxiety: prayer and care",
+    "seo_title": "Bible Verses for Anxiety: Prayer, Peace and Context",
+    "description": "Read Philippians 4:6–7 and 1 Peter 5:6–7 with context, an honest prayer exercise, and questions for returning to Scripture when worry feels heavy.",
+    "category": "Worry and peace",
+    "lead": "Start with two passages that make room for prayer and being cared for. You do not have to turn a worried day into a tidy story before reading.",
+    "plate": "plate-kind-poetry",
+    "key": "anxiety",
+    "lang": "en",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Which Bible passage can I read when I am anxious?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Philippians 4:6–7 is a useful starting point because it connects worry with prayer, specific requests, thanksgiving, and the peace of God. Read both verses together. The passage invites you to bring what is troubling you to God; it does not ask you to manufacture a calm feeling before you can pray."
+          },
+          {
+            "type": "passage",
+            "source": "en-PHP-4-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "In the surrounding chapter, Paul addresses a community: agreement, gentleness, prayer, and the thoughts and actions that shape its life. The passage is more than a sentence to repeat in isolation. Read Philippians 4:4–9 next and notice which instructions are given alongside the promise of peace."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "What does 1 Peter add about being cared for?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The invitation in 1 Peter 5:6–7 rests on God's care. It belongs to a chapter about humility, leadership, suffering, and life together. You can bring a burden into prayer without pretending that carrying it has made you unworthy of care."
+          },
+          {
+            "type": "passage",
+            "source": "en-1PE-5-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Keep the two settings distinct. Philippians describes prayer and peace within a community; 1 Peter connects entrusting a burden with humility and God's care. Neither passage gives us a timetable for when a difficult circumstance will end."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "A short reading and prayer for a worried day",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine that an unanswered message keeps drawing your attention. You do not need to interpret every delay. Begin by naming the actual uncertainty, rather than listing all the outcomes you fear. This is a reading exercise, not a formula for controlling what happens."
+          },
+          {
+            "type": "practice",
+            "title": "One passage, one request, one next step",
+            "items": [
+              "Read Philippians 4:6–7 twice. Notice what the passage invites you to do.",
+              "Bring one specific worry into prayer and give thanks for one real thing you have received.",
+              "Choose one appropriate next step: ask a clear question, accept help, or return to the task in front of you."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "The step should fit the situation. Prayer can accompany support from trusted people and qualified care when needed. Asking for help does not prevent you from bringing the same concern to God."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "What if I still feel worried after praying?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A continuing feeling does not give you enough information to judge your own faith or someone else's. Return to the passage as an invitation to pray and receive care. Avoid turning it into a test you must pass immediately."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can use Bible Answer to read the surrounding chapter, explore the verse's context, or open Moments of Peace. Keep the complete passage beside the reflection. The reading remains useful even when you simply close this page and speak to someone you trust."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "morning-prayer-bible-verses",
+    "title": "Morning prayer Bible verses for a simple beginning",
+    "seo_title": "Morning Prayer Bible Verses: A Simple Five-Minute Reading",
+    "description": "Begin morning prayer with Psalm 143:8–10 and Lamentations 3:22–23, read their context, and try a simple five-minute practice without rushing.",
+    "category": "Morning prayer",
+    "lead": "A quiet beginning can be small: read a passage, name the day before God, and choose one attentive step. There is no perfect morning to wait for.",
+    "plate": "plate-plan-john",
+    "key": "morning",
+    "lang": "en",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Where can I begin a morning prayer?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Psalm 143:8–10 brings together trust, the desire for guidance, and a request to learn God's will. It is a useful morning reading because the speaker asks for direction instead of claiming to control the day."
+          },
+          {
+            "type": "passage",
+            "source": "en-PSA-143-8-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Read the whole psalm when you can. Its speaker describes distress as well as trust. A morning prayer can honestly include a difficult conversation, tiredness, or an unfinished question; it does not need to sound confident about every outcome."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Read about mercy without skipping the grief",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lamentations 3:22–23 is another passage often read at the start of a day. The wider chapter contains grief and a deliberate turning toward hope. Read verses 19–26 around this quotation to hear that movement, rather than treating the morning as a demand to forget what hurts."
+          },
+          {
+            "type": "passage",
+            "source": "en-LAM-3-22-23.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "In your own prayer, you can name something received with thanks and something still difficult. Those two observations can share one morning. Gratitude does not require you to call every painful event good."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "A five-minute practice you can adapt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The timing below is an ordinary suggestion, not a rule in either passage. If a morning is busy, read one passage now and return to the chapter later. The aim is attention, rather than completing an impressive routine."
+          },
+          {
+            "type": "practice",
+            "title": "Read, pray, and carry one thing into the day",
+            "items": [
+              "Spend about two minutes reading one complete passage slowly, then read it again.",
+              "Spend about two minutes naming what you need, giving thanks, and asking for guidance.",
+              "Use the final minute to choose one faithful action: listen before answering, do an honest task, or help someone."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Leave room for silence if you want to. You can also write one sentence to return to at lunch. These suggestions accompany the text; they do not replace its words or promise a particular feeling."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Must morning prayer happen at a fixed time?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "These readings do not give every person a required clock time. A shift worker, a parent, and a student may have very different mornings. Choose a moment when you can pay attention, even if it is brief."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer's Prayer of the Hour brings morning Scripture, prayer, and quiet together. You can use it alongside your own words, then continue reading in the Bible reader. If you miss a morning, the next reading can begin where you are."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "what-the-bible-says-about-money",
+    "title": "What does the Bible say about money?",
+    "seo_title": "What the Bible Says About Money: Contentment and Generosity",
+    "description": "Read 1 Timothy 6:6–10 and 6:17–19 to explore money, contentment, misplaced trust, and generosity, with context and questions for everyday choices.",
+    "category": "Money and generosity",
+    "lead": "Begin by distinguishing money from the place it can take in a person's life. These passages ask where we put our hope and how we treat other people.",
+    "plate": "plate-script",
+    "key": "money",
+    "lang": "en",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Does the Bible say that money itself is evil?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In 1 Timothy 6:6–10, the warning concerns the desire to become rich and the love of money. The paragraph also speaks about contentment and ordinary needs. Reading the whole passage helps keep those distinctions together instead of reducing it to a slogan about money itself."
+          },
+          {
+            "type": "passage",
+            "source": "en-1TI-6-6-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "The passage asks us to examine desire and its consequences. It does not say that a person's income tells us how faithful they are. Having little and having much can each bring real responsibilities; neither lets us know another person's heart."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "What responsibility does the passage give to people with wealth?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Later in the chapter, 1 Timothy 6:17–19 addresses people who are rich. It warns against arrogance and relying on uncertain wealth, and directs them toward good works, generosity, and willingness to share. Read that paragraph alongside the earlier warning."
+          },
+          {
+            "type": "passage",
+            "source": "en-1TI-6-17-19.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "The focus is more than accumulating or rejecting possessions. It concerns trust and the use of what is available. Generosity appears as a way of acting toward others, rather than a transaction that guarantees a larger financial return."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "How can I reflect before an ordinary purchase?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine you want to buy something mainly because another person has it. You might still choose to buy it, but first name the reason honestly. Is it useful, an expression of care, a wish for approval, or an attempt to make an uneasy feeling disappear? The question is our practical reflection, not an extra command inserted into the passage."
+          },
+          {
+            "type": "practice",
+            "title": "Three questions before the next choice",
+            "items": [
+              "What need or desire am I trying to answer?",
+              "Am I expecting this purchase to give me worth or certainty it cannot provide?",
+              "How does this choice sit alongside my responsibilities and willingness to help others?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Use the questions without judging someone else's circumstances. A visible purchase does not tell you a person's whole life. The exercise asks you to examine your own motives and conduct."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Does giving mean that I will become wealthy?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "These passages do not promise that a gift will produce a larger sum of money. They call for good works and sharing, while directing hope away from uncertain wealth. Keep the invitation to generosity distinct from a claim about investment returns."
+          },
+          {
+            "type": "paragraph",
+            "text": "For more reading, Bible Answer's Advice includes money alongside work, words, and decisions, with biblical passages behind each topic. Read those passages in their own context. This article is a starting point for reflection on trust and generosity, rather than a financial plan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "psalm-23-meaning",
+    "title": "Psalm 23 meaning: the shepherd and the valley",
+    "seo_title": "Psalm 23 Meaning: Read the Whole Psalm in Context",
+    "description": "Read the complete Psalm 23 and explore its images of a shepherd, rest, the valley, and a table, with simple questions for personal Bible study.",
+    "category": "Understanding a psalm",
+    "lead": "The psalm holds care and danger in the same poem. Read it from beginning to end before making any one line carry the whole meaning.",
+    "plate": "plate-kind-poetry",
+    "key": "psalm23",
+    "lang": "en",
+    "date": "2026-10-03",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "What is Psalm 23 about?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Psalm 23 describes trust in God through the images of a shepherd and a host. Rest and guidance appear alongside a dark valley and the presence of enemies. The poem does not erase danger; it describes care within it. Begin with the complete psalm."
+          },
+          {
+            "type": "passage",
+            "source": "en-PSA-23-1-6.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Notice how the speaker moves from describing God to addressing God in the valley. Reading the poem aloud can help you hear that change. In Russian Synodal numbering, this same text is Psalm 22; the difference is numbering, not a different poem."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Follow four images rather than a single slogan",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "The shepherd and rest: notice provision, water, and restoration at the beginning.",
+              "The paths: notice guidance and its connection with God's name.",
+              "The valley: notice danger and the reason given for confidence within it.",
+              "The table and dwelling: notice hospitality, abundance, and the poem's movement toward lasting nearness."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "These are images in a poem. They invite attentive reading without giving us an exact map of how every future event will happen. Compare the beginning and the valley: the same trust continues in very different surroundings."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "How can I use the psalm in prayer?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choose the image that most connects with your day, then keep it beside the full poem. You may need rest, guidance, courage in difficulty, or a reminder of care. Name that need plainly instead of promising yourself an outcome the text has not specified."
+          },
+          {
+            "type": "practice",
+            "title": "A short study of the whole psalm",
+            "items": [
+              "Read all six verses and name two different settings in the poem.",
+              "Ask what changes between those settings and what remains present.",
+              "Bring one need into prayer, then consider one appropriate action for today."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, a need for rest might lead you to accept help with a task; a need for guidance might lead to a useful conversation. These are editorial examples of responding, not hidden meanings assigned to the images."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Does Psalm 23 promise a life without trouble?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The valley and enemies are already present in the poem. Its confidence concerns God's care and presence, so reading it as a promise of a trouble-free day would leave out part of the text."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer lets you read the complete psalm and explore its three readings: biblical, symbolic, and for life. Compare any reflection with the actual words of the psalm. Keep your own application distinct from a claim that the poem predicts your particular circumstances."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "stikhi-biblii-o-trevoge",
+    "title": "Стихи Библии о тревоге: молитва и забота",
+    "seo_title": "Стихи Библии о тревоге: молитва, мир и контекст",
+    "description": "Прочитайте Филиппийцам 4:6–7 и 1 Петра 5:6–7 в контексте. Небольшая практика молитвы и вопросы помогут вернуться к Писанию в тревожный день.",
+    "category": "Тревога и мир",
+    "lead": "Начните с двух отрывков, в которых есть место молитве и заботе о вас. Не нужно сначала превращать тревожный день в благополучную историю.",
+    "key": "anxiety",
+    "lang": "ru",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Какой отрывок Библии читать, когда тревожно?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Филиппийцам 4:6–7 — подходящее начало: здесь тревога связана с молитвой, конкретными просьбами, благодарением и Божьим миром. Читайте оба стиха вместе. Отрывок приглашает принести Богу то, что вас беспокоит; для молитвы не требуется сначала добиться спокойного чувства."
+          },
+          {
+            "type": "passage",
+            "source": "ru-PHP-4-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "В окружающей главе Павел обращается к общине: говорит о согласии, кротости, молитве, мыслях и поступках. Это больше, чем отдельная фраза для повторения. Затем прочитайте Филиппийцам 4:4–9 и обратите внимание, какие наставления находятся рядом с обещанием мира."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Что Первое послание Петра добавляет о заботе?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Приглашение в 1 Петра 5:6–7 опирается на Божью заботу. Оно находится в главе о смирении, руководстве, страдании и совместной жизни. Можно принести тяжесть в молитву, не считая, что она сделала вас недостойными заботы."
+          },
+          {
+            "type": "passage",
+            "source": "ru-1PE-5-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Сохраняйте различие контекстов. Филиппийцам говорит о молитве и мире в жизни общины; Первое послание Петра связывает вверение заботы со смирением и Божьим попечением. Ни один отрывок не устанавливает срок окончания трудных обстоятельств."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Небольшое чтение и молитва для тревожного дня",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Представьте, что сообщение без ответа постоянно привлекает ваше внимание. Не обязательно объяснять каждую задержку. Сначала назовите настоящую неопределённость, вместо того чтобы перечислять все пугающие исходы. Это упражнение чтения, а не формула управления событиями."
+          },
+          {
+            "type": "practice",
+            "title": "Один отрывок, одна просьба, один шаг",
+            "items": [
+              "Дважды прочитайте Филиппийцам 4:6–7. Что предлагает сделать отрывок?",
+              "Принесите в молитву одну конкретную тревогу и поблагодарите за что-то действительно полученное.",
+              "Выберите подходящий шаг: задайте ясный вопрос, примите помощь или вернитесь к текущему делу."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Шаг должен соответствовать ситуации. Молитва может сопровождаться поддержкой близких и квалифицированной помощью, когда она нужна. Просьба о помощи не мешает приносить ту же заботу Богу."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Что делать, если после молитвы всё ещё тревожно?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Сохраняющееся чувство не даёт достаточных оснований судить о вашей или чужой вере. Вернитесь к отрывку как приглашению молиться и принимать заботу. Не превращайте его в испытание, которое нужно пройти немедленно."
+          },
+          {
+            "type": "paragraph",
+            "text": "В Bible Answer можно прочитать окружающую главу, посмотреть контекст стиха или открыть Моменты покоя. Держите полный отрывок рядом с размышлением. Чтение остаётся полезным и тогда, когда вы просто закрываете страницу и разговариваете с человеком, которому доверяете."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "utrennyaya-molitva-stikhi-biblii",
+    "title": "Стихи для утренней молитвы и спокойного начала",
+    "seo_title": "Утренняя молитва: стихи Библии и пять минут чтения",
+    "description": "Начните утреннюю молитву с Псалтири 142:8–10 и Плача Иеремии 3:22–23. Контекст отрывков и простая практика помогут читать без спешки.",
+    "category": "Утренняя молитва",
+    "lead": "Спокойное начало может быть небольшим: прочитайте отрывок, назовите свой день перед Богом и выберите внимательный шаг. Идеального утра ждать не нужно.",
+    "key": "morning",
+    "lang": "ru",
+    "date": "2026-10-03",
+    "plate": "plate-plan-john",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "С чего начать утреннюю молитву?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Псалтирь 142:8–10 соединяет доверие, желание получить направление и просьбу научиться Божьей воле. Это подходящее утреннее чтение: молящийся просит о пути, а не утверждает, что может управлять всем днём."
+          },
+          {
+            "type": "passage",
+            "source": "ru-PSA-142-8-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "При возможности прочитайте псалом целиком. В нём есть и бедствие, и доверие. Утренняя молитва может честно включать трудный разговор, усталость и нерешённый вопрос. Не обязательно звучать уверенно относительно каждого исхода."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Читайте о милости, не пропуская скорбь",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Плач Иеремии 3:22–23 — другой отрывок, к которому часто обращаются в начале дня. В окружающей главе есть скорбь и осознанное обращение к надежде. Прочитайте стихи 19–26, чтобы увидеть это движение, вместо того чтобы воспринимать утро как требование забыть боль."
+          },
+          {
+            "type": "passage",
+            "source": "ru-LAM-3-22-23.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "В своей молитве можно назвать что-то принятое с благодарностью и то, что остаётся тяжёлым. Оба наблюдения помещаются в одном утре. Благодарность не требует объявлять хорошим каждое болезненное событие."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Пять минут, которые можно устроить по-своему",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Время ниже — обычная рекомендация, а не правило из этих отрывков. Если утро занято, прочитайте один отрывок сейчас, а к главе вернитесь позже. Цель — внимание к тексту, а не впечатляющий распорядок."
+          },
+          {
+            "type": "practice",
+            "title": "Прочитайте, помолитесь и возьмите один шаг в день",
+            "items": [
+              "Около двух минут читайте один полный отрывок неспешно, затем повторите чтение.",
+              "Около двух минут называйте нужды, благодарите и просите о направлении.",
+              "Последнюю минуту посвятите одному верному действию: выслушать перед ответом, честно выполнить дело или помочь человеку."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "При желании оставьте место тишине. Можно записать одну мысль и вернуться к ней в обед. Эти предложения сопровождают текст, не заменяют его слов и не обещают определённого чувства."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Нужно ли молиться утром в строго определённое время?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Эти отрывки не назначают всем обязательного времени на часах. У работающего посменно человека, родителя и студента утро устроено по-разному. Выберите момент, когда можете уделить внимание, даже если он короткий."
+          },
+          {
+            "type": "paragraph",
+            "text": "Молитва часа в Bible Answer соединяет утреннее Писание, молитву и тишину. Её можно сочетать с собственными словами, а затем продолжать в разделе чтения Библии. Если утро пропущено, следующее чтение начинается там, где вы сейчас."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chto-bibliya-govorit-o-dengah",
+    "title": "Что Библия говорит о деньгах?",
+    "seo_title": "Что Библия говорит о деньгах: довольство и щедрость",
+    "description": "Прочитайте 1 Тимофею 6:6–10 и 6:17–19: деньги, довольство, доверие и щедрость. Контекст отрывков и вопросы для размышления перед обычной покупкой.",
+    "category": "Деньги и щедрость",
+    "lead": "Начните с различия между деньгами и местом, которое они занимают в жизни. Эти отрывки спрашивают, на что мы надеемся и как относимся к людям.",
+    "key": "money",
+    "lang": "ru",
+    "date": "2026-10-03",
+    "plate": "plate-script",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Говорит ли Библия, что сами деньги — зло?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В 1 Тимофею 6:6–10 предупреждение касается желания разбогатеть и любви к деньгам. Здесь также говорится о довольстве и обычных нуждах. Полный отрывок помогает сохранить эти различия и не свести текст к лозунгу о деньгах самих по себе."
+          },
+          {
+            "type": "passage",
+            "source": "ru-1TI-6-6-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Отрывок предлагает рассмотреть желание и его последствия. Он не говорит, что доход показывает верность человека. И недостаток, и достаток могут сопровождаться настоящими обязанностями; ни то ни другое не позволяет узнать чужое сердце."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Какая ответственность названа для людей с достатком?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Дальше в главе, в 1 Тимофею 6:17–19, речь обращена к богатым. Она предупреждает о высокомерии и надежде на ненадёжное богатство, направляет к добрым делам, щедрости и готовности делиться. Прочитайте её рядом с предыдущим предупреждением."
+          },
+          {
+            "type": "passage",
+            "source": "ru-1TI-6-17-19.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "В центре больше, чем накопление вещей или отказ от них. Важны доверие и использование доступного. Щедрость предстаёт как отношение к другим людям, а не сделка, гарантирующая больший денежный возврат."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "О чём подумать перед обычной покупкой?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Представьте, что вы хотите купить вещь главным образом потому, что она есть у другого человека. Возможно, вы всё же её купите, но сначала честно назовите причину. Полезна ли она, выражает ли заботу, нужна ли ради одобрения или чтобы заглушить неприятное чувство? Это наш практический вопрос, а не добавленная к отрывку заповедь."
+          },
+          {
+            "type": "practice",
+            "title": "Три вопроса перед следующим выбором",
+            "items": [
+              "На какую нужду или желание я пытаюсь ответить?",
+              "Жду ли я от покупки ценности и уверенности, которые она не может дать?",
+              "Как этот выбор сочетается с моими обязанностями и готовностью помогать другим?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Применяйте вопросы без осуждения чужих обстоятельств. Одна видимая покупка не рассказывает всю жизнь человека. Упражнение предлагает смотреть на собственные мотивы и поступки."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Означает ли щедрость, что я стану богаче?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Эти отрывки не обещают, что подарок принесёт бо́льшую сумму денег. Они зовут к добрым делам и готовности делиться, направляя надежду от ненадёжного богатства. Отличайте приглашение к щедрости от заявления о доходности вложения."
+          },
+          {
+            "type": "paragraph",
+            "text": "В Советах Bible Answer есть деньги, работа, слова и решения; у тем приведены библейские отрывки. Читайте их в собственном контексте. Эта статья — начало размышления о доверии и щедрости, а не финансовый план."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "psalom-22-smysl",
+    "title": "Смысл Псалма 22: пастырь и долина",
+    "seo_title": "Псалом 22: смысл и полный текст в контексте",
+    "description": "Прочитайте Псалом 22 целиком и рассмотрите образы пастыря, покоя, долины и трапезы. Вопросы помогут изучать псалом и обращаться с ним к молитве.",
+    "category": "Понимание псалма",
+    "lead": "В одном стихотворении находятся забота и опасность. Прочитайте его от начала до конца, прежде чем поручать одной строке весь смысл.",
+    "key": "psalm23",
+    "lang": "ru",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "О чём Псалом 22?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Псалом 22 описывает доверие Богу через образы пастыря и принимающего хозяина. Покой и направление соседствуют с опасной долиной и врагами. Стихотворение не стирает опасность; оно говорит о заботе внутри неё. Начните с полного псалма."
+          },
+          {
+            "type": "passage",
+            "source": "ru-PSA-22-1-6.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Обратите внимание: сначала Бог описывается, а в долине речь обращается непосредственно к Нему. Чтение вслух помогает услышать переход. В Синодальном переводе это Псалом 22, а в распространённой еврейской нумерации — Псалом 23. Различие относится к нумерации, а не к другому стихотворению."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Проследите четыре образа вместо одного лозунга",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Пастырь и покой: обратите внимание на заботу, воду и восстановление в начале.",
+              "Пути: заметьте направление и его связь с Божьим именем.",
+              "Долина: заметьте опасность и названную причину уверенности внутри неё.",
+              "Трапеза и дом: рассмотрите гостеприимство, изобилие и движение к продолжительной близости."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Это образы стихотворения. Они приглашают к внимательному чтению, не составляя точную карту каждого будущего события. Сравните начало и долину: одно доверие сохраняется в очень разных обстоятельствах."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Как обращаться с псалмом к молитве?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Выберите образ, который ближе вашему дню, но держите его рядом со всем стихотворением. Возможно, нужны отдых, направление, мужество в трудности или напоминание о заботе. Назовите нужду прямо, не обещая себе исход, которого текст не определяет."
+          },
+          {
+            "type": "practice",
+            "title": "Небольшое изучение полного псалма",
+            "items": [
+              "Прочитайте все шесть стихов и назовите две разные обстановки в стихотворении.",
+              "Спросите, что меняется между ними и что остаётся рядом.",
+              "Принесите одну нужду в молитву, затем подумайте о подходящем действии на сегодня."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Например, нужда в отдыхе может привести к принятию помощи с делом, а нужда в направлении — к полезному разговору. Это редакционные примеры ответа, а не приписанные образам тайные значения."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Обещает ли Псалом 22 жизнь без трудностей?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Долина и враги уже присутствуют в стихотворении. Уверенность касается Божьей заботы и присутствия. Прочитать его как обещание дня без трудностей означало бы исключить часть текста."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer позволяет читать полный псалом и изучать три прочтения: библейское, символическое и для жизни. Сопоставляйте размышление с настоящими словами псалма. Отличайте личное применение от утверждения, что стихотворение предсказывает ваши конкретные обстоятельства."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "versiculos-biblicos-sobre-la-ansiedad",
+    "title": "Versículos sobre la ansiedad: oración y cuidado",
+    "seo_title": "Versículos bíblicos sobre la ansiedad: oración y paz",
+    "description": "Lee Filipenses 4:6–7 y 1 Pedro 5:6–7 en contexto, con una práctica de oración honesta y preguntas para volver a la Biblia cuando las preocupaciones pesan.",
+    "category": "Preocupación y paz",
+    "lead": "Empieza con dos pasajes que dejan espacio para la oración y el cuidado. No necesitas convertir un día preocupado en una historia ordenada antes de leer.",
+    "key": "anxiety",
+    "lang": "es",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "¿Qué pasaje puedo leer cuando siento ansiedad?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Filipenses 4:6–7 es un buen comienzo: relaciona la preocupación con la oración, las peticiones concretas, la gratitud y la paz de Dios. Lee ambos versículos juntos. El pasaje invita a llevar a Dios lo que te inquieta; no exige fabricar una sensación de calma antes de orar."
+          },
+          {
+            "type": "passage",
+            "source": "es-PHP-4-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "En el capítulo, Pablo habla a una comunidad sobre acuerdo, amabilidad, oración, pensamientos y acciones. Es más que una frase para repetir aislada. Continúa con Filipenses 4:4–9 y observa las instrucciones que acompañan a la promesa de paz."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "¿Qué añade 1 Pedro sobre recibir cuidado?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "La invitación de 1 Pedro 5:6–7 se apoya en el cuidado de Dios. Está en un capítulo sobre humildad, liderazgo, sufrimiento y vida compartida. Puedes llevar una carga a la oración sin pensar que tenerla te hace indigno de cuidado."
+          },
+          {
+            "type": "passage",
+            "source": "es-1PE-5-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Distingue los contextos. Filipenses describe oración y paz en una comunidad; 1 Pedro relaciona confiar una carga con humildad y cuidado de Dios. Ninguno establece cuándo terminará una circunstancia difícil."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Una lectura y oración breves para un día preocupado",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagina que un mensaje sin respuesta atrae tu atención una y otra vez. No necesitas interpretar cada demora. Nombra primero la incertidumbre real, en lugar de todos los resultados que temes. Es una práctica de lectura, no una fórmula para controlar lo que ocurre."
+          },
+          {
+            "type": "practice",
+            "title": "Un pasaje, una petición, un siguiente paso",
+            "items": [
+              "Lee Filipenses 4:6–7 dos veces. Observa qué te invita a hacer.",
+              "Lleva una preocupación concreta a la oración y agradece algo real que hayas recibido.",
+              "Elige un paso apropiado: preguntar con claridad, aceptar ayuda o volver a la tarea presente."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "El paso debe corresponder a la situación. La oración puede acompañar el apoyo de personas de confianza y la ayuda profesional cuando haga falta. Pedir ayuda no impide llevar la misma preocupación a Dios."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "¿Y si sigo preocupado después de orar?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Una sensación que continúa no basta para juzgar tu fe o la de otra persona. Vuelve al pasaje como invitación a orar y recibir cuidado. Evita convertirlo en una prueba que debas aprobar inmediatamente."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer permite leer el capítulo, explorar el contexto del versículo o abrir Momentos de paz. Mantén el pasaje completo junto a la reflexión. La lectura sigue siendo útil si cierras esta página y hablas con alguien de confianza."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "versiculos-para-la-oracion-de-la-manana",
+    "title": "Versículos para una oración sencilla de la mañana",
+    "seo_title": "Oración de la mañana: versículos y cinco minutos de lectura",
+    "description": "Comienza la oración de la mañana con Salmos 143:8–10 y Lamentaciones 3:22–23, su contexto y una práctica sencilla de cinco minutos sin prisas.",
+    "category": "Oración de la mañana",
+    "lead": "Un comienzo tranquilo puede ser pequeño: lee un pasaje, presenta el día ante Dios y elige un paso atento. No hace falta esperar una mañana perfecta.",
+    "key": "morning",
+    "lang": "es",
+    "date": "2026-10-03",
+    "plate": "plate-plan-john",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "¿Por dónde comenzar la oración de la mañana?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Salmos 143:8–10 reúne confianza, deseo de orientación y una petición de aprender la voluntad de Dios. Es una lectura útil para la mañana porque quien habla pide dirección, en lugar de afirmar que controla el día."
+          },
+          {
+            "type": "passage",
+            "source": "es-PSA-143-8-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Cuando puedas, lee el salmo completo. Su voz expresa angustia y confianza. La oración puede incluir honestamente una conversación difícil, cansancio o una pregunta pendiente. No necesitas sonar seguro de todos los resultados."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Lee sobre misericordia sin saltarte el dolor",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lamentaciones 3:22–23 también suele leerse al comenzar el día. El capítulo contiene dolor y un giro consciente hacia la esperanza. Lee los versículos 19–26 para escuchar ese movimiento, sin tratar la mañana como una exigencia de olvidar lo que duele."
+          },
+          {
+            "type": "passage",
+            "source": "es-LAM-3-22-23.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Puedes nombrar en tu oración algo recibido con gratitud y algo que sigue siendo difícil. Ambas observaciones caben en una mañana. Agradecer no exige llamar bueno a cada acontecimiento doloroso."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Una práctica de cinco minutos que puedes adaptar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El tiempo sugerido no es una regla de esos pasajes. Si la mañana está ocupada, lee uno ahora y vuelve al capítulo después. El propósito es prestar atención, no completar una rutina impresionante."
+          },
+          {
+            "type": "practice",
+            "title": "Lee, ora y lleva una cosa contigo",
+            "items": [
+              "Dedica unos dos minutos a leer un pasaje completo despacio y luego repítelo.",
+              "Dedica unos dos minutos a nombrar tus necesidades, agradecer y pedir orientación.",
+              "Usa el minuto final para elegir una acción fiel: escuchar antes de responder, hacer una tarea honestamente o ayudar a alguien."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Deja espacio para el silencio si quieres. También puedes escribir una frase y volver a ella al mediodía. Las sugerencias acompañan al texto; no sustituyen sus palabras ni prometen una sensación concreta."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "¿Debe hacerse a una hora fija?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Estas lecturas no asignan una hora obligatoria a todos. Un trabajador por turnos, una madre o un padre y un estudiante tienen mañanas diferentes. Elige un momento en el que puedas prestar atención, aunque sea breve."
+          },
+          {
+            "type": "paragraph",
+            "text": "La Oración de la hora de Bible Answer reúne Escritura, oración y quietud para la mañana. Puedes usarla junto con tus propias palabras y continuar en la lectura bíblica. Si pierdes una mañana, la siguiente lectura puede empezar donde estés."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "que-dice-la-biblia-sobre-el-dinero",
+    "title": "¿Qué dice la Biblia sobre el dinero?",
+    "seo_title": "Qué dice la Biblia sobre el dinero: contentamiento y dar",
+    "description": "Lee 1 Timoteo 6:6–10 y 6:17–19 para explorar dinero, contentamiento, confianza y generosidad, con contexto y preguntas para las decisiones cotidianas.",
+    "category": "Dinero y generosidad",
+    "lead": "Distingue el dinero del lugar que puede ocupar en una vida. Estos pasajes preguntan dónde ponemos la esperanza y cómo tratamos a las personas.",
+    "key": "money",
+    "lang": "es",
+    "date": "2026-10-03",
+    "plate": "plate-script",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "¿La Biblia dice que el dinero es malo en sí mismo?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "En 1 Timoteo 6:6–10, la advertencia se refiere al deseo de hacerse rico y al amor al dinero. El párrafo también habla de contentamiento y necesidades habituales. Leerlo completo mantiene esas diferencias, en lugar de reducirlo a un lema sobre el dinero en sí."
+          },
+          {
+            "type": "passage",
+            "source": "es-1TI-6-6-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "El pasaje invita a examinar el deseo y sus consecuencias. No dice que los ingresos indiquen la fidelidad de alguien. Tener poco o mucho puede traer responsabilidades reales; ninguna situación nos permite conocer el corazón ajeno."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "¿Qué responsabilidad señala para quienes tienen riqueza?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Más adelante, 1 Timoteo 6:17–19 se dirige a los ricos. Advierte contra la arrogancia y la confianza en riquezas inciertas; invita a buenas obras, generosidad y disposición a compartir. Léelo junto a la advertencia anterior."
+          },
+          {
+            "type": "passage",
+            "source": "es-1TI-6-17-19.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "El enfoque va más allá de acumular o rechazar posesiones. Importan la confianza y el uso de lo disponible. La generosidad aparece como una forma de actuar hacia otros, no como una transacción que garantice una mayor ganancia."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "¿Cómo reflexionar antes de una compra cotidiana?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagina que deseas una cosa principalmente porque otra persona la tiene. Quizá decidas comprarla, pero primero nombra la razón honestamente. ¿Es útil, expresa cuidado, busca aprobación o intenta borrar una inquietud? Es nuestra reflexión práctica, no un mandamiento añadido al pasaje."
+          },
+          {
+            "type": "practice",
+            "title": "Tres preguntas antes de elegir",
+            "items": [
+              "¿A qué necesidad o deseo intento responder?",
+              "¿Espero que esta compra me dé valor o certeza que no puede ofrecer?",
+              "¿Cómo encaja esta elección con mis responsabilidades y mi disposición a ayudar?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Usa las preguntas sin juzgar las circunstancias de los demás. Una compra visible no cuenta toda una vida. El ejercicio invita a examinar tus propios motivos y conducta."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "¿Dar significa que me haré rico?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Estos pasajes no prometen que un regalo produzca una cantidad mayor de dinero. Invitan a hacer el bien y compartir, mientras apartan la esperanza de la riqueza incierta. Distingue la generosidad de una afirmación sobre rendimientos financieros."
+          },
+          {
+            "type": "paragraph",
+            "text": "Los Consejos de Bible Answer incluyen dinero, trabajo, palabras y decisiones, con pasajes bíblicos detrás de cada tema. Léelos en su contexto. Este artículo inicia una reflexión sobre confianza y generosidad, no un plan financiero."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "salmo-23-significado",
+    "title": "Significado del Salmo 23: el pastor y el valle",
+    "seo_title": "Significado del Salmo 23: texto completo y contexto",
+    "description": "Lee el Salmo 23 completo y explora las imágenes del pastor, el descanso, el valle y la mesa con preguntas sencillas para estudiar la Biblia.",
+    "category": "Comprender un salmo",
+    "lead": "El salmo reúne cuidado y peligro en un mismo poema. Léelo de principio a fin antes de dejar que una sola línea cargue con todo el significado.",
+    "key": "psalm23",
+    "lang": "es",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "¿De qué trata el Salmo 23?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El Salmo 23 describe la confianza en Dios con las imágenes de un pastor y un anfitrión. El descanso y la guía aparecen junto a un valle oscuro y enemigos. El poema no borra el peligro: describe cuidado dentro de él. Empieza con el salmo completo."
+          },
+          {
+            "type": "passage",
+            "source": "es-PSA-23-1-6.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Observa el cambio entre describir a Dios y hablarle directamente en el valle. Leer en voz alta puede ayudarte a escucharlo. En la numeración sinodal rusa, el mismo texto es el Salmo 22: cambia la numeración, no el poema."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Sigue cuatro imágenes en lugar de un solo lema",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "El pastor y el descanso: observa provisión, agua y restauración al comienzo.",
+              "Los caminos: observa la guía y su relación con el nombre de Dios.",
+              "El valle: observa el peligro y la razón de la confianza en medio de él.",
+              "La mesa y la morada: observa hospitalidad, abundancia y el movimiento hacia una cercanía duradera."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Son imágenes de un poema. Invitan a leer con atención sin ofrecer un mapa exacto de cada acontecimiento futuro. Compara el principio y el valle: la misma confianza continúa en entornos diferentes."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "¿Cómo usar el salmo en la oración?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Elige la imagen que más se relacione con tu día y mantenla junto al poema completo. Quizá necesites descanso, guía, valor o un recordatorio de cuidado. Nombra esa necesidad sin prometerte un resultado que el texto no ha especificado."
+          },
+          {
+            "type": "practice",
+            "title": "Un estudio breve del salmo completo",
+            "items": [
+              "Lee los seis versículos y nombra dos entornos distintos del poema.",
+              "Pregunta qué cambia entre ellos y qué permanece presente.",
+              "Lleva una necesidad a la oración y considera una acción apropiada para hoy."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Por ejemplo, necesitar descanso puede llevarte a aceptar ayuda en una tarea; necesitar guía, a una conversación útil. Son ejemplos editoriales de respuesta, no significados ocultos atribuidos a las imágenes."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "¿Promete el Salmo 23 una vida sin problemas?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El valle y los enemigos ya están en el poema. Su confianza se relaciona con el cuidado y la presencia de Dios. Leerlo como promesa de un día sin problemas dejaría fuera parte del texto."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer permite leer el salmo y explorar tres lecturas: bíblica, simbólica y para la vida. Compara cualquier reflexión con las palabras reales. Distingue tu aplicación personal de la afirmación de que el poema predice tus circunstancias concretas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "versiculos-biblicos-sobre-ansiedade",
+    "title": "Versículos sobre ansiedade: oração e cuidado",
+    "seo_title": "Versículos bíblicos sobre ansiedade: oração e paz",
+    "description": "Leia Filipenses 4:6–7 e 1 Pedro 5:6–7 em contexto, com uma prática de oração honesta e perguntas para voltar à Bíblia quando a preocupação pesa.",
+    "category": "Preocupação e paz",
+    "lead": "Comece com duas passagens que dão lugar à oração e ao cuidado. Você não precisa transformar um dia preocupado numa história organizada antes de ler.",
+    "key": "anxiety",
+    "lang": "pt",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Que passagem posso ler quando estou ansioso?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Filipenses 4:6–7 é um começo útil: relaciona preocupação com oração, pedidos concretos, gratidão e paz de Deus. Leia os dois versículos juntos. A passagem convida a levar a Deus o que preocupa você; não exige fabricar uma sensação de calma antes de orar."
+          },
+          {
+            "type": "passage",
+            "source": "pt-PHP-4-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "No capítulo, Paulo se dirige a uma comunidade sobre acordo, gentileza, oração, pensamentos e ações. É mais que uma frase repetida isoladamente. Leia Filipenses 4:4–9 em seguida e observe as orientações que acompanham a promessa de paz."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "O que 1 Pedro acrescenta sobre receber cuidado?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "O convite em 1 Pedro 5:6–7 se apoia no cuidado de Deus. Está num capítulo sobre humildade, liderança, sofrimento e vida em comunidade. Você pode levar um peso à oração sem concluir que carregá-lo torna você indigno de cuidado."
+          },
+          {
+            "type": "passage",
+            "source": "pt-1PE-5-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Distinga os contextos. Filipenses fala de oração e paz na comunidade; 1 Pedro relaciona entregar uma preocupação com humildade e cuidado de Deus. Nenhuma passagem dá um prazo para o fim de uma circunstância difícil."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Uma leitura e oração breves para um dia preocupado",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine que uma mensagem sem resposta prende sua atenção repetidamente. Não é preciso interpretar cada demora. Nomeie primeiro a incerteza real, em vez de todos os resultados que teme. É um exercício de leitura, não uma fórmula para controlar os acontecimentos."
+          },
+          {
+            "type": "practice",
+            "title": "Uma passagem, um pedido, um próximo passo",
+            "items": [
+              "Leia Filipenses 4:6–7 duas vezes. Perceba o que o texto convida você a fazer.",
+              "Leve uma preocupação concreta à oração e agradeça algo real que recebeu.",
+              "Escolha um passo adequado: fazer uma pergunta clara, aceitar ajuda ou voltar à tarefa presente."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "O passo precisa caber na situação. A oração pode acompanhar apoio de pessoas de confiança e cuidado profissional quando necessário. Pedir ajuda não impede levar a mesma preocupação a Deus."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "E se eu continuar preocupado depois de orar?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Um sentimento que continua não basta para julgar sua fé ou a de alguém. Volte à passagem como convite à oração e ao cuidado. Evite transformá-la numa prova que precise passar imediatamente."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer permite ler o capítulo, explorar o contexto do versículo ou abrir Momentos de paz. Mantenha a passagem completa ao lado da reflexão. A leitura continua útil se você fechar a página e conversar com alguém de confiança."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "versiculos-para-oracao-da-manha",
+    "title": "Versículos para uma oração simples da manhã",
+    "seo_title": "Oração da manhã: versículos e cinco minutos de leitura",
+    "description": "Comece a oração da manhã com Salmos 143:8–10 e Lamentações 3:22–23, seu contexto e uma prática simples de cinco minutos para ler sem pressa.",
+    "category": "Oração da manhã",
+    "lead": "Um começo tranquilo pode ser pequeno: leia uma passagem, apresente o dia a Deus e escolha um passo atento. Não é preciso esperar uma manhã perfeita.",
+    "key": "morning",
+    "lang": "pt",
+    "date": "2026-10-03",
+    "plate": "plate-plan-john",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Por onde começar a oração da manhã?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Salmos 143:8–10 reúne confiança, desejo de direção e pedido para aprender a vontade de Deus. É uma leitura útil de manhã porque quem fala pede orientação, em vez de afirmar que controla o dia."
+          },
+          {
+            "type": "passage",
+            "source": "pt-PSA-143-8-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Quando puder, leia o salmo inteiro. Ele expressa aflição e confiança. A oração pode incluir uma conversa difícil, cansaço ou uma pergunta pendente. Você não precisa soar seguro sobre todos os resultados."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Leia sobre misericórdia sem pular a dor",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lamentações 3:22–23 também costuma ser lido no começo do dia. O capítulo contém dor e um movimento consciente para a esperança. Leia os versículos 19–26 ao redor da citação para ouvir esse movimento, sem fazer da manhã uma exigência de esquecer o que dói."
+          },
+          {
+            "type": "passage",
+            "source": "pt-LAM-3-22-23.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Na oração, você pode nomear algo recebido com gratidão e algo que continua difícil. As duas observações cabem numa manhã. Agradecer não exige chamar de bom todo acontecimento doloroso."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Uma prática de cinco minutos que você pode adaptar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "O tempo sugerido é uma proposta comum, não uma regra das passagens. Se a manhã está corrida, leia uma agora e volte ao capítulo depois. O objetivo é atenção, não completar uma rotina impressionante."
+          },
+          {
+            "type": "practice",
+            "title": "Leia, ore e leve uma coisa ao longo do dia",
+            "items": [
+              "Use cerca de dois minutos para ler uma passagem completa devagar e repeti-la.",
+              "Use cerca de dois minutos para nomear necessidades, agradecer e pedir direção.",
+              "No minuto final, escolha uma ação fiel: ouvir antes de responder, fazer uma tarefa honestamente ou ajudar alguém."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Deixe espaço para o silêncio se quiser. Você também pode escrever uma frase e voltar a ela no almoço. As sugestões acompanham o texto; não substituem suas palavras nem prometem um sentimento específico."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "A oração precisa acontecer num horário fixo?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Essas leituras não dão um horário obrigatório para todas as pessoas. Quem trabalha em turnos, quem cuida de filhos e quem estuda podem ter manhãs diferentes. Escolha um momento em que consiga prestar atenção, mesmo breve."
+          },
+          {
+            "type": "paragraph",
+            "text": "A Oração da hora de Bible Answer reúne Escritura, oração e quietude pela manhã. Use junto com suas próprias palavras e continue na leitura bíblica. Se perder uma manhã, a próxima leitura pode começar onde você estiver."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "o-que-a-biblia-diz-sobre-dinheiro",
+    "title": "O que a Bíblia diz sobre dinheiro?",
+    "seo_title": "O que a Bíblia diz sobre dinheiro: contentamento e dar",
+    "description": "Leia 1 Timóteo 6:6–10 e 6:17–19 para explorar dinheiro, contentamento, confiança e generosidade, com contexto e perguntas para escolhas cotidianas.",
+    "category": "Dinheiro e generosidade",
+    "lead": "Distinga o dinheiro do lugar que ele pode ocupar na vida. Essas passagens perguntam onde colocamos a esperança e como tratamos as pessoas.",
+    "key": "money",
+    "lang": "pt",
+    "date": "2026-10-03",
+    "plate": "plate-script",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "A Bíblia diz que o dinheiro em si é mau?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Em 1 Timóteo 6:6–10, o alerta trata do desejo de enriquecer e do amor ao dinheiro. O parágrafo também fala de contentamento e necessidades comuns. Ler tudo preserva essas diferenças, em vez de reduzir o texto a um slogan sobre o dinheiro em si."
+          },
+          {
+            "type": "passage",
+            "source": "pt-1TI-6-6-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "A passagem convida a examinar o desejo e suas consequências. Não diz que a renda revela a fidelidade de alguém. Ter pouco ou muito pode envolver responsabilidades reais; nenhuma situação nos permite conhecer o coração de outra pessoa."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Que responsabilidade é dada a quem tem riqueza?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Depois, 1 Timóteo 6:17–19 se dirige aos ricos. Alerta contra arrogância e confiança na riqueza incerta, orientando para boas obras, generosidade e disposição para repartir. Leia o parágrafo ao lado do alerta anterior."
+          },
+          {
+            "type": "passage",
+            "source": "pt-1TI-6-17-19.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "O foco vai além de acumular ou rejeitar posses. Importam confiança e uso do que está disponível. A generosidade aparece como maneira de agir com os outros, não como transação que garante um retorno financeiro maior."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Como refletir antes de uma compra comum?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine querer uma coisa principalmente porque outra pessoa tem. Talvez você ainda escolha comprar, mas primeiro nomeie a razão honestamente. Ela é útil, expressa cuidado, busca aprovação ou tenta apagar uma inquietação? É nossa reflexão prática, não um mandamento acrescentado ao texto."
+          },
+          {
+            "type": "practice",
+            "title": "Três perguntas antes de escolher",
+            "items": [
+              "A que necessidade ou desejo estou tentando responder?",
+              "Espero que esta compra dê valor ou certeza que ela não pode oferecer?",
+              "Como essa escolha se relaciona com minhas responsabilidades e disposição para ajudar?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Use as perguntas sem julgar as circunstâncias dos outros. Uma compra visível não conta toda a vida. O exercício pede um olhar para seus próprios motivos e atitudes."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Dar significa que vou ficar rico?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Essas passagens não prometem que um presente gere uma quantia maior de dinheiro. Chamam às boas obras e à partilha, afastando a esperança da riqueza incerta. Distinga o convite à generosidade de uma afirmação sobre retornos de investimento."
+          },
+          {
+            "type": "paragraph",
+            "text": "Os Conselhos de Bible Answer incluem dinheiro, trabalho, palavras e decisões, com passagens bíblicas por trás de cada tema. Leia em contexto. Este artigo é um começo para refletir sobre confiança e generosidade, não um plano financeiro."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "salmo-23-significado",
+    "title": "Significado do Salmo 23: o pastor e o vale",
+    "seo_title": "Significado do Salmo 23: texto completo e contexto",
+    "description": "Leia o Salmo 23 completo e explore as imagens do pastor, do descanso, do vale e da mesa com perguntas simples para um estudo pessoal da Bíblia.",
+    "category": "Entender um salmo",
+    "lead": "O salmo reúne cuidado e perigo num mesmo poema. Leia do começo ao fim antes de deixar uma única linha carregar todo o sentido.",
+    "key": "psalm23",
+    "lang": "pt",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Do que trata o Salmo 23?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "O Salmo 23 descreve confiança em Deus com as imagens de um pastor e um anfitrião. Descanso e direção aparecem junto ao vale escuro e aos inimigos. O poema não apaga o perigo; descreve cuidado dentro dele. Comece pelo salmo completo."
+          },
+          {
+            "type": "passage",
+            "source": "pt-PSA-23-1-6.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Perceba como a voz passa de descrever Deus para se dirigir a Ele no vale. Ler em voz alta ajuda a ouvir a mudança. Na numeração sinodal russa, o mesmo texto é o Salmo 22: muda a numeração, não o poema."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Acompanhe quatro imagens em vez de um único slogan",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "O pastor e o descanso: observe provisão, água e restauração no começo.",
+              "Os caminhos: observe direção e sua ligação com o nome de Deus.",
+              "O vale: observe o perigo e a razão da confiança dentro dele.",
+              "A mesa e a morada: observe hospitalidade, abundância e o movimento para uma proximidade duradoura."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "São imagens de um poema. Convidam à leitura atenta sem oferecer um mapa exato de cada acontecimento futuro. Compare o começo e o vale: a mesma confiança continua em cenários diferentes."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Como usar o salmo na oração?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Escolha a imagem que mais se relaciona com seu dia e mantenha-a junto ao poema inteiro. Talvez você precise de descanso, direção, coragem ou lembrança de cuidado. Nomeie a necessidade sem prometer um resultado que o texto não especifica."
+          },
+          {
+            "type": "practice",
+            "title": "Um estudo breve do salmo completo",
+            "items": [
+              "Leia os seis versículos e nomeie dois cenários diferentes.",
+              "Pergunte o que muda entre eles e o que continua presente.",
+              "Leve uma necessidade à oração e pense numa ação adequada para hoje."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Por exemplo, precisar de descanso pode levar a aceitar ajuda numa tarefa; precisar de direção, a uma conversa útil. São exemplos editoriais de resposta, não significados ocultos atribuídos às imagens."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "O Salmo 23 promete uma vida sem problemas?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "O vale e os inimigos já estão no poema. Sua confiança trata do cuidado e da presença de Deus. Ler como promessa de um dia sem problemas deixaria parte do texto de fora."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer permite ler o salmo e explorar três leituras: bíblica, simbólica e para a vida. Compare qualquer reflexão com as palavras reais. Distinga sua aplicação pessoal da afirmação de que o poema prevê suas circunstâncias específicas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "versets-bibliques-sur-inquietude",
+    "title": "Versets sur l’anxiété : prière et attention",
+    "seo_title": "Versets bibliques sur l’anxiété : prière et paix",
+    "description": "Lis Philippiens 4:6–7 et 1 Pierre 5:6–7 dans leur contexte, avec une prière honnête et des questions pour revenir à la Bible lorsque l’inquiétude pèse.",
+    "category": "Inquiétude et paix",
+    "lead": "Commence par deux passages qui font place à la prière et au fait d’être accompagné. Tu n’as pas besoin de transformer une journée inquiète en récit bien rangé.",
+    "key": "anxiety",
+    "lang": "fr",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Quel passage lire lorsque je suis inquiet ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Philippiens 4:6–7 est un point de départ utile : le passage relie inquiétude, prière, demandes précises, reconnaissance et paix de Dieu. Lis les deux versets ensemble. Tu es invité à apporter ce qui t’inquiète à Dieu, sans fabriquer d’abord une sensation de calme."
+          },
+          {
+            "type": "passage",
+            "source": "fr-PHP-4-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans le chapitre, Paul parle à une communauté : accord, douceur, prière, pensées et actes. Il s’agit de plus qu’une phrase à répéter isolément. Continue avec Philippiens 4:4–9 et remarque les instructions qui accompagnent la promesse de paix."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Que dit 1 Pierre sur le fait d’être accompagné ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "L’invitation de 1 Pierre 5:6–7 s’appuie sur l’attention de Dieu. Elle appartient à un chapitre sur l’humilité, la conduite de la communauté, la souffrance et la vie commune. Tu peux apporter un fardeau à la prière sans penser que le porter te rend indigne d’attention."
+          },
+          {
+            "type": "passage",
+            "source": "fr-1PE-5-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Distingue les contextes. Philippiens décrit prière et paix dans une communauté ; 1 Pierre relie le fait de confier un souci à l’humilité et à l’attention de Dieu. Aucun des deux ne fixe la date où une circonstance difficile prendra fin."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Une lecture et une prière brèves pour une journée inquiète",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine qu’un message sans réponse attire sans cesse ton attention. Tu n’as pas à interpréter chaque retard. Nomme d’abord l’incertitude réelle plutôt que tous les résultats redoutés. C’est un exercice de lecture, pas une formule pour contrôler les événements."
+          },
+          {
+            "type": "practice",
+            "title": "Un passage, une demande, un prochain pas",
+            "items": [
+              "Lis deux fois Philippiens 4:6–7. Remarque ce que le passage t’invite à faire.",
+              "Apporte un souci précis à la prière et remercie pour une chose réellement reçue.",
+              "Choisis un pas approprié : poser une question claire, accepter de l’aide ou revenir à la tâche présente."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Le pas doit correspondre à la situation. La prière peut accompagner le soutien de personnes de confiance et une aide professionnelle quand elle est nécessaire. Demander de l’aide n’empêche pas de confier le même souci à Dieu."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Et si je reste inquiet après avoir prié ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Un sentiment qui persiste ne suffit pas à juger ta foi ou celle d’autrui. Reviens au passage comme invitation à prier et à recevoir de l’attention. Évite d’en faire une épreuve à réussir immédiatement."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer permet de lire le chapitre, d’explorer le contexte du verset ou d’ouvrir Moments de paix. Garde le passage complet à côté de la réflexion. La lecture reste utile si tu fermes cette page pour parler à une personne de confiance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "versets-pour-la-priere-du-matin",
+    "title": "Versets pour une prière simple du matin",
+    "seo_title": "Prière du matin : versets et cinq minutes de lecture",
+    "description": "Commence la prière du matin avec Psaumes 143:8–10 et Lamentations 3:22–23, leur contexte et une pratique simple de cinq minutes sans te presser.",
+    "category": "Prière du matin",
+    "lead": "Un début paisible peut être petit : lis un passage, présente ta journée à Dieu et choisis un pas attentif. Tu n’as pas à attendre un matin parfait.",
+    "key": "morning",
+    "lang": "fr",
+    "date": "2026-10-03",
+    "plate": "plate-plan-john",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Par où commencer une prière du matin ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Psaumes 143:8–10 réunit confiance, désir d’être guidé et demande d’apprendre la volonté de Dieu. C’est une lecture utile le matin : la personne qui parle demande une direction au lieu de prétendre contrôler sa journée."
+          },
+          {
+            "type": "passage",
+            "source": "fr-PSA-143-8-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Lis le psaume entier quand tu peux. Sa voix exprime la détresse autant que la confiance. Une prière peut nommer une conversation difficile, la fatigue ou une question ouverte. Tu n’as pas à sembler sûr de chaque résultat."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Lis la miséricorde sans sauter la peine",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lamentations 3:22–23 est aussi souvent lu au début du jour. Le chapitre contient de la peine et un mouvement volontaire vers l’espérance. Lis les versets 19–26 autour de cette citation pour entendre ce mouvement, plutôt que faire du matin une obligation d’oublier ce qui fait mal."
+          },
+          {
+            "type": "passage",
+            "source": "fr-LAM-3-22-23.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans ta prière, tu peux nommer un don avec reconnaissance et une difficulté toujours présente. Les deux observations tiennent dans un même matin. La gratitude n’exige pas de déclarer bon chaque événement douloureux."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Une pratique de cinq minutes à adapter",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Le temps proposé est une suggestion ordinaire, pas une règle de ces passages. Si le matin est chargé, lis un passage maintenant et reviens au chapitre plus tard. Le but est l’attention, pas une routine impressionnante."
+          },
+          {
+            "type": "practice",
+            "title": "Lis, prie et emporte une chose dans la journée",
+            "items": [
+              "Consacre environ deux minutes à lire lentement un passage complet, puis à le relire.",
+              "Consacre environ deux minutes à nommer tes besoins, remercier et demander une direction.",
+              "Garde la dernière minute pour choisir un acte fidèle : écouter avant de répondre, accomplir honnêtement une tâche ou aider quelqu’un."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Fais place au silence si tu le souhaites. Tu peux aussi noter une phrase et la retrouver au déjeuner. Ces suggestions accompagnent le texte ; elles ne remplacent pas ses mots et ne promettent pas une sensation particulière."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Faut-il prier à une heure fixe ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ces lectures ne donnent pas à tous une heure obligatoire. Une personne travaillant en horaires décalés, un parent et un étudiant ont des matins différents. Choisis un moment où tu peux être attentif, même bref."
+          },
+          {
+            "type": "paragraph",
+            "text": "La Prière de l’heure de Bible Answer réunit Écriture, prière et silence pour le matin. Tu peux l’utiliser avec tes propres mots, puis poursuivre la lecture biblique. Si tu manques un matin, la prochaine lecture commence là où tu es."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ce-que-la-bible-dit-sur-argent",
+    "title": "Que dit la Bible sur l’argent ?",
+    "seo_title": "Ce que la Bible dit sur l’argent : contentement et partage",
+    "description": "Lis 1 Timothée 6:6–10 et 6:17–19 pour explorer argent, contentement, confiance et générosité, avec le contexte et des questions pour tes choix quotidiens.",
+    "category": "Argent et générosité",
+    "lead": "Distingue l’argent de la place qu’il peut prendre dans une vie. Ces passages interrogent notre espérance et notre manière de traiter les autres.",
+    "key": "money",
+    "lang": "fr",
+    "date": "2026-10-03",
+    "plate": "plate-script",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "La Bible dit-elle que l’argent lui-même est mauvais ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dans 1 Timothée 6:6–10, l’avertissement concerne le désir de devenir riche et l’amour de l’argent. Le paragraphe parle aussi de contentement et de besoins ordinaires. Lire l’ensemble garde ces distinctions, au lieu de réduire le texte à un slogan sur l’argent lui-même."
+          },
+          {
+            "type": "passage",
+            "source": "fr-1TI-6-6-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Le passage invite à examiner le désir et ses conséquences. Il ne dit pas que le revenu révèle la fidélité d’une personne. Avoir peu ou beaucoup peut comporter de vraies responsabilités ; aucune situation ne nous fait connaître le cœur d’autrui."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Quelle responsabilité donne-t-il aux personnes riches ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Plus loin, 1 Timothée 6:17–19 s’adresse aux riches. Il avertit contre l’orgueil et la confiance dans des richesses incertaines, puis appelle aux bonnes œuvres, à la générosité et au partage. Lis-le avec l’avertissement précédent."
+          },
+          {
+            "type": "passage",
+            "source": "fr-1TI-6-17-19.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Il s’agit de plus qu’accumuler ou rejeter des biens. La confiance et l’usage de ce qui est disponible comptent. La générosité apparaît comme une manière d’agir envers les autres, pas une transaction garantissant un gain financier supérieur."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Comment réfléchir avant un achat ordinaire ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Imagine vouloir un objet surtout parce qu’une autre personne le possède. Tu décideras peut-être de l’acheter, mais nomme d’abord honnêtement la raison. Est-il utile, exprime-t-il de l’attention, recherche-t-il l’approbation ou cherche-t-il à effacer une inquiétude ? C’est notre réflexion pratique, pas un commandement ajouté au texte."
+          },
+          {
+            "type": "practice",
+            "title": "Trois questions avant le prochain choix",
+            "items": [
+              "À quel besoin ou désir est-ce que j’essaie de répondre ?",
+              "Est-ce que j’attends de cet achat une valeur ou une certitude qu’il ne peut donner ?",
+              "Comment ce choix rejoint-il mes responsabilités et ma volonté d’aider ?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Utilise les questions sans juger la situation des autres. Un achat visible ne raconte pas toute une vie. L’exercice invite à examiner tes propres motifs et actes."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Donner signifie-t-il que je deviendrai riche ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ces passages ne promettent pas qu’un don produira une somme d’argent plus grande. Ils appellent à faire le bien et à partager, tout en détournant l’espérance des richesses incertaines. Distingue la générosité d’une affirmation sur un rendement financier."
+          },
+          {
+            "type": "paragraph",
+            "text": "Les Conseils de Bible Answer traitent d’argent, de travail, de paroles et de décisions avec des passages bibliques. Lis-les dans leur contexte. Cet article commence une réflexion sur confiance et générosité ; il ne constitue pas un plan financier."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "psaume-23-signification",
+    "title": "Sens du Psaume 23 : le berger et la vallée",
+    "seo_title": "Signification du Psaume 23 : texte complet et contexte",
+    "description": "Lis le Psaume 23 entier et explore les images du berger, du repos, de la vallée et de la table avec des questions simples pour étudier la Bible.",
+    "category": "Comprendre un psaume",
+    "lead": "Le psaume réunit attention et danger dans un même poème. Lis-le du début à la fin avant de confier tout le sens à une seule ligne.",
+    "key": "psalm23",
+    "lang": "fr",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "De quoi parle le Psaume 23 ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Le Psaume 23 décrit la confiance en Dieu par les images d’un berger et d’un hôte. Repos et direction côtoient une vallée sombre et des ennemis. Le poème n’efface pas le danger ; il décrit l’attention au milieu de lui. Commence par le psaume complet."
+          },
+          {
+            "type": "passage",
+            "source": "fr-PSA-23-1-6.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Remarque le passage de la description de Dieu à la parole directement adressée à Dieu dans la vallée. La lecture à voix haute aide à entendre ce changement. Dans la numérotation synodale russe, le même texte est le Psaume 22 : c’est la numérotation qui change, pas le poème."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Suis quatre images plutôt qu’un seul slogan",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Le berger et le repos : remarque nourriture, eau et restauration au début.",
+              "Les chemins : remarque la direction et son lien avec le nom de Dieu.",
+              "La vallée : remarque le danger et la raison donnée pour la confiance au milieu de lui.",
+              "La table et la demeure : remarque hospitalité, abondance et mouvement vers une proximité durable."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Ce sont les images d’un poème. Elles invitent à lire avec attention sans tracer une carte précise de tous les événements futurs. Compare le début et la vallée : une même confiance demeure dans des lieux très différents."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Comment utiliser le psaume dans la prière ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choisis l’image la plus proche de ta journée et garde-la avec le poème entier. Tu as peut-être besoin de repos, de direction, de courage ou d’un rappel de l’attention de Dieu. Nomme ce besoin sans te promettre un résultat que le texte ne précise pas."
+          },
+          {
+            "type": "practice",
+            "title": "Une petite étude du psaume entier",
+            "items": [
+              "Lis les six versets et nomme deux situations différentes du poème.",
+              "Demande ce qui change entre elles et ce qui reste présent.",
+              "Apporte un besoin à la prière, puis considère une action appropriée aujourd’hui."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Par exemple, un besoin de repos peut conduire à accepter une aide ; un besoin de direction, à une conversation utile. Ce sont des exemples éditoriaux de réponse, pas des sens cachés attribués aux images."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Le Psaume 23 promet-il une vie sans difficulté ?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "La vallée et les ennemis sont déjà dans le poème. Sa confiance concerne l’attention et la présence de Dieu. Le lire comme promesse d’une journée sans problème laisserait de côté une partie du texte."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bible Answer permet de lire le psaume entier et d’explorer ses trois lectures : biblique, symbolique et pour la vie. Compare toute réflexion aux mots du psaume. Distingue ton application personnelle de l’affirmation que le poème prédit ta situation précise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mga-talata-sa-bibliya-tungkol-sa-pag-aalala",
+    "title": "Mga talata tungkol sa pag-aalala: panalangin at malasakit",
+    "seo_title": "Mga talata sa Bibliya tungkol sa pag-aalala at kapayapaan",
+    "description": "Basahin ang Filipos 4:6–7 at 1 Pedro 5:6–7 sa konteksto, kasama ang tapat na panalangin at mga tanong para bumalik sa Bibliya kapag mabigat ang pag-aalala.",
+    "category": "Pag-aalala at kapayapaan",
+    "lead": "Magsimula sa dalawang talata na nagbibigay ng puwang sa panalangin at pag-aalaga. Hindi mo kailangang gawing maayos na kuwento ang isang magulong araw bago magbasa.",
+    "key": "anxiety",
+    "lang": "fil",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Anong talata ang maaari kong basahin kapag nag-aalala?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Magandang simula ang Filipos 4:6–7: iniuugnay nito ang pag-aalala sa panalangin, tiyak na kahilingan, pasasalamat, at kapayapaan ng Diyos. Basahin ang dalawang talata nang magkasama. Inaanyayahan kang dalhin sa Diyos ang gumugulo sa iyo; hindi kailangang gumawa muna ng payapang pakiramdam bago magdasal."
+          },
+          {
+            "type": "passage",
+            "source": "fil-PHP-4-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Sa kabanata, kinakausap ni Pablo ang isang komunidad tungkol sa pagkakaisa, kahinahunan, panalangin, pag-iisip, at kilos. Higit ito sa pangungusap na inuulit nang mag-isa. Ituloy ang Filipos 4:4–9 at pansinin ang mga tagubiling kasabay ng pangako ng kapayapaan."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Ano ang idinadagdag ng 1 Pedro tungkol sa malasakit?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Nakabatay sa malasakit ng Diyos ang paanyaya sa 1 Pedro 5:6–7. Nasa kabanata ito tungkol sa pagpapakumbaba, pamumuno, pagdurusa, at buhay na magkakasama. Maaari kang magdala ng pasanin sa panalangin nang hindi iniisip na hindi ka na karapat-dapat alagaan dahil mayroon kang pasanin."
+          },
+          {
+            "type": "passage",
+            "source": "fil-1PE-5-6-7.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Ihiwalay ang mga konteksto. Inilalarawan ng Filipos ang panalangin at kapayapaan sa komunidad; iniuugnay ng 1 Pedro ang pagpapaubaya ng pasanin sa pagpapakumbaba at malasakit ng Diyos. Walang takdang petsa sa alinman kung kailan matatapos ang mahirap na kalagayan."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Maikling pagbabasa at panalangin para sa araw na may alalahanin",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Isiping paulit-ulit mong tinitingnan ang mensaheng hindi pa sinasagot. Hindi mo kailangang ipaliwanag ang bawat pagkaantala. Pangalanan muna ang totoong hindi mo alam, sa halip na lahat ng resultang kinatatakutan. Pagsasanay ito sa pagbabasa, hindi pormula para kontrolin ang pangyayari."
+          },
+          {
+            "type": "practice",
+            "title": "Isang talata, isang kahilingan, isang hakbang",
+            "items": [
+              "Basahin nang dalawang beses ang Filipos 4:6–7. Ano ang inaanyayahan nitong gawin?",
+              "Dalhin sa panalangin ang isang tiyak na alalahanin at magpasalamat sa tunay na natanggap.",
+              "Pumili ng angkop na hakbang: magtanong nang malinaw, tumanggap ng tulong, o bumalik sa kasalukuyang gawain."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Dapat umangkop sa sitwasyon ang hakbang. Maaaring kasabay ng panalangin ang suporta ng pinagkakatiwalaang tao at propesyonal na tulong kapag kailangan. Hindi hadlang ang paghingi ng tulong sa pagdadala ng parehong alalahanin sa Diyos."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Paano kung nag-aalala pa rin ako matapos magdasal?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Hindi sapat ang patuloy na damdamin upang husgahan ang pananampalataya mo o ng iba. Balikan ang talata bilang paanyaya sa panalangin at pagtanggap ng malasakit. Huwag itong gawing pagsusulit na kailangang maipasa agad."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sa Bible Answer, mababasa mo ang kabanata, matutuklasan ang konteksto ng talata, o mabubuksan ang Mga Sandali ng Kapayapaan. Panatilihin ang buong teksto katabi ng pagninilay. May kabuluhan pa rin ang pagbasa kung isasara mo ang pahina at kakausapin ang pinagkakatiwalaan mo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mga-talata-para-sa-panalangin-sa-umaga",
+    "title": "Mga talata para sa simpleng panalangin sa umaga",
+    "seo_title": "Panalangin sa umaga: mga talata at limang minutong pagbasa",
+    "description": "Simulan ang panalangin sa umaga sa Mga Awit 143:8–10 at Panaghoy 3:22–23, kasama ang konteksto at simpleng limang minutong pagbabasa nang walang pagmamadali.",
+    "category": "Panalangin sa umaga",
+    "lead": "Maaaring maliit ang tahimik na simula: basahin ang talata, iharap ang araw sa Diyos, at pumili ng maingat na hakbang. Hindi kailangang maghintay ng perpektong umaga.",
+    "key": "morning",
+    "lang": "fil",
+    "date": "2026-10-03",
+    "plate": "plate-plan-john",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Saan magsisimula ng panalangin sa umaga?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Pinagsasama ng Mga Awit 143:8–10 ang tiwala, pagnanais ng gabay, at paghingi na matuto ng kalooban ng Diyos. Angkop ito sa umaga dahil humihingi ng direksiyon ang nagsasalita sa halip na sabihing hawak niya ang buong araw."
+          },
+          {
+            "type": "passage",
+            "source": "fil-PSA-143-8-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Basahin ang buong awit kapag maaari. May hirap at tiwala sa tinig nito. Maaaring tapat na isama sa panalangin ang mahirap na usapan, pagod, o tanong na hindi pa nasasagot. Hindi mo kailangang magtunog siguradong-sigurado sa bawat resulta."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Basahin ang awa nang hindi nilalaktawan ang lungkot",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Madalas ding basahin sa simula ng araw ang Panaghoy 3:22–23. May lungkot sa kabanata at sinadyang pagbaling sa pag-asa. Basahin ang mga talata 19–26 upang makita ang paglipat na iyon, sa halip na ituring ang umaga na utos para kalimutan ang masakit."
+          },
+          {
+            "type": "passage",
+            "source": "fil-LAM-3-22-23.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Sa panalangin, maaari mong pangalanan ang natanggap na may pasasalamat at ang nananatiling mahirap. May puwang ang dalawa sa isang umaga. Hindi kailangang tawaging mabuti ang bawat masakit na pangyayari upang magpasalamat."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Limang minutong maaari mong iangkop",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Karaniwang mungkahi ang oras sa ibaba, hindi tuntunin mula sa mga talata. Kung abala ang umaga, basahin ang isang sipi ngayon at bumalik sa kabanata mamaya. Layunin ang pansin sa teksto, hindi kahanga-hangang gawain."
+          },
+          {
+            "type": "practice",
+            "title": "Magbasa, magdasal, at magdala ng isang bagay sa araw",
+            "items": [
+              "Gamitin ang mga dalawang minuto sa dahan-dahang pagbasa ng buong sipi, saka ulitin ito.",
+              "Gamitin ang mga dalawang minuto sa pagbanggit ng pangangailangan, pasasalamat, at paghingi ng gabay.",
+              "Sa huling minuto, pumili ng tapat na kilos: makinig bago sumagot, gawin nang tapat ang gawain, o tumulong sa iba."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Magbigay ng puwang sa katahimikan kung nais mo. Maaari kang magsulat ng isang pangungusap at balikan sa tanghali. Kasama ng teksto ang mga mungkahi; hindi nila pinapalitan ang mga salita o ipinapangako ang isang damdamin."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Kailangan ba ng tiyak na oras?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Walang itinakdang oras para sa lahat sa mga siping ito. Magkaiba ang umaga ng nagtatrabaho nang palitan, magulang, at estudyante. Pumili ng sandaling makapagbibigay ka ng pansin, kahit maikli."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pinagsasama ng Panalangin ng Oras sa Bible Answer ang Kasulatan, panalangin, at katahimikan para sa umaga. Maaari mong samahan ng sarili mong mga salita at ituloy sa pagbabasa ng Bibliya. Kung may nalaktawang umaga, magsimula sa kung nasaan ka sa susunod na pagbasa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera",
+    "title": "Ano ang sinasabi ng Bibliya tungkol sa pera?",
+    "seo_title": "Bibliya at pera: pagiging kontento, tiwala, at pagbabahagi",
+    "description": "Basahin ang 1 Timoteo 6:6–10 at 6:17–19 tungkol sa pera, pagiging kontento, tiwala, at pagbabahagi, kasama ang konteksto at mga tanong sa araw-araw.",
+    "category": "Pera at pagbabahagi",
+    "lead": "Ihiwalay ang pera sa puwestong maaari nitong sakupin sa buhay. Itinatanong ng mga talata kung saan tayo umaasa at paano natin tinatrato ang iba.",
+    "key": "money",
+    "lang": "fil",
+    "date": "2026-10-03",
+    "plate": "plate-script",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Sinasabi ba ng Bibliya na masama ang pera mismo?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa 1 Timoteo 6:6–10, tungkol sa pagnanais yumaman at pag-ibig sa pera ang babala. Kasama rin ang pagiging kontento at ordinaryong pangangailangan. Sa buong talata, malinaw ang pagkakaiba sa halip na gawing simpleng sawikain tungkol sa pera mismo."
+          },
+          {
+            "type": "passage",
+            "source": "fil-1TI-6-6-10.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Inaanyayahan kang suriin ang hangarin at bunga nito. Hindi sinasabing ipinakikita ng kita ang katapatan ng tao. May tunay na pananagutan sa kakaunti at sa marami; hindi natin nakikilala ang puso ng iba sa alinman."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Anong pananagutan ang ibinibigay sa mayaman?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa bandang huli, kinakausap ng 1 Timoteo 6:17–19 ang mayayaman. Nagbababala laban sa pagmamataas at pag-asa sa kayamanang hindi tiyak; itinuturo ang mabubuting gawa, pagkabukas-palad, at pagbabahagi. Basahin kasabay ng naunang babala."
+          },
+          {
+            "type": "passage",
+            "source": "fil-1TI-6-17-19.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Higit ito sa pag-ipon o pagtanggi sa mga ari-arian. Mahalaga ang tiwala at paggamit ng mayroon. Paraan ng pagkilos sa kapwa ang pagbabahagi, hindi transaksiyong nangangako ng mas malaking balik na pera."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Paano magnilay bago ang isang ordinaryong pagbili?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Isiping gusto mo ang isang bagay dahil mayroon ang ibang tao. Maaari mo pa ring bilhin, pero pangalanan muna nang tapat ang dahilan. Kapaki-pakinabang ba, nagpapahayag ng malasakit, naghahanap ng pagtanggap, o sumusubok burahin ang pagkabalisa? Praktikal naming pagninilay ito, hindi dagdag na utos sa talata."
+          },
+          {
+            "type": "practice",
+            "title": "Tatlong tanong bago pumili",
+            "items": [
+              "Anong pangangailangan o hangarin ang sinusubukan kong tugunan?",
+              "Inaasahan ko bang magbigay ang pagbili ng halaga o katiyakang hindi nito maibibigay?",
+              "Paano nauugnay ang pagpili sa mga pananagutan ko at kahandaang tumulong?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Gamitin ang tanong nang hindi hinuhusgahan ang kalagayan ng iba. Hindi buong buhay ang nakikita sa isang pagbili. Iniimbitahan kang suriin ang sariling motibo at kilos."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Ibig bang sabihin ng pagbibigay ay yayaman ako?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Walang pangako rito na ang regalo ay magbubunga ng mas malaking halaga ng pera. Inaanyayahan ang mabubuting gawa at pagbabahagi habang inilalayo ang pag-asa sa hindi tiyak na kayamanan. Ihiwalay ang pagkabukas-palad sa pangako ng balik sa pamumuhunan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Kasama sa Payo ng Bible Answer ang pera, trabaho, pananalita, at mga pasiya, na may mga talata sa bawat paksa. Basahin ang mga ito sa konteksto. Simula ito ng pagninilay sa tiwala at pagbabahagi, hindi planong pinansiyal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kahulugan-ng-awit-23",
+    "title": "Kahulugan ng Awit 23: ang pastol at ang lambak",
+    "seo_title": "Kahulugan ng Awit 23: buong teksto at konteksto",
+    "description": "Basahin ang buong Awit 23 at pagnilayan ang pastol, pahinga, lambak, at hapag sa pamamagitan ng simpleng mga tanong para sa personal na pag-aaral ng Bibliya.",
+    "category": "Pag-unawa sa isang awit",
+    "lead": "May malasakit at panganib sa iisang tula. Basahin mula simula hanggang dulo bago ipabuhat sa isang linya ang lahat ng kahulugan.",
+    "key": "psalm23",
+    "lang": "fil",
+    "date": "2026-10-03",
+    "plate": "plate-kind-poetry",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Tungkol saan ang Awit 23?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Inilalarawan ng Awit 23 ang tiwala sa Diyos sa larawan ng pastol at mapagpatuloy na tumatanggap. Kasama ng pahinga at gabay ang madilim na lambak at mga kaaway. Hindi binubura ng tula ang panganib; inilalarawan ang pag-aalaga sa gitna nito. Magsimula sa buong awit."
+          },
+          {
+            "type": "passage",
+            "source": "fil-PSA-23-1-6.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Pansinin ang pagbabago mula sa paglalarawan sa Diyos tungo sa direktang pagsasalita sa Kaniya sa lambak. Makakatulong ang pagbasa nang malakas upang marinig ang paglipat. Awit 22 ang parehong teksto sa numerasyong sinodal na Ruso: numero ang nagbago, hindi ang tula."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "Sundan ang apat na larawan sa halip na isang sawikain",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Ang pastol at pahinga: pansinin ang pagkakaloob, tubig, at pagpapanumbalik sa simula.",
+              "Ang mga landas: pansinin ang gabay at ugnayan sa pangalan ng Diyos.",
+              "Ang lambak: pansinin ang panganib at dahilan ng tiwala sa gitna nito.",
+              "Ang hapag at tahanan: pansinin ang pagtanggap, kasaganaan, at paglapit sa nananatiling ugnayan."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Mga larawan ito sa tula. Inaanyayahan ang maingat na pagbasa, hindi eksaktong mapa ng bawat mangyayari. Ihambing ang simula at lambak: nagpapatuloy ang parehong tiwala sa magkaibang kalagayan."
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Paano gamitin ang awit sa panalangin?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Pumili ng larawang malapit sa araw mo at panatilihin sa tabi ng buong tula. Maaaring kailangan mo ng pahinga, gabay, tapang, o paalala ng malasakit. Pangalanan ang kailangan nang hindi nangangako ng resultang hindi tinukoy ng teksto."
+          },
+          {
+            "type": "practice",
+            "title": "Maikling pag-aaral ng buong awit",
+            "items": [
+              "Basahin ang anim na talata at pangalanan ang dalawang magkaibang kalagayan sa tula.",
+              "Itanong kung ano ang nagbabago at ano ang nananatiling kasama.",
+              "Dalhin ang isang kailangan sa panalangin at isipin ang angkop na kilos ngayon."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Halimbawa, ang pangangailangan sa pahinga ay maaaring humantong sa pagtanggap ng tulong; ang paghahanap ng gabay, sa kapaki-pakinabang na usapan. Mga halimbawang pang-editoryal ito ng pagtugon, hindi mga lihim na kahulugang idinagdag sa larawan."
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "Nangangako ba ang Awit 23 ng buhay na walang hirap?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Nasa tula na ang lambak at mga kaaway. Tungkol sa malasakit at presensiya ng Diyos ang tiwala nito. Kung ituturing itong pangako ng araw na walang problema, maiiwan ang bahagi ng teksto."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sa Bible Answer, mababasa ang buong awit at tatlong pagbasa nito: biblikal, simboliko, at para sa buhay. Ihambing ang pagninilay sa tunay na mga salita. Ihiwalay ang personal na paglalapat sa pag-angking hinuhulaan ng tula ang tiyak mong sitwasyon."
+          }
+        ]
+      }
+    ]
   }
 ]

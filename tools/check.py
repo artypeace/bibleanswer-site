@@ -20,7 +20,7 @@ PAGES = ['index.html'] + [f'{p}/index.html' for p in PATH.values() if p] + ['lin
                                                                               'privacy.html', 'terms.html', 'support.html', 'press/index.html']
 import build_articles
 ARTICLES = build_articles.load(ROOT)
-PAGES += [build_articles.hub(l) + 'index.html' for l in ('en', 'ru')]
+PAGES += [build_articles.hub(l) + 'index.html' for l in LANGS]
 PAGES += [build_articles.path(a) + 'index.html' for a in ARTICLES]
 problems = []
 
@@ -198,9 +198,17 @@ locs = re.findall(r'<loc>([^<]+)</loc>', sm)
 for need in [f'{SITE}/' + (PATH[l] + '/' if PATH[l] else '') for l in LANGS] + [f'{SITE}/privacy', f'{SITE}/terms', f'{SITE}/support', f'{SITE}/press/']:
     if need not in locs:
         bad('sitemap.xml', f'{need} is not listed')
-for lang in ('en', 'ru'):
+for lang in LANGS:
     if SITE + '/' + build_articles.hub(lang) not in locs:
         bad('sitemap.xml', f'{lang} reading guide index is not listed')
+for lang in LANGS:
+    name = build_articles.hub(lang) + 'index.html'
+    expected = {build_articles.LANG_CODE[l]: SITE + '/' + build_articles.hub(l) for l in LANGS}
+    expected['x-default'] = expected['en']
+    actual = {l['hreflang']: l['href'] for l in pages[name].links if l.get('rel') == 'alternate' and l.get('hreflang')}
+    if actual != expected:
+        bad(name, 'reading guide index alternates do not match the six localized indexes')
+
 for a in ARTICLES:
     name = build_articles.path(a) + 'index.html'
     p = pages[name]
@@ -211,7 +219,7 @@ for a in ARTICLES:
     if canon != [url]:
         bad(name, 'article canonical differs from its public address')
     pair = [b for b in ARTICLES if b['key'] == a['key']]
-    want = {b['lang']: SITE + '/' + build_articles.path(b) for b in pair}
+    want = {build_articles.LANG_CODE[b['lang']]: SITE + '/' + build_articles.path(b) for b in pair}
     want['x-default'] = want['en']
     got = {l['hreflang']: l['href'] for l in p.links if l.get('rel') == 'alternate' and l.get('hreflang')}
     if got != want:
@@ -229,7 +237,7 @@ for a in ARTICLES:
                     bad(name, 'quotation has an incomplete ending')
     graph = json.loads(p.jsonld[0]).get('@graph', [])
     schema = next((g for g in graph if g.get('@type') == 'Article'), {})
-    if schema.get('headline') != a['title'] or schema.get('datePublished') != a['date'] or schema.get('inLanguage') != a['lang']:
+    if schema.get('headline') != a['title'] or schema.get('datePublished') != a['date'] or schema.get('inLanguage') != build_articles.LANG_CODE[a['lang']]:
         bad(name, 'Article data does not match the visible article')
 if 'links' in ' '.join(locs):
     bad('sitemap.xml', '/links must stay out of the sitemap')

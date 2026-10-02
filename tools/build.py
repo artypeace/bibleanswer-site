@@ -248,9 +248,10 @@ def screens_section(lang, base):
 
 def reading_guides_section(lang, base):
     s = SITE[lang]
-    article_lang = 'ru' if lang == 'ru' else 'en'
-    guides = [a for a in build_articles.load(ROOT) if a['lang'] == article_lang][:3]
-    mark = '' if lang in ('en', 'ru') else '<span class="reading-guides__language">English</span>'
+    article_lang = lang
+    mine = {a['key']: a for a in build_articles.load(ROOT) if a['lang'] == article_lang}
+    guides = [mine[k] for k in ('start', 'anxiety', 'morning')]
+    mark = ''
     cards = ''.join(f'<a class="home-guide reveal" href="/{build_articles.path(a)}"><div class="home-guide__image"><img src="{base}assets/plates/{a["plate"]}.webp" alt="" width="900" height="600" loading="lazy" decoding="async"></div><div class="home-guide__body"><p class="home-guide__meta">{e(a["category"])} · {build_articles.duration(ROOT,a)} {build_articles.UI[article_lang]["reading"]} {mark}</p><h3>{e(a["title"])}</h3><p>{e(a["lead"])}</p><span class="home-guide__arrow" aria-hidden="true">↗</span></div></a>' for a in guides)
     return f'<section class="section reading-guides" id="reading-guides" aria-labelledby="h-reading-guides"><div class="wrap">{h2(s["readingGuidesH"], "", "h-reading-guides")}<p class="lede reveal">{e(s["readingGuidesP"])}</p><div class="home-guides">{cards}</div><p class="reading-guides__all"><a class="btn btn--ghost" href="/{build_articles.hub(article_lang)}">{e(s["readingGuidesAll"])}</a></p></div></section>'
 
@@ -597,7 +598,7 @@ def home(lang):
 </main>
 
 <footer class="foot">
-  <p><a href="{'/ru/articles/' if lang == 'ru' else '/articles/'}" lang="{'ru' if lang == 'ru' else 'en'}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
+  <p><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>

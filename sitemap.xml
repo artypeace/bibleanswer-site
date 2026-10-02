@@ -86,20 +86,76 @@
     <loc>https://bibleanswer.app/articles/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://bibleanswer.app/ru/articles/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/"/>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://bibleanswer.app/articles/where-to-start-reading-the-bible/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
     <lastmod>2026-10-02</lastmod>
   </url>
@@ -107,13 +163,65 @@
     <loc>https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
     <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/s-chego-nachat-chitat-bibliyu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/por-donde-empezar-a-leer-la-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/por-onde-comecar-a-ler-a-biblia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/par-ou-commencer-a-lire-la-bible/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/saan-magsisimulang-magbasa-ng-bibliya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/where-to-start-reading-the-bible/"/>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://bibleanswer.app/articles/forgiveness-after-apology/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
     <lastmod>2026-10-02</lastmod>
   </url>
@@ -121,13 +229,65 @@
     <loc>https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
     <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/proshchenie-posle-izvineniya/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/perdon-despues-de-pedir-disculpas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/perdao-depois-do-pedido-de-desculpas/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/pardon-apres-les-excuses/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pagpapatawad-pagkatapos-ng-paghingi-ng-tawad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/forgiveness-after-apology/"/>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://bibleanswer.app/articles/gratitude-on-a-hard-day/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
     <lastmod>2026-10-02</lastmod>
   </url>
@@ -135,13 +295,65 @@
     <loc>https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
     <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/blagodarnost-v-trudnyy-den/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/gratitud-en-un-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/gratidao-em-um-dia-dificil/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/gratitude-dans-une-journee-difficile/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/pasasalamat-sa-isang-mahirap-na-araw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/gratitude-on-a-hard-day/"/>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://bibleanswer.app/articles/asking-for-wisdom-decisions/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
     <lastmod>2026-10-02</lastmod>
   </url>
@@ -149,7 +361,319 @@
     <loc>https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
     <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/mudrost-pered-resheniem/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/pedir-sabiduria-para-tomar-decisiones/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/pedir-sabedoria-para-tomar-decisoes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/demander-la-sagesse-pour-decider/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/humingi-ng-karunungan-sa-pagpapasiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/asking-for-wisdom-decisions/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/bible-verses-for-anxiety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/stikhi-biblii-o-trevoge/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-biblicos-sobre-la-ansiedad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-biblicos-sobre-ansiedade/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-bibliques-sur-inquietude/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-sa-bibliya-tungkol-sa-pag-aalala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/bible-verses-for-anxiety/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/morning-prayer-bible-verses/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/utrennyaya-molitva-stikhi-biblii/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/versiculos-para-la-oracion-de-la-manana/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/versiculos-para-oracao-da-manha/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/versets-pour-la-priere-du-matin/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/mga-talata-para-sa-panalangin-sa-umaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/morning-prayer-bible-verses/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/what-the-bible-says-about-money/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/chto-bibliya-govorit-o-dengah/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/que-dice-la-biblia-sobre-el-dinero/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/o-que-a-biblia-diz-sobre-dinheiro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/ce-que-la-bible-dit-sur-argent/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/ano-ang-sinasabi-ng-bibliya-tungkol-sa-pera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/what-the-bible-says-about-money/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/articles/psalm-23-meaning/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/psalom-22-smysl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/psaume-23-signification/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/articles/psalom-22-smysl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/psalom-22-smysl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/psaume-23-signification/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/articles/salmo-23-significado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/psalom-22-smysl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/psaume-23-signification/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/articles/salmo-23-significado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/psalom-22-smysl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/psaume-23-signification/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/articles/psaume-23-signification/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/psalom-22-smysl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/psaume-23-signification/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/articles/psalom-22-smysl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/articles/salmo-23-significado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/articles/psaume-23-signification/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/articles/kahulugan-ng-awit-23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
+    <lastmod>2026-10-03</lastmod>
   </url>
 </urlset>

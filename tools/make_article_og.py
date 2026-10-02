@@ -43,10 +43,12 @@ def make(a):
  y=190
  for row in rows:d.text((60,y),row,font=f,fill=cream);y+=int(size*1.08)
  d.line([(62,542),(710,542)],fill=gold,width=1)
- d.text((60,562),'Статьи о чтении Библии' if a['lang']=='ru' else 'READING GUIDES',font=font(28),fill=gold)
+ d.text((60,562),{'en':'READING GUIDES','ru':'Статьи о чтении Библии','es':'LECTURA DE LA BIBLIA','pt':'LEITURA DA BÍBLIA','fr':'LIRE LA BIBLE','fil':'PAGBABASA NG BIBLIYA'}[a['lang']],font=font(28),fill=gold)
  path=ROOT/f'assets/og/articles/{a["lang"]}-{a["key"]}.jpg';path.parent.mkdir(parents=True,exist_ok=True)
  im.convert('RGB').save(path,quality=88,optimize=True)
  return path
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--font',type=pathlib.Path,help='optional equivalent Cormorant Garamond variable TTF');args=parser.parse_args();FONT_PATH=args.font
- for a in json.loads((ROOT/'tools/articles.json').read_text()):print(make(a).relative_to(ROOT))
+ parser=argparse.ArgumentParser();parser.add_argument('--missing',action='store_true');parser.add_argument('--font',type=pathlib.Path,help='optional equivalent Cormorant Garamond variable TTF');args=parser.parse_args();FONT_PATH=args.font
+ for a in json.loads((ROOT/'tools/articles.json').read_text()):
+  if args.missing and (ROOT/f'assets/og/articles/{a["lang"]}-{a["key"]}.jpg').exists():continue
+  print(make(a).relative_to(ROOT))
