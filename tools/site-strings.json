@@ -86,7 +86,10 @@
   "previewAlt": "{section} in Bible Answer",
   "todayVerseLabel": "Verse of the Day",
   "insideNavLabel": "Explore the app",
-  "readingGuides": "Reading guides"
+  "readingGuides": "Reading guides",
+  "skyPause": "Pause sky",
+  "skyPlay": "Play sky",
+  "skyEdited": "Adapted"
  },
  "ru": {
   "htmlLang": "ru",
@@ -175,7 +178,10 @@
   "previewAlt": "{section} в приложении Bible Answer",
   "todayVerseLabel": "Стих дня",
   "insideNavLabel": "Разделы приложения",
-  "readingGuides": "Статьи"
+  "readingGuides": "Статьи",
+  "skyPause": "Остановить небо",
+  "skyPlay": "Оживить небо",
+  "skyEdited": "Обработано"
  },
  "es": {
   "htmlLang": "es",
@@ -264,7 +270,10 @@
   "previewAlt": "{section} en Bible Answer",
   "todayVerseLabel": "Versículo del Día",
   "insideNavLabel": "Explora la aplicación",
-  "readingGuides": "Guías de lectura (EN)"
+  "readingGuides": "Guías de lectura (EN)",
+  "skyPause": "Pausar el cielo",
+  "skyPlay": "Animar el cielo",
+  "skyEdited": "Adaptado"
  },
  "pt": {
   "htmlLang": "pt-BR",
@@ -353,7 +362,10 @@
   "previewAlt": "{section} no Bible Answer",
   "todayVerseLabel": "Versículo do Dia",
   "insideNavLabel": "Explore o aplicativo",
-  "readingGuides": "Guias de leitura (EN)"
+  "readingGuides": "Guias de leitura (EN)",
+  "skyPause": "Pausar o céu",
+  "skyPlay": "Animar o céu",
+  "skyEdited": "Adaptado"
  },
  "fr": {
   "htmlLang": "fr",
@@ -442,7 +454,10 @@
   "previewAlt": "{section} dans Bible Answer",
   "todayVerseLabel": "Verset du Jour",
   "insideNavLabel": "Explore l’application",
-  "readingGuides": "Guides de lecture (EN)"
+  "readingGuides": "Guides de lecture (EN)",
+  "skyPause": "Mettre le ciel en pause",
+  "skyPlay": "Animer le ciel",
+  "skyEdited": "Adapté"
  },
  "fil": {
   "htmlLang": "fil",
@@ -531,6 +546,9 @@
   "previewAlt": "{section} sa Bible Answer",
   "todayVerseLabel": "Talata ng Araw",
   "insideNavLabel": "Tuklasin ang app",
-  "readingGuides": "Mga gabay sa pagbabasa (EN)"
+  "readingGuides": "Mga gabay sa pagbabasa (EN)",
+  "skyPause": "I-pause ang langit",
+  "skyPlay": "I-play ang langit",
+  "skyEdited": "Inedit"
  }
 }

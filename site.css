@@ -712,3 +712,23 @@ h1.split{font-size:clamp(54px,10.4vw,140px);line-height:.98}
 @media(prefers-reduced-motion:reduce){.hero .split--hero .w>span{animation:none;transform:none;filter:none}.hero__preview .device-product{animation:none}}
 
 .inblock{scroll-margin-top:100px}
+
+/* Real night sky: locally hosted ESO footage, with a static photograph before playback. */
+.sky--real .sky__img{background-image:url(assets/sky/geminids-poster.webp);background-position:center top;animation:none}
+.sky__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0;transition:opacity 1.2s ease}
+.sky--real.is-ready .sky__video{opacity:.9}
+.sky--real.is-ready .sky__img{opacity:0}
+.sky--real .sky__veil{background:linear-gradient(180deg,rgba(15,22,40,.48),rgba(15,22,40,.44) 36%,rgba(15,22,40,.7) 76%,var(--bg)),radial-gradient(ellipse at 32% 42%,rgba(15,22,40,.36),transparent 62%)}
+.sky--real::after{animation:none}
+.sky-caption{position:absolute;left:var(--pad);right:var(--pad);bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;z-index:2}
+.sky-credit{font:400 11px/1.5 var(--sans);color:#C6CBD6}
+.sky-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(198,203,214,.35)}
+.sky-toggle{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:6px 11px;border:1px solid rgba(242,234,219,.2);border-radius:999px;background:rgba(15,22,40,.6);font-size:11px;line-height:1.2;color:var(--text)}
+.sky-toggle:hover{border-color:var(--gold)}
+.sky-toggle svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6}
+.sky-toggle__play{display:none}
+.sky-toggle.is-paused .sky-toggle__pause{display:none}
+.sky-toggle.is-paused .sky-toggle__play{display:block;fill:currentColor;stroke:none}
+@media(max-width:860px){.sky-caption{bottom:16px;flex-wrap:wrap;justify-content:center;gap:8px 18px;text-align:center}.sky-credit{font-size:11px}.sky-toggle{min-height:44px}.hero__hint{bottom:78px}}
+@media(prefers-color-scheme:light){.sky--real .sky__video,.sky-caption{display:none}.sky--real .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}}
+@media(prefers-reduced-motion:reduce){.sky--real .sky__video{display:none}.sky--real.is-ready .sky__img{opacity:var(--sky-o)}}

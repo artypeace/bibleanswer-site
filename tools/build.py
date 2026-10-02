@@ -455,7 +455,7 @@ def home(lang):
 </head>
 <body>
 <a class="skip" href="#main">{e(s["skip"])}</a>
-<div class="sky" aria-hidden="true"><div class="sky__img"></div><div class="stars" id="stars"></div><div class="sky__veil"></div></div>
+<div class="sky sky--real" aria-hidden="true"><div class="sky__img"></div><video class="sky__video" id="skyMotion" muted loop playsinline preload="none" data-desktop="{base}assets/sky/geminids-desktop.mp4" data-mobile="{base}assets/sky/geminids-mobile.mp4"></video><div class="sky__veil"></div></div>
 
 <header class="nav">
   <div class="nav__in">
@@ -489,6 +489,10 @@ def home(lang):
       <p class="hero__devices">iPhone <span>·</span> iPad <span>·</span> Mac <span>·</span> Apple Watch</p>
       </div>
       <figure class="hero__preview">{device_product('iphone', lang, base, s['previewAlt'].format(section=ap['prompt']), priority=True)}</figure>
+    </div>
+    <div class="sky-caption">
+      <button id="skyToggle" class="sky-toggle" type="button" aria-controls="skyMotion" aria-label="{e(s['skyPause'])}" data-pause="{e(s['skyPause'])}" data-play="{e(s['skyPlay'])}" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path class="sky-toggle__pause" d="M5 3v10M11 3v10"/><path class="sky-toggle__play" d="m5 3 8 5-8 5Z"/></svg><span>{e(s['skyPause'])}</span></button>
+      <small class="sky-credit"><a href="https://www.eso.org/public/videos/Geminidstimelapse1/">ESO/Gianluca Lombardi</a> (<a href="https://glphoto.it/">glphoto.it</a>) · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · {e(s["skyEdited"])}</small>
     </div>
     <svg class="hero__hint ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
   </section>

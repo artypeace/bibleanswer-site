@@ -1,5 +1,5 @@
 /* Bible Answer — the website. Cosmetic only: a living sky, words that rise, the phone that follows the page, parallax
-   and the timing of the example. Every page is complete without it, and it makes no requests of any kind. */
+   and the timing of the example. Every page is complete without it. Background video is a local, silent asset; there are no third-party requests. */
 (() => {
   'use strict';
 
@@ -7,93 +7,67 @@
   const $ = id => document.getElementById(id);
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 
-  /* ---------------------------------------------------------------- the sky: stars with depth, a shooting star */
+  /* ---------------------------------------------------------------- the sky: real ESO time-lapse */
   function sky() {
-    const host = $('stars');
-    if (!host) return;
-    const cv = document.createElement('canvas');
-    cv.className = 'stars__cv';
-    cv.setAttribute('aria-hidden', 'true');
-    host.appendChild(cv);
-    const ctx = cv.getContext('2d');
-    if (!ctx) return;
-
+    const video = $('skyMotion');
+    const button = $('skyToggle');
+    if (!video || !button) return;
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
     const light = matchMedia('(prefers-color-scheme: light)');
-    // Match Retina density, with a pixel budget for very large displays.
-    let dpr = 1;
-    let seed = 20260928;   // fixed seed: the same sky on every visit
-    const rnd = () => { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let x = Math.imul(seed ^ (seed >>> 15), 1 | seed); x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x; return ((x ^ (x >>> 14)) >>> 0) / 4294967296; };
-    let W = 0, H = 0, stars = [], shot = null, nextShot = 0, px = 0, py = 0, tx = 0, ty = 0, running = false;
+    const connection = navigator.connection;
+    const hero = document.querySelector('.hero');
+    const backdrop = video.closest('.sky');
+    let inView = true, loaded = false, pageReady = false, failed = false, userPaused = false;
+    try { userPaused = sessionStorage.getItem('sky-paused') === '1'; } catch (_) {}
+    video.muted = true;
 
-    function layout() {
-      W = host.clientWidth; H = host.clientHeight;
-      if (!W || !H) return;
-      dpr = Math.min(window.devicePixelRatio || 1, 3, Math.sqrt(12000000 / (W * H)));
-      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      seed = 20260928;
-      // The detailed field is static SVG; only a few stars gently breathe.
-      const n = Math.round(Math.min(90, (W * H) / 18000));
-      stars = Array.from({ length: n }, () => {
-        const q = rnd();
-        return { x: rnd(), y: rnd() * 0.92, z: q < 0.6 ? 0.3 : q < 0.9 ? 0.65 : 1, r: 0.3 + rnd() * 0.6, a: 0.25 + rnd() * 0.4, ph: rnd() * 6.283, sp: 0.4 + rnd() * 1.4, gold: rnd() < 0.12 };
-      });
+    const allowed = () => !motion.matches && !light.matches && !(connection && connection.saveData) && !failed;
+    function label() {
+      button.hidden = !allowed();
+      const paused = video.paused;
+      button.setAttribute('aria-label', paused ? button.dataset.play : button.dataset.pause);
+      button.setAttribute('title', paused ? button.dataset.play : button.dataset.pause);
+      button.classList.toggle('is-paused', paused);
+      button.querySelector('span').textContent = paused ? button.dataset.play : button.dataset.pause;
     }
-
-    function draw(t) {
-      ctx.clearRect(0, 0, W, H);
-      px += (tx - px) * 0.04; py += (ty - py) * 0.04;
-      for (const s of stars) {
-        const drift = reduced ? 0 : t * 0.004 * s.z;
-        const x = ((s.x * W + drift + px * s.z * 20) % W + W) % W;
-        const y = s.y * H + py * s.z * 12;
-        ctx.globalAlpha = s.a * (reduced ? 1 : 0.55 + 0.45 * Math.sin(t * 0.001 * s.sp + s.ph));
-        ctx.fillStyle = s.gold ? '#E8CFA0' : '#DFEAFE';
-        ctx.beginPath(); ctx.arc(x, y, s.r * (0.8 + s.z * 0.5), 0, 6.283); ctx.fill();
+    function sync() {
+      if (!allowed()) backdrop.classList.remove('is-ready');
+      if (!pageReady || !allowed() || !inView || document.hidden || userPaused) {
+        video.pause(); label(); return;
       }
-      if (!reduced) {
-        if (!shot && t > nextShot) {
-          shot = { x: W * (0.25 + rnd() * 0.6), y: H * (0.04 + rnd() * 0.26), a: 0.35 + rnd() * 0.25, t0: t, len: 150 + rnd() * 90 };
-          nextShot = t + 7000 + rnd() * 6000;
-        }
-        if (shot) {
-          const k = (t - shot.t0) / 950;
-          if (k >= 1) shot = null;
-          else {
-            const d = k * 420, hx = shot.x + Math.cos(shot.a) * d, hy = shot.y + Math.sin(shot.a) * d;
-            const tl = Math.min(shot.len, d), tailx = hx - Math.cos(shot.a) * tl, taily = hy - Math.sin(shot.a) * tl;
-            const g = ctx.createLinearGradient(tailx, taily, hx, hy);
-            g.addColorStop(0, 'rgba(255,243,214,0)'); g.addColorStop(1, 'rgba(255,243,214,.95)');
-            ctx.globalAlpha = Math.sin(Math.PI * k);
-            ctx.strokeStyle = g; ctx.lineWidth = 1.4; ctx.lineCap = 'round';
-            ctx.beginPath(); ctx.moveTo(tailx, taily); ctx.lineTo(hx, hy); ctx.stroke();
-          }
-        }
+      if (!loaded) {
+        // One local, silent file. Load after the page, only when the sky can play.
+        video.src = matchMedia('(max-width: 760px)').matches ? video.dataset.mobile : video.dataset.desktop;
+        loaded = true;
       }
-      ctx.globalAlpha = 1;
+      video.play().then(label).catch(() => { label(); });
     }
-
-    const active = () => !document.hidden && !light.matches && window.scrollY < window.innerHeight * 1.15;
-    function loop(t) {
-      if (!active()) { running = false; return; }
-      draw(t);
-      requestAnimationFrame(loop);
+    video.addEventListener('playing', () => { backdrop.classList.add('is-ready'); label(); });
+    video.addEventListener('pause', label);
+    video.addEventListener('error', () => { failed = true; backdrop.classList.remove('is-ready'); video.pause(); label(); });
+    button.addEventListener('click', () => {
+      userPaused = !video.paused;
+      try { sessionStorage.setItem('sky-paused', userPaused ? '1' : '0'); } catch (_) {}
+      sync();
+    });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(entries => { inView = entries[0].isIntersecting; sync(); }, { threshold: 0 }).observe(hero);
+    } else {
+      addEventListener('scroll', () => { inView = hero.getBoundingClientRect().bottom > 0; sync(); }, { passive: true });
     }
-    function wake() { if (!reduced && !running && active()) { running = true; requestAnimationFrame(loop); } }
-
-    layout();
-    draw(0);
-    // Resize the static canvas even when Reduce Motion is enabled.
-    let rz;
-    addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { layout(); draw(performance.now()); wake(); }, 150); });
-    if (reduced) return;
-    wake();
-    addEventListener('scroll', wake, { passive: true });
-    document.addEventListener('visibilitychange', wake);
-    if (light.addEventListener) light.addEventListener('change', wake);
-    if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
-      addEventListener('pointermove', e => { tx = (e.clientX / innerWidth - 0.5) * 2; ty = (e.clientY / innerHeight - 0.5) * 2; }, { passive: true });
+    document.addEventListener('visibilitychange', sync);
+    for (const query of [motion, light]) {
+      if (query.addEventListener) query.addEventListener('change', sync);
+      else if (query.addListener) query.addListener(sync);
     }
+    if (connection && connection.addEventListener) connection.addEventListener('change', sync);
+    const ready = () => {
+      const begin = () => { pageReady = true; sync(); };
+      if ('requestIdleCallback' in window) requestIdleCallback(begin, { timeout: 1800 });
+      else setTimeout(begin, 120);
+    };
+    if (document.readyState === 'complete') ready();
+    else addEventListener('load', ready, { once: true });
   }
 
   /** Adds a class to elements as they come into view, once. */

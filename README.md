@@ -153,3 +153,9 @@ Then run the normal build and check. The indexes, related guides, reciprocal
 hreflang, sitemap and English RSS entries are generated from the content.
 Keep publication dates stable; update a guide’s date when its content materially
 changes. No arbitrary word-count target or tracking script is required.
+
+### Real night sky
+
+The home pages use a locally hosted time-lapse of the Geminids, credited visibly next to the background as **ESO/Gianluca Lombardi (glphoto.it)**, under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source, exact alterations and original checksum: `assets/sky/credits.json`. Rebuild the web assets with `tools/prepare_sky_video.py`; originals and FFmpeg stay outside this repository. No ESO logo or endorsement is used.
+
+The video loads after the main page, only in dark mode, with motion allowed and data saving off. It pauses outside the hero or in a hidden tab. The sky button pauses/resumes it; pause preference lasts for the browser session. A real still photograph remains if playback is unavailable or motion is reduced. Mobile receives a separate narrow MP4. Articles keep their existing static sky.
