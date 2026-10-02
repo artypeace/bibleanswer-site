@@ -50,6 +50,8 @@ class Page(HTMLParser):
                 self.refs.append(a['src'])
         elif tag in ('a', 'img', 'source') and (a.get('href') or a.get('src')):
             self.refs.append(a.get('href') or a.get('src'))
+        elif tag == 'video' and a.get('poster'):
+            self.refs.append(a['poster'])
         elif tag == 'use' and a.get('href'):
             self.refs.append(a['href'])
 

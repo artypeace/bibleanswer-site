@@ -39,9 +39,19 @@ SHOT_SIZE = {'iphone': (1320, 2868), 'ipad': (2064, 2752)}
 BOOT = "document.documentElement.classList.add('js')"   # tells the stylesheet scripts run, so reveal-on-scroll may hide things
 BOOT_HASH = 'sha256-' + base64.b64encode(hashlib.sha256(BOOT.encode()).digest()).decode()
 CSP = (f"default-src 'none'; script-src 'self' '{BOOT_HASH}'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
-       "font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'")
+       "font-src 'self'; media-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'")
 
 e = lambda s: html.escape(str(s), quote=True)
+
+
+def split_words(text):
+    """Every word in a mask of its own, so a heading can rise word by word; the text read aloud is unchanged."""
+    return ' '.join(f'<span class="w"><span style="--i:{i}">{e(w)}</span></span>' for i, w in enumerate(text.split(' ')))
+
+
+def h2(text, cls='', ident=''):
+    attrs = (f' id="{ident}"' if ident else '') + f' class="split{" " + cls if cls else ""}"'
+    return f'<h2{attrs}>{split_words(text)}</h2>'
 
 
 def have(path):
@@ -130,6 +140,26 @@ def shot_file(device, lang, n):
             if have(p):
                 return p
     return None
+
+
+STORY = ['read', 'guide', 'counsel', 'quiet', 'hours']   # the scenes of the pinned phone, in order
+
+
+def story_media(scene, lang, base):
+    """A real screen recording or screenshot for one scene of the phone: assets/story/<scene>/<lang>.* or default.*
+    (mp4/webm = video, webp/png/jpg = picture). Returns '' when none was added; the drawn scene is shown then."""
+    for name in (lang, 'default'):
+        vids = [f'assets/story/{scene}/{name}.{x}' for x in ('webm', 'mp4') if have(f'assets/story/{scene}/{name}.{x}')]
+        if vids:
+            poster = next((f'assets/story/{scene}/{name}-poster.{x}' for x in ('webp', 'jpg', 'png') if have(f'assets/story/{scene}/{name}-poster.{x}')), None)
+            kinds = {'webm': 'video/webm', 'mp4': 'video/mp4'}
+            srcs = ''.join(f'<source src="{base}{v}" type="{kinds[v.rsplit(".", 1)[1]]}">' for v in vids)
+            pos = f' poster="{base}{poster}"' if poster else ''
+            return f'<video class="sc-media" muted loop playsinline preload="none" disablepictureinpicture{pos}>{srcs}</video>'
+        for x in ('webp', 'png', 'jpg'):
+            if have(f'assets/story/{scene}/{name}.{x}'):
+                return f'<img class="sc-media" src="{base}assets/story/{scene}/{name}.{x}" width="1320" height="2868" alt="" loading="lazy" decoding="async">'
+    return ''
 
 
 def screens_section(lang, base):
@@ -242,6 +272,54 @@ def home(lang):
         f'<h3>{t}{(" <span class=soon>" + e(s["soon"]) + "</span>") if k == "mac" else ""}</h3><p>{e(s[k + "P"])}</p></article>'
         for d, (k, t) in zip((0, .1, .2, .3), (('iphone', 'iPhone'), ('ipad', 'iPad'), ('watch', 'Apple Watch'), ('mac', 'Mac'))))
 
+
+    topics_scene = ''.join(f'<div class="topic topic--s"><span class="topic__t"><b></b>{e(t)}</span><i class="skl"></i><i class="skl" style="width:68%"></i></div>' for t in ap['topics'])
+    topics_scene += ''.join('<div class="topic topic--s topic--ghost"><i class="skl" style="width:38%;margin-top:0"></i><i class="skl"></i><i class="skl" style="width:68%"></i></div>' for _ in range(3))
+    widths = (92, 78, 96, 84, 90, 66, 94, 80, 88, 58)
+    skl_lines = lambda n: ''.join(f'<span class="skl" style="width:{widths[k % len(widths)]}%"></span>' for k in range(n))
+    era_rows = ''.join(f'<div class="sc-era"><b></b><i class="skl" style="width:{w}%"></i></div>' for w in (86, 72, 90, 64))
+    eq = ''.join(f'<i style="--k:{k}"></i>' for k in range(9))
+    plate = lambda n, w, h, cls='': f'<img{(" class=" + chr(34) + cls + chr(34)) if cls else ""} src="{base}assets/plates/{n}.webp" width="{w}" height="{h}" alt="" loading="lazy" decoding="async">'
+    cards = {
+        'read': f'''<div class="card reader" data-parallax aria-hidden="true">
+            <span class="skl skl--head"></span>
+            <span class="skl"><b></b></span><span class="skl" style="width:96%"></span><span class="skl" style="width:88%"></span>
+            <span class="skl" style="margin-top:22px"><b></b></span><span class="skl" style="width:92%"></span><span class="skl" style="width:64%"></span>
+            <div class="sheet"><div class="lens">{lens}</div><span class="skl" style="margin-top:16px"></span><span class="skl" style="width:82%;margin-top:9px"></span></div>
+          </div>''',
+        'guide': f'''<div class="card guidecard" data-parallax aria-hidden="true">
+            {plate("plate-timeline", 900, 494, "guidecard__img")}
+            <div class="chipgrid">{guide_chips}</div>
+          </div>''',
+        'counsel': f'<div class="card topicscard" data-parallax aria-hidden="true"><div class="topics">{topics}</div></div>',
+        'quiet': f'''<div class="card player" data-parallax aria-hidden="true">
+            <div class="player__img" style="background-image:url({base}assets/plates/plate-galilee.webp)"></div><div class="player__veil"></div>
+            <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div>
+            <div class="eq">{eq}</div>
+            <div class="bar"><i></i></div>
+          </div>''',
+        'hours': f'<div class="card platecard" data-parallax aria-hidden="true">{plate("plate-hours", 520, 834)}</div>',
+    }
+    scene_inner = {
+        'read': f'''<div class="sc-body"><p class="sc-ref">{e(sample["reference"])}</p>{skl_lines(5)}<p class="sc-verse">{e(sample["verse"])}</p>{skl_lines(7)}</div>
+              <div class="sc-sheet"><i class="sc-grab"></i><div class="lens">{lens}</div><span class="skl"></span><span class="skl" style="width:86%"></span><span class="skl" style="width:62%"></span></div>''',
+        'guide': f'{plate("plate-timeline", 900, 494, "sc-plate")}<div class="chipgrid">{guide_chips}</div><div class="sc-eras">{era_rows}</div>',
+        'counsel': f'<div class="sc-body"><div class="topics">{topics_scene}</div></div>',
+        'quiet': f'''<div class="sc-bg" style="background-image:url({base}assets/plates/plate-galilee.webp)"></div><div class="sc-veil"></div>
+              <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div><div class="eq">{eq}</div><div class="bar"><i></i></div>''',
+        'hours': f'{plate("plate-hours", 520, 834, "sc-plate sc-plate--fill")}<div class="sc-veil"></div><div class="sc-hours">{hours}</div>',
+    }
+    story_text = [('readH', 'readP', ''), ('guideH', 'guideP', ''), ('counselH', 'counselP', ''), ('quietH', 'quietP', ''),
+                  ('hoursH', 'hoursP', f'<div class="hourlist">{hours}</div>')]
+    steps_html = '\n'.join(
+        f'        <div class="step feature{" feature--flip" if i % 2 else ""}" id="{key}" data-step="{i}">'
+        f'<div class="feature__text"><div class="eyebrow">{i + 1:02d}</div>{h2(s[hk])}<p class="reveal">{e(s[pk])}</p>{extra}</div>'
+        f'<div class="reveal step__card" style="--d:.15s">{cards[key]}</div></div>'
+        for i, (key, (hk, pk, extra)) in enumerate(zip(STORY, story_text)))
+    scenes_html = '\n'.join(
+        f'              <div class="scene{" on" if i == 0 else ""}" data-scene="{key}">{story_media(key, lang, base) or scene_inner[key]}</div>' for i, key in enumerate(STORY))
+    dots_html = ''.join(f'<li{" class=on" if i == 0 else ""}></li>' for i in range(len(STORY)))
+
     return f'''<!doctype html>
 <html lang="{e(s["htmlLang"])}">
 <head>
@@ -275,9 +353,10 @@ def home(lang):
 
 <main id="main">
   <section class="hero" aria-labelledby="h-hero">
+    <div class="hero__fx" aria-hidden="true"><div class="hero__glow"></div></div>
     <div class="hero__in" id="heroIn">
       <img class="hero__icon rise" style="--i:0" src="{base}assets/icon.png" width="96" height="96" alt="Bible Answer">
-      <h1 id="h-hero" class="rise" style="--i:1">{e(ap["tagline"])}</h1>
+      <h1 id="h-hero" class="split split--hero grad">{split_words(ap["tagline"])}</h1>
       <p class="hero__sub rise" style="--i:2">{e(ap["subtitle"])}</p>
       <div class="hero__cta rise" style="--i:3">
         {store}
@@ -289,7 +368,7 @@ def home(lang):
 
   <section class="section ask" id="ask" aria-labelledby="h-ask">
     <div class="wrap">
-      <h2 id="h-ask" class="reveal">{e(ap["prompt"])}</h2>
+      {h2(ap["prompt"], "grad", "h-ask")}
       <p class="lede reveal" style="--d:.1s">{e(s["askLede"])}</p>
       <div class="demo reveal" style="--d:.15s" data-demo>
         <div class="demo__ask" aria-hidden="true">
@@ -304,81 +383,28 @@ def home(lang):
     </div>
   </section>
 
-  <section class="section" id="read" aria-labelledby="h-read">
-    <div class="wrap">
-      <div class="feature">
-        <div class="feature__text reveal">
-          <div class="eyebrow">{e(s["navRead"])}</div>
-          <h2 id="h-read">{e(s["readH"])}</h2>
-          <p>{e(s["readP"])}</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card reader" data-parallax aria-hidden="true">
-            <span class="skl skl--head"></span>
-            <span class="skl"><b></b></span><span class="skl" style="width:96%"></span><span class="skl" style="width:88%"></span>
-            <span class="skl" style="margin-top:22px"><b></b></span><span class="skl" style="width:92%"></span><span class="skl" style="width:64%"></span>
-            <div class="sheet"><div class="lens">{lens}</div><span class="skl" style="margin-top:16px"></span><span class="skl" style="width:82%;margin-top:9px"></span></div>
+  <section class="story" aria-label="Bible Answer">
+    <div class="story__in">
+      <div class="story__steps">
+{steps_html}
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="phone">
+          <div class="phone__glow"></div>
+          <div class="phone__body"><i class="phone__island"></i>
+            <div class="phone__screen">
+{scenes_html}
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="feature feature--flip" id="guide">
-        <div class="feature__text reveal">
-          <div class="eyebrow">{e(s["navGuide"])}</div>
-          <h2>{e(s["guideH"])}</h2>
-          <p>{e(s["guideP"])}</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card guidecard" data-parallax aria-hidden="true">
-            <img class="guidecard__img" src="{base}assets/plates/plate-timeline.webp" width="900" height="494" alt="" loading="lazy" decoding="async">
-            <div class="chipgrid">{guide_chips}</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature" id="counsel">
-        <div class="feature__text reveal">
-          <h2>{e(s["counselH"])}</h2>
-          <p>{e(s["counselP"])}</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card topicscard" data-parallax aria-hidden="true"><div class="topics">{topics}</div></div>
-        </div>
-      </div>
-
-      <div class="feature feature--flip" id="quiet">
-        <div class="feature__text reveal">
-          <h2>{e(s["quietH"])}</h2>
-          <p>{e(s["quietP"])}</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card player" data-parallax aria-hidden="true">
-            <div class="player__img" style="background-image:url({base}assets/plates/plate-galilee.webp)"></div><div class="player__veil"></div>
-            <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div>
-            <div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="bar"><i></i></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature" id="hours">
-        <div class="feature__text reveal">
-          <h2>{e(s["hoursH"])}</h2>
-          <p>{e(s["hoursP"])}</p>
-          <div class="hourlist">{hours}</div>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card platecard" data-parallax aria-hidden="true">
-            <img src="{base}assets/plates/plate-hours.webp" width="520" height="834" alt="" loading="lazy" decoding="async">
-          </div>
-        </div>
+        <ol class="story__dots">{dots_html}</ol>
       </div>
     </div>
   </section>
 
   <section class="section today" id="today" aria-labelledby="h-today">
     <div class="wrap">
-      <h2 id="h-today" class="reveal">{e(s["todayH"])}</h2>
+      {h2(s["todayH"], "", "h-today")}
       <p class="lede reveal" style="--d:.1s">{e(s["todayP"])}</p>
       <div class="mini-grid" aria-hidden="true">
         <div class="mini mini--widget reveal"><span class="label">{e(ap["tagline"])}</span><span class="skl"></span><span class="skl" style="width:84%"></span><span class="skl" style="width:62%"></span></div>
@@ -390,7 +416,7 @@ def home(lang):
 
   <section class="section platforms" id="devices" aria-labelledby="h-devices">
     <div class="wrap">
-      <h2 id="h-devices" class="reveal">{e(s["devicesH"])}</h2>
+      {h2(s["devicesH"], "", "h-devices")}
       <div class="device-grid">{devices}</div>
     </div>
   </section>
@@ -399,7 +425,7 @@ def home(lang):
 
   <section class="section languages" id="languages" aria-labelledby="h-langs">
     <div class="wrap">
-      <h2 id="h-langs" class="reveal">{e(s["langsH"])}</h2>
+      {h2(s["langsH"], "", "h-langs")}
       <p class="lede reveal" style="--d:.1s">{e(s["langsP"])}</p>
       <div class="lang-grid reveal" style="--d:.15s">{lang_pills}</div>
     </div>
@@ -407,7 +433,7 @@ def home(lang):
 
   <section class="section privacy" id="private" aria-labelledby="h-priv">
     <div class="wrap">
-      <h2 id="h-priv" class="reveal">{e(s["privH"])}</h2>
+      {h2(s["privH"], "", "h-priv")}
       <div class="trio">
         <div class="reveal"><h3>{e(s["priv1T"])}</h3><p>{e(s["priv1P"])}</p></div>
         <div class="reveal" style="--d:.12s"><h3>{e(s["priv2T"])}</h3><p>{e(s["priv2P"])}</p></div>
@@ -418,7 +444,7 @@ def home(lang):
 
   <section class="section cta" aria-label="{e(s["storeText"])}">
     <div class="wrap">
-      <h2 class="reveal">{e(ap["tagline"])}</h2>
+      {h2(ap["tagline"], "grad")}
       <p class="reveal" style="--d:.1s">{store}</p>
     </div>
   </section>

@@ -29,7 +29,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/make_og.py` | Draws the link-preview pictures `assets/og/og-<lang>.jpg` (1200×630). Needs Pillow, fontTools, brotli. |
 | `tools/optimize_screens.py` | Makes light web copies of the App Store screenshots. |
 | `tools/sync_legal.py` | Re-copies the three legal pages from another folder, byte for byte. |
-| `site.css`, `app.js`, `fonts/` | Look and motion. `app.js` is cosmetic; every page works without it. |
+| `site.css`, `app.js`, `fonts/` | Look and motion: the canvas sky, headings that rise word by word, the phone that follows the page (a pinned stage with five scenes), parallax. `app.js` is cosmetic; every page works without it, and with "reduce motion" or on a phone the story is a column of cards. |
 
 ### Things to fill in (all in `tools/config.json`, then `python3 tools/build.py`)
 
@@ -38,10 +38,15 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 * `googleVerify`, `bingVerify`, `yandexVerify`, `pinterestVerify` — the codes the webmaster tools and Pinterest give for the "HTML tag" method; each empty value means no tag. (Google can instead be verified with a DNS TXT record in Cloudflare.)
 * `showScreenshotSlots` — `false` hides the screenshots strip until real screenshots exist.
 
+### The phone on the home page
+
+Five scenes (read, guide, counsel, quiet, hours) change as you scroll. They are drawn from the app's own words and engravings.
+To use real screen recordings or screenshots instead, drop files into `assets/story/` (see `assets/story/README.md`) and run the build.
+
 ### Screenshots and Apple badges
 
 * `assets/screens/README.md` — where the App Store screenshots go (per device and language). Until they are there, the page shows quiet placeholders.
-* `assets/badges/README.md` — the official "Download on the App Store" badges in the page's language. Until they are there, the pages show a plain gold button.
+* `assets/badges/` — Apple's official "Download on the App Store" badges, one per language (already in place; see its README).
 
 ## Publishing, step by step
 

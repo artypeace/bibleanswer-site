@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Bible Answer — La Escritura para lo que sientes</title>
 <meta name="description" content="Cuéntale lo que llevas en el corazón y recibe un versículo textual, su sentido y una oración breve. Toda la Biblia explicada. iPhone, iPad y Apple Watch. Gratis.">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -112,9 +112,10 @@
 
 <main id="main">
   <section class="hero" aria-labelledby="h-hero">
+    <div class="hero__fx" aria-hidden="true"><div class="hero__glow"></div></div>
     <div class="hero__in" id="heroIn">
       <img class="hero__icon rise" style="--i:0" src="../assets/icon.png" width="96" height="96" alt="Bible Answer">
-      <h1 id="h-hero" class="rise" style="--i:1">La Palabra de Dios para cada momento</h1>
+      <h1 id="h-hero" class="split split--hero grad"><span class="w"><span style="--i:0">La</span></span> <span class="w"><span style="--i:1">Palabra</span></span> <span class="w"><span style="--i:2">de</span></span> <span class="w"><span style="--i:3">Dios</span></span> <span class="w"><span style="--i:4">para</span></span> <span class="w"><span style="--i:5">cada</span></span> <span class="w"><span style="--i:6">momento</span></span></h1>
       <p class="hero__sub rise" style="--i:2">Comparte lo que hay en tu corazón y recibe una respuesta basada en la Biblia.</p>
       <div class="hero__cta rise" style="--i:3">
         <a class="badge " href="https://apps.apple.com/app/id6761124514" aria-label="Descargar en la App Store"><img src="../assets/badges/app-store-es.svg" alt="Descargar en la App Store" height="54"></a>
@@ -126,7 +127,7 @@
 
   <section class="section ask" id="ask" aria-labelledby="h-ask">
     <div class="wrap">
-      <h2 id="h-ask" class="reveal">¿Cómo te sientes hoy?</h2>
+      <h2 id="h-ask" class="split grad"><span class="w"><span style="--i:0">¿Cómo</span></span> <span class="w"><span style="--i:1">te</span></span> <span class="w"><span style="--i:2">sientes</span></span> <span class="w"><span style="--i:3">hoy?</span></span></h2>
       <p class="lede reveal" style="--d:.1s">Escríbelo o dilo en voz alta. Recibes el versículo textual, su sentido y una oración breve.</p>
       <div class="demo reveal" style="--d:.15s" data-demo>
         <div class="demo__ask" aria-hidden="true">
@@ -161,81 +162,51 @@
     </div>
   </section>
 
-  <section class="section" id="read" aria-labelledby="h-read">
-    <div class="wrap">
-      <div class="feature">
-        <div class="feature__text reveal">
-          <div class="eyebrow">Leer</div>
-          <h2 id="h-read">Toda la Biblia, con cada versículo explicado.</h2>
-          <p>Cada versículo se abre en tres lecturas. Busca en el texto y sigue un plan de lectura.</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card reader" data-parallax aria-hidden="true">
+  <section class="story" aria-label="Bible Answer">
+    <div class="story__in">
+      <div class="story__steps">
+        <div class="step feature" id="read" data-step="0"><div class="feature__text"><div class="eyebrow">01</div><h2 class="split"><span class="w"><span style="--i:0">Toda</span></span> <span class="w"><span style="--i:1">la</span></span> <span class="w"><span style="--i:2">Biblia,</span></span> <span class="w"><span style="--i:3">con</span></span> <span class="w"><span style="--i:4">cada</span></span> <span class="w"><span style="--i:5">versículo</span></span> <span class="w"><span style="--i:6">explicado.</span></span></h2><p class="reveal">Cada versículo se abre en tres lecturas. Busca en el texto y sigue un plan de lectura.</p></div><div class="reveal step__card" style="--d:.15s"><div class="card reader" data-parallax aria-hidden="true">
             <span class="skl skl--head"></span>
             <span class="skl"><b></b></span><span class="skl" style="width:96%"></span><span class="skl" style="width:88%"></span>
             <span class="skl" style="margin-top:22px"><b></b></span><span class="skl" style="width:92%"></span><span class="skl" style="width:64%"></span>
             <div class="sheet"><div class="lens"><span class=on>Bíblico</span><span>Simbólico</span><span>Aplicación</span></div><span class="skl" style="margin-top:16px"></span><span class="skl" style="width:82%;margin-top:9px"></span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature feature--flip" id="guide">
-        <div class="feature__text reveal">
-          <div class="eyebrow">Guía</div>
-          <h2>Una guía para toda la historia.</h2>
-          <p>Qué es este libro, por dónde empezar y cómo encaja todo.</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card guidecard" data-parallax aria-hidden="true">
+          </div></div></div>
+        <div class="step feature feature--flip" id="guide" data-step="1"><div class="feature__text"><div class="eyebrow">02</div><h2 class="split"><span class="w"><span style="--i:0">Una</span></span> <span class="w"><span style="--i:1">guía</span></span> <span class="w"><span style="--i:2">para</span></span> <span class="w"><span style="--i:3">toda</span></span> <span class="w"><span style="--i:4">la</span></span> <span class="w"><span style="--i:5">historia.</span></span></h2><p class="reveal">Qué es este libro, por dónde empezar y cómo encaja todo.</p></div><div class="reveal step__card" style="--d:.15s"><div class="card guidecard" data-parallax aria-hidden="true">
             <img class="guidecard__img" src="../assets/plates/plate-timeline.webp" width="900" height="494" alt="" loading="lazy" decoding="async">
             <div class="chipgrid"><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-book"></use></svg><span>Qué es este libro</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-path"></use></svg><span>Toda la historia, en orden</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-era"></use></svg><span>Cronología</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-person"></use></svg><span>Quién es quién</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-word"></use></svg><span>Glosario</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-map"></use></svg><span>Siete épocas: de Abraham a Pablo</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-thread"></use></svg><span>Genealogía: de Adán a Cristo</span></div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature" id="counsel">
-        <div class="feature__text reveal">
-          <h2>Consejos para el día a día.</h2>
-          <p>Lo que dice la Biblia sobre la familia, el trabajo, el dinero, las palabras y más, con sus versículos.</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card topicscard" data-parallax aria-hidden="true"><div class="topics"><div class="topic"><b></b><span>Familia</span></div><div class="topic"><b></b><span>El trabajo</span></div><div class="topic"><b></b><span>El dinero</span></div><div class="topic"><b></b><span>Las palabras</span></div></div></div>
-        </div>
-      </div>
-
-      <div class="feature feature--flip" id="quiet">
-        <div class="feature__text reveal">
-          <h2>Un lugar para el silencio.</h2>
-          <p>Música y la Palabra para momentos de calma, y sonidos de la naturaleza con temporizador.</p>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card player" data-parallax aria-hidden="true">
+          </div></div></div>
+        <div class="step feature" id="counsel" data-step="2"><div class="feature__text"><div class="eyebrow">03</div><h2 class="split"><span class="w"><span style="--i:0">Consejos</span></span> <span class="w"><span style="--i:1">para</span></span> <span class="w"><span style="--i:2">el</span></span> <span class="w"><span style="--i:3">día</span></span> <span class="w"><span style="--i:4">a</span></span> <span class="w"><span style="--i:5">día.</span></span></h2><p class="reveal">Lo que dice la Biblia sobre la familia, el trabajo, el dinero, las palabras y más, con sus versículos.</p></div><div class="reveal step__card" style="--d:.15s"><div class="card topicscard" data-parallax aria-hidden="true"><div class="topics"><div class="topic"><b></b><span>Familia</span></div><div class="topic"><b></b><span>El trabajo</span></div><div class="topic"><b></b><span>El dinero</span></div><div class="topic"><b></b><span>Las palabras</span></div></div></div></div></div>
+        <div class="step feature feature--flip" id="quiet" data-step="3"><div class="feature__text"><div class="eyebrow">04</div><h2 class="split"><span class="w"><span style="--i:0">Un</span></span> <span class="w"><span style="--i:1">lugar</span></span> <span class="w"><span style="--i:2">para</span></span> <span class="w"><span style="--i:3">el</span></span> <span class="w"><span style="--i:4">silencio.</span></span></h2><p class="reveal">Música y la Palabra para momentos de calma, y sonidos de la naturaleza con temporizador.</p></div><div class="reveal step__card" style="--d:.15s"><div class="card player" data-parallax aria-hidden="true">
             <div class="player__img" style="background-image:url(../assets/plates/plate-galilee.webp)"></div><div class="player__veil"></div>
             <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div>
-            <div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="eq"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><i style="--k:5"></i><i style="--k:6"></i><i style="--k:7"></i><i style="--k:8"></i></div>
             <div class="bar"><i></i></div>
-          </div>
-        </div>
+          </div></div></div>
+        <div class="step feature" id="hours" data-step="4"><div class="feature__text"><div class="eyebrow">05</div><h2 class="split"><span class="w"><span style="--i:0">Una</span></span> <span class="w"><span style="--i:1">oración</span></span> <span class="w"><span style="--i:2">para</span></span> <span class="w"><span style="--i:3">cada</span></span> <span class="w"><span style="--i:4">hora.</span></span></h2><p class="reveal">Mañana, día, tarde —desde la puesta del sol— y noche.</p><div class="hourlist"><span class="pill">Oración de la mañana</span><span class="pill">Oración del mediodía</span><span class="pill">Oración de la tarde</span><span class="pill">Oración de la noche</span></div></div><div class="reveal step__card" style="--d:.15s"><div class="card platecard" data-parallax aria-hidden="true"><img src="../assets/plates/plate-hours.webp" width="520" height="834" alt="" loading="lazy" decoding="async"></div></div></div>
       </div>
-
-      <div class="feature" id="hours">
-        <div class="feature__text reveal">
-          <h2>Una oración para cada hora.</h2>
-          <p>Mañana, día, tarde —desde la puesta del sol— y noche.</p>
-          <div class="hourlist"><span class="pill">Oración de la mañana</span><span class="pill">Oración del mediodía</span><span class="pill">Oración de la tarde</span><span class="pill">Oración de la noche</span></div>
-        </div>
-        <div class="reveal" style="--d:.15s">
-          <div class="card platecard" data-parallax aria-hidden="true">
-            <img src="../assets/plates/plate-hours.webp" width="520" height="834" alt="" loading="lazy" decoding="async">
+      <div class="stage" aria-hidden="true">
+        <div class="phone">
+          <div class="phone__glow"></div>
+          <div class="phone__body"><i class="phone__island"></i>
+            <div class="phone__screen">
+              <div class="scene on" data-scene="read"><div class="sc-body"><p class="sc-ref">Filipenses 4:6–7</p><span class="skl" style="width:92%"></span><span class="skl" style="width:78%"></span><span class="skl" style="width:96%"></span><span class="skl" style="width:84%"></span><span class="skl" style="width:90%"></span><p class="sc-verse">Por nada estéis afanosos; sino sean notorias vuestras peticiones delante de Dios en toda oración y ruego, con hacimiento de gracias. Y la paz de Dios, que sobrepuja todo entendimiento, guardará vuestros corazones y vuestros entendimientos en Cristo Jesús.</p><span class="skl" style="width:92%"></span><span class="skl" style="width:78%"></span><span class="skl" style="width:96%"></span><span class="skl" style="width:84%"></span><span class="skl" style="width:90%"></span><span class="skl" style="width:66%"></span><span class="skl" style="width:94%"></span></div>
+              <div class="sc-sheet"><i class="sc-grab"></i><div class="lens"><span class=on>Bíblico</span><span>Simbólico</span><span>Aplicación</span></div><span class="skl"></span><span class="skl" style="width:86%"></span><span class="skl" style="width:62%"></span></div></div>
+              <div class="scene" data-scene="guide"><img class="sc-plate" src="../assets/plates/plate-timeline.webp" width="900" height="494" alt="" loading="lazy" decoding="async"><div class="chipgrid"><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-book"></use></svg><span>Qué es este libro</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-path"></use></svg><span>Toda la historia, en orden</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-era"></use></svg><span>Cronología</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-person"></use></svg><span>Quién es quién</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-word"></use></svg><span>Glosario</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-map"></use></svg><span>Siete épocas: de Abraham a Pablo</span></div><div class="chip-sm"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/guide.svg#guide-thread"></use></svg><span>Genealogía: de Adán a Cristo</span></div></div><div class="sc-eras"><div class="sc-era"><b></b><i class="skl" style="width:86%"></i></div><div class="sc-era"><b></b><i class="skl" style="width:72%"></i></div><div class="sc-era"><b></b><i class="skl" style="width:90%"></i></div><div class="sc-era"><b></b><i class="skl" style="width:64%"></i></div></div></div>
+              <div class="scene" data-scene="counsel"><div class="sc-body"><div class="topics"><div class="topic topic--s"><span class="topic__t"><b></b>Familia</span><i class="skl"></i><i class="skl" style="width:68%"></i></div><div class="topic topic--s"><span class="topic__t"><b></b>El trabajo</span><i class="skl"></i><i class="skl" style="width:68%"></i></div><div class="topic topic--s"><span class="topic__t"><b></b>El dinero</span><i class="skl"></i><i class="skl" style="width:68%"></i></div><div class="topic topic--s"><span class="topic__t"><b></b>Las palabras</span><i class="skl"></i><i class="skl" style="width:68%"></i></div><div class="topic topic--s topic--ghost"><i class="skl" style="width:38%;margin-top:0"></i><i class="skl"></i><i class="skl" style="width:68%"></i></div><div class="topic topic--s topic--ghost"><i class="skl" style="width:38%;margin-top:0"></i><i class="skl"></i><i class="skl" style="width:68%"></i></div><div class="topic topic--s topic--ghost"><i class="skl" style="width:38%;margin-top:0"></i><i class="skl"></i><i class="skl" style="width:68%"></i></div></div></div></div>
+              <div class="scene" data-scene="quiet"><div class="sc-bg" style="background-image:url(../assets/plates/plate-galilee.webp)"></div><div class="sc-veil"></div>
+              <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></div><div class="eq"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><i style="--k:5"></i><i style="--k:6"></i><i style="--k:7"></i><i style="--k:8"></i></div><div class="bar"><i></i></div></div>
+              <div class="scene" data-scene="hours"><img class="sc-plate sc-plate--fill" src="../assets/plates/plate-hours.webp" width="520" height="834" alt="" loading="lazy" decoding="async"><div class="sc-veil"></div><div class="sc-hours"><span class="pill">Oración de la mañana</span><span class="pill">Oración del mediodía</span><span class="pill">Oración de la tarde</span><span class="pill">Oración de la noche</span></div></div>
+            </div>
           </div>
         </div>
+        <ol class="story__dots"><li class=on></li><li></li><li></li><li></li><li></li></ol>
       </div>
     </div>
   </section>
 
   <section class="section today" id="today" aria-labelledby="h-today">
     <div class="wrap">
-      <h2 id="h-today" class="reveal">Un versículo para cada día.</h2>
+      <h2 id="h-today" class="split"><span class="w"><span style="--i:0">Un</span></span> <span class="w"><span style="--i:1">versículo</span></span> <span class="w"><span style="--i:2">para</span></span> <span class="w"><span style="--i:3">cada</span></span> <span class="w"><span style="--i:4">día.</span></span></h2>
       <p class="lede reveal" style="--d:.1s">El versículo del día en la pantalla de inicio y de bloqueo, en Live Activities y en el Apple Watch.</p>
       <div class="mini-grid" aria-hidden="true">
         <div class="mini mini--widget reveal"><span class="label">La Palabra de Dios para cada momento</span><span class="skl"></span><span class="skl" style="width:84%"></span><span class="skl" style="width:62%"></span></div>
@@ -247,7 +218,7 @@
 
   <section class="section platforms" id="devices" aria-labelledby="h-devices">
     <div class="wrap">
-      <h2 id="h-devices" class="reveal">En iPhone, iPad y Apple Watch.</h2>
+      <h2 id="h-devices" class="split"><span class="w"><span style="--i:0">En</span></span> <span class="w"><span style="--i:1">iPhone,</span></span> <span class="w"><span style="--i:2">iPad</span></span> <span class="w"><span style="--i:3">y</span></span> <span class="w"><span style="--i:4">Apple</span></span> <span class="w"><span style="--i:5">Watch.</span></span></h2>
       <div class="device-grid"><article class="device reveal" style="--d:0s"><div class="device__art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="40" y="8" width="40" height="74" rx="10"/><path d="M52 15h16" opacity=".5"/><path d="M48 32h24M48 40h24M48 48h16" opacity=".5"/></svg></div><h3>iPhone</h3><p>Pregunta, lee y escucha, estés donde estés.</p></article><article class="device reveal" style="--d:0.1s"><div class="device__art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="10" width="80" height="70" rx="9"/><path d="M33 28h30M33 36h50M33 44h42M33 52h26" opacity=".5"/><path d="M60 72h.01" stroke-width="2.4"/></svg></div><h3>iPad</h3><p>Páginas más amplias, pensadas para leer.</p></article><article class="device reveal" style="--d:0.2s"><div class="device__art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="38" y="12" width="44" height="66" rx="13"/><path d="M46 12l3-9h22l3 9M46 78l3 9h22l3-9" opacity=".6"/><circle cx="60" cy="45" r="14" opacity=".55"/><path d="M60 31a14 14 0 0 1 14 14" stroke-width="2.4"/><path d="M56 45h8M60 41v8" opacity=".9"/></svg></div><h3>Apple Watch</h3><p>La palabra del día, la oración de la hora y 5 minutos de silencio, sin necesitar el iPhone.</p></article><article class="device device--soon reveal" style="--d:0.3s"><div class="device__art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="22" y="14" width="76" height="46" rx="5"/><path d="M12 68h96l-6 8H18z"/><path d="M34 30h30M34 38h44" opacity=".5"/></svg></div><h3>Mac <span class=soon>Pronto</span></h3><p>Próximamente.</p></article></div>
     </div>
   </section>
@@ -256,7 +227,7 @@
 
   <section class="section languages" id="languages" aria-labelledby="h-langs">
     <div class="wrap">
-      <h2 id="h-langs" class="reveal">Seis idiomas.</h2>
+      <h2 id="h-langs" class="split"><span class="w"><span style="--i:0">Seis</span></span> <span class="w"><span style="--i:1">idiomas.</span></span></h2>
       <p class="lede reveal" style="--d:.1s">La app está disponible en seis idiomas. Elige el tuyo.</p>
       <div class="lang-grid reveal" style="--d:.15s"><a class="pill pill--lang" href="../" lang="en" hreflang="en">English</a><a class="pill pill--lang" href="../pt/" lang="pt-BR" hreflang="pt-BR">Português</a><a class="pill pill--lang" href="../es/" lang="es" hreflang="es" aria-current="true">Español</a><a class="pill pill--lang" href="../ru/" lang="ru" hreflang="ru">Русский</a><a class="pill pill--lang" href="../fr/" lang="fr" hreflang="fr">Français</a><a class="pill pill--lang" href="../fil/" lang="fil" hreflang="fil">Filipino</a></div>
     </div>
@@ -264,7 +235,7 @@
 
   <section class="section privacy" id="private" aria-labelledby="h-priv">
     <div class="wrap">
-      <h2 id="h-priv" class="reveal">Sin cuenta. Sin anuncios. Sin rastreo.</h2>
+      <h2 id="h-priv" class="split"><span class="w"><span style="--i:0">Sin</span></span> <span class="w"><span style="--i:1">cuenta.</span></span> <span class="w"><span style="--i:2">Sin</span></span> <span class="w"><span style="--i:3">anuncios.</span></span> <span class="w"><span style="--i:4">Sin</span></span> <span class="w"><span style="--i:5">rastreo.</span></span></h2>
       <div class="trio">
         <div class="reveal"><h3>Sin cuenta</h3><p>Abre la app y empieza. No hay nada que registrar.</p></div>
         <div class="reveal" style="--d:.12s"><h3>Sin anuncios ni rastreo</h3><p>Sin publicidad, sin analítica y sin rastreo entre apps o sitios web.</p></div>
@@ -275,7 +246,7 @@
 
   <section class="section cta" aria-label="Descargar en la App Store">
     <div class="wrap">
-      <h2 class="reveal">La Palabra de Dios para cada momento</h2>
+      <h2 class="split grad"><span class="w"><span style="--i:0">La</span></span> <span class="w"><span style="--i:1">Palabra</span></span> <span class="w"><span style="--i:2">de</span></span> <span class="w"><span style="--i:3">Dios</span></span> <span class="w"><span style="--i:4">para</span></span> <span class="w"><span style="--i:5">cada</span></span> <span class="w"><span style="--i:6">momento</span></span></h2>
       <p class="reveal" style="--d:.1s"><a class="badge " href="https://apps.apple.com/app/id6761124514" aria-label="Descargar en la App Store"><img src="../assets/badges/app-store-es.svg" alt="Descargar en la App Store" height="54"></a></p>
     </div>
   </section>
