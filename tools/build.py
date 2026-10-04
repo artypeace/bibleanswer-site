@@ -83,6 +83,19 @@ def gicon(name, base):
     return icon(name, base, 'guide', 'guide')
 
 
+def inside_nav_link(section, title):
+    """Readable section links with a consistent set of decorative outline icons."""
+    paths = {
+        'guide': '<circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.2 5.4-5.4 2.2 2.2-5.4z"/>',
+        'readings': '<path d="M12 6.5C9.5 4.9 6.2 4.4 3 5.1v14c3.2-.7 6.5-.2 9 1.4 2.5-1.6 5.8-2.1 9-1.4v-14c-3.2-.7-6.5-.2-9 1.4ZM12 6.5v14M6 9h3m-3 3h3m-3 3h3m6-6h3m-3 3h3m-3 3h3"/>',
+        'advice': '<path d="M20 4H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h3l4 3v-3h9a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/><path d="M12 8.8c-1.4-2.1-4.1-.5-3.1 1.3.6 1.2 3.1 2.9 3.1 2.9s2.5-1.7 3.1-2.9c1-1.8-1.7-3.4-3.1-1.3Z"/>',
+        'plans': '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 10h18m-13 5 2.5 2.5L16 12"/>',
+    }
+    return (f'<a href="#inside-{section}"><span class="inside-nav__icon" aria-hidden="true">'
+            f'<svg viewBox="0 0 24 24" focusable="false">{paths[section]}</svg></span>'
+            f'<span class="inside-nav__label">{e(title)}</span></a>')
+
+
 def device_product(name, lang, base, alt='', priority=False):
     """An original vector housing containing an unaltered real app screenshot."""
     dimensions = {'iphone': (1450, 3000), 'ipad': (2196, 2884), 'watch': (720, 1450), 'mac': (3000, 1950)}
@@ -457,10 +470,10 @@ def home(lang):
       {h2(s["insideH"], "", "h-inside")}
       <p class="lede reveal" style="--d:.1s">{e(s["insideP"])}</p>
       <nav class="inside-nav" aria-label="{e(s['insideNavLabel'])}">
-        <a href="#inside-guide">{gicon('book', base)}{e(ins['guide']['title'])}</a>
-        <a href="#inside-readings">{gicon('word', base)}{e(s['readingsH'])}</a>
-        <a href="#inside-advice">{gicon('path', base)}{e(ins['advice']['title'])}</a>
-        <a href="#inside-plans">{gicon('era', base)}{e(s['plansH'])}</a>
+        {inside_nav_link('guide', ins['guide']['title'])}
+        {inside_nav_link('readings', s['readingsH'])}
+        {inside_nav_link('advice', ins['advice']['title'])}
+        {inside_nav_link('plans', s['plansH'])}
       </nav>
       <div class="inblocks">
         <article class="inblock inblock--guide reveal" id="inside-guide"><div class="inblock__head"><span class="inblock__index" aria-hidden="true">01</span><h3>{e(ins["guide"]["title"])}</h3><p>{e(ins["guide"]["lead"])}</p></div>
