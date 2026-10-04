@@ -334,5 +334,245 @@
     "output": "assets/previews/moments/cant-cope/fil.svg",
     "sourceSHA256": "468470637b492daff0602a823eeb52f65bce4d63dd4240b251e4472c7d3dd308",
     "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/moments/anxious/en.webp",
+    "output": "assets/previews/moments/anxious/en.svg",
+    "sourceSHA256": "aa83944e3bc8f0fb314092e12007f906a85411819ddf20ab2678aa82cef585e4",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/moments/anxious/ru.webp",
+    "output": "assets/previews/moments/anxious/ru.svg",
+    "sourceSHA256": "9c8e29fbc2b8ba13cad6e9f2b99a5882de0d08aab0770dbdadcddf599b1a525f",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/moments/anxious/es.webp",
+    "output": "assets/previews/moments/anxious/es.svg",
+    "sourceSHA256": "645d6b83f9906ea67af0baf692055323214fd36e18ae519d3413f96462f4366e",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/moments/anxious/pt.webp",
+    "output": "assets/previews/moments/anxious/pt.svg",
+    "sourceSHA256": "0cbf4a4565fc92107a9c32aa55b38e8016847551d799da75968e3fa3b7e161fe",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/moments/anxious/fr.webp",
+    "output": "assets/previews/moments/anxious/fr.svg",
+    "sourceSHA256": "98f870c29097ff5d068360239d56ac245b444b0534ce34c85f468265a3882874",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/moments/anxious/fil.webp",
+    "output": "assets/previews/moments/anxious/fil.svg",
+    "sourceSHA256": "b2fcb4121fb85b1bec06ae31c155ecf4995890d0649a464ecc92591331968508",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/moments/lonely/en.webp",
+    "output": "assets/previews/moments/lonely/en.svg",
+    "sourceSHA256": "9e7337bef49904db78c4ffdb6224dfb2612e64c2e3a33acb58d5bf99dcf42b43",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/moments/lonely/ru.webp",
+    "output": "assets/previews/moments/lonely/ru.svg",
+    "sourceSHA256": "ec65016908e58c8a017d7ed9db7f08f4f4dc4a78b87d914d4320fbfdf4c35e05",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/moments/lonely/es.webp",
+    "output": "assets/previews/moments/lonely/es.svg",
+    "sourceSHA256": "a1b8404b7f098b39d0426006fb5589110b3716cb7e405cb3b4829ae76e67ef66",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/moments/lonely/pt.webp",
+    "output": "assets/previews/moments/lonely/pt.svg",
+    "sourceSHA256": "3ceddbb08219c2fee0eb09333a6c85d9954a7171dbca110f4802d7f255ef2c7b",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/moments/lonely/fr.webp",
+    "output": "assets/previews/moments/lonely/fr.svg",
+    "sourceSHA256": "0b0be42f2279fb7848687bd97346ca4d2d1da5f32c84b1f71dc0680c63606054",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/moments/lonely/fil.webp",
+    "output": "assets/previews/moments/lonely/fil.svg",
+    "sourceSHA256": "dcc76651c91c96f66b5fdfd3b4f809537c18fd1936f77470b371c848c907ebce",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/moments/no-strength/en.webp",
+    "output": "assets/previews/moments/no-strength/en.svg",
+    "sourceSHA256": "b81d1623f5c8fbb3ef7e6b3bf7bff117d846836e1d860a4916d3d01ce7f793a4",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/moments/no-strength/ru.webp",
+    "output": "assets/previews/moments/no-strength/ru.svg",
+    "sourceSHA256": "659250c2e5108c951dab8f8e3a9fa0012d3a1c4da1b77a327c270184cd161890",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/moments/no-strength/es.webp",
+    "output": "assets/previews/moments/no-strength/es.svg",
+    "sourceSHA256": "865e664073f791b9994a2e00326ed38c72697a36c2ed98fd518e7988f051f09d",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/moments/no-strength/pt.webp",
+    "output": "assets/previews/moments/no-strength/pt.svg",
+    "sourceSHA256": "e179a5230cd41457c94f4baf4429693d1a4708ddee10c78585d16a93d70a02c2",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/moments/no-strength/fr.webp",
+    "output": "assets/previews/moments/no-strength/fr.svg",
+    "sourceSHA256": "75b288bd38467f82cb327837cc8c4517de54be5bb6bb14c170ed9e93215d7bef",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/moments/no-strength/fil.webp",
+    "output": "assets/previews/moments/no-strength/fil.svg",
+    "sourceSHA256": "ef3a47367a9e23677e8197469fcfc0369dbf80da15870b703eb96fbfb4d09ea8",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/moments/afraid-future/en.webp",
+    "output": "assets/previews/moments/afraid-future/en.svg",
+    "sourceSHA256": "06de1f553837381575f4e7cb5c227f7a42a2333a45b735f78fd66d7bec76669c",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/moments/afraid-future/ru.webp",
+    "output": "assets/previews/moments/afraid-future/ru.svg",
+    "sourceSHA256": "d5be3ae952aea6224df455d6c1c1108d7517bb60c425569e1ad46ccc23fa929d",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/moments/afraid-future/es.webp",
+    "output": "assets/previews/moments/afraid-future/es.svg",
+    "sourceSHA256": "3a1082aa54e7eeae491d66270120b1754f860030ffc7ee61a77798c94b7bdbe8",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/moments/afraid-future/pt.webp",
+    "output": "assets/previews/moments/afraid-future/pt.svg",
+    "sourceSHA256": "a9c074489bce849479a55b14833af650453ea6a0b1a185593df4e07b8df528cd",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/moments/afraid-future/fr.webp",
+    "output": "assets/previews/moments/afraid-future/fr.svg",
+    "sourceSHA256": "a92fcead8934f738b814e497a133b7fdfd64d002b87154c4b36b56a97e5f5ab8",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/moments/afraid-future/fil.webp",
+    "output": "assets/previews/moments/afraid-future/fil.svg",
+    "sourceSHA256": "faa0426df97edca2077a231fd5c7ecc4f24f458cb06ed12b34092a9d1b53c382",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "en",
+    "device": "iphone",
+    "source": "assets/moments/before-sleep/en.webp",
+    "output": "assets/previews/moments/before-sleep/en.svg",
+    "sourceSHA256": "fe8fa9fe3281a3d9740a838d6b076663ab893cd1e528818e8c675145f7e876c8",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "ru",
+    "device": "iphone",
+    "source": "assets/moments/before-sleep/ru.webp",
+    "output": "assets/previews/moments/before-sleep/ru.svg",
+    "sourceSHA256": "15c97da3561c48652b83489ae3f5bb78cd6df0d318a7e8312b507cee356fc581",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "es",
+    "device": "iphone",
+    "source": "assets/moments/before-sleep/es.webp",
+    "output": "assets/previews/moments/before-sleep/es.svg",
+    "sourceSHA256": "e23cda4434649e4f4fa7047403480d4be368b161395c5ba11da17f1788fc5c3c",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "pt",
+    "device": "iphone",
+    "source": "assets/moments/before-sleep/pt.webp",
+    "output": "assets/previews/moments/before-sleep/pt.svg",
+    "sourceSHA256": "8fd20f5c1b3510d1608ab6f44c05a7964c8656977d81ef9d0af7584f72181ecf",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fr",
+    "device": "iphone",
+    "source": "assets/moments/before-sleep/fr.webp",
+    "output": "assets/previews/moments/before-sleep/fr.svg",
+    "sourceSHA256": "af9f262b2ab934a76ba7a8dafe88ea2fabf4beb7410ec86131e3329aa2d2b975",
+    "screenPixels": "unchanged"
+  },
+  {
+    "language": "fil",
+    "device": "iphone",
+    "source": "assets/moments/before-sleep/fil.webp",
+    "output": "assets/previews/moments/before-sleep/fil.svg",
+    "sourceSHA256": "a6448ea73dfb54e92babe253379a406c44ba95f8f673a40e5917be7ce11514f5",
+    "screenPixels": "unchanged"
   }
 ]

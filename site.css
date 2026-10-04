@@ -774,3 +774,31 @@ h1.split{font-size:clamp(54px,10.4vw,140px);line-height:.98}
 .moment-preview__visual figcaption{max-width:310px;font:400 12px/1.6 var(--sans);color:var(--muted);text-align:center}
 @media(max-width:860px){.moment-preview__layout{grid-template-columns:1fr;gap:34px}.moment-preview__text{max-width:600px}.moment-preview__visual{width:100%;max-width:520px;justify-self:center;padding:30px 20px 24px}.moment-preview__visual .content-iphone{height:min(520px,120vw)}}
 @media(max-width:380px){.moment-preview__visual{border-radius:24px;padding:24px 16px 20px}.moment-preview__credit{gap:13px}.moment-preview__credit strong{font-size:16px}}
+
+/* Moments collection: one native phone, six quiet choices. */
+.moment-preview__layout{position:relative;min-width:0;border:0;padding:0;margin:0}
+.moment-preview__text h2{font-size:clamp(40px,4.8vw,64px)}
+.moment-preview__description{font-size:clamp(16px,1.5vw,18px);margin-top:22px}
+.moment-preview__picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:26px}
+.moment-preview__choice{position:relative;display:flex;align-items:center;min-height:46px;padding:11px 13px;border:1px solid var(--chip-stroke);border-radius:13px;font:400 13px/1.4 var(--sans);color:var(--muted);background:transparent;cursor:pointer;transition:color .18s,border-color .18s,background .18s}
+.moment-preview__choice:hover{color:var(--text);border-color:var(--gold-hair)}
+.moment-preview__choice:has(:checked){color:var(--text);border-color:var(--gold-hair);background:var(--gold-soft)}
+.moment-preview__choice:has(:focus-visible){outline:2px solid var(--gold);outline-offset:3px}
+.moment-preview__summaries{margin-top:21px;min-height:84px}
+.moment-preview__summary{display:none;margin:0;font:400 15px/1.7 var(--sans);color:var(--muted)}
+.moment-preview__credit{margin-top:23px;padding-top:21px}
+.moment-preview__screen{display:none;margin:0;flex-direction:column;align-items:center;gap:22px;width:100%}
+.moment-preview__layout:has(#moment-choice-cant-cope:checked) .moment-preview__summary--cant-cope{display:block}
+.moment-preview__layout:has(#moment-choice-cant-cope:checked) .moment-preview__screen--cant-cope{display:flex}
+.moment-preview__layout:has(#moment-choice-anxious:checked) .moment-preview__summary--anxious{display:block}
+.moment-preview__layout:has(#moment-choice-anxious:checked) .moment-preview__screen--anxious{display:flex}
+.moment-preview__layout:has(#moment-choice-lonely:checked) .moment-preview__summary--lonely{display:block}
+.moment-preview__layout:has(#moment-choice-lonely:checked) .moment-preview__screen--lonely{display:flex}
+.moment-preview__layout:has(#moment-choice-no-strength:checked) .moment-preview__summary--no-strength{display:block}
+.moment-preview__layout:has(#moment-choice-no-strength:checked) .moment-preview__screen--no-strength{display:flex}
+.moment-preview__layout:has(#moment-choice-afraid-future:checked) .moment-preview__summary--afraid-future{display:block}
+.moment-preview__layout:has(#moment-choice-afraid-future:checked) .moment-preview__screen--afraid-future{display:flex}
+.moment-preview__layout:has(#moment-choice-before-sleep:checked) .moment-preview__summary--before-sleep{display:block}
+.moment-preview__layout:has(#moment-choice-before-sleep:checked) .moment-preview__screen--before-sleep{display:flex}
+@media(max-width:860px){.moment-preview__summaries{min-height:78px}.moment-preview__visual{padding-top:30px}}
+@media(max-width:380px){.moment-preview__choice{font-size:12px;padding:10px;min-height:46px}.moment-preview__picker{gap:8px}}

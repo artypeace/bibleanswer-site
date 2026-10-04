@@ -5,7 +5,7 @@ import base64,hashlib,json
 from make_device_previews import phone,LANGS
 ROOT=Path(__file__).resolve().parent.parent
 rows=[]
-for group in ['story/guide','story/read','story/hours','inside/advice-money','inside/plans','today/verse','moments/cant-cope']:
+for group in ['story/guide','story/read','story/hours','inside/advice-money','inside/plans','today/verse','moments/cant-cope','moments/anxious','moments/lonely','moments/no-strength','moments/afraid-future','moments/before-sleep']:
  for lang in LANGS:
   source=ROOT/f'assets/{group}/{lang}.webp';output=ROOT/f'assets/previews/{group}/{lang}.svg'
   output.parent.mkdir(parents=True,exist_ok=True)

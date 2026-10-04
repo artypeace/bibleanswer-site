@@ -26,6 +26,7 @@ ROOT = HERE.parent
 CFG = json.loads((HERE / 'config.json').read_text('utf-8'))
 APP = json.loads((HERE / 'app-strings.json').read_text('utf-8'))
 SITE = json.loads((HERE / 'site-strings.json').read_text('utf-8'))
+MOMENTS = json.loads((HERE / 'moments.json').read_text('utf-8'))
 LANGS = ['en', 'pt', 'es', 'ru', 'fr', 'fil']
 
 FEATURED = [0, 13, 5, 1, 6, 3]     # the six feelings the app shows first
@@ -116,24 +117,35 @@ def inside_visual(section, lang, base, title):
 
 
 def moments_preview_section(lang, base):
-    s = SITE[lang]
-    screen = real_screen_frame(f'assets/moments/cant-cope/{lang}.webp', base,
-                              s['previewAlt'].format(section=s['momentPreviewH']))
+    s, moments = SITE[lang], MOMENTS[lang]
+    choices, descriptions, screens = [], [], []
+    for index, moment in enumerate(moments):
+        ident, title = moment['asset'], moment['title']
+        checked = ' checked' if index == 0 else ''
+        radio = f'<input class="moment-preview__radio sr" type="radio" name="moment-preview" id="moment-choice-{ident}" value="{ident}" aria-controls="moment-description-{ident} moment-screen-{ident}"{checked}>'
+        choices.append(f'<label class="moment-preview__choice" for="moment-choice-{ident}">{radio}{e(title)}</label>')
+        descriptions.append(f'<p class="moment-preview__summary moment-preview__summary--{ident}" id="moment-description-{ident}">{e(moment["description"])}</p>')
+        image = real_screen_frame(f'assets/moments/{ident}/{lang}.webp', base,
+                                  s['previewAlt'].format(section=title))
+        caption = s['momentPreviewCaption'].format(title=title)
+        screens.append(f'<figure class="moment-preview__screen moment-preview__screen--{ident}" id="moment-screen-{ident}">{image}<figcaption>{e(caption)}</figcaption></figure>')
     return f'''<section class="section moment-preview" id="moments" aria-labelledby="h-moments">
-      <div class="wrap moment-preview__layout">
-        <div class="moment-preview__text">
-          <p class="eyebrow reveal">{e(s['momentsLabel'])}</p>
-          {h2(s['momentPreviewH'], '', 'h-moments')}
-          <p class="moment-preview__description reveal">{e(s['momentPreviewP'])}</p>
-          <p class="moment-preview__credit reveal">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4M8 6v12M12 3v18M16 6v12M20 10v4"/></svg>
-            <span>{e(s['momentsMusicLabel'])}<br><strong>Marble Space</strong> {e(s['momentsMusicJoin'])} <strong>Arty</strong></span>
-          </p>
-        </div>
-        <figure class="moment-preview__visual reveal">
-          {screen}
-          <figcaption>{e(s['momentPreviewCaption'])}</figcaption>
-        </figure>
+      <div class="wrap">
+        <fieldset class="moment-preview__layout">
+          <legend class="sr">{e(s['momentsChooseLabel'])}</legend>
+          <div class="moment-preview__text">
+            <p class="eyebrow reveal">{e(s['momentsLabel'])}</p>
+            {h2(s['momentPreviewH'], '', 'h-moments')}
+            <p class="moment-preview__description reveal">{e(s['momentPreviewP'])}</p>
+            <div class="moment-preview__picker reveal">{''.join(choices)}</div>
+            <div class="moment-preview__summaries">{''.join(descriptions)}</div>
+            <p class="moment-preview__credit reveal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4M8 6v12M12 3v18M16 6v12M20 10v4"/></svg>
+              <span>{e(s['momentsMusicLabel'])}<br><strong>Marble Space</strong> {e(s['momentsMusicJoin'])} <strong>Arty</strong></span>
+            </p>
+          </div>
+          <div class="moment-preview__visual reveal">{''.join(screens)}</div>
+        </fieldset>
       </div>
     </section>'''
 

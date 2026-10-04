@@ -1,0 +1,230 @@
+{
+  "en": [
+    {
+      "id": "cant_cope",
+      "asset": "cant-cope",
+      "title": "When you can't cope",
+      "description": "Feeling like you can't cope is not weakness. It's an invitation to pause and take one deep breath."
+    },
+    {
+      "id": "anxious",
+      "asset": "anxious",
+      "title": "When anxious",
+      "description": "Anxiety is a signal that something matters. Let this meditation guide you back to inner stillness."
+    },
+    {
+      "id": "lonely",
+      "asset": "lonely",
+      "title": "When lonely",
+      "description": "Loneliness speaks of a deep need for connection. You are not alone — let this moment remind you."
+    },
+    {
+      "id": "no_strength",
+      "asset": "no-strength",
+      "title": "When you have no strength",
+      "description": "When strength runs low, it's okay to pause. This is a space for restoration."
+    },
+    {
+      "id": "afraid_future",
+      "asset": "afraid-future",
+      "title": "When afraid of the future",
+      "description": "Fear of the future lives in what hasn't come yet. Let's return together to the present moment."
+    },
+    {
+      "id": "before_sleep",
+      "asset": "before-sleep",
+      "title": "Before sleep",
+      "description": "Release this day with all that it held. Allow the silence to come and let your body rest."
+    }
+  ],
+  "ru": [
+    {
+      "id": "cant_cope",
+      "asset": "cant-cope",
+      "title": "Когда не справляетесь",
+      "description": "Чувство, что не справляетесь, — это не слабость. Это приглашение остановиться и сделать глубокий вдох."
+    },
+    {
+      "id": "anxious",
+      "asset": "anxious",
+      "title": "Когда тревожно",
+      "description": "Тревога — это сигнал о чём-то важном. Позвольте этой медитации помочь вам вернуться к тишине внутри."
+    },
+    {
+      "id": "lonely",
+      "asset": "lonely",
+      "title": "Когда одиноко",
+      "description": "Одиночество говорит о потребности в близости. Вы не одни — позвольте этому моменту напомнить об этом."
+    },
+    {
+      "id": "no_strength",
+      "asset": "no-strength",
+      "title": "Когда нет сил",
+      "description": "Когда сил нет — разрешите себе остановиться. Это пространство для восстановления."
+    },
+    {
+      "id": "afraid_future",
+      "asset": "afraid-future",
+      "title": "Когда страшно за будущее",
+      "description": "Страх будущего живёт в мыслях о том, чего ещё нет. Вернёмся вместе в настоящий момент."
+    },
+    {
+      "id": "before_sleep",
+      "asset": "before-sleep",
+      "title": "Перед сном",
+      "description": "Отпустите этот день со всем, что в нём было. Позвольте тишине прийти, и телу — отдохнуть."
+    }
+  ],
+  "es": [
+    {
+      "id": "cant_cope",
+      "asset": "cant-cope",
+      "title": "Cuando todo agobia",
+      "description": "Sentir que no puedes más no es debilidad. Es una invitación a detenerte y respirar hondo."
+    },
+    {
+      "id": "anxious",
+      "asset": "anxious",
+      "title": "Cuando estás ansioso",
+      "description": "La ansiedad es una señal de que algo importa. Deja que esta meditación te guíe de vuelta a la calma interior."
+    },
+    {
+      "id": "lonely",
+      "asset": "lonely",
+      "title": "Cuando te sientes solo",
+      "description": "La soledad habla de una profunda necesidad de conexión. No estás solo — deja que este momento te lo recuerde."
+    },
+    {
+      "id": "no_strength",
+      "asset": "no-strength",
+      "title": "Cuando no tienes fuerzas",
+      "description": "Cuando las fuerzas se acaban, está bien detenerse. Este es un espacio de restauración."
+    },
+    {
+      "id": "afraid_future",
+      "asset": "afraid-future",
+      "title": "Cuando temes al futuro",
+      "description": "El miedo al futuro vive en lo que aún no existe. Volvamos juntos al momento presente."
+    },
+    {
+      "id": "before_sleep",
+      "asset": "before-sleep",
+      "title": "Antes de dormir",
+      "description": "Suelta este día con todo lo que trajo. Permite que venga el silencio y deja que tu cuerpo descanse."
+    }
+  ],
+  "pt": [
+    {
+      "id": "cant_cope",
+      "asset": "cant-cope",
+      "title": "Quando você não consegue",
+      "description": "Sentir que você não consegue não é fraqueza. É um convite para parar e respirar fundo."
+    },
+    {
+      "id": "anxious",
+      "asset": "anxious",
+      "title": "Quando você está ansioso",
+      "description": "A ansiedade é um sinal. Deixe esta meditação guiar você de volta à paz interior."
+    },
+    {
+      "id": "lonely",
+      "asset": "lonely",
+      "title": "Quando você se sente só",
+      "description": "A solidão fala de uma necessidade profunda. Você não está sozinho — deixe este momento lembrar você disso."
+    },
+    {
+      "id": "no_strength",
+      "asset": "no-strength",
+      "title": "Quando você não tem forças",
+      "description": "Quando as forças acabam, é permitido parar. Este é um espaço de renovação."
+    },
+    {
+      "id": "afraid_future",
+      "asset": "afraid-future",
+      "title": "Quando você tem medo do futuro",
+      "description": "O medo do futuro vive no que ainda não existe. Voltemos juntos ao momento presente."
+    },
+    {
+      "id": "before_sleep",
+      "asset": "before-sleep",
+      "title": "Antes de dormir",
+      "description": "Deixe este dia ir, com tudo o que ele trouxe. Permita o silêncio e deixe o corpo descansar."
+    }
+  ],
+  "fr": [
+    {
+      "id": "cant_cope",
+      "asset": "cant-cope",
+      "title": "Quand tu n'y arrives plus",
+      "description": "Se sentir dépassé n'est pas une faiblesse. C'est une invitation à s'arrêter et à respirer."
+    },
+    {
+      "id": "anxious",
+      "asset": "anxious",
+      "title": "Quand tu es anxieux",
+      "description": "L'anxiété est un signal. Laisse cette méditation te ramener au calme intérieur."
+    },
+    {
+      "id": "lonely",
+      "asset": "lonely",
+      "title": "Quand tu es seul",
+      "description": "La solitude parle d'un besoin profond. Tu n'es pas seul — laisse ce moment te le rappeler."
+    },
+    {
+      "id": "no_strength",
+      "asset": "no-strength",
+      "title": "Quand tu n'as plus de force",
+      "description": "Quand les forces manquent, il est permis de s'arrêter. Ceci est un espace de restauration."
+    },
+    {
+      "id": "afraid_future",
+      "asset": "afraid-future",
+      "title": "Quand tu as peur de l'avenir",
+      "description": "La peur du futur vit dans ce qui n'existe pas encore. Revenons ensemble au moment présent."
+    },
+    {
+      "id": "before_sleep",
+      "asset": "before-sleep",
+      "title": "Avant de dormir",
+      "description": "Laisse aller cette journée avec tout ce qu'elle contenait. Permets au silence de venir et au corps de se reposer."
+    }
+  ],
+  "fil": [
+    {
+      "id": "cant_cope",
+      "asset": "cant-cope",
+      "title": "Kapag hindi mo kayang harapin",
+      "description": "Ang pakiramdam na hindi mo kayang harapin ay hindi kahinaan. Huminga nang malalim."
+    },
+    {
+      "id": "anxious",
+      "asset": "anxious",
+      "title": "Kapag nababalisa",
+      "description": "Ang pagkabahala ay isang senyales. Hayaan ang meditasyong ito na gabayan ka pabalik sa kapayapaan."
+    },
+    {
+      "id": "lonely",
+      "asset": "lonely",
+      "title": "Kapag nag-iisa",
+      "description": "Ang kalungkutan ay nagpapakita ng pangangailangan. Hindi ka nag-iisa."
+    },
+    {
+      "id": "no_strength",
+      "asset": "no-strength",
+      "title": "Kapag walang lakas",
+      "description": "Kapag maubos na ang lakas, okay lang na huminto. Ito ay espasyo para sa pagbabago."
+    },
+    {
+      "id": "afraid_future",
+      "asset": "afraid-future",
+      "title": "Kapag natatakot sa kinabukasan",
+      "description": "Ang takot sa kinabukasan ay nasa iniisip na hindi pa nangyayari. Bumalik tayo sa kasalukuyan."
+    },
+    {
+      "id": "before_sleep",
+      "asset": "before-sleep",
+      "title": "Bago matulog",
+      "description": "Hayaan ang araw na ito na lumayo. Hayaan ang katahimikan at pahingahin ang katawan."
+    }
+  ]
+}
