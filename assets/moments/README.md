@@ -11,8 +11,11 @@ WebP. The surrounding iPhone housing is the existing original vector artwork.
 Native UI, Bible text and artist credits are not rewritten. Checksums and source
 dimensions are recorded in sources.json; raw screenshots stay in the social workspace.
 
-Titles and introductory descriptions in tools/moments.json come from Moment
-in the app's MomentsView.swift. Music in Moments is by Marble Space and Arty;
+Titles and initial introductory descriptions in tools/moments.json come from
+Moment in the app's MomentsView.swift. The website's anxious introduction now
+uses 'moment' in place of 'meditation' in all six languages, at the owner's
+request; the native screenshots and app source are unchanged.
+Music in Moments is by Marble Space and Arty;
 the collection credit is distinct from the music/voice credits of each recording.
 no_strength and afraid_future are music-only in the current app source.
 
