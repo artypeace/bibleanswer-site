@@ -1,0 +1,92 @@
+[
+  {
+    "language": "en",
+    "momentId": "cant_cope",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceFile": "en-cant-cope.png",
+    "sourceSHA256": "28e2ad0b98c32daf73fafb3b4baa9e407f13fe2f55d52853c777ec516af34294",
+    "webFile": "assets/moments/cant-cope/en.webp",
+    "webSHA256": "bf5ef3bef54b20ab96976c0be2f53191bfc0a30430c4a14bee1d1554d28ee800",
+    "frame": "assets/previews/moments/cant-cope/en.svg",
+    "screenAlterations": "proportional downscale and WebP encoding only",
+    "housing": "existing original iPhone vector illustration"
+  },
+  {
+    "language": "ru",
+    "momentId": "cant_cope",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceFile": "ru-cant-cope.png",
+    "sourceSHA256": "53c99a9d78cbe0a2459434bce0e1b49df203a990048ba07587e21a2e0e597e79",
+    "webFile": "assets/moments/cant-cope/ru.webp",
+    "webSHA256": "3075eeb1114bd27542eb33db3810906ac04fdd82f63e2c2ac9927958a788476d",
+    "frame": "assets/previews/moments/cant-cope/ru.svg",
+    "screenAlterations": "proportional downscale and WebP encoding only",
+    "housing": "existing original iPhone vector illustration"
+  },
+  {
+    "language": "es",
+    "momentId": "cant_cope",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceFile": "es-cant-cope.png",
+    "sourceSHA256": "38270ec366882f219315bdde82c5f46ab425b824038ed1044b71fa3084904ceb",
+    "webFile": "assets/moments/cant-cope/es.webp",
+    "webSHA256": "cc244b9dd187c23635da4741aedf58edcd8a9c70cd92395b1cfb569984ee1701",
+    "frame": "assets/previews/moments/cant-cope/es.svg",
+    "screenAlterations": "proportional downscale and WebP encoding only",
+    "housing": "existing original iPhone vector illustration"
+  },
+  {
+    "language": "pt",
+    "momentId": "cant_cope",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceFile": "pt-cant-cope.png",
+    "sourceSHA256": "de9fdc16ae1d981339d9c5a5f90dced27ba7e66cfec32d3275c98285985baa3a",
+    "webFile": "assets/moments/cant-cope/pt.webp",
+    "webSHA256": "736336defe4dc526c0610e81a274da9d99bcad4519103bd7357aebe877fc3284",
+    "frame": "assets/previews/moments/cant-cope/pt.svg",
+    "screenAlterations": "proportional downscale and WebP encoding only",
+    "housing": "existing original iPhone vector illustration"
+  },
+  {
+    "language": "fr",
+    "momentId": "cant_cope",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceFile": "fr-cant-cope.png",
+    "sourceSHA256": "d515cf25fb71e8c02eb89e7047fd799d231b8e0e6bb706a3b0c34b90ae695179",
+    "webFile": "assets/moments/cant-cope/fr.webp",
+    "webSHA256": "6a5c158281fe4b6d8192a7565fb5ea28564be291ad3e6d081e8e4a5ea83b7f31",
+    "frame": "assets/previews/moments/cant-cope/fr.svg",
+    "screenAlterations": "proportional downscale and WebP encoding only",
+    "housing": "existing original iPhone vector illustration"
+  },
+  {
+    "language": "fil",
+    "momentId": "cant_cope",
+    "sourceSize": [
+      1320,
+      2868
+    ],
+    "sourceFile": "fil-cant-cope.png",
+    "sourceSHA256": "ea6c7638222a7baacea2b122e9bdbea70c7ab6e6017a4c472088a34f5f8a2484",
+    "webFile": "assets/moments/cant-cope/fil.webp",
+    "webSHA256": "468470637b492daff0602a823eeb52f65bce4d63dd4240b251e4472c7d3dd308",
+    "frame": "assets/previews/moments/cant-cope/fil.svg",
+    "screenAlterations": "proportional downscale and WebP encoding only",
+    "housing": "existing original iPhone vector illustration"
+  }
+]

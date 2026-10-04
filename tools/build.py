@@ -115,6 +115,29 @@ def inside_visual(section, lang, base, title):
             f'{real_screen_frame(paths[section] + "/" + lang + ".webp", base, alt)}</figure>')
 
 
+def moments_preview_section(lang, base):
+    s = SITE[lang]
+    screen = real_screen_frame(f'assets/moments/cant-cope/{lang}.webp', base,
+                              s['previewAlt'].format(section=s['momentPreviewH']))
+    return f'''<section class="section moment-preview" id="moments" aria-labelledby="h-moments">
+      <div class="wrap moment-preview__layout">
+        <div class="moment-preview__text">
+          <p class="eyebrow reveal">{e(s['momentsLabel'])}</p>
+          {h2(s['momentPreviewH'], '', 'h-moments')}
+          <p class="moment-preview__description reveal">{e(s['momentPreviewP'])}</p>
+          <p class="moment-preview__credit reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4M8 6v12M12 3v18M16 6v12M20 10v4"/></svg>
+            <span>{e(s['momentsMusicLabel'])}<br><strong>Marble Space</strong> {e(s['momentsMusicJoin'])} <strong>Arty</strong></span>
+          </p>
+        </div>
+        <figure class="moment-preview__visual reveal">
+          {screen}
+          <figcaption>{e(s['momentPreviewCaption'])}</figcaption>
+        </figure>
+      </div>
+    </section>'''
+
+
 def daily_previews(lang, base):
     s, ap = SITE[lang], APP[lang]
     verse = real_screen_frame(f'assets/today/verse/{lang}.webp', base, s['previewAlt'].format(section=s['todayVerseLabel']))
@@ -545,6 +568,8 @@ def home(lang):
       </div>
     </div>
   </section>
+
+  {moments_preview_section(lang, base)}
 
   {inside_html}
 
