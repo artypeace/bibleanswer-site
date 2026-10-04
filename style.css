@@ -19,3 +19,8 @@ table{border-collapse:collapse;width:100%;font-size:16px}
 td,th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
 th{color:var(--muted);font:600 12px/1.4 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 footer{margin-top:64px;color:var(--muted);font:13px/1.6 "Helvetica Neue",Arial,sans-serif}
+
+/* Carry the appearance preference into the legal pages; their wording stays unchanged. */
+:root{color-scheme:dark}
+:root[data-theme="light"]{color-scheme:light;--bg:#DCEDF6;--panel:#fff;--text:#132A47;--muted:#4D6883;--gold:#3F86BE;--rule:#AAC6D9}
+@media(prefers-color-scheme:light){:root:not([data-theme]){color-scheme:light;--bg:#DCEDF6;--panel:#fff;--text:#132A47;--muted:#4D6883;--gold:#3F86BE;--rule:#AAC6D9}}

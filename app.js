@@ -21,7 +21,7 @@
     try { userPaused = sessionStorage.getItem('sky-paused') === '1'; } catch (_) {}
     video.muted = true;
 
-    const allowed = () => !motion.matches && !light.matches && !(connection && connection.saveData) && !failed;
+    const allowed = () => !motion.matches && (document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : !light.matches) && !(connection && connection.saveData) && !failed;
     function label() {
       button.hidden = !allowed();
       const paused = video.paused;
@@ -56,6 +56,7 @@
       addEventListener('scroll', () => { inView = hero.getBoundingClientRect().bottom > 0; sync(); }, { passive: true });
     }
     document.addEventListener('visibilitychange', sync);
+    document.addEventListener('bible-theme-change', sync);
     for (const query of [motion, light]) {
       if (query.addEventListener) query.addEventListener('change', sync);
       else if (query.addListener) query.addListener(sync);

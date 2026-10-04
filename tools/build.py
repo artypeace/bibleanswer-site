@@ -20,6 +20,7 @@ There is no analytics, no cookie, no third-party request; the Content-Security-P
 """
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 import build_articles
+import theme
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -302,6 +303,11 @@ def reading_guides_section(lang, base):
     cards = ''.join(f'<a class="home-guide reveal" href="/{build_articles.path(a)}"><div class="home-guide__image"><img src="{base}assets/plates/{a["plate"]}.webp" alt="" width="900" height="600" loading="lazy" decoding="async"></div><div class="home-guide__body"><p class="home-guide__meta">{e(a["category"])} · {build_articles.duration(ROOT,a)} {build_articles.UI[article_lang]["reading"]} {mark}</p><h3>{e(a["title"])}</h3><p>{e(a["lead"])}</p><span class="home-guide__arrow" aria-hidden="true">↗</span></div></a>' for a in guides)
     return f'<section class="section reading-guides" id="reading-guides" aria-labelledby="h-reading-guides"><div class="wrap">{h2(s["readingGuidesH"], "", "h-reading-guides")}<p class="lede reveal">{e(s["readingGuidesP"])}</p><div class="home-guides">{cards}</div><p class="reading-guides__all"><a class="btn btn--ghost" href="/{build_articles.hub(article_lang)}">{e(s["readingGuidesAll"])}</a></p></div></section>'
 
+def theme_script(base):
+    version = hashlib.sha256((ROOT / 'theme.js').read_bytes()).hexdigest()[:12]
+    return f'<script src="{base}theme.js?v={version}"></script>\n'
+
+
 def head_common(lang, title, desc, canonical, og_image, robots, base, extra=''):
     alternates = ''
     if lang:
@@ -314,7 +320,7 @@ def head_common(lang, title, desc, canonical, og_image, robots, base, extra=''):
             f'<link rel="canonical" href="{e(canonical)}">\n{alternates}'
             f'<link rel="alternate" type="application/rss+xml" title="Bible Answer" href="{e(CFG["siteUrl"].rstrip("/") + "/feed.xml")}">\n'
             '<meta name="color-scheme" content="dark light">\n<meta name="theme-color" content="#0F1628">\n'
-            f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}{extra}{icons_head(base)}')
+            f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}{extra}{icons_head(base)}{theme_script(base)}')
 
 
 # ------------------------------------------------------------------ the home page of one language
@@ -528,6 +534,7 @@ def home(lang):
     </nav>
     <div class="nav__tools">
       <details class="langmenu"><summary aria-label="{e(ap["name"])}">{e(ap["name"])}</summary><ul>{lang_items}</ul></details>
+      {theme.control(lang)}
       <a class="nav__reading" href="#reading-guides">{e(s["readingGuidesLabel"])}</a>
       {store_nav}
     </div>
@@ -678,6 +685,7 @@ def links_page():
 <script>{BOOT}</script>
 </head>
 <body class="solo">
+{theme.control("en")}
 <div class="sky" aria-hidden="true"><div class="sky__img"></div><div class="sky__veil"></div></div>
 <main class="links" id="main">
   <img class="hero__icon" src="../assets/icon.png" width="96" height="96" alt="Bible Answer">
@@ -707,6 +715,7 @@ def not_found():
 <script>{BOOT}</script>
 </head>
 <body class="solo">
+{theme.control("en")}
 <div class="sky" aria-hidden="true"><div class="sky__img"></div><div class="sky__veil"></div></div>
 <main class="links" id="main">
   <img class="hero__icon" src="/assets/icon.png" width="96" height="96" alt="Bible Answer">
@@ -734,7 +743,7 @@ def legal_head(name, title):
             f'<link rel="canonical" href="{e(url)}">\n<meta name="robots" content="index,follow">\n'
             f'<link rel="alternate" type="application/rss+xml" title="Bible Answer" href="{e(site + "/feed.xml")}">\n'
             f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}'
-            f'{og_head(title, desc, url, og)}{icons_head("/")}<!-- /site:head -->\n')
+            f'{og_head(title, desc, url, og)}{icons_head("/")}{theme_script("/")}<!-- /site:head -->\n')
 
 
 def write_legal():
@@ -913,7 +922,7 @@ def press_page():
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="nav__tools">{cta}</div>
+    <div class="nav__tools">{theme.control("en")}{cta}</div>
   </div>
 </header>
 
@@ -1067,10 +1076,13 @@ def version_stylesheets():
     """Refresh cached CSS when its content changes."""
     versions = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:12]
                 for name in ('site.css', 'articles.css')}
+    runtime_version = hashlib.sha256((ROOT / 'app.js').read_bytes()).hexdigest()[:12]
+    runtime_pattern = re.compile(r'src="([^"?]*?)app\.js(?:\?[^" ]*)?"')
     pattern = re.compile(r'href="([^"?]*?)(site\.css|articles\.css)(?:\?[^" ]*)?"')
     for page in ROOT.rglob('*.html'):
         source = page.read_text('utf-8')
         updated = pattern.sub(lambda m: f'href="{m[1]}{m[2]}?v={versions[m[2]]}"', source)
+        updated = runtime_pattern.sub(lambda m: f'src="{m[1]}app.js?v={runtime_version}"', updated)
         if updated != source:
             page.write_text(updated, encoding='utf-8')
 

@@ -96,3 +96,6 @@
 .article-license{font-size:12px}
 @media(max-width:900px){.article-app__actions{margin-left:88px}}
 @media(max-width:650px){.article-app__actions{margin-left:0;width:100%}.article-app__actions .btn{width:100%}}
+
+.article-nav__tools{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}.article-nav__tools .article-language-menu{margin-left:0}
+@media(max-width:650px){.article-nav__tools{gap:8px}.article-nav__in{gap:10px}.article-nav .theme-menu__panel{right:0}}

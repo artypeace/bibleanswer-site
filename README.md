@@ -159,3 +159,7 @@ changes. No arbitrary word-count target or tracking script is required.
 The home pages use a locally hosted time-lapse of the Geminids, credited visibly next to the background as **ESO/Gianluca Lombardi (glphoto.it)**, under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source, exact alterations and original checksum: `assets/sky/credits.json`. Rebuild the web assets with `tools/prepare_sky_video.py`; originals and FFmpeg stay outside this repository. No ESO logo or endorsement is used.
 
 The video loads after the main page, only in dark mode, with motion allowed and data saving off. It pauses outside the hero or in a hidden tab. The sky button pauses/resumes it; pause preference lasts for the browser session. A real still photograph remains if playback is unavailable or motion is reduced. Mobile receives a separate narrow MP4. Articles keep their existing static sky.
+
+### Appearance
+
+The sun/moon button offers Light, Dark and Use device settings, localized in all six languages. `theme.js` restores the local preference before the stylesheet paints, shares it across pages/tabs and updates the browser theme color. `tools/theme.py` renders the shared control. Device settings are the default; there is no separate time-of-day rule. Without JavaScript, CSS still follows the device and the inactive control stays hidden. The sky video follows the selected theme and retains its independent pause and reduced-motion settings. No preference is transmitted.

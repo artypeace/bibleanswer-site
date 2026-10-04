@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Static reading guides. All Scripture comes from saved verse.py stdout."""
 import datetime,html,json,math,pathlib,re
+import theme
 E=lambda text:html.escape(str(text),quote=True)
 LANGS = ('en', 'ru', 'es', 'pt', 'fr', 'fil')
 LANG_CODE = {'en':'en', 'ru':'ru', 'es':'es', 'pt':'pt-BR', 'fr':'fr', 'fil':'fil'}
@@ -33,7 +34,7 @@ def navigation(lang,pages):
  return (f'<a class="article-skip" href="#main">{u["skip"]}</a><header class="article-nav"><div class="article-nav__in">'
  '<a class="mark" href="'+home(lang)+'">Bible Answer</a>'
  f'<nav aria-label="{u["hub"]}"><a href="{home(lang)}">{u["home"]}</a><a href="/{hub(lang)}">{u["hub"]}</a></nav>'
- f'<details class="article-language-menu"><summary aria-label="{u["language"]}">{u["label"]}</summary><ul>{choices}</ul></details></div></header>')
+ f'<div class="article-nav__tools"><details class="article-language-menu"><summary aria-label="{u["language"]}">{u["label"]}</summary><ul>{choices}</ul></details>{theme.control(lang)}</div></div></header>')
 def footer(cfg,lang):
  u=UI[lang]
  license_note = f'<p class="article-license"><a href="https://creativecommons.org/licenses/by-sa/4.0/">{u["article_license"]}</a></p>' if lang=='fil' else ''
