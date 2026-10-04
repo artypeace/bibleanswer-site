@@ -1075,10 +1075,10 @@ def write_extras():
 def version_stylesheets():
     """Refresh cached CSS when its content changes."""
     versions = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:12]
-                for name in ('site.css', 'articles.css')}
+                for name in ('site.css', 'articles.css', 'style.css')}
     runtime_version = hashlib.sha256((ROOT / 'app.js').read_bytes()).hexdigest()[:12]
     runtime_pattern = re.compile(r'src="([^"?]*?)app\.js(?:\?[^" ]*)?"')
-    pattern = re.compile(r'href="([^"?]*?)(site\.css|articles\.css)(?:\?[^" ]*)?"')
+    pattern = re.compile(r'href="([^"?]*?)(site\.css|articles\.css|style\.css)(?:\?[^" ]*)?"')
     for page in ROOT.rglob('*.html'):
         source = page.read_text('utf-8')
         updated = pattern.sub(lambda m: f'href="{m[1]}{m[2]}?v={versions[m[2]]}"', source)
