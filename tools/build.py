@@ -127,8 +127,7 @@ def moments_preview_section(lang, base):
         descriptions.append(f'<p class="moment-preview__summary moment-preview__summary--{ident}" id="moment-description-{ident}">{e(moment["description"])}</p>')
         image = real_screen_frame(f'assets/moments/{ident}/{lang}.webp', base,
                                   s['previewAlt'].format(section=title))
-        caption = s['momentPreviewCaption'].format(title=title)
-        screens.append(f'<figure class="moment-preview__screen moment-preview__screen--{ident}" id="moment-screen-{ident}">{image}<figcaption>{e(caption)}</figcaption></figure>')
+        screens.append(f'<figure class="moment-preview__screen moment-preview__screen--{ident}" id="moment-screen-{ident}">{image}</figure>')
     return f'''<section class="section moment-preview" id="moments" aria-labelledby="h-moments">
       <div class="wrap">
         <fieldset class="moment-preview__layout">
