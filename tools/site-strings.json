@@ -201,7 +201,8 @@
   "readingGuidesLabel": "Статьи",
   "readingGuidesH": "Чуть больше времени рядом с Писанием.",
   "readingGuidesP": "Отрывок в контексте, вопрос для размышления и небольшой шаг для обычного дня.",
-  "readingGuidesAll": "Все статьи"
+  "readingGuidesAll": "Все статьи",
+  "localName": "Ответ из Библии"
  },
  "es": {
   "htmlLang": "es",
@@ -303,7 +304,8 @@
   "readingGuidesLabel": "Artículos",
   "readingGuidesH": "Un poco más de tiempo con la Palabra.",
   "readingGuidesP": "Un pasaje en contexto, una pregunta y un pequeño paso para el día a día.",
-  "readingGuidesAll": "Todos los artículos"
+  "readingGuidesAll": "Todos los artículos",
+  "localName": "Respuesta de la Biblia"
  },
  "pt": {
   "htmlLang": "pt-BR",
@@ -405,7 +407,8 @@
   "readingGuidesLabel": "Artigos",
   "readingGuidesH": "Um pouco mais de tempo com a Palavra.",
   "readingGuidesP": "Uma passagem em contexto, uma pergunta e um pequeno passo para o dia a dia.",
-  "readingGuidesAll": "Todos os artigos"
+  "readingGuidesAll": "Todos os artigos",
+  "localName": "Resposta da Bíblia"
  },
  "fr": {
   "htmlLang": "fr",
@@ -507,7 +510,8 @@
   "readingGuidesLabel": "Articles",
   "readingGuidesH": "Un peu plus de temps avec la Parole.",
   "readingGuidesP": "Un passage dans son contexte, une question et un petit pas pour le quotidien.",
-  "readingGuidesAll": "Tous les articles"
+  "readingGuidesAll": "Tous les articles",
+  "localName": "Réponse tirée de la Bible"
  },
  "fil": {
   "htmlLang": "fil",
@@ -609,6 +613,7 @@
   "readingGuidesLabel": "Mga artikulo",
   "readingGuidesH": "Kaunting oras kasama ang Salita.",
   "readingGuidesP": "Isang talata sa konteksto, isang tanong, at isang maliit na hakbang sa araw-araw.",
-  "readingGuidesAll": "Lahat ng artikulo"
+  "readingGuidesAll": "Lahat ng artikulo",
+  "localName": "Sagot mula sa Bibliya"
  }
 }

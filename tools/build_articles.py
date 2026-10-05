@@ -2,6 +2,7 @@
 """Static reading guides. All Scripture comes from saved verse.py stdout."""
 import datetime,html,json,math,pathlib,re
 import theme
+import branding
 E=lambda text:html.escape(str(text),quote=True)
 LANGS = ('en', 'ru', 'es', 'pt', 'fr', 'fil')
 LANG_CODE = {'en':'en', 'ru':'ru', 'es':'es', 'pt':'pt-BR', 'fr':'fr', 'fil':'fil'}
@@ -38,7 +39,8 @@ def navigation(lang,pages):
 def footer(cfg,lang):
  u=UI[lang]
  license_note = f'<p class="article-license"><a href="https://creativecommons.org/licenses/by-sa/4.0/">{u["article_license"]}</a></p>' if lang=='fil' else ''
- return f'<footer class="foot article-footer"><p><a href="/privacy#{lang}">{u["privacy"]}</a><span class="dot">·</span><wbr><a href="/terms#{lang}">{u["terms"]}</a></p><p><a href="mailto:{E(cfg["contactEmail"])}">{E(cfg["contactEmail"])}</a></p>{license_note}</footer>'
+ brand = branding.footer_brand(lang, home(lang)) if branding.local_name(lang) else ""
+ return f'<footer class="foot article-footer">{brand}<p><a href="/privacy#{lang}">{u["privacy"]}</a><span class="dot">·</span><wbr><a href="/terms#{lang}">{u["terms"]}</a></p><p><a href="mailto:{E(cfg["contactEmail"])}">{E(cfg["contactEmail"])}</a></p>{license_note}</footer>'
 def card(root,a):
  u=UI[a['lang']]
  return (f'<a class="guide-card" href="/{path(a)}"><div class="guide-card__image"><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" loading="lazy" decoding="async"></div><div class="guide-card__body">'

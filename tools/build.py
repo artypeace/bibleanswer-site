@@ -21,6 +21,7 @@ There is no analytics, no cookie, no third-party request; the Content-Security-P
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 import build_articles
 import theme
+import branding
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -346,7 +347,7 @@ def home(lang):
     if any(shots):
         ld_app['screenshot'] = [f'{site}/{p}' for p in shots if p]
     ld = {'@context': 'https://schema.org', '@graph': [
-        {'@type': 'WebSite', '@id': site + '/#site', 'name': 'Bible Answer', 'url': site + '/', 'inLanguage': s['hreflang']}, ld_app]}
+        {'@type': 'WebSite', '@id': site + '/#site', 'name': 'Bible Answer', 'alternateName': branding.alternate_names(), 'url': site + '/', 'inLanguage': s['hreflang']}, ld_app]}
     ld_json = json.dumps(ld, ensure_ascii=False, indent=1).replace('</', '<\\/')
 
     current = ' aria-current="true"'
@@ -655,7 +656,7 @@ def home(lang):
 </main>
 
 <footer class="foot">
-  <a class="foot__brand" href="{rel(lang, lang)}">Bible Answer</a>
+  {branding.footer_brand(lang, rel(lang, lang))}
   <p><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
