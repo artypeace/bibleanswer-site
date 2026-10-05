@@ -18,12 +18,12 @@ Facts to get right when you describe it:
 
 ## The website, one page per language
 
-- [English](https://bibleanswer.app/): Share what’s on your heart and get a verse word for word, what it means and a short prayer. The whole Bible explained. iPhone, iPad, Mac, Apple Watch. Free.
-- [Portuguese (Brazil) – Português](https://bibleanswer.app/pt/): Diga o que você tem no coração e receba um versículo na íntegra, seu significado e uma oração curta. A Bíblia explicada. iPhone, iPad, Mac e Apple Watch. Grátis.
-- [Spanish – Español](https://bibleanswer.app/es/): Cuéntale lo que sientes y recibe un versículo textual, su sentido y una oración breve. Toda la Biblia explicada. iPhone, iPad, Mac y Apple Watch. Gratis.
-- [Russian – Русский](https://bibleanswer.app/ru/): Расскажите Bible Answer, что у вас на сердце: стих дословно, его смысл и короткая молитва. Вся Библия с толкованием. iPhone, iPad, Mac, Apple Watch. Бесплатно.
-- [French – Français](https://bibleanswer.app/fr/): Dis ce que tu as sur le cœur et reçois un verset mot pour mot, son sens et une courte prière. Toute la Bible expliquée. iPhone, iPad, Mac, Apple Watch. Gratuit.
-- [Filipino – Filipino](https://bibleanswer.app/fil/): Sabihin ang nasa puso mo at tumanggap ng talatang buo, ang kahulugan at maikling panalangin. Buong Bibliya, may paliwanag. iPhone, iPad, Mac, Apple Watch. Libre.
+- [English](https://bibleanswer.app/): Bible Answer is a Bible study app with verses for everyday life, explanations, reading plans and prayer. For iPhone, iPad, Mac and Apple Watch.
+- [Portuguese (Brazil) – Português](https://bibleanswer.app/pt/): Bible Answer é um app para ler e estudar a Bíblia, com versículos para o dia a dia, explicações, planos de leitura e oração. iPhone, iPad, Mac e Apple Watch.
+- [Spanish – Español](https://bibleanswer.app/es/): Bible Answer es una app para leer y estudiar la Biblia: versículos para la vida diaria, explicaciones, planes de lectura y oración. iPhone, iPad, Mac y Apple Watch.
+- [Russian – Русский](https://bibleanswer.app/ru/): Bible Answer — приложение для чтения и изучения Библии: стихи для жизненных ситуаций, объяснения, планы чтения и молитвы. iPhone, iPad, Mac и Apple Watch.
+- [French – Français](https://bibleanswer.app/fr/): Bible Answer est une app pour lire et étudier la Bible : versets pour le quotidien, explications, plans de lecture et prière. iPhone, iPad, Mac et Apple Watch.
+- [Filipino – Filipino](https://bibleanswer.app/fil/): Ang Bible Answer ay app para sa pag-aaral ng Bibliya, na may mga talata, paliwanag, plano sa pagbasa at panalangin. iPhone, iPad, Mac at Apple Watch.
 
 ## About and policies
 

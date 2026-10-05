@@ -546,8 +546,9 @@ def home(lang):
     <div class="hero__fx" aria-hidden="true"><div class="hero__glow"></div></div>
     <div class="hero__in" id="heroIn">
       <div class="hero__copy">
-      <div class="hero__identity"><img class="hero__icon" src="{base}assets/icon.png" width="64" height="64" alt=""><span class="eyebrow">Bible Answer</span></div>
-      <h1 id="h-hero" class="split split--hero grad">{split_words(ap["tagline"])}</h1>
+      <div class="hero__identity"><img class="hero__icon" src="{base}assets/icon.png" width="64" height="64" alt=""></div>
+      <h1 id="h-hero" class="split split--hero grad">{split_words('Bible Answer')}</h1>
+      <p class="hero__tagline">{e(ap["tagline"])}</p>
       <p class="hero__sub rise" style="--i:2">{e(ap["subtitle"])}</p>
       <div class="hero__cta rise" style="--i:3">
         {store}
@@ -654,6 +655,7 @@ def home(lang):
 </main>
 
 <footer class="foot">
+  <a class="foot__brand" href="{rel(lang, lang)}">Bible Answer</a>
   <p><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>

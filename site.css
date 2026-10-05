@@ -682,12 +682,12 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 .hero{padding:108px var(--pad) 84px;isolation:isolate}
 .hero__in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,6vw,84px);align-items:center;width:100%;max-width:1120px;text-align:left;transform:none;opacity:1;will-change:auto}
 .hero__copy{min-width:0}
-.hero__identity{display:flex;align-items:center;gap:18px;margin-bottom:32px}
-.hero__identity .eyebrow{font-size:13px;letter-spacing:.28em}
+.hero__identity{display:flex;align-items:center;gap:18px;margin-bottom:22px}
 .hero__identity .hero__icon{width:64px;height:64px;border-radius:16px;margin:0;animation:none;box-shadow:0 12px 36px color-mix(in srgb,var(--gold) 18%,transparent)}
 .hero h1.split{font-size:clamp(64px,7.7vw,106px);line-height:1.02;text-wrap:balance}
 .hero .split--hero .w>span{animation-duration:.85s;animation-delay:calc(.08s + var(--i)*65ms)}
-.hero__sub{font-size:clamp(18px,1.8vw,22px);max-width:510px;line-height:1.55;margin-top:28px;text-wrap:pretty}
+.hero__tagline{font:500 clamp(28px,2.8vw,38px)/1.18 var(--serif);letter-spacing:-.015em;max-width:26ch;margin:18px 0 0;text-wrap:balance;color:var(--text)}
+.hero__sub{font-size:clamp(18px,1.8vw,22px);max-width:510px;line-height:1.55;margin-top:22px;text-wrap:pretty}
 .hero__cta{justify-content:flex-start;margin-top:34px;gap:18px 24px}
 .hero__devices{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;font-size:13px;line-height:1.5;color:var(--muted);letter-spacing:.02em}
 .hero__devices span{color:var(--gold);opacity:.65}
@@ -719,7 +719,8 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
  .hero{min-height:auto;padding-top:105px;padding-bottom:86px}
  .hero__in{grid-template-columns:1fr;gap:46px;text-align:center;max-width:620px}
  .hero__identity,.hero__cta,.hero__devices{justify-content:center}
- .hero__identity{margin-bottom:28px}
+ .hero__identity{margin-bottom:22px}
+ .hero__tagline{margin:18px auto 0}
  .hero h1.split{font-size:clamp(52px,11vw,82px)}
  .hero__sub{margin:24px auto 0;max-width:480px}
  .hero__preview .device-product{height:540px;min-height:0}
@@ -727,7 +728,7 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 }
 @media(max-width:560px){
  .hero__identity .hero__icon{width:52px;height:52px;border-radius:13px}
- .hero__identity .eyebrow{font-size:12px;letter-spacing:.2em}
+ .hero__tagline{font-size:28px}
  .hero__sub{font-size:18px}
  .hero__preview .device-product{height:490px}
  .hero__devices{font-size:12px;gap:8px}
@@ -858,3 +859,6 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 @media(max-width:440px){.nav .mark{font-size:12px;letter-spacing:.2em}.nav__in{gap:8px}.nav__tools{gap:8px}.langmenu summary{padding-left:11px;font-size:12px}}
 @media(max-width:380px){.nav__reading{display:none}}
 @media(prefers-reduced-motion:reduce){.theme-menu summary,.theme-menu__orb svg,.theme-changing,.theme-changing body,.theme-changing .nav,.theme-changing .article-nav{transition:none}}
+
+/* A readable brand signature beneath the homepage. */
+.foot .foot__brand{display:inline-block;margin-bottom:10px;font:600 20px/1.2 var(--serif);letter-spacing:.12em;color:var(--text)}
