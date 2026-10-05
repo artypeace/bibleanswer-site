@@ -5,7 +5,8 @@ name: indexnow
 # Run it by hand with "all" ticked to send every page once.
 on:
   workflow_run:
-    workflows: ["pages build and deployment"]
+    # Match the workflow name reported by GitHub, not its run display title.
+    workflows: ["pages-build-deployment"]
     types: [completed]
     branches: [main]
   workflow_dispatch:
