@@ -451,7 +451,7 @@ h1.split{font-size:clamp(54px,10.4vw,140px);line-height:.98}
 /* hero: a slow light behind the icon, a sky that arrives */
 .hero__fx{position:absolute;inset:0;overflow:hidden;pointer-events:none}
 .hero__glow{will-change:transform,opacity;position:absolute;left:50%;top:44%;width:min(1100px,150vw);aspect-ratio:1;translate:-50% -50%;pointer-events:none;
-  background:radial-gradient(closest-side,color-mix(in srgb,var(--gold) 24%,transparent),color-mix(in srgb,var(--gold) 7%,transparent) 55%,transparent 74%);animation:breathe 10s ease-in-out infinite}
+  background:radial-gradient(closest-side,rgba(90,130,184,.18),rgba(74,110,158,.06) 55%,transparent 74%);animation:breathe 10s ease-in-out infinite}
 @keyframes breathe{0%,100%{opacity:.65;scale:.93}50%{opacity:1;scale:1.05}}
 .hero__icon{position:relative}
 .hero__icon::after{content:"";position:absolute;inset:-14px;border-radius:34px;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);opacity:0;animation:ring 5s ease-out 1.6s infinite}
@@ -562,10 +562,11 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 .sc-era .skl{margin:0;height:calc(var(--u)*2.4);border-radius:9px}
 .scene .topic--ghost{border-style:dashed;opacity:.55}
 
-/* the closing line: a warm light rising behind it */
+/* the closing line: a soft light behind it. Blue as the sky's, and wholly inside the section — a warm one rose
+   from below its edge and was cut off by it, a yellow band with a hard line over the footer. */
 .cta{position:relative;overflow:hidden;padding-bottom:clamp(110px,16vw,220px)}
-.cta::before{content:"";position:absolute;left:50%;bottom:-34%;width:min(1300px,150%);aspect-ratio:2/1;translate:-50% 0;border-radius:50%;pointer-events:none;
-  background:radial-gradient(closest-side,color-mix(in srgb,var(--gold) 26%,transparent),color-mix(in srgb,var(--gold) 6%,transparent) 62%,transparent 74%);animation:breathe 10s ease-in-out infinite}
+.cta::before{content:"";position:absolute;left:50%;top:46%;width:min(1100px,130%);aspect-ratio:2/1;translate:-50% -50%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(90,130,184,.16),rgba(74,110,158,.05) 60%,transparent);animation:breathe 10s ease-in-out infinite}
 .cta .wrap{position:relative}
 .cta .badge img{height:64px}
 
