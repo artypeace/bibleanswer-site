@@ -8,9 +8,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "40e747fd23451bbcb52f44aa0a72e61dc1c7176b1448a6cde50692d871fcde06",
+      "sourceSha256": "554f3fad0730b5a5cf903009bf393f2be6a9658e4a1a47bf803046cc0f988fd8",
       "output": "assets/inside/advice-money/en.webp",
-      "outputSha256": "d40557393099b5de395efd194f0d062f1e2dd6f3f5b2afb711436af94f2e93c1"
+      "outputSha256": "46f627862a5faeb6b103cac680f739b7709498ed4f11c3089ce0e2f9816524f0"
     },
     {
       "sourceFile": "en-plans.png",
@@ -18,9 +18,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "49d38b0c93c92a91ac445e7a9a763df07ba00ecf40996b23fe9b2df05659f9d1",
+      "sourceSha256": "cb373f4544b7a1a61c456d416fbb6f5f7d5fa51a4b4a4602203323798f05c503",
       "output": "assets/inside/plans/en.webp",
-      "outputSha256": "b676c6391801bc45ff041b4ab91c3e5c1b682c6391bb67f7dded4d3a37d9a660"
+      "outputSha256": "f506d2e8e6bf0dc380b648c05b980d069c751dbd550520a89291c1001628e532"
     },
     {
       "sourceFile": "en-verse.png",
@@ -28,9 +28,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "8aed600b8a786dd7cf45c2d9fd6a1482503eaa77cf391bb972ae82d77634e343",
+      "sourceSha256": "34fc5c06666364630492fed8714d80a11d92af879bda8e0c54a4de2fe65a1f08",
       "output": "assets/today/verse/en.webp",
-      "outputSha256": "cc7553c4aa88db155143eef3f8c2ba362df23015e7a728317a38e271188b7179"
+      "outputSha256": "288c1a858f10f6581742607cb06f6c7e7c5db19a16f3157c21aefc30c75325b9"
     },
     {
       "sourceFile": "ru-advice-money.png",
@@ -38,9 +38,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "3151c5bcd4bd9369605c677c354dd349934c36a5bd09a01228f9e23b47d6cba2",
+      "sourceSha256": "1821a80db3b55beb8ca283364a66866a0c81e71e12f5c0812b103c9abc779750",
       "output": "assets/inside/advice-money/ru.webp",
-      "outputSha256": "b2e71623dc54d8d84fc4b6a6d82c2a019d6b85b7c256445f6d8ec1a0cbbed850"
+      "outputSha256": "1924304b64e6be57a74fbee692d98ac907242a9dea6d51ae2877b910be24710b"
     },
     {
       "sourceFile": "ru-plans.png",
@@ -48,9 +48,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "265353362f4892bc75ab74f3c9d115c85ce47e36171a15c7c3fda86a67c5cc06",
+      "sourceSha256": "f4837e5d575cc475f7a63bef63ce051a11fb47b9bc483de145274428d7f0dfc3",
       "output": "assets/inside/plans/ru.webp",
-      "outputSha256": "8c79c58d7b474886d7ff5fe076fd614e61d7951ddb812951268e6c05db9369ff"
+      "outputSha256": "41400675894544b6ca902626238f79461c5d34951ee0f6b58e25c94381605a38"
     },
     {
       "sourceFile": "ru-verse.png",
@@ -58,9 +58,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "4e6983d47ff054217f6caf60d099d5a85646895ced60205c9cd13028f1353a62",
+      "sourceSha256": "e34ef4cda5f5003a9703167b5765faf5ac141a8ed81ca1bb84556bb69b6bc240",
       "output": "assets/today/verse/ru.webp",
-      "outputSha256": "2b41305ec3fbc044ba4e69bb74c7cbe668ce82e6317a92870b74b526f32d2632"
+      "outputSha256": "90df0eb93e56de0af28782a50fcdbcb4527e273202fe2b77c0a5b7ad9dda02cd"
     },
     {
       "sourceFile": "es-advice-money.png",
@@ -68,9 +68,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "291e4eee6a9e50814c11472910d6298e9a7d31e4f75bf8ce9a4c5dcc829bf2fd",
+      "sourceSha256": "9512a67fd9be4f64ef19b03749f366e61372a17d91231c2210c4b5aa722f2960",
       "output": "assets/inside/advice-money/es.webp",
-      "outputSha256": "0cc725666b17b76f436c8690794528d4ccee0208678c6eb7b554c259a768ed1f"
+      "outputSha256": "69cab60739cfb7b4117a55d825630e23607d12ff8229eb0d2f17c1cff8144ad1"
     },
     {
       "sourceFile": "es-plans.png",
@@ -78,9 +78,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "b856b56afbb296acce64f288ffb3e7eb7dce6e14809b376aa6c480b34eac221c",
+      "sourceSha256": "86de3b39bfb8de29e19741ea08a4808f9c4a28e9737f5138d411f3c553ac12c9",
       "output": "assets/inside/plans/es.webp",
-      "outputSha256": "02518f5f6683c3185e0183e9e30a012496821fc4afcb4a02fb7d7148003c39bc"
+      "outputSha256": "7c1295434d610bf2637ff09ddd3fea47c850e6c557d698aa76fb0b6b9ab62056"
     },
     {
       "sourceFile": "es-verse.png",
@@ -88,9 +88,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "5f558133718a35590d06b8e5108929316ad681b29bd9b21f329cedbe14180615",
+      "sourceSha256": "cfa336e3f93cc9071b2250e69d1c5abd814f0f84aca964e8e373c2d567475cf9",
       "output": "assets/today/verse/es.webp",
-      "outputSha256": "387b8cfcc445173384e211bbd6f3614943dca22c313d1462225dadeca30c08fc"
+      "outputSha256": "128be3b28c27137fb36a48b9d16691580a9b7588803c2b47405a508964d4bba0"
     },
     {
       "sourceFile": "pt-advice-money.png",
@@ -98,9 +98,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "5695a6e25500229e3151e09bc68dfb0ee1c999248ee184f56f5aea185b1c1af5",
+      "sourceSha256": "d07e473a64835dadc7dd6d3ccbf31890aea2ac21949ed437cd87b5a916253e98",
       "output": "assets/inside/advice-money/pt.webp",
-      "outputSha256": "b1aef70ca754318f1882a8b1ad486aa27da92c613e963ed7eeaaf1203be6ab5d"
+      "outputSha256": "fc6f1b071c8582c31527433ee8a4e5bceb8644b2fb1fe8bf1652dc83ba4b2384"
     },
     {
       "sourceFile": "pt-plans.png",
@@ -108,9 +108,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "fa39d40097d29c458dd8e0c6016b905568dc30e376be5a6dcec650c5b47649f2",
+      "sourceSha256": "97f3eefb1ebf53a05924aff1f24e9b71a1f6a005a98e37a9654ad10c2d096859",
       "output": "assets/inside/plans/pt.webp",
-      "outputSha256": "1b81b46902a2f4a582132423cf4204781c2b16e5088526436df6744be37bfe79"
+      "outputSha256": "162b6063aeb2aa6212e4b91ecef256192e7eb1a1cb1c05e3c0e0fb170fd0ac7c"
     },
     {
       "sourceFile": "pt-verse.png",
@@ -118,9 +118,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "359b99c42e7545c6c9bb9e241a762d6ceab72b57fdfddc19892f4c5878bc3406",
+      "sourceSha256": "5a80981379c5f22f64b662d38920fde8d39dad069eaf2fc5864dfdd7a0cb02ab",
       "output": "assets/today/verse/pt.webp",
-      "outputSha256": "d23c1a600e180bc5059ca9780f0897e1470a1a51e53c434f2f4ddc45992ff368"
+      "outputSha256": "58416289e54985d37e6175164fa25dad015372840a0d65c5437519cf6a3dbd9d"
     },
     {
       "sourceFile": "fr-advice-money.png",
@@ -128,9 +128,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "6f859cbcf33445a27bd612ae786d4184047fbfb24c86afbc10d4f7d8272516bf",
+      "sourceSha256": "e6d9c80f8c4cb3b2bf51cdf01b79455aac06dd78df07b29240ee6882a8d052f7",
       "output": "assets/inside/advice-money/fr.webp",
-      "outputSha256": "cf6c6c7bb03f90c4a274fdf1bbd6e3ed18b37327117030738799cd3fbd1cca6f"
+      "outputSha256": "0900478d940d1432cbff613bf2db93db0a9cad15b5dd88af587efdc54b787b03"
     },
     {
       "sourceFile": "fr-plans.png",
@@ -138,9 +138,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "522b593c5099ce0502a2c3eb7c3391a5ff22cba25617c4c38a40f073eaad841e",
+      "sourceSha256": "8efc478b250e1f837fa4e8b88f988160a87362cee4884e7ab996d37f88bf95b4",
       "output": "assets/inside/plans/fr.webp",
-      "outputSha256": "22922b2a99a879b8bbea34ca50dac4f5b94f011577ec5e3539bb1d6883d20dc1"
+      "outputSha256": "9f092f89b19643b550a54afac0a520eec98e46dfdf646473f31082a7c40ddf18"
     },
     {
       "sourceFile": "fr-verse.png",
@@ -148,9 +148,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "8ebec87e99c2adf80c5e25bb11daaae25eaafb7dbc4a391567ba584f63d32060",
+      "sourceSha256": "1235f31bae099f02fd13d1ce8fc0bafb642e6cd4a979919b478c0d160c0a8cbc",
       "output": "assets/today/verse/fr.webp",
-      "outputSha256": "1d0553fd94bb62508c750bc3cd7c6972180cdee7434682417df9d48de555e4f0"
+      "outputSha256": "4f9569e839a7b1d88b2277c18239301a36a2e73a50f7f724ee8ed9ba46397984"
     },
     {
       "sourceFile": "fil-advice-money.png",
@@ -158,9 +158,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "c3340fd32dd01c8e86bf81d7c00d486403cb6c70313c2c2df055c0be327590a4",
+      "sourceSha256": "bbf3532c66c6f8086bd2eb38f438e2519e527c38777d6a3604d8bf2dd79b253a",
       "output": "assets/inside/advice-money/fil.webp",
-      "outputSha256": "6d653b69bd52159ef624e8927f7d7f7d431845696ffbfd3696debf9a78e66859"
+      "outputSha256": "fc1e44168b45fca3daaf71e57f17d5565904eb6b51ff28bf2384297d04c9355f"
     },
     {
       "sourceFile": "fil-plans.png",
@@ -168,9 +168,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "f940a1d0f49cc1c6bfe28e84ef37582ce43fc19372394e6d330cc0f7e6126363",
+      "sourceSha256": "fe6b971af295de81897c0304a450c5195e1b22164ea5a6ce165d00854135d741",
       "output": "assets/inside/plans/fil.webp",
-      "outputSha256": "d78cac3ad11a6e6a86205fb29e9adea5a409a2e40cee76fe3511756e2080b509"
+      "outputSha256": "37b4923b32141045cee894e08746c7151f6453920993b91fa7f6c09db105f955"
     },
     {
       "sourceFile": "fil-verse.png",
@@ -178,9 +178,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "1f109948e935d3fbd4e9ea6a1381940326b4adc33c81c02eb824b483789a0a60",
+      "sourceSha256": "ab190f6ed84da5a56021486cc6218e7107dee6f50631f8eb36a87b2808ebab9d",
       "output": "assets/today/verse/fil.webp",
-      "outputSha256": "9ea17060697c8085e8ac04fb70af06e8f3eeca98fcc1c8799c2205cef30e786a"
+      "outputSha256": "c812fd8c9e4f9e6cc32cb8ccc401ed01dc0d7b018dcc05dfc8f0c1f419174549"
     },
     {
       "sourceFile": "plate-gate.jpg",

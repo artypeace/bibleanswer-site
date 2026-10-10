@@ -7,7 +7,7 @@
       1320,
       2868
     ],
-    "sourceSHA256": "25c4aa9fff1520455f2cc82a16f2e46573339eea39fc9208c43b3d73f426ce93",
+    "sourceSHA256": "f5b7c45274fb592e30098ad600d7a77a99f4169b71a8bbbeadc45f2631ad8060",
     "output": "assets/devices/iphone/en.svg",
     "housing": "original vector illustration"
   },
@@ -19,7 +19,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "0be2035a682499cae5cfa123e28c1e2469345335d304b30538d7b736e28d72da",
+    "sourceSHA256": "749b95199e19aba5eda3eed2bd94cbe149fcb96f2396bfe16e132c3c466cca26",
     "output": "assets/devices/ipad/en.svg",
     "housing": "original vector illustration"
   },
@@ -43,7 +43,7 @@
       2640,
       1696
     ],
-    "sourceSHA256": "e62825a825eb650e80f1777dae3749587b635e2910817999eae556189e6cdb6b",
+    "sourceSHA256": "0542bac01a9eabd6da8de16f32977b418f9391d9b7d5082e0fafd9942cab1a56",
     "output": "assets/devices/mac/en.svg",
     "housing": "original vector illustration"
   },
@@ -55,7 +55,7 @@
       1320,
       2868
     ],
-    "sourceSHA256": "0ff73092140c9b1c2558865148a5d045a4e1e78abd6d6f9c4421944a1cdc0e27",
+    "sourceSHA256": "0bc3a936848ca8020baa0a9b16a97e06780a572f6e54fa8e5b607559771a2c2e",
     "output": "assets/devices/iphone/ru.svg",
     "housing": "original vector illustration"
   },
@@ -67,7 +67,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "0d33301f4c2a15eb23abcc5822446b68c6cfec50e53929f7fb0adb42044609b2",
+    "sourceSHA256": "966b144cc9af0f189084c3829df6eb477b82e77c6221adb2e7c8c0c030232cc3",
     "output": "assets/devices/ipad/ru.svg",
     "housing": "original vector illustration"
   },
@@ -91,7 +91,7 @@
       2640,
       1696
     ],
-    "sourceSHA256": "26c796e6148e538134c5a976a3357f483df23ac8ac608487bb2d03e123e1cf61",
+    "sourceSHA256": "7b367d9f4b9bdf27f76f7560fcbbc814184745d006240794edbe8c39eebb6915",
     "output": "assets/devices/mac/ru.svg",
     "housing": "original vector illustration"
   },
@@ -103,7 +103,7 @@
       1320,
       2868
     ],
-    "sourceSHA256": "19d219e9a276d235f32d43b3a231a7ec9e243c5ff32008feb43d1a00ba00eff1",
+    "sourceSHA256": "2772a2c492b1444b4cf18cc844b44fcf600e27f28c3dd0a292528db34d5cc264",
     "output": "assets/devices/iphone/es.svg",
     "housing": "original vector illustration"
   },
@@ -115,7 +115,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "e61279a9f749bbb450172e9ddd898ba8afc96a11262e360f2275355253b9be5c",
+    "sourceSHA256": "263d5de73ddb14540ff6bdd8de388f68ac62754f9c058e5dba0fdd2ad39f7b1f",
     "output": "assets/devices/ipad/es.svg",
     "housing": "original vector illustration"
   },
@@ -139,7 +139,7 @@
       2640,
       1696
     ],
-    "sourceSHA256": "f203e9f04a45b9bacade8c5a4a2fabd532e64de86ac2f114ae5cf7a84602a865",
+    "sourceSHA256": "04a6b46142a1e0575fef5ec65941d6e959023dc95970dfa49a38a493ba062748",
     "output": "assets/devices/mac/es.svg",
     "housing": "original vector illustration"
   },
@@ -151,7 +151,7 @@
       1320,
       2868
     ],
-    "sourceSHA256": "2669ea26284469585f319d94bf717aacdec4dd3eadc5565c193b20d95136a998",
+    "sourceSHA256": "da73b4e58034d008e19654cfce6b75c1528950ce517e11d04a2462148cf932c4",
     "output": "assets/devices/iphone/pt.svg",
     "housing": "original vector illustration"
   },
@@ -163,7 +163,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "b9782bbdd43f837157add2af558d80f10a47195163d77e6617751e486fbec687",
+    "sourceSHA256": "9dd9a7ce556117237fa7df516e5f9af3e3cdac20f5edcb4dce24bc57d7aec198",
     "output": "assets/devices/ipad/pt.svg",
     "housing": "original vector illustration"
   },
@@ -187,7 +187,7 @@
       2640,
       1696
     ],
-    "sourceSHA256": "de5ca94ccb4dc4cebf478d87f7a7c39a77e41491553d3c6bf0032769f474cc43",
+    "sourceSHA256": "be79e2dd985ba72e712012618863b3676cefa606829337ecb08ce108cb0203aa",
     "output": "assets/devices/mac/pt.svg",
     "housing": "original vector illustration"
   },
@@ -199,7 +199,7 @@
       1320,
       2868
     ],
-    "sourceSHA256": "e68e3f7e3ee2b3ce8f1f49e98a5c53170357b86918be548eb4f3f2b256fbb36e",
+    "sourceSHA256": "88a70307fc51b078fe26cebabb69bee0039ab48590f1a10bcee5406b9eb7fe6e",
     "output": "assets/devices/iphone/fr.svg",
     "housing": "original vector illustration"
   },
@@ -211,7 +211,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "43bceecce50c0c01b4974a020a9183c5b2f36a9a2fc7882f89b4b4d9c6048499",
+    "sourceSHA256": "a722ebf6b650fe786bcf7ea9afd9ee4cc126a8440da6072cd3341cf903de29c5",
     "output": "assets/devices/ipad/fr.svg",
     "housing": "original vector illustration"
   },
@@ -235,7 +235,7 @@
       2640,
       1696
     ],
-    "sourceSHA256": "82bd42743b8ae71ee387f426d67dede7f888fe1797ad2e38e745fefa96f79a97",
+    "sourceSHA256": "122eac6526b7fbc2f9678fff78f2f88f8fc3ae22608fcbf0732679565d3b8283",
     "output": "assets/devices/mac/fr.svg",
     "housing": "original vector illustration"
   },
@@ -247,7 +247,7 @@
       1320,
       2868
     ],
-    "sourceSHA256": "de063961c16d3dbd9a4d20115bc459bbf8d4db9496ee8c7f9a2dfd85eceaad70",
+    "sourceSHA256": "033e548d5932a379505c560f1a09f4077772a9efc55cec0a571b09deaea2699c",
     "output": "assets/devices/iphone/fil.svg",
     "housing": "original vector illustration"
   },
@@ -259,7 +259,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "2474040a853c64f3818e1091edccdbc3d4734ad095a6280ac627dda1e96f9a48",
+    "sourceSHA256": "d63832aefd2e78a6d430bf964bad2ec14dc648e52ed3bff3a3351e955053b06c",
     "output": "assets/devices/ipad/fil.svg",
     "housing": "original vector illustration"
   },
@@ -283,7 +283,7 @@
       2640,
       1696
     ],
-    "sourceSHA256": "6e0e39a1746682eb3605fadafc72c7ef2785afa18ca58ae5a170b001826da1b1",
+    "sourceSHA256": "98ad97001c769fe3d7fbdcf025aca2925a668331ede977a299de82e60b6c6fcb",
     "output": "assets/devices/mac/fil.svg",
     "housing": "original vector illustration"
   }
