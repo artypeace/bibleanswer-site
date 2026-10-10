@@ -1,75 +1,11 @@
-/* Bible Answer — the website. Cosmetic only: a living sky, words that rise, the phone that follows the page, parallax
-   and the timing of the example. Every page is complete without it. Background video is a local, silent asset; there are no third-party requests. */
+/* Bible Answer — the website. Cosmetic only: words that rise, the phone that follows the page, parallax and the
+   timing of the example. Every page is complete without it. The sky turns in CSS (site.css); there are no third-party requests. */
 (() => {
   'use strict';
 
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = id => document.getElementById(id);
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
-
-  /* ---------------------------------------------------------------- the sky: real ESO time-lapse */
-  function sky() {
-    const video = $('skyMotion');
-    const button = $('skyToggle');
-    if (!video || !button) return;
-    const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    const light = matchMedia('(prefers-color-scheme: light)');
-    const connection = navigator.connection;
-    const hero = document.querySelector('.hero');
-    const backdrop = video.closest('.sky');
-    let inView = true, loaded = false, pageReady = false, failed = false, userPaused = false;
-    try { userPaused = sessionStorage.getItem('sky-paused') === '1'; } catch (_) {}
-    video.muted = true;
-
-    const allowed = () => !motion.matches && (document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : !light.matches) && !(connection && connection.saveData) && !failed;
-    function label() {
-      button.hidden = !allowed();
-      const paused = video.paused;
-      button.setAttribute('aria-label', paused ? button.dataset.play : button.dataset.pause);
-      button.setAttribute('title', paused ? button.dataset.play : button.dataset.pause);
-      button.classList.toggle('is-paused', paused);
-      button.querySelector('span').textContent = paused ? button.dataset.play : button.dataset.pause;
-    }
-    function sync() {
-      if (!allowed()) backdrop.classList.remove('is-ready');
-      if (!pageReady || !allowed() || !inView || document.hidden || userPaused) {
-        video.pause(); label(); return;
-      }
-      if (!loaded) {
-        // One local, silent file. Load after the page, only when the sky can play.
-        video.src = matchMedia('(max-width: 760px)').matches ? video.dataset.mobile : video.dataset.desktop;
-        loaded = true;
-      }
-      video.play().then(label).catch(() => { label(); });
-    }
-    video.addEventListener('playing', () => { backdrop.classList.add('is-ready'); label(); });
-    video.addEventListener('pause', label);
-    video.addEventListener('error', () => { failed = true; backdrop.classList.remove('is-ready'); video.pause(); label(); });
-    button.addEventListener('click', () => {
-      userPaused = !video.paused;
-      try { sessionStorage.setItem('sky-paused', userPaused ? '1' : '0'); } catch (_) {}
-      sync();
-    });
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(entries => { inView = entries[0].isIntersecting; sync(); }, { threshold: 0 }).observe(hero);
-    } else {
-      addEventListener('scroll', () => { inView = hero.getBoundingClientRect().bottom > 0; sync(); }, { passive: true });
-    }
-    document.addEventListener('visibilitychange', sync);
-    document.addEventListener('bible-theme-change', sync);
-    for (const query of [motion, light]) {
-      if (query.addEventListener) query.addEventListener('change', sync);
-      else if (query.addListener) query.addListener(sync);
-    }
-    if (connection && connection.addEventListener) connection.addEventListener('change', sync);
-    const ready = () => {
-      const begin = () => { pageReady = true; sync(); };
-      if ('requestIdleCallback' in window) requestIdleCallback(begin, { timeout: 1800 });
-      else setTimeout(begin, 120);
-    };
-    if (document.readyState === 'complete') ready();
-    else addEventListener('load', ready, { once: true });
-  }
 
   /** Adds a class to elements as they come into view, once. */
   function onView(selector, cls, options) {
@@ -207,7 +143,6 @@
     });
   }
 
-  sky();
   copiers();
   onView('.reveal', 'in', { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
   onView('.split:not(.split--hero)', 'in', { threshold: 0.5, rootMargin: '0px 0px -8% 0px' });

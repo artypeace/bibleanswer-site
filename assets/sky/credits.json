@@ -1,14 +1,12 @@
 {
-  "title": "Geminids time-lapse 1",
-  "source": "https://www.eso.org/public/videos/Geminidstimelapse1/",
-  "download": "https://cdn.eso.org/videos/ultra_hd/Geminidstimelapse1.mp4",
-  "credit": "ESO/Gianluca Lombardi (glphoto.it)",
-  "creator_url": "https://glphoto.it/",
+  "title": "Night sky at La Silla (fulldome)",
+  "source": "https://commons.wikimedia.org/wiki/File:Night_sky_at_La_Silla_(150121-22-lasilla-360-cc-fd).jpg",
+  "credit": "ESO/P. Horálek",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "usage_policy": "https://www.eso.org/public/outreach/copyright/",
-  "retrieved": "2026-10-03",
-  "original_sha256": "548b4676f3c14f55c5bcd76210f1c9110258bedbb870858366de60c0afa6a113",
-  "changes": "Excerpt from 21.5–30 s, cropped to exclude telescopes and lasers; slowed to 5/6 speed; resized and compressed without audio. CSS navy tint. Poster from 21.5 s.",
+  "retrieved": "2026-10-09",
+  "original_sha256": "e8f12c0303d7561d02a8542b038a23fc24ebb32cd485d5239c959b71736d4aeb",
+  "changes": "A 70° disc around the zenith cut from the 13444 px fulldome; the sky's grey taken out against a fitted background; a seam at the zenith covered with sky from beside it; laid on the app's navy (#0F1628), 2048 px, JPEG. The same sky as the app's night (bible-answer repo, tools/sky/README.md). Turned in CSS.",
   "endorsement": "No affiliation or endorsement by ESO is implied."
 }

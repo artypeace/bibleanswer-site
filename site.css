@@ -61,8 +61,13 @@ button{cursor:pointer}
 .sky{position:absolute;left:0;top:0;width:100%;height:118vh;z-index:-1;pointer-events:none;overflow:hidden;
   transform:translate3d(0,calc(var(--scroll,0)*.28px),0);will-change:transform;
   -webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
-.sky__img{position:absolute;inset:0;background:url(assets/sky-night.svg) center 30%/cover no-repeat;opacity:var(--sky-o)}
-.sky__veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,22,40,.24) 0%,rgba(15,22,40,.04) 34%,rgba(15,22,40,.65) 76%,var(--bg) 100%)}
+/* The sky over La Silla (ESO/P. Horálek, CC BY 4.0) — the app's own night: a photograph of the sky overhead,
+   turning about the zenith once in twenty minutes, as wide as the screen's diagonal so no corner is ever bare. */
+.sky__disc{position:absolute;left:50%;top:46%;width:max(150vw,175vh);aspect-ratio:1;translate:-50% -50%;
+  background:#0F1628 url(assets/sky/lasilla-night.jpg) center/cover no-repeat;opacity:var(--sky-o);
+  animation:skyin 3.4s var(--ease) both,skyturn 1200s linear infinite}
+@keyframes skyturn{to{rotate:-360deg}}
+.sky__veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,22,40,.32) 0%,rgba(15,22,40,.2) 34%,rgba(15,22,40,.66) 76%,var(--bg) 100%)}
 :where(:root[data-theme="light"]) .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}
 
 @media (prefers-color-scheme:light){:where(:root:not([data-theme])) .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}
@@ -425,7 +430,6 @@ h1.split{font-size:clamp(54px,10.4vw,140px);line-height:.98}
 .hero__icon{position:relative}
 .hero__icon::after{content:"";position:absolute;inset:-14px;border-radius:34px;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);opacity:0;animation:ring 5s ease-out 1.6s infinite}
 @keyframes ring{0%{opacity:.7;transform:scale(.94)}100%{opacity:0;transform:scale(1.5)}}
-.sky__img{animation:skyin 3.4s var(--ease) both}
 @keyframes skyin{from{scale:1.14;opacity:0}to{scale:1;opacity:var(--sky-o)}}
 .stars{position:absolute;inset:0}
 .stars__cv{position:absolute;inset:0;width:100%;height:100%}
@@ -738,26 +742,13 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 
 .inblock{scroll-margin-top:100px}
 
-/* Real night sky: locally hosted ESO footage, with a static photograph before playback. */
-.sky--real .sky__img{background-image:url(assets/sky/geminids-poster.webp);background-position:center top;animation:none}
-.sky__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0;transition:opacity 1.2s ease}
-.sky--real.is-ready .sky__video{opacity:.9}
-.sky--real.is-ready .sky__img{opacity:0}
-.sky--real .sky__veil{background:linear-gradient(180deg,rgba(15,22,40,.48),rgba(15,22,40,.44) 36%,rgba(15,22,40,.7) 76%,var(--bg)),radial-gradient(ellipse at 32% 42%,rgba(15,22,40,.36),transparent 62%)}
-.sky--real::after{animation:none}
+/* The sky's credit, under the hero. */
 .sky-caption{position:absolute;left:var(--pad);right:var(--pad);bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;z-index:2}
 .sky-credit{font:400 11px/1.5 var(--sans);color:#C6CBD6}
 .sky-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(198,203,214,.35)}
-.sky-toggle{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:6px 11px;border:1px solid rgba(242,234,219,.2);border-radius:999px;background:rgba(15,22,40,.6);font-size:11px;line-height:1.2;color:var(--text)}
-.sky-toggle:hover{border-color:var(--gold)}
-.sky-toggle svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6}
-.sky-toggle__play{display:none}
-.sky-toggle.is-paused .sky-toggle__pause{display:none}
-.sky-toggle.is-paused .sky-toggle__play{display:block;fill:currentColor;stroke:none}
-@media(max-width:860px){.sky-caption{bottom:16px;flex-wrap:wrap;justify-content:center;gap:8px 18px;text-align:center}.sky-credit{font-size:11px}.sky-toggle{min-height:44px}.hero__hint{bottom:78px}}
-:where(:root[data-theme="light"]) .sky--real .sky__video,:where(:root[data-theme="light"]) .sky-caption{display:none}:where(:root[data-theme="light"]) .sky--real .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}
-@media (prefers-color-scheme:light){:where(:root:not([data-theme])) .sky--real .sky__video,:where(:root:not([data-theme])) .sky-caption{display:none}:where(:root:not([data-theme])) .sky--real .sky__veil{background:radial-gradient(900px 520px at 50% 0,rgba(255,255,255,.85),rgba(220,237,246,0) 70%),linear-gradient(180deg,rgba(196,221,236,.6),rgba(220,237,246,0))}}
-@media(prefers-reduced-motion:reduce){.sky--real .sky__video{display:none}.sky--real.is-ready .sky__img{opacity:var(--sky-o)}}
+@media(max-width:860px){.sky-caption{bottom:16px;justify-content:center;text-align:center}.sky-credit{font-size:11px}.hero__hint{bottom:78px}}
+:where(:root[data-theme="light"]) .sky-caption{display:none}
+@media (prefers-color-scheme:light){:where(:root:not([data-theme])) .sky-caption{display:none}}
 
 /* Consistent original iPhone housings around complete native app screens. */
 .inblock__visual .content-iphone{height:520px;width:auto;max-width:100%;filter:drop-shadow(0 20px 25px rgba(0,0,0,.24))}
