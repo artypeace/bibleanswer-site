@@ -7,6 +7,6 @@
   "usage_policy": "https://www.eso.org/public/outreach/copyright/",
   "retrieved": "2026-10-09",
   "original_sha256": "e8f12c0303d7561d02a8542b038a23fc24ebb32cd485d5239c959b71736d4aeb",
-  "changes": "A 70° disc around the zenith cut from the 13444 px fulldome; the sky's grey taken out against a fitted background; a seam at the zenith covered with sky from beside it; laid on the app's navy (#0F1628), 2048 px, JPEG. The same sky as the app's night (bible-answer repo, tools/sky/README.md). Turned in CSS.",
+  "changes": "A 70° disc around the zenith cut from the 13444 px fulldome; the sky's grey taken out against a fitted background; a seam at the zenith covered with sky from beside it; laid on the app's navy (#0F1628), 2048 px, JPEG and AVIF (quality 50, for browsers that take it). The same sky as the app's night (bible-answer repo, tools/sky/README.md). Turned in CSS.",
   "endorsement": "No affiliation or endorsement by ESO is implied."
 }

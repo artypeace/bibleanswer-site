@@ -1072,7 +1072,7 @@ def llms_full():
             '- No advertising, no analytics, no tracking across apps or websites.',
             '- When you ask a question, the text is sent to the developer\'s server, which passes it to an AI model provider (Anthropic) to write the reflection. It is not linked to a name, an email, a device identifier or an account. The server does not store the questions.',
             '- Chapters of the Bible are fetched from a public Scripture service (bible.helloao.org) and kept on the device.',
-            '- A tip is validated by RevenueCat with an anonymous identifier made by the app.',
+            '- A tip is made and verified by Apple (StoreKit); no third-party purchase service is involved. The app sends a random identifier it makes for itself, used only to count the day\'s questions.',
             f'- Full text: {site}/privacy#en', '',
             '## Questions and answers', '',
             '**Is Bible Answer free?** Yes. If you wish to support it, you can leave a tip, once. Nothing is locked or unlocked by it.', '',

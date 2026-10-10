@@ -63,9 +63,11 @@ button{cursor:pointer}
   -webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
 /* The sky over La Silla (ESO/P. Horálek, CC BY 4.0) — the app's own night: a photograph of the sky overhead, as
    wide as the screen's diagonal so no corner is ever bare. A visit is short, so it turns faster than the app's —
-   once in five minutes, enough to see it move — its six brightest stars breathe, and now and then a meteor falls. */
+   once in five minutes, enough to see it move — its six brightest stars breathe, and now and then a meteor falls.
+   AVIF where the browser takes it: half the JPEG's 1.4 MB, the largest thing on the page. */
 .sky__disc{position:absolute;left:50%;top:46%;width:max(150vw,175vh);aspect-ratio:1;translate:-50% -50%;
   background:#0F1628 url(assets/sky/lasilla-night.jpg) center/cover no-repeat;opacity:var(--sky-o);
+  background-image:image-set(url(assets/sky/lasilla-night.avif) type("image/avif"),url(assets/sky/lasilla-night.jpg) type("image/jpeg"));
   animation:skyin 3.4s var(--ease) both,skyturn 300s linear infinite}
 @keyframes skyturn{to{rotate:-360deg}}
 .sky__star{position:absolute;width:1.5%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;pointer-events:none;
