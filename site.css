@@ -150,7 +150,9 @@ h2{margin:0;font:500 clamp(38px,6.4vw,84px)/1.04 var(--serif);letter-spacing:-.0
 .lede{text-wrap:balance;margin:20px auto 0;max-width:640px;font-size:clamp(17px,1.9vw,21px);line-height:1.45;color:color-mix(in srgb,var(--text) 72%,transparent)}
 
 /* ---------- ask ---------- */
-.ask{text-align:center;background:radial-gradient(900px 520px at 50% -4%,color-mix(in srgb,var(--gold) 11%,transparent),transparent 70%)}
+/* No glow of its own at the top: a gold one began at the section's edge and laid a yellow band where the sky
+   ends. A faint blue light sits behind the feelings instead, fading out before either edge. */
+.ask{text-align:center;background:radial-gradient(1000px 640px at 50% 52%,rgba(74,110,158,.10),transparent 70%)}
 .ask h2{background:var(--verse-ink);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 .feelings{max-width:900px;margin:52px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 @media (max-width:720px){.feelings{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
