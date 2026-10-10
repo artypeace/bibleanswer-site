@@ -33,7 +33,7 @@ def navigation(lang,pages):
  u=UI[lang]
  choices=''.join(f'<li><a href="/{path(a) if a.get("slug") else hub(a["lang"])}" lang="{LANG_CODE[a["lang"]]}" hreflang="{LANG_CODE[a["lang"]]}"'+(' aria-current="page"' if a['lang']==lang else '')+f'>{UI[a["lang"]]["label"]}</a></li>' for a in pages)
  return (f'<a class="article-skip" href="#main">{u["skip"]}</a><header class="article-nav"><div class="article-nav__in">'
- '<a class="mark" href="'+home(lang)+'">Bible Answer</a>'
+ '<a class="mark" href="'+home(lang)+'">Bible Answer'+(f'<span class="mark__local" lang="{LANG_CODE[lang]}">{E(branding.local_name(lang))}</span>' if branding.local_name(lang) else '')+'</a>'
  f'<nav aria-label="{u["hub"]}"><a href="{home(lang)}">{u["home"]}</a><a href="/{hub(lang)}">{u["hub"]}</a></nav>'
  f'<div class="article-nav__tools"><details class="article-language-menu"><summary aria-label="{u["language"]}">{u["label"]}</summary><ul>{choices}</ul></details>{theme.control(lang)}</div></div></header>')
 def footer(cfg,lang):

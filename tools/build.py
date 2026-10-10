@@ -23,6 +23,18 @@ import build_articles
 import theme
 import branding
 
+
+def local_name_line(lang):
+    """The name in the page's language under the hero's "Bible Answer", as the app calls itself there."""
+    name = branding.local_name(lang)
+    return f'<p class="hero__localname rise" style="--i:1" lang="{branding.COPY[lang]["htmlLang"]}">{e(name)}</p>' if name else ''
+
+
+def mark_local(lang):
+    """The same beside the header's mark, on screens wide enough for both."""
+    name = branding.local_name(lang)
+    return f'<span class="mark__local" lang="{branding.COPY[lang]["htmlLang"]}">{e(name)}</span>' if name else ''
+
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 CFG = json.loads((HERE / 'config.json').read_text('utf-8'))
@@ -525,7 +537,7 @@ def home(lang):
 
 <header class="nav">
   <div class="nav__in">
-    <a class="mark" href="{rel(lang, lang)}">Bible Answer</a>
+    <a class="mark" href="{rel(lang, lang)}">Bible Answer{mark_local(lang)}</a>
     <nav class="nav__links" aria-label="Bible Answer">
       <a href="#ask">{e(s["navAsk"])}</a>
       <a href="#read">{e(s["navRead"])}</a>
@@ -549,6 +561,7 @@ def home(lang):
       <div class="hero__copy">
       <div class="hero__identity"><img class="hero__icon" src="{base}assets/icon.png" width="64" height="64" alt=""></div>
       <h1 id="h-hero" class="split split--hero grad">{split_words('Bible Answer')}</h1>
+      {local_name_line(lang)}
       <p class="hero__tagline">{e(ap["tagline"])}</p>
       <p class="hero__sub rise" style="--i:2">{e(ap["subtitle"])}</p>
       <div class="hero__cta rise" style="--i:3">
