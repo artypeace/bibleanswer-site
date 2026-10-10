@@ -24,6 +24,18 @@ import theme
 import branding
 
 
+# The night every dark page stands on: the app's own sky over La Silla (assets/sky/credits.json), turning, its six
+# brightest stars breathing where they are in the photograph — Sirius, Canopus, Rigel, Betelgeuse, Procyon, Achernar —
+# and now and then a meteor. All CSS (site.css, "the sky"); nothing moves under reduced motion.
+_TWINKLES = [(31.40, 39.11, ''), (43.90, 73.88, ''), (52.59, 27.44, ''), (40.41, 11.94, ' w'), (12.30, 19.34, ''), (84.30, 86.60, '')]
+_METEORS = [(14, 12, 28, 0), (78, 8, 152, 7), (40, 26, 20, 13)]   # left %, top %, angle, delay s: falling, one from the right
+SKY = ('<div class="sky" aria-hidden="true"><div class="sky__disc">'
+       + ''.join(f'<i class="sky__star{w}" style="left:{x}%;top:{y}%;--n:{i}"></i>' for i, (x, y, w) in enumerate(_TWINKLES))
+       + '</div>'
+       + ''.join(f'<i class="sky__meteor" style="left:{x}%;top:{y}%;--a:{a}deg;--dl:{d}s"></i>' for x, y, a, d in _METEORS)
+       + '<div class="sky__veil"></div></div>')
+
+
 def local_name_line(lang):
     """The name in the page's language under the hero's "Bible Answer", as the app calls itself there."""
     name = branding.local_name(lang)
@@ -533,7 +545,7 @@ def home(lang):
 </head>
 <body>
 <a class="skip" href="#main">{e(s["skip"])}</a>
-<div class="sky" aria-hidden="true"><div class="sky__disc"></div><div class="sky__veil"></div></div>
+{SKY}
 
 <header class="nav">
   <div class="nav__in">
@@ -701,7 +713,7 @@ def links_page():
 </head>
 <body class="solo">
 {theme.control("en")}
-<div class="sky" aria-hidden="true"><div class="sky__disc"></div><div class="sky__veil"></div></div>
+{SKY}
 <main class="links" id="main">
   <img class="hero__icon" src="../assets/icon.png" width="96" height="96" alt="Bible Answer">
   <h1 class="links__title">Bible Answer</h1>
@@ -731,7 +743,7 @@ def not_found():
 </head>
 <body class="solo">
 {theme.control("en")}
-<div class="sky" aria-hidden="true"><div class="sky__disc"></div><div class="sky__veil"></div></div>
+{SKY}
 <main class="links" id="main">
   <img class="hero__icon" src="/assets/icon.png" width="96" height="96" alt="Bible Answer">
   <h1 class="links__title">404</h1>
@@ -925,7 +937,7 @@ def press_page():
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
-<div class="sky" aria-hidden="true"><div class="sky__disc"></div><div class="sky__veil"></div></div>
+{SKY}
 
 <header class="nav">
   <div class="nav__in">
