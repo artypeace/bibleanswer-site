@@ -578,7 +578,7 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 
 /* ---------- the Mac: the app's own window (title bar and sidebar included), as in its App Store screenshots ---------- */
 .macsec{text-align:center}
-.macwin{--mw:min(1060px,92vw);--m:calc(var(--mw)/100);position:relative;width:var(--mw);aspect-ratio:2640/1698;margin:clamp(36px,5vw,64px) auto 0;text-align:left;
+.macwin{--mw:min(1060px,92vw);--m:calc(var(--mw)/100);position:relative;width:var(--mw);aspect-ratio:2938/1696;margin:clamp(36px,5vw,64px) auto 0;text-align:left;
   border-radius:calc(var(--mw)*.0184);overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 60px 120px rgba(0,0,0,.55);
   background:linear-gradient(180deg,var(--bg),color-mix(in srgb,var(--bg) 82%,#26355a));
   display:grid;grid-template-columns:calc(var(--m)*21) minmax(0,1fr);grid-template-rows:calc(var(--m)*4.3) minmax(0,1fr)}

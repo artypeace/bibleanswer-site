@@ -133,9 +133,13 @@ def laptop(screen):
         <stop offset="1" stop-color="#72818b"/>
       </linearGradient>
       <clipPath id="display"><rect x="220" y="80" width="2560" height="1645" rx="25"/></clipPath>
+      <radialGradient id="desk" cx=".5" cy=".38" r=".75">
+        <stop stop-color="#1d2b4c"/><stop offset=".6" stop-color="#121b31"/><stop offset="1" stop-color="#0a0f1c"/>
+      </radialGradient>
     ''', f'''
       <rect x="180" y="39" width="2640" height="1752" rx="59" fill="url(#metal)" stroke="#c4cdd2" stroke-width="4"/>
       <rect x="192" y="52" width="2616" height="1730" rx="47" fill="#06090d"/>
+      <rect x="220" y="80" width="2560" height="1645" fill="url(#desk)" clip-path="url(#display)"/>
       <image href="{screen}" x="220" y="80" width="2560" height="1645" clip-path="url(#display)" preserveAspectRatio="xMidYMid meet"/>
       <path d="M1335 79h330v61a25 25 0 0 1-25 25h-280a25 25 0 0 1-25-25Z" fill="#05080c"/>
       <circle cx="1500" cy="114" r="7" fill="#142132"/>

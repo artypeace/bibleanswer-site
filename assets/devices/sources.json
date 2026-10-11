@@ -19,7 +19,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "38838c7fccbeb4f345bb0d62d46c7c09da6e2b1d5df9f1c45d0af5cd98e824ba",
+    "sourceSHA256": "4e19da892c0ab8bd380f791722ee7b7038dc6edfed584fc056dc930154c405c9",
     "output": "assets/devices/ipad/en.svg",
     "housing": "original vector illustration"
   },
@@ -40,10 +40,10 @@
     "device": "mac",
     "sourceFile": "en-home.png",
     "sourceSize": [
-      2640,
+      2938,
       1696
     ],
-    "sourceSHA256": "a88c0dadc6cb2bac17c206fcccb02f9ee522d377faa9f9f45a5d6e7ca9c7d87a",
+    "sourceSHA256": "f6807199b66d11321c289b04e9d7dd5422c9e6492d420a58b9980ff57b9bca7f",
     "output": "assets/devices/mac/en.svg",
     "housing": "original vector illustration"
   },
@@ -67,7 +67,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "e4735c12669d4246e3af7936d94ba7bd1b561aa2aa04afe1283f846a9bfa264a",
+    "sourceSHA256": "88a2bbb65e77f354ef8b59e6e3738ccebb791c74ab2cc15073b4e68a6a02fada",
     "output": "assets/devices/ipad/ru.svg",
     "housing": "original vector illustration"
   },
@@ -88,10 +88,10 @@
     "device": "mac",
     "sourceFile": "ru-home.png",
     "sourceSize": [
-      2640,
+      2938,
       1696
     ],
-    "sourceSHA256": "837cc0b787aa238ccfd29128c83dd913e76eb969bd9ecffb80f75f7e45ce0261",
+    "sourceSHA256": "615b24fe36e04864cba547a57725e684e92143daee91a8d42a747ae42cd8acf3",
     "output": "assets/devices/mac/ru.svg",
     "housing": "original vector illustration"
   },
@@ -115,7 +115,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "a0317703cc4053116ed9a11b0c4c4016315a5e624ac7572c39aefb643cd1882e",
+    "sourceSHA256": "98e3459f1bdc0e76583bb908a7adec843688ae19bb632dcdb4156c18b1066110",
     "output": "assets/devices/ipad/es.svg",
     "housing": "original vector illustration"
   },
@@ -136,10 +136,10 @@
     "device": "mac",
     "sourceFile": "es-home.png",
     "sourceSize": [
-      2640,
+      2938,
       1696
     ],
-    "sourceSHA256": "319f6f278bf7b776ce777dc95795fe01e9ca4e234ed726c6cc6112e7b20f61e7",
+    "sourceSHA256": "d4936137512663e177ab8c11e976f4a4fa3906645fa5b39d8d11af8b519f0f7f",
     "output": "assets/devices/mac/es.svg",
     "housing": "original vector illustration"
   },
@@ -163,7 +163,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "b06d65bdb2c3f06138dc88899fd29dc07108130d65f64fbe55c833eb13c0e489",
+    "sourceSHA256": "1d70e59a3a8779441b3e15a04780b014b5c491910f2ad8d59df0f0fb5a7e9380",
     "output": "assets/devices/ipad/pt.svg",
     "housing": "original vector illustration"
   },
@@ -184,10 +184,10 @@
     "device": "mac",
     "sourceFile": "ptBR-home.png",
     "sourceSize": [
-      2640,
+      2938,
       1696
     ],
-    "sourceSHA256": "d2fd15709c9b9059a9f9f85e49576e132920ed923392955f455e05e7c882c9c2",
+    "sourceSHA256": "be14fc8b3e690dfb206b4dcecaa47b6de8604167d2ca2c916e17a43b7003c7ee",
     "output": "assets/devices/mac/pt.svg",
     "housing": "original vector illustration"
   },
@@ -211,7 +211,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "ddb413880d341a63094da0cde960d45a59b402c9383992b585535c7f82af0354",
+    "sourceSHA256": "dbdfb0de6711207ffdaa9ea53ff9d23d863ed63552d3f990badf96758d77f378",
     "output": "assets/devices/ipad/fr.svg",
     "housing": "original vector illustration"
   },
@@ -232,10 +232,10 @@
     "device": "mac",
     "sourceFile": "fr-home.png",
     "sourceSize": [
-      2640,
+      2938,
       1696
     ],
-    "sourceSHA256": "e38de0ef95bca2531fa4ae3f49f1e80a1c3d35835bacabdbb4207cc494d02f1b",
+    "sourceSHA256": "bff034d7dccf58cca06ed6b51b086a8ae43f6ece48a5a57be494f77dc9cdd77e",
     "output": "assets/devices/mac/fr.svg",
     "housing": "original vector illustration"
   },
@@ -259,7 +259,7 @@
       2064,
       2752
     ],
-    "sourceSHA256": "c286332e169f3373db4146bded4a65c1669bd6de652bc535228e573b5c1d3eb6",
+    "sourceSHA256": "88fbda54c158b8f07ffb899dedb8936bf34a5633fd430edf07aae15273ec924d",
     "output": "assets/devices/ipad/fil.svg",
     "housing": "original vector illustration"
   },
@@ -280,10 +280,10 @@
     "device": "mac",
     "sourceFile": "fil-home.png",
     "sourceSize": [
-      2640,
+      2938,
       1696
     ],
-    "sourceSHA256": "c518a8230a13a5480a4e44933b263c72911f2a8f7fc94267a6b0571d6f1b39a9",
+    "sourceSHA256": "ef945adf191ff8a507b0a8ef689573ec9635456ade55f513a521bc681cb717e2",
     "output": "assets/devices/mac/fil.svg",
     "housing": "original vector illustration"
   }

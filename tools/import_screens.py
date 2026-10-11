@@ -82,10 +82,10 @@ def main():
             if a.default == lang:
                 save(pathlib.Path(path).expanduser(), ROOT / f'assets/story/{scene}/default.webp', WIDTH['story'], 1320 / 2868)
         for scene, path in hand_mac.items():
-            kb = save(pathlib.Path(path).expanduser(), ROOT / f'assets/mac/{scene}/{lang}.webp', WIDTH['macwin'], 2640 / 1698)
+            kb = save(pathlib.Path(path).expanduser(), ROOT / f'assets/mac/{scene}/{lang}.webp', WIDTH['macwin'], 2938 / 1696)
             print(f'{lang:3} mac {scene} {kb}KB')
             if a.default == lang:
-                save(pathlib.Path(path).expanduser(), ROOT / f'assets/mac/{scene}/default.webp', WIDTH['macwin'], 2640 / 1698)
+                save(pathlib.Path(path).expanduser(), ROOT / f'assets/mac/{scene}/default.webp', WIDTH['macwin'], 2938 / 1696)
         if not a.no_build:
             subprocess.check_call([sys.executable, str(ROOT / 'tools' / 'build.py')])
         return
@@ -111,10 +111,10 @@ def main():
         for scene, stems in MAC_STORY.items():
             src = next((f for f in (find(raw_mac, tags, st) for st in stems) if f), None)
             if src:
-                kb = save(src, ROOT / f'assets/mac/{scene}/{lang}.webp', WIDTH['macwin'], 2640 / 1698)
+                kb = save(src, ROOT / f'assets/mac/{scene}/{lang}.webp', WIDTH['macwin'], 2938 / 1696)
                 wrote.append(f'mac {scene} {kb}KB')
                 if a.default == lang:
-                    save(src, ROOT / f'assets/mac/{scene}/default.webp', WIDTH['macwin'], 2640 / 1698)
+                    save(src, ROOT / f'assets/mac/{scene}/default.webp', WIDTH['macwin'], 2938 / 1696)
         for device, folder in (('iphone', out), ('ipad', out_ipad), ('mac', out_mac)):
             for n, stem in enumerate(GALLERY[device], 1):
                 src = find(folder, tags, stem)

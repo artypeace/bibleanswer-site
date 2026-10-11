@@ -472,7 +472,7 @@ def home(lang):
                  '<path d="M12 3v18M5 6h11l3 3-3 3H5z"/>', '<path d="M5 10v4M9 7v10M13 4v16M17 8v8M21 11v2"/>', '<path d="M7 4h10v16l-5-4-5 4z"/>')
     mac_files = mac_shots(lang, base)
     if mac_files:
-        mac_inner = ''.join(f'<img class="macwin__shot{" on" if i == 0 else ""}" src="{base}{f}" width="2640" height="1698" alt="" loading="lazy" decoding="async">' for i, f in enumerate(mac_files))
+        mac_inner = ''.join(f'<img class="macwin__shot{" on" if i == 0 else ""}" src="{base}{f}" width="2938" height="1696" alt="" loading="lazy" decoding="async">' for i, f in enumerate(mac_files))
         mac_cls = ' macwin--real'
     else:
         side = ''.join(f'<li{" class=on" if i == 0 else ""}><svg viewBox="0 0 24 24" aria-hidden="true">{ic}</svg>{e(t)}</li>' for i, (ic, t) in enumerate(zip(mac_icons, ap['macSidebar'])))
