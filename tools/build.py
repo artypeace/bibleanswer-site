@@ -425,6 +425,12 @@ def home(lang):
         for k, t in (('iphone', 'iPhone'), ('ipad', 'iPad'), ('watch', 'Apple Watch'), ('mac', 'Mac')))
 
 
+    # Android is on its way; until then the line points to the Instagram account.
+    insta = next((a for a in CFG.get('social', []) if a.get('platform') == 'Instagram' and a.get('url')), None)
+    android_text = e(s['androidSoon']).replace('{instagram}',
+        f'<a href="{e(insta["url"])}" rel="noopener">Instagram</a>' if insta else 'Instagram')
+    android_line = f'<p class="android reveal"><span class="soon">Android</span> {android_text}</p>'
+
     topics_scene = ''.join(f'<div class="topic topic--s"><span class="topic__t"><b></b>{e(t)}</span><i class="skl"></i><i class="skl" style="width:68%"></i></div>' for t in ap['topics'])
     topics_scene += ''.join('<div class="topic topic--s topic--ghost"><i class="skl" style="width:38%;margin-top:0"></i><i class="skl"></i><i class="skl" style="width:68%"></i></div>' for _ in range(3))
     widths = (92, 78, 96, 84, 90, 66, 94, 80, 88, 58)
@@ -644,6 +650,7 @@ def home(lang):
     <div class="wrap">
       {h2(s["devicesH"], "", "h-devices")}
       <div class="device-grid">{devices}</div>
+      {android_line}
     </div>
   </section>
 
@@ -1064,6 +1071,7 @@ def llms_full():
             f'- {S["alsoSearch"]}; {S["alsoWidgets"].lower()}; {S["alsoHandoff"].lower()}; verse cards to share.', '',
             '## Platforms', '',
             f'- iPhone: {S["iphoneP"]}', f'- iPad: {S["ipadP"]}', f'- Apple Watch: {S["watchP"]}', f'- Mac: {S["macSecP"]}',
+            f'- Android: {S["androidSoon"].replace("{instagram}", "Instagram")}',
             f'- Requires {CFG.get("requirements", "")}.', '',
             '## Languages and Bible texts', '', 'The app and the website are in six languages. Each uses one Bible translation, quoted unchanged:', '']
     out += [f'- {LANG_EN[l]}: {BIBLE_EN[l]}' for l in LANGS]

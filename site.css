@@ -617,6 +617,9 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 .mscene--listen.on .eq i{animation:eq 1.4s ease-in-out infinite;animation-delay:calc(var(--k)*-.23s)}
 .mscene--listen .bar{position:absolute;left:calc(var(--m)*5);right:calc(var(--m)*5);bottom:calc(var(--m)*5);margin:0;height:calc(var(--m)*.35)}
 .soonline{margin:18px 0 0}
+.android{margin:34px auto 0;max-width:620px;text-align:center;font-size:15px;line-height:1.6;color:var(--muted)}
+.android .soon{margin:0 8px 0 0;vertical-align:1px}
+.android a{color:var(--text);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--muted)}
 .shot--mac{flex-basis:340px}
 .shot--mac .shot__ph{aspect-ratio:2880/1800}
 @media (max-width:560px){.shot--mac{flex-basis:100%}.macwin__side{display:none}.macwin{grid-template-columns:minmax(0,1fr)}.mscene{padding:calc(var(--m)*3) calc(var(--m)*4)}}

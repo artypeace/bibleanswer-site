@@ -35,7 +35,8 @@ ALIASES = {'pt': ('ptBR', 'ptbr', 'pt-BR', 'pt-br', 'pt')}
 # scene of the phone on the home page -> the raw screen that shows it
 STORY = {'read': 'bible', 'guide': 'guide', 'counsel': 'advice', 'quiet': 'soundplayer3', 'hours': 'prayer'}
 # the "A look inside" strip: the composed frames, in order (4 for iPhone, 2 for iPad)
-GALLERY = {'iphone': ('02-answer', '03-bible', '06-guide', '07-sounds'), 'ipad': ('02-answer', '03-bible'), 'mac': ('02-answer', '03-bible', '05-advice')}
+# Nine different frames: a headline shown once in the strip, never again under another device.
+GALLERY = {'iphone': ('02-answer', '03-bible', '06-guide', '07-sounds'), 'ipad': ('05-advice', '08-genealogy'), 'mac': ('04-moments', '09-prayer', '10-map')}
 # the sections of the Mac window on the home page -> the raw window screenshot that shows it (the first one found)
 MAC_STORY = {'answer': ('answer', 'home'), 'bible': ('bible',), 'advice': ('advice',), 'listen': ('moments', 'listen', 'sounds')}
 WIDTH = {'story': 720, 'iphone': 640, 'ipad': 900, 'mac': 900, 'macwin': 1600}
