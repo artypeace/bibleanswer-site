@@ -206,6 +206,12 @@
       "days": 16
      },
      {
+      "id": "luke",
+      "title": "The Gospel of Luke",
+      "summary": "A chapter a day for twenty-four days. The most detailed telling of the life of Christ, from His birth to His ascension. Begun on 1 December, it ends on Christmas Eve.",
+      "days": 24
+     },
+     {
       "id": "john",
       "title": "The Gospel of John",
       "summary": "A chapter a day. Who Jesus is and why it changes everything — deeper and slower than the rest.",
@@ -260,11 +266,11 @@
   "feelings": [
    {
     "label": "Me sinto ansioso",
-    "query": "Estou ansioso e não consigo acalmar-me."
+    "query": "Estou ansioso e não consigo me acalmar."
    },
    {
     "label": "Não consigo lidar",
-    "query": "Não estou a dar conta. É tudo demasiado."
+    "query": "Não estou dando conta. É coisa demais."
    },
    {
     "label": "Não me aceito",
@@ -272,7 +278,7 @@
    },
    {
     "label": "Me perdi",
-    "query": "Já não sei quem sou nem para onde vou."
+    "query": "Não sei mais quem sou nem para onde vou."
    },
    {
     "label": "Não acredito que consigo",
@@ -280,11 +286,11 @@
    },
    {
     "label": "Tenho medo do futuro",
-    "query": "Tenho medo do que vem a seguir."
+    "query": "Tenho medo do que vem pela frente."
    },
    {
     "label": "Sem forças",
-    "query": "Já não tenho forças."
+    "query": "Não tenho mais forças."
    },
    {
     "label": "Guardando rancor",
@@ -300,7 +306,7 @@
    },
    {
     "label": "Me sinto culpado",
-    "query": "A culpa consome-me pelo que fiz."
+    "query": "A culpa está me consumindo pelo que fiz."
    },
    {
     "label": "Como confiar em Deus",
@@ -308,19 +314,19 @@
    },
    {
     "label": "Dificuldades financeiras",
-    "query": "Falta-me dinheiro e não sei o que fazer."
+    "query": "Está faltando dinheiro e não sei o que fazer."
    },
    {
     "label": "Me sinto só",
-    "query": "Sinto-me só, e não passa."
+    "query": "Me sinto só, e isso não passa."
    },
    {
     "label": "Sinto gratidão",
-    "query": "Estou grato, e quero dizê-lo."
+    "query": "Estou grato e quero dizer isso."
    },
    {
     "label": "Cheio de alegria",
-    "query": "Estou alegre, e quero partilhar isso."
+    "query": "Estou alegre e quero compartilhar isso."
    },
    {
     "label": "Quero louvar a Deus",
@@ -328,7 +334,7 @@
    },
    {
     "label": "Algo bom aconteceu",
-    "query": "Aconteceu-me algo bom."
+    "query": "Aconteceu uma coisa boa comigo."
    },
    {
     "label": "Sinto paz",
@@ -452,6 +458,12 @@
       "title": "O Evangelho de Marcos",
       "summary": "Um capítulo por dia. O relato mais curto e rápido da vida de Cristo — por onde é mais fácil começar.",
       "days": 16
+     },
+     {
+      "id": "luke",
+      "title": "O Evangelho de Lucas",
+      "summary": "Um capítulo por dia durante vinte e quatro dias. O relato mais detalhado da vida de Cristo, do nascimento à ascensão. Começando em 1º de dezembro, termina na véspera de Natal.",
+      "days": 24
      },
      {
       "id": "john",
@@ -702,6 +714,12 @@
       "days": 16
      },
      {
+      "id": "luke",
+      "title": "El Evangelio de Lucas",
+      "summary": "Un capítulo al día durante veinticuatro días. El relato más detallado de la vida de Cristo, de su nacimiento a su ascensión. Si empiezas el 1 de diciembre, terminas en Nochebuena.",
+      "days": 24
+     },
+     {
       "id": "john",
       "title": "El Evangelio de Juan",
       "summary": "Un capítulo al día. Quién es Jesús y por qué lo cambia todo: más hondo y más lento.",
@@ -948,6 +966,12 @@
       "title": "Евангелие от Марка",
       "summary": "По главе в день. Самый короткий и быстрый рассказ о жизни Христа — с чего проще всего начать.",
       "days": 16
+     },
+     {
+      "id": "luke",
+      "title": "Евангелие от Луки",
+      "summary": "По главе в день, двадцать четыре дня. Самый подробный рассказ о жизни Христа — от Рождества до Вознесения. Начатый 1 декабря, он заканчивается в Сочельник.",
+      "days": 24
      },
      {
       "id": "john",
@@ -1198,6 +1222,12 @@
       "days": 16
      },
      {
+      "id": "luke",
+      "title": "L’Évangile de Luc",
+      "summary": "Un chapitre par jour pendant vingt-quatre jours. Le récit le plus détaillé de la vie du Christ, de sa naissance à son ascension. Commencé le 1er décembre, il s’achève la veille de Noël.",
+      "days": 24
+     },
+     {
       "id": "john",
       "title": "L’Évangile de Jean",
       "summary": "Un chapitre par jour. Qui est Jésus et pourquoi cela change tout — plus profond, plus lent.",
@@ -1291,8 +1321,8 @@
     "query": "Ang pinakamalapit sa akin ang nakakainis sa akin."
    },
    {
-    "label": "Nagkakasala ako",
-    "query": "Kinakain ako ng pagkakasala sa ginawa ko."
+    "label": "Nakokonsensya ako",
+    "query": "Nakokonsensya ako sa ginawa ko."
    },
    {
     "label": "Paano magtiwala sa Diyos",
@@ -1444,6 +1474,12 @@
       "title": "Ang Ebanghelyo ni Marcos",
       "summary": "Isang kabanata bawat araw. Ang pinakamaikling salaysay ng buhay ni Cristo.",
       "days": 16
+     },
+     {
+      "id": "luke",
+      "title": "Ang Ebanghelyo ni Lucas",
+      "summary": "Isang kabanata bawat araw sa loob ng dalawampu’t apat na araw, mula sa kapanganakan ni Cristo hanggang sa pag-akyat niya sa langit. Kung sisimulan sa Disyembre 1, matatapos ito sa Bisperas ng Pasko.",
+      "days": 24
      },
      {
       "id": "john",

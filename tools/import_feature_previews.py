@@ -17,8 +17,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ('en', 'ru', 'es', 'pt', 'fr', 'fil')
 SCREENS = {'advice-money': 'inside/advice-money', 'plans': 'inside/plans', 'verse': 'today/verse'}
-PLATES = ('plate-gate', 'plate-script', 'plate-mite', 'plate-plan-mark',
-          'plate-plan-john', 'plate-kind-poetry', 'plate-plan-psalms', 'plate-plan-nt')
+PLATES = ('plate-gate', 'plate-script', 'plate-mite', 'plate-plan-mark', 'plate-plan-luke',
+          'plate-plan-john', 'plate-plan-proverbs', 'plate-kind-poetry', 'plate-plan-psalms', 'plate-plan-nt')
 
 
 def encode(source, destination, width, expected=None):

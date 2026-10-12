@@ -500,7 +500,7 @@ def home(lang):
     guide_rows = ''.join(f'<li>{gicon(guide_icons[i["key"]], base)}<div><b>{e(i["title"])}</b><span>{e(i["summary"])}</span></div></li>' for i in ins['guide']['items'])
     lens_boxes = ''.join(f'<div class="lensbox"><i class="lensbox__number" aria-hidden="true">{n:02d}</i><div><b>{e(x["name"])}</b><span>{e(x["caption"])}</span></div></div>' for n, x in enumerate(ins['lenses'], 1))
     advice_chips = ''.join(f'<span class="pill">{e(t)}</span>' for t in ins['advice']['topics'])
-    plan_plates = {'mark': 'plate-plan-mark', 'john': 'plate-plan-john', 'proverbs': 'plate-kind-poetry', 'psalms': 'plate-plan-psalms', 'newTestament': 'plate-plan-nt'}
+    plan_plates = {'mark': 'plate-plan-mark', 'luke': 'plate-plan-luke', 'john': 'plate-plan-john', 'proverbs': 'plate-plan-proverbs', 'psalms': 'plate-plan-psalms', 'newTestament': 'plate-plan-nt'}
     plan_rows = ''.join(f'<li><img class="plan__plate" src="{base}assets/plates/{plan_plates[x["id"]]}.webp" alt="" loading="lazy" decoding="async"><div class="plan__words"><b>{e(x["title"])}</b><span class="plansum">{e(x["summary"])}</span></div><span class="days">{e(days_label(x["days"], lang))}</span></li>' for x in ins['plans']['items'])
     also = ''.join(f'<span class="pill">{e(t)}</span>' for t in (s['alsoSearch'], s['alsoWidgets'], s['alsoHandoff'], s['alsoShare']))
     inside_html = f'''<section class="section inside" id="inside" aria-labelledby="h-inside"><div class="wrap">

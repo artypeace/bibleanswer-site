@@ -157,11 +157,11 @@ for case in CASES:
     lens_captions[case] = switch_values(vi_cap[i:min(later) if later else len(vi_cap)])
 
 plan_src = (app / 'BibleAnswer/Models/ReadingPlan.swift').read_text(encoding='utf-8')
-PLANS = ['mark', 'john', 'proverbs', 'psalms', 'newTestament']
+PLANS = ['mark', 'luke', 'john', 'proverbs', 'psalms', 'newTestament']
 def plan_cases(body):
-    """mark, john, proverbs, psalms are `case "id":` of the outer switch; the New Testament is its `default:` (the last one)."""
+    """Every plan but the New Testament is a `case "id":` of the outer switch; the New Testament is its `default:` (the last one)."""
     cut = body.rindex('default:\n')
-    got = cases(body[:cut], PLANS[:4])
+    got = cases(body[:cut], PLANS[:-1])
     got['newTestament'] = body[cut:]
     return got
 plan_title = plan_cases(func_body(plan_src, 'title'))

@@ -18,9 +18,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "f6efa4d2d20d6cde2040f560d2e65f854660ebf19d9b0dda484c412521beb0ac",
+      "sourceSha256": "1488eb6075bcb338f96f4fefcaf02f084dec55eeb97da8197bb7a071bba68913",
       "output": "assets/inside/plans/en.webp",
-      "outputSha256": "dbeecb2f78a4509bb5daf8b4ce7e10e9e51b921fb0e3274247151d26f72fc230"
+      "outputSha256": "cb7133fdc9be834d654f18e8df19cda9dc4d53f12108c9b40499c41bbc026e81"
     },
     {
       "sourceFile": "en-verse.png",
@@ -48,9 +48,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "585db917e42835f25963d172f84ffe49ed63ef6063cbec3f65a0c10d529e0f7e",
+      "sourceSha256": "fc68208d064e38395f8d23c9617ad0a91f8aed59fc17e2829635e1d9aa62b172",
       "output": "assets/inside/plans/ru.webp",
-      "outputSha256": "38f40fa69e24a7f98dee357fb7c556522e496e79c4a52cdfee211fe5e206f7d1"
+      "outputSha256": "256e0a7a2d89fd339af83c3e2db0dee8550da6985bf62245e1b8a0c5d7a96002"
     },
     {
       "sourceFile": "ru-verse.png",
@@ -78,9 +78,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "c09caa685be3470286ef2179fa3d3d8d46e25c536b0c1106fa8ef41c0f294679",
+      "sourceSha256": "94cefeb7414905810d0d70c55e6e49d99966797b002db108f46b519868d43b11",
       "output": "assets/inside/plans/es.webp",
-      "outputSha256": "88d5ea903f4c00fede42c29d5397af62dc8610b454cd1b01efe7f2aec97e2cdf"
+      "outputSha256": "921e8ae30c500c21e79600be97fbc2a4631f95681145551cd8c486c43eb14f58"
     },
     {
       "sourceFile": "es-verse.png",
@@ -108,9 +108,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "42595d2192d0b2805a28130957fef57584538cb25be613fdf62297ba71b59a59",
+      "sourceSha256": "b5b2ff5a6d6f61115672f3466fb23acb242e87c7fef951c8ae553bdcc2af7ef4",
       "output": "assets/inside/plans/pt.webp",
-      "outputSha256": "24afa4f78c7131f9785930d1ffc6ce1c7b44d2c714e74a9450204753229f623e"
+      "outputSha256": "ae5125eb881ff76067cca5dd7c981df427197e0730f8ab3ed9359ede52f83287"
     },
     {
       "sourceFile": "pt-verse.png",
@@ -138,9 +138,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "627211e49bcd43b04f538109ea1ababdf71d4fe6e3c4a7790acc5ce49e16bfeb",
+      "sourceSha256": "edf2e02981da1430c238fb96c9ce943de5b2c3ace771c75c60d6b3871f243065",
       "output": "assets/inside/plans/fr.webp",
-      "outputSha256": "ce752064607c3e7ba245c4c1ac75917636b16c932ce1ecd3de5ff047079e394f"
+      "outputSha256": "b53579842fae6bcec8b072b55cde53bb36d4b6d9f6a3ef0eebc6635fb2f313f8"
     },
     {
       "sourceFile": "fr-verse.png",
@@ -168,9 +168,9 @@
         1320,
         2868
       ],
-      "sourceSha256": "d81ea42e5c64c4562610d615bb2539d324714b85d247d0cc8e86233098897161",
+      "sourceSha256": "72756e7df1d0741cf694ed7567e22ee1a62a147eca445450536fb711959114d6",
       "output": "assets/inside/plans/fil.webp",
-      "outputSha256": "ae9d7e710fd5c233cdde22a617e915dedd2c6f358bea320e8cfe7e70a62fb2cf"
+      "outputSha256": "19ffac21a0f886129dc3f32e1e8c30e03b833d55e2d9b9c7dbdef74256d69a9f"
     },
     {
       "sourceFile": "fil-verse.png",
@@ -223,6 +223,16 @@
       "outputSha256": "d7251e564de243a987b24834b955b08b22e26e88f61678eb353e8fc917a4c8f8"
     },
     {
+      "sourceFile": "plate-plan-luke.jpg",
+      "sourceSize": [
+        1100,
+        344
+      ],
+      "sourceSha256": "efe280a65a187cab46e825aab37696ec700b3c3394ac643194bbada771be69f7",
+      "output": "assets/plates/plate-plan-luke.webp",
+      "outputSha256": "c3c8cb9b3dba1523e488622317871d434e7589c57e924968f606c166a11323fe"
+    },
+    {
       "sourceFile": "plate-plan-john.jpg",
       "sourceSize": [
         1100,
@@ -231,6 +241,16 @@
       "sourceSha256": "8db53fd70f095b675aa8bbd28c6e796f6d3b1dc2e9d4b9656c9c1ae8191c3c65",
       "output": "assets/plates/plate-plan-john.webp",
       "outputSha256": "4e692de96e5892750d5c17c7e1c21946fa6331c968cc3afce5317c6ef82bf3cb"
+    },
+    {
+      "sourceFile": "plate-plan-proverbs.jpg",
+      "sourceSize": [
+        1100,
+        344
+      ],
+      "sourceSha256": "225436739ad1e07226a4c1bac0bd0d2528c82fe070571443dd6062446fcedb8c",
+      "output": "assets/plates/plate-plan-proverbs.webp",
+      "outputSha256": "3e9db8082a1ef265a8422dfdd4b2a0b05928135f1d9d0c3cb095c00ea8056dd9"
     },
     {
       "sourceFile": "plate-kind-poetry.jpg",

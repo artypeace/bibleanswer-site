@@ -196,7 +196,7 @@
     "device": "iphone",
     "source": "assets/inside/plans/en.webp",
     "output": "assets/previews/inside/plans/en.svg",
-    "sourceSHA256": "dbeecb2f78a4509bb5daf8b4ce7e10e9e51b921fb0e3274247151d26f72fc230",
+    "sourceSHA256": "cb7133fdc9be834d654f18e8df19cda9dc4d53f12108c9b40499c41bbc026e81",
     "screenPixels": "unchanged"
   },
   {
@@ -204,7 +204,7 @@
     "device": "iphone",
     "source": "assets/inside/plans/ru.webp",
     "output": "assets/previews/inside/plans/ru.svg",
-    "sourceSHA256": "38f40fa69e24a7f98dee357fb7c556522e496e79c4a52cdfee211fe5e206f7d1",
+    "sourceSHA256": "256e0a7a2d89fd339af83c3e2db0dee8550da6985bf62245e1b8a0c5d7a96002",
     "screenPixels": "unchanged"
   },
   {
@@ -212,7 +212,7 @@
     "device": "iphone",
     "source": "assets/inside/plans/es.webp",
     "output": "assets/previews/inside/plans/es.svg",
-    "sourceSHA256": "88d5ea903f4c00fede42c29d5397af62dc8610b454cd1b01efe7f2aec97e2cdf",
+    "sourceSHA256": "921e8ae30c500c21e79600be97fbc2a4631f95681145551cd8c486c43eb14f58",
     "screenPixels": "unchanged"
   },
   {
@@ -220,7 +220,7 @@
     "device": "iphone",
     "source": "assets/inside/plans/pt.webp",
     "output": "assets/previews/inside/plans/pt.svg",
-    "sourceSHA256": "24afa4f78c7131f9785930d1ffc6ce1c7b44d2c714e74a9450204753229f623e",
+    "sourceSHA256": "ae5125eb881ff76067cca5dd7c981df427197e0730f8ab3ed9359ede52f83287",
     "screenPixels": "unchanged"
   },
   {
@@ -228,7 +228,7 @@
     "device": "iphone",
     "source": "assets/inside/plans/fr.webp",
     "output": "assets/previews/inside/plans/fr.svg",
-    "sourceSHA256": "ce752064607c3e7ba245c4c1ac75917636b16c932ce1ecd3de5ff047079e394f",
+    "sourceSHA256": "b53579842fae6bcec8b072b55cde53bb36d4b6d9f6a3ef0eebc6635fb2f313f8",
     "screenPixels": "unchanged"
   },
   {
@@ -236,7 +236,7 @@
     "device": "iphone",
     "source": "assets/inside/plans/fil.webp",
     "output": "assets/previews/inside/plans/fil.svg",
-    "sourceSHA256": "ae9d7e710fd5c233cdde22a617e915dedd2c6f358bea320e8cfe7e70a62fb2cf",
+    "sourceSHA256": "19ffac21a0f886129dc3f32e1e8c30e03b833d55e2d9b9c7dbdef74256d69a9f",
     "screenPixels": "unchanged"
   },
   {
