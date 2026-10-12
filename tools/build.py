@@ -496,7 +496,7 @@ def home(lang):
     advice_chips = ''.join(f'<span class="pill">{e(t)}</span>' for t in ins['advice']['topics'])
     plan_plates = {'mark': 'plate-plan-mark', 'john': 'plate-plan-john', 'proverbs': 'plate-kind-poetry', 'psalms': 'plate-plan-psalms', 'newTestament': 'plate-plan-nt'}
     plan_rows = ''.join(f'<li><img class="plan__plate" src="{base}assets/plates/{plan_plates[x["id"]]}.webp" alt="" loading="lazy" decoding="async"><div class="plan__words"><b>{e(x["title"])}</b><span class="plansum">{e(x["summary"])}</span></div><span class="days">{e(days_label(x["days"], lang))}</span></li>' for x in ins['plans']['items'])
-    also = ''.join(f'<span class="pill">{e(t)}</span>' for t in (s['alsoSearch'], ap['macSidebar'][4], s['alsoShare']))
+    also = ''.join(f'<span class="pill">{e(t)}</span>' for t in (s['alsoSearch'], s['alsoWidgets'], s['alsoHandoff'], s['alsoShare']))
     inside_html = f'''<section class="section inside" id="inside" aria-labelledby="h-inside"><div class="wrap">
       {h2(s["insideH"], "", "h-inside")}
       <p class="lede reveal" style="--d:.1s">{e(s["insideP"])}</p>
@@ -1061,7 +1061,7 @@ def llms_full():
             f'- {S["todayH"]} {S["todayP"]}',
             f'- {S["quietH"]} {S["quietP"]}',
             f'- {S["hoursH"]} {", ".join(en["hours"])}.',
-            f'- {S["alsoSearch"]}; verse cards to share.', '',
+            f'- {S["alsoSearch"]}; {S["alsoWidgets"].lower()}; {S["alsoHandoff"].lower()}; verse cards to share.', '',
             '## Platforms', '',
             f'- iPhone: {S["iphoneP"]}', f'- iPad: {S["ipadP"]}', f'- Apple Watch: {S["watchP"]}', f'- Mac: {S["macSecP"]}',
             f'- Requires {CFG.get("requirements", "")}.', '',
