@@ -59,8 +59,8 @@
   const close = document.createElement('button'); close.type = 'button'; close.textContent = t[7]; close.hidden = !choice;
   actions.append(yes, no, close); panel.append(title, message, details, actions);
   const settings = document.createElement('button'); settings.type = 'button'; settings.className = 'ba-analytics-settings'; settings.textContent = t[4];
-  settings.addEventListener('click', () => { panel.hidden = false; close.hidden = !choice; yes.focus(); });
-  close.addEventListener('click', () => { panel.hidden = true; settings.focus(); });
+  settings.addEventListener('click', () => { panel.hidden = false; close.hidden = !choice; yes.focus({preventScroll:true}); });
+  close.addEventListener('click', () => { panel.hidden = true; settings.focus({preventScroll:true}); });
   function setChoice(value) {
     choice = value;
     try { localStorage.setItem(key, JSON.stringify({value, time:Date.now()})); } catch (_) {}
@@ -72,7 +72,7 @@
       if (loaded) tag('consent', 'update', denied);
       removeAnalyticsCookies();
     }
-    panel.hidden = true; settings.focus();
+    panel.hidden = true; settings.focus({preventScroll:true});
   }
   yes.addEventListener('click', () => setChoice('granted'));
   no.addEventListener('click', () => setChoice('denied'));
