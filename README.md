@@ -16,7 +16,7 @@ Static pages, published by GitHub Pages from `main` (root) under the custom doma
 | `/links` | The page behind "link in bio": language choice, the App Store, the social accounts. Not in the sitemap, `noindex`. |
 | `404.html` | Any other address. |
 
-The site shows what the app does; it does **not** ask the server anything. The example answer is fixed text. The pages load nothing from any other host, set no cookie and count nothing (the Content-Security-Policy says so: `connect-src 'none'`).
+The site shows what the app does; it does **not** ask the server anything. The example answer is fixed text. Optional website GA4 is controlled by `analyticsMeasurementId` in `tools/config.json`. An empty ID disables it. When enabled, the local consent panel loads the Google tag only after a visitor allows analytics. Declining sends no Analytics requests. The six-language website notice appears at the top of `/privacy`; the app policy remains separate. No UTM links are generated or rewritten. Advertising consent stays denied and Google signals are disabled. Visitors can change their choice through Analytics settings in the footer. See `analytics.js`, `analytics.css` and `tools/analytics.py`.
 
 ## Rebuilding
 

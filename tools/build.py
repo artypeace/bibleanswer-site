@@ -16,12 +16,13 @@ Sources
 Why static pages: every language is a page of its own, readable by a search engine without running
 a script, with its own title, description, canonical address and hreflang links. The one script the
 pages run (app.js) is cosmetic: reveal on scroll, parallax, the timing of the example.
-There is no analytics, no cookie, no third-party request; the Content-Security-Policy says so.
+Optional website GA4 loads after consent when analyticsMeasurementId is configured.
 """
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 import build_articles
 import theme
 import branding
+import analytics
 
 
 # The night every dark page stands on: the app's own sky over La Silla (assets/sky/credits.json), turning, its six
@@ -68,6 +69,7 @@ BOOT = "document.documentElement.classList.add('js')"   # tells the stylesheet s
 BOOT_HASH = 'sha256-' + base64.b64encode(hashlib.sha256(BOOT.encode()).digest()).decode()
 CSP = (f"default-src 'none'; script-src 'self' '{BOOT_HASH}'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
        "font-src 'self'; media-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'")
+CSP = analytics.policy(CSP, CFG)
 
 e = lambda s: html.escape(str(s), quote=True)
 
@@ -345,7 +347,7 @@ def head_common(lang, title, desc, canonical, og_image, robots, base, extra=''):
             f'<link rel="canonical" href="{e(canonical)}">\n{alternates}'
             f'<link rel="alternate" type="application/rss+xml" title="Bible Answer" href="{e(CFG["siteUrl"].rstrip("/") + "/feed.xml")}">\n'
             '<meta name="color-scheme" content="dark light">\n<meta name="theme-color" content="#0F1628">\n'
-            f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}{extra}{icons_head(base)}{theme_script(base)}')
+            f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}{extra}{icons_head(base)}{theme_script(base)}{analytics.head(ROOT,CFG,base)}')
 
 
 # ------------------------------------------------------------------ the home page of one language
@@ -777,13 +779,16 @@ def legal_head(name, title):
             f'<link rel="canonical" href="{e(url)}">\n<meta name="robots" content="index,follow">\n'
             f'<link rel="alternate" type="application/rss+xml" title="Bible Answer" href="{e(site + "/feed.xml")}">\n'
             f'<meta name="apple-itunes-app" content="app-id={e(CFG["appStoreId"])}">\n{social_meta()}'
-            f'{og_head(title, desc, url, og)}{icons_head("/")}{theme_script("/")}<!-- /site:head -->\n')
+            f'{og_head(title, desc, url, og)}{icons_head("/")}{theme_script("/")}{analytics.head(ROOT,CFG,"/")}<!-- /site:head -->\n')
 
 
 def write_legal():
     for name, title in LEGAL.items():
         path = ROOT / f'{name}.html'
         text = BLOCK.sub('', path.read_text('utf-8'))
+        if name == 'privacy': text = analytics.privacy_notice(text, ROOT, CFG)
+        text = re.sub(r'<meta http-equiv="Content-Security-Policy" content="[^"]*">\n?', '', text)
+        text = text.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<meta http-equiv="Content-Security-Policy" content="'+CSP+'">', 1)
         assert text.count('</head>') == 1, name
         path.write_text(text.replace('</head>', legal_head(name, title) + '</head>'), encoding='utf-8')
         print('wrote', path.name, '(head only)')

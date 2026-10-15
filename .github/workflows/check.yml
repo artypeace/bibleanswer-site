@@ -24,3 +24,5 @@ jobs:
         run: git diff --exit-code
       - name: Check tags, links, images, sitemap
         run: python3 tools/check.py
+      - name: Check analytics consent behavior
+        run: node tools/check_analytics.cjs
