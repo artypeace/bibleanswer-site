@@ -1,1 +1,47 @@
-.ba-analytics-panel{position:fixed;z-index:1000;bottom:max(18px,env(safe-area-inset-bottom));left:20px;right:20px;max-width:620px;margin:auto;padding:22px 24px;border:1px solid #71808c;border-radius:18px;background:#132238;color:#f2eadb;box-shadow:0 12px 50px #0005;font:16px/1.5 system-ui,sans-serif;max-height:calc(100dvh - 40px);overflow:auto}.ba-analytics-panel[hidden]{display:none}.ba-analytics-panel h2{font:600 21px/1.25 system-ui,sans-serif;margin:0 0 10px;color:inherit}.ba-analytics-panel p{margin:8px 0 14px;font:inherit;color:inherit}.ba-analytics-panel summary{cursor:pointer;font-size:14px}.ba-analytics-panel a{color:#bce0ff;text-decoration:underline}.ba-analytics-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.ba-analytics-actions button{font:500 15px/1.25 system-ui,sans-serif;padding:11px 15px;min-height:44px;border:1px solid #93a8ba;border-radius:10px;background:#203650;color:#fff;cursor:pointer}.ba-analytics-actions button[hidden]{display:none}.ba-analytics-settings{font:inherit;color:inherit;background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:10px;min-height:44px}.ba-analytics-panel :focus-visible,.ba-analytics-settings:focus-visible{outline:3px solid #e6c986;outline-offset:3px}@media(max-width:480px){.ba-analytics-panel{left:12px;right:12px;padding:18px}.ba-analytics-actions button{flex:1}}
+/* The first layer is a compact notice; all three choices share one style. */
+.ba-analytics-panel,.ba-analytics-panel *{box-sizing:border-box}
+.ba-analytics-panel{
+  --ba-cookie-bg:#132238;--ba-cookie-ink:#f2eadb;--ba-cookie-stroke:#8094a7;
+  --ba-cookie-button:#203650;--ba-cookie-link:#bce0ff;
+  position:fixed;z-index:1000;bottom:max(16px,env(safe-area-inset-bottom));
+  left:16px;right:16px;max-width:720px;margin:0 auto;padding:10px;
+  border:1px solid var(--ba-cookie-stroke);border-radius:14px;
+  background:var(--ba-cookie-bg);color:var(--ba-cookie-ink);
+  box-shadow:0 8px 32px #0003;font:13px/1.4 system-ui,sans-serif;
+  max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;
+}
+:root[data-theme="light"] .ba-analytics-panel{
+  --ba-cookie-bg:#fbf9f3;--ba-cookie-ink:#24354a;--ba-cookie-stroke:#9ca9b2;
+  --ba-cookie-button:#f3f2ed;--ba-cookie-link:#214d72;
+}
+@media(prefers-color-scheme:light){:root:not([data-theme]) .ba-analytics-panel{
+  --ba-cookie-bg:#fbf9f3;--ba-cookie-ink:#24354a;--ba-cookie-stroke:#9ca9b2;
+  --ba-cookie-button:#f3f2ed;--ba-cookie-link:#214d72;
+}}
+.ba-analytics-panel[hidden],.ba-analytics-details[hidden],.ba-analytics-actions button[hidden]{display:none}
+.ba-analytics-panel h2{font:600 16px/1.3 system-ui,sans-serif;margin:0 0 6px;color:inherit}
+.ba-analytics-panel p{margin:0;font:inherit;color:inherit}
+.ba-analytics-details{margin-top:8px;padding-top:8px;border-top:1px solid var(--ba-cookie-stroke)}
+.ba-analytics-links{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:8px}
+.ba-analytics-panel a{color:var(--ba-cookie-link);text-decoration:underline;text-underline-offset:3px;padding:6px 0}
+.ba-analytics-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
+.ba-analytics-actions button{
+  font:500 13px/1.3 system-ui,sans-serif;padding:10px 6px;min-width:0;min-height:44px;
+  border:1px solid var(--ba-cookie-stroke);border-radius:8px;
+  background:var(--ba-cookie-button);color:inherit;cursor:pointer;overflow-wrap:normal;
+}
+.ba-analytics-actions button:hover{filter:brightness(1.08)}
+.ba-analytics-settings{font:inherit;color:inherit;background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:10px;min-height:44px}
+.ba-analytics-panel :focus-visible,.ba-analytics-settings:focus-visible{outline:3px solid #b38430;outline-offset:3px}
+@media(max-width:480px){.ba-analytics-panel{left:10px;right:10px;padding:10px;bottom:max(10px,env(safe-area-inset-bottom))}}
+@media(max-width:359px){.ba-analytics-actions{gap:6px}.ba-analytics-actions button{padding:10px 4px}}
+/* Keep the accessible section name without another visible line. */
+.ba-analytics-panel:not(.ba-analytics-panel--expanded)>h2{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0;
+}
+@media(min-width:700px){
+  .ba-analytics-panel:not(.ba-analytics-panel--expanded){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:16px}
+  .ba-analytics-panel:not(.ba-analytics-panel--expanded) .ba-analytics-actions{margin-top:0;min-width:276px}
+}
+.ba-analytics-panel[hidden]{display:none}
