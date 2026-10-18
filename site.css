@@ -894,3 +894,4 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 .foot__brand .foot__separator,.foot__brand .foot__local-name{font:400 14px/1.5 var(--sans);letter-spacing:0;color:var(--muted)}
 .foot__brand .foot__local-name{overflow-wrap:break-word}
 @media(max-width:520px){.foot .foot__brand--localized{flex-direction:column;align-items:center;gap:4px}.foot__brand .foot__separator{display:none}}
+.store-soon{cursor:default;pointer-events:none;letter-spacing:.02em}

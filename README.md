@@ -51,7 +51,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 * `contactEmail` — `support@bibleanswer.app` (Cloudflare Email Routing forwards it to `support@bibleanswer.app`). The legal pages carry their own copy of the address in their text (`support@bibleanswer.app`); change it there if you want them to match.
 * `social` — the accounts that exist (platform, language, handle, url). Only entries with a url are shown: in the footer and on `/links`, and listed in the structured data (`sameAs`). Add an entry when an account for another language is created.
 * `googleVerify`, `bingVerify`, `yandexVerify`, `pinterestVerify` — the codes the webmaster tools and Pinterest give for the "HTML tag" method; each empty value means no tag. (Google can instead be verified with a DNS TXT record in Cloudflare.)
-* `appLive` — `false` until the app is on the App Store. The press page, `llms.txt` and `llms-full.txt` then say "launching soon" instead of "on the App Store". Set `true` on release day and rebuild.
+* `appLive` — `false` until the app is on the App Store. The press page, `llms.txt` and `llms-full.txt` then say "launching soon" instead of "on the App Store", and every download control is a quiet "App Store · Soon" instead of Apple's badge (the store page answers 404 before release). Set `true` on release day and rebuild.
 * `requirements` — the OS versions named on the press page and in `llms.txt` (from the app's deployment targets).
 * `indexNowKey` — the IndexNow key; `build.py` publishes it as `/<key>.txt`. It is not a secret. To change it, edit the value, rebuild, and delete the old `<key>.txt`.
 * `macAvailable` — `true`: the Mac is shown like the other devices. `false` would put the "soon" badge back.

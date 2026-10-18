@@ -204,8 +204,13 @@ def daily_previews(lang, base):
 # ------------------------------------------------------------------ shared pieces
 
 def store_link(lang, base, cls=''):
-    """The Download-on-the-App-Store control: Apple's own badge when its file is here, else a plain button."""
+    """The Download-on-the-App-Store control: Apple's own badge when its file is here, else a plain button.
+
+    Before release the App Store page answers 404, and Apple's badge may only point at an app that can be
+    downloaded, so until `appLive` is set it is a quiet, unlinked "App Store · Soon" instead."""
     s = SITE[lang]
+    if not live():
+        return f'<span class="btn btn--ghost store-soon {cls}" role="note">App Store · {e(s["soon"])}</span>'
     url = CFG['appStoreUrl']
     for name in (f'assets/badges/app-store-{lang}.svg', 'assets/badges/app-store-en.svg'):
         if have(name):
