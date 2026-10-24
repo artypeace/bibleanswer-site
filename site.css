@@ -722,8 +722,9 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 .hero__identity .hero__icon{width:64px;height:64px;border-radius:16px;margin:0;animation:none;box-shadow:0 12px 36px color-mix(in srgb,var(--gold) 18%,transparent)}
 .hero h1.split{font-size:clamp(64px,7.7vw,106px);line-height:1.02;text-wrap:balance}
 .hero .split--hero .w>span{animation-duration:.85s;animation-delay:calc(.08s + var(--i)*65ms)}
-.hero__localname{margin:14px 0 0;font:600 clamp(15px,1.3vw,18px)/1.3 var(--serif);letter-spacing:.3em;text-transform:uppercase;
-  color:color-mix(in srgb,var(--gold) 72%,var(--text))}
+.hero__localname{width:fit-content;max-width:100%;margin:14px 0 0;
+  font:700 clamp(16px,1.4vw,20px)/1.4 var(--serif);letter-spacing:.22em;text-transform:uppercase;
+  color:var(--text);text-shadow:0 1px 3px var(--bg),0 0 12px var(--bg)}
 .hero__localname+.hero__tagline{margin-top:14px}
 .hero__tagline{font:500 clamp(28px,2.8vw,38px)/1.18 var(--serif);letter-spacing:-.015em;max-width:26ch;margin:18px 0 0;text-wrap:balance;color:var(--text)}
 .hero__sub{font-size:clamp(18px,1.8vw,22px);max-width:510px;line-height:1.55;margin-top:22px;text-wrap:pretty}
@@ -759,6 +760,7 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
  .hero__in{grid-template-columns:1fr;gap:46px;text-align:center;max-width:620px}
  .hero__identity,.hero__cta,.hero__devices{justify-content:center}
  .hero__identity{margin-bottom:22px}
+ .hero__localname{margin-left:auto;margin-right:auto}
  .hero__tagline{margin:18px auto 0}
  .hero h1.split{font-size:clamp(52px,11vw,82px)}
  .hero__sub{margin:24px auto 0;max-width:480px}
@@ -886,12 +888,23 @@ html:where([data-theme="dark"]).js .demo.is-playing .demo__answer .verse.part{
 @media(max-width:380px){.nav__reading{display:none}}
 @media(prefers-reduced-motion:reduce){.theme-menu summary,.theme-menu__orb svg,.theme-changing,.theme-changing body,.theme-changing .nav,.theme-changing .article-nav{transition:none}}
 
-/* A readable brand signature beneath the homepage. */
-.foot .foot__brand{display:inline-block;margin-bottom:10px;font:600 20px/1.2 var(--serif);letter-spacing:.12em;color:var(--text)}
+/* Shared footer signature on home, reading and shop pages. */
+.foot__brand{display:inline-block;margin-bottom:10px;font:600 20px/1.2 var(--serif);letter-spacing:.12em;color:var(--text)}
 
 /* Local name paired with the original brand, readable on small screens. */
-.foot .foot__brand--localized{display:inline-flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:6px 10px;max-width:100%;white-space:normal;letter-spacing:.03em}
-.foot__brand .foot__separator,.foot__brand .foot__local-name{font:400 14px/1.5 var(--sans);letter-spacing:0;color:var(--muted)}
+.foot__brand--localized{display:inline-flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:6px 12px;max-width:100%;white-space:normal;letter-spacing:.03em}
+.foot__brand .foot__separator,.foot__brand .foot__local-name{font:400 15px/1.5 var(--sans);letter-spacing:0;color:var(--muted)}
 .foot__brand .foot__local-name{overflow-wrap:break-word}
-@media(max-width:520px){.foot .foot__brand--localized{flex-direction:column;align-items:center;gap:4px}.foot__brand .foot__separator{display:none}}
+@media(max-width:520px){.foot__brand--localized{flex-direction:column;align-items:center;gap:6px}.foot__brand .foot__separator{display:none}}
 .store-soon{cursor:default;pointer-events:none;letter-spacing:.02em}
+
+/* Desktop store beside Reading guides; mobile retains the original one-row header. */
+.nav__in{grid-template-columns:auto minmax(0,1fr) auto}
+.nav__links{justify-content:center;align-items:center;gap:clamp(12px,1.5vw,22px)}
+.nav__links a{white-space:nowrap}
+.nav a.nav__shop{display:inline-flex;align-items:center;justify-content:center;padding:8px 15px;border:1px solid var(--gold-hair);border-radius:980px;color:var(--gold);white-space:nowrap}
+.nav a.nav__shop:hover{background:var(--gold-soft)}
+@media(max-width:1280px){.nav__links{display:none}.nav__in{grid-template-columns:minmax(0,1fr) auto}.nav__reading{display:block;font-size:12px;color:var(--gold)}}
+/* The shop's one word fits beside the language and the theme down to 360px in every language. */
+@media(max-width:359px){.nav__reading{display:none}}
+@media(max-width:1600px){.nav .mark__local{display:none}}

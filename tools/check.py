@@ -19,7 +19,9 @@ PATH = {'en': '', 'pt': 'pt', 'es': 'es', 'ru': 'ru', 'fr': 'fr', 'fil': 'fil'}
 PAGES = ['index.html'] + [f'{p}/index.html' for p in PATH.values() if p] + ['links/index.html', '404.html',
                                                                               'privacy.html', 'terms.html', 'support.html', 'press/index.html']
 import build_articles
+import build_shop
 ARTICLES = build_articles.load(ROOT)
+PAGES += [build_shop.path(l) + 'index.html' for l in LANGS]
 PAGES += [build_articles.hub(l) + 'index.html' for l in LANGS]
 PAGES += [build_articles.path(a) + 'index.html' for a in ARTICLES]
 problems = []

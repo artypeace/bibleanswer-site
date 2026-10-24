@@ -676,4 +676,64 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/articles/psalm-23-meaning/"/>
     <lastmod>2026-10-03</lastmod>
   </url>
+  <url>
+    <loc>https://bibleanswer.app/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/shop/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/shop/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/shop/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/shop/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/shop/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/shop/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/shop/"/>
+  </url>
 </urlset>

@@ -20,6 +20,7 @@ Optional website GA4 loads after consent when analyticsMeasurementId is configur
 """
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 import build_articles
+import build_shop
 import theme
 import branding
 import analytics
@@ -569,11 +570,12 @@ def home(lang):
       <a href="#guide">{e(s["navGuide"])}</a>
       <a href="#devices">{e(s["navDevices"])}</a>
       <a href="#reading-guides">{e(s["readingGuidesLabel"])}</a>
+      <a class="nav__shop" href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a>
     </nav>
     <div class="nav__tools">
       <details class="langmenu"><summary aria-label="{e(ap["name"])}">{e(ap["name"])}</summary><ul>{lang_items}</ul></details>
       {theme.control(lang)}
-      <a class="nav__reading" href="#reading-guides">{e(s["readingGuidesLabel"])}</a>
+      <a class="nav__reading nav__reading--shop" href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a>
       {store_nav}
     </div>
   </div>
@@ -695,7 +697,7 @@ def home(lang):
 
 <footer class="foot">
   {branding.footer_brand(lang, rel(lang, lang))}
-  <p><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
+  <p><a href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a><span class="dot">·</span><wbr><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>
@@ -813,6 +815,7 @@ def sitemap(lastmod):
         rows.append(f'  <url>\n    <loc>{site}/{name}</loc>{stamp}\n  </url>')
     rows.append(f'  <url>\n    <loc>{site}/press/</loc>{stamp}\n  </url>')
     rows.extend(build_articles.sitemap_rows(ROOT, CFG))
+    rows.extend(build_shop.sitemap_rows(CFG))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + '\n'.join(rows) + '\n</urlset>\n')
@@ -1152,6 +1155,7 @@ def main():
     write_legal()
     write_extras()
     build_articles.write(ROOT, CFG, head_common, og_head)
+    build_shop.write(ROOT, CFG, head_common, og_head)
     version_stylesheets()
     (ROOT / 'sitemap.xml').write_text(sitemap(a.lastmod), encoding='utf-8')
     (ROOT / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {CFG["siteUrl"].rstrip("/")}/sitemap.xml\n', encoding='utf-8')
