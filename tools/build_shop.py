@@ -11,13 +11,14 @@ CODES={'en':'en','ru':'ru','es':'es','pt':'pt-BR','fr':'fr','fil':'fil'}
 HANDLES={'en':'bibleanswerapp','ru':'bibleanswerapp_ru','es':'bibleanswerapp_es','pt':'bibleanswerapp_br','fr':'bibleanswerapp_fr','fil':'bibleanswerapp_ph'}
 COPY=json.loads((Path(__file__).parent/'shop-copy.json').read_text('utf-8'))
 ORIGINAL_PHOTOS=('folded','front','back','worn','front-daylight','neck-detail')
-PHOTOS=('front-daylight','neck-detail','folded')
+PHOTOS=('back','front-daylight','neck-detail','folded')
 def alt(c,name):return c['alts'][ORIGINAL_PHOTOS.index(name)]
-# The file each photo is served from: the neck detail is turned 90° to the right in the file itself.
-FILE={'neck-detail':'neck-detail-v'}
+# The file each photo is served from: the neck detail is turned 90° to the right in the file itself,
+# and the back is the owner's night photograph on the bridge.
+FILE={'neck-detail':'neck-detail-v','back':'back-bridge'}
 def file(name):return FILE.get(name,name)
 def candidates(name):
-    real={'front-daylight':1672,'neck-detail':941,'folded':900}.get(name,1800)
+    real={'back':1672,'front-daylight':1672,'neck-detail':941,'folded':900}.get(name,1800)
     return ', '.join(f'{image(name,w)} {min(w,real)}w' for w in (640,1200,1800))
 E=lambda s:html.escape(str(s),quote=True)
 def path(lang):return ('' if lang=='en' else lang+'/')+'shop/'
@@ -27,10 +28,10 @@ def image(name,width=1200):return f'/assets/shop/love-above-all/{file(name)}-{wi
 def full(name):return f'/assets/shop/love-above-all/{file(name)}.jpg'
 def img(name,alt,*,lazy=True,cls=''):
     sizes='(max-width: 999px) 100vw, 58vw'
-    dims={'folded':(900,1600),'front-daylight':(1672,941),'neck-detail':(941,1672)}[name]
+    dims={'back':(1672,941),'folded':(900,1600),'front-daylight':(1672,941),'neck-detail':(941,1672)}[name]
     return f'<img class="{cls}" src="{image(name)}" srcset="{candidates(name)}" sizes="{sizes}" alt="{E(alt)}" width="{dims[0]}" height="{dims[1]}" decoding="async" '+('loading="lazy"' if lazy else 'fetchpriority="high"')+'>'
 def page(root,cfg,lang,head_common,og_head):
-    c=COPY[lang];site=cfg['siteUrl'].rstrip('/');url=site+'/'+path(lang);title=f'Love Above All — First Drop | Bible Answer';photo=site+'/assets/shop/love-above-all/front-daylight.jpg'
+    c=COPY[lang];site=cfg['siteUrl'].rstrip('/');url=site+'/'+path(lang);title=f'Love Above All — First Drop | Bible Answer';photo=site+full(PHOTOS[0])
     alts=''.join(f'<link rel="alternate" hreflang="{CODES[l]}" href="{site}/{path(l)}">\n' for l in LANGS)+f'<link rel="alternate" hreflang="x-default" href="{site}/{path("en")}">\n'
     data={'@context':'https://schema.org','@graph':[{'@type':'Product','@id':site+'/shop/#love-above-all','name':'Bible Answer Love Above All T-Shirt — First Drop','description':c['description'],'brand':{'@type':'Brand','name':'Bible Answer'},'image':[site+full(p) for p in PHOTOS],'sku':'BA-LAA-FIRST-DROP','material':'Cotton, 280 g/m²','color':c['colour'],'size':['M','L','XL'],'url':url,'offers':{'@type':'Offer','price':'33.00','priceCurrency':'USD','url':url}}, {'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Bible Answer','item':site+home(lang)},{'@type':'ListItem','position':2,'name':c['shop'],'item':url}]}]}
     ld=json.dumps(data,ensure_ascii=False).replace('</','<\\/')
@@ -39,7 +40,7 @@ def page(root,cfg,lang,head_common,og_head):
     languages=''.join(f'<li><a href="/{path(l)}" hreflang="{CODES[l]}" lang="{CODES[l]}"'+(' aria-current="page"' if l==lang else '')+f'>{COPY[l]["lang"]}</a></li>' for l in LANGS)
     instagram=f'https://www.instagram.com/{HANDLES[lang]}/'
     n=len(PHOTOS)
-    slides=''.join(f'<figure class="look" id="look-{i+1}"><a href="{full(p)}" data-zoom="{i}" aria-label="{E(c["zoom"])} — {E(c[p])}">{img(p,alt(c,p),lazy=i>0,cls="look-img")}</a></figure>' for i,p in enumerate(PHOTOS))
+    slides=''.join(f'<figure class="look" id="look-{i+1}"><a href="{full(p)}" data-zoom="{i}" aria-label="{E(c["zoom"])} — {E(c[p])}">{img(p,alt(c,p),lazy=i>0,cls="look-img look-"+p)}</a></figure>' for i,p in enumerate(PHOTOS))
     dots=''.join(f'<span class="look-dot"{" data-on" if i==0 else ""}></span>' for i in range(n))
     assets=json.dumps([{'full':full(p),'alt':alt(c,p)} for p in PHOTOS],ensure_ascii=False)
     specs=''.join(f'<li>{E(x)}</li>' for x in (c['material'],c['silhouette'],c['craft'],c['colour']))

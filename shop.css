@@ -27,7 +27,9 @@
 .look{margin:0;position:relative;overflow:hidden;background:color-mix(in srgb,var(--text) 6%,var(--bg))}
 .look a{display:block;cursor:zoom-in}
 .look-img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;transition:transform 1.6s var(--ease)}
-.look:first-child .look-img{object-position:50% 46%}
+/* Each landscape photograph keeps its embroidery in the tall frame. */
+.look-back{object-position:66% 50%}
+.look-front-daylight{object-position:50% 46%}
 .look a:hover .look-img{transform:scale(1.02)}
 .looks-meta{display:none}
 
