@@ -1,0 +1,137 @@
+[
+  {
+    "id": "embroidery-macro",
+    "source": "/Users/mac/Downloads/ElevenLabs_image_gpt-image-2-5-sunburst_Macro product p_2026-10-25T05_39_32.png",
+    "source_sha256": "c4283ac13dbaed2c6b30cfc4d0e904eb94f8383be58838c9c2cb10135bc1c6af",
+    "source_dimensions": [
+      2048,
+      2048
+    ],
+    "outputs": [
+      {
+        "file": "embroidery-macro-640.webp",
+        "width": 640,
+        "bytes": 60046
+      },
+      {
+        "file": "embroidery-macro-1200.webp",
+        "width": 1200,
+        "bytes": 146856
+      },
+      {
+        "file": "embroidery-macro-1800.webp",
+        "width": 1800,
+        "bytes": 244338
+      }
+    ],
+    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+  },
+  {
+    "id": "window",
+    "source": "/Users/mac/Downloads/ElevenLabs_image_gpt-image-2-5-sunburst_Edit Image 1 in_2026-10-25T06_02_27.png",
+    "source_sha256": "b8d1a48832287f8e48a50657e3fddd2b0434d23bc38ab7eb138bd72b41030187",
+    "source_dimensions": [
+      1152,
+      2048
+    ],
+    "outputs": [
+      {
+        "file": "window-640.webp",
+        "width": 640,
+        "bytes": 61122
+      },
+      {
+        "file": "window-1200.webp",
+        "width": 1152,
+        "bytes": 143270
+      },
+      {
+        "file": "window-1800.webp",
+        "width": 1152,
+        "bytes": 143270
+      }
+    ],
+    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+  },
+  {
+    "id": "friends",
+    "source": "/Users/mac/Downloads/ElevenLabs_image_gpt-image-2-5-sunburst_Edit Image 1 in_2026-10-25T06_02_41.png",
+    "source_sha256": "3eb1c30744288060ddee01e6a5395165a70eaa4e458063d93de64886fe19a7a9",
+    "source_dimensions": [
+      1664,
+      2080
+    ],
+    "outputs": [
+      {
+        "file": "friends-640.webp",
+        "width": 640,
+        "bytes": 90404
+      },
+      {
+        "file": "friends-1200.webp",
+        "width": 1200,
+        "bytes": 216810
+      },
+      {
+        "file": "friends-1800.webp",
+        "width": 1664,
+        "bytes": 338754
+      }
+    ],
+    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+  },
+  {
+    "id": "street-back",
+    "source": "/Users/mac/Downloads/ElevenLabs_image_gpt-image-2-5-sunburst_Edit Image 1 in_2026-10-25T06_02_43.png",
+    "source_sha256": "f4b2ffa036b52666628b6e01ece4ceba09653c70205c291bf933e6a5a5bf32e1",
+    "source_dimensions": [
+      1664,
+      2080
+    ],
+    "outputs": [
+      {
+        "file": "street-back-640.webp",
+        "width": 640,
+        "bytes": 76814
+      },
+      {
+        "file": "street-back-1200.webp",
+        "width": 1200,
+        "bytes": 167438
+      },
+      {
+        "file": "street-back-1800.webp",
+        "width": 1664,
+        "bytes": 237386
+      }
+    ],
+    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+  },
+  {
+    "id": "hanger",
+    "source": "/Users/mac/Downloads/ElevenLabs_image_gpt-image-2-5-sunburst_Minimalist comp_2026-10-25T05_43_53.png",
+    "source_sha256": "c7ea460e60ffce721559b76806902cb61fd22acb2285b97c1a88393504dc8e0c",
+    "source_dimensions": [
+      1664,
+      2080
+    ],
+    "outputs": [
+      {
+        "file": "hanger-640.webp",
+        "width": 640,
+        "bytes": 28428
+      },
+      {
+        "file": "hanger-1200.webp",
+        "width": 1200,
+        "bytes": 143672
+      },
+      {
+        "file": "hanger-1800.webp",
+        "width": 1664,
+        "bytes": 299360
+      }
+    ],
+    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+  }
+]

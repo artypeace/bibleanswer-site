@@ -72,7 +72,19 @@
   "editionShort": "Edition of 333",
   "sizeLabel": "Size",
   "footerNote": "Orders are arranged directly on Instagram.",
-  "detailsTitle": "Details"
+  "detailsTitle": "Details",
+  "photoAlts": {
+   "embroidery-macro": "Close-up of the blue embroidered fish on white cotton",
+   "window": "Love Above All T-shirt worn by a woman sitting beside a sunlit window",
+   "friends": "Three people wearing the white Love Above All T-shirt on outdoor steps",
+   "street-back": "Back of the white Love Above All T-shirt with a blue cross and lettering, seen on a sunlit street",
+   "hanger": "White Love Above All T-shirt on a black hanger, showing the blue fish embroidery and inner neck label"
+  },
+  "embroidery-macro": "Close-up of the blue embroidered fish on white cotton",
+  "window": "Love Above All T-shirt worn by a woman sitting beside a sunlit window",
+  "friends": "Three people wearing the white Love Above All T-shirt on outdoor steps",
+  "street-back": "Back of the white Love Above All T-shirt with a blue cross and lettering, seen on a sunlit street",
+  "hanger": "White Love Above All T-shirt on a black hanger, showing the blue fish embroidery and inner neck label"
  },
  "ru": {
   "shop": "Магазин",
@@ -147,7 +159,19 @@
   "editionShort": "Тираж 333 штуки",
   "sizeLabel": "Размер",
   "footerNote": "Заказ оформляется в переписке в Instagram.",
-  "detailsTitle": "Детали"
+  "detailsTitle": "Детали",
+  "photoAlts": {
+   "embroidery-macro": "Синяя вышивка рыбы крупным планом на белом хлопке",
+   "window": "Футболка Love Above All на девушке у освещённого солнцем окна",
+   "friends": "Три человека в белых футболках Love Above All на ступенях",
+   "street-back": "Вид сзади: белая футболка Love Above All с синим крестом и надписью на солнечной улице",
+   "hanger": "Белая футболка Love Above All на чёрной вешалке: синяя вышивка рыбы и внутренняя маркировка у горловины"
+  },
+  "embroidery-macro": "Синяя вышивка рыбы крупным планом на белом хлопке",
+  "window": "Футболка Love Above All на девушке у освещённого солнцем окна",
+  "friends": "Три человека в белых футболках Love Above All на ступенях",
+  "street-back": "Вид сзади: белая футболка Love Above All с синим крестом и надписью на солнечной улице",
+  "hanger": "Белая футболка Love Above All на чёрной вешалке: синяя вышивка рыбы и внутренняя маркировка у горловины"
  },
  "es": {
   "shop": "Tienda",
@@ -222,7 +246,19 @@
   "editionShort": "Edición de 333",
   "sizeLabel": "Talla",
   "footerNote": "El pedido se acuerda por Instagram.",
-  "detailsTitle": "Detalles"
+  "detailsTitle": "Detalles",
+  "photoAlts": {
+   "embroidery-macro": "Detalle del pez bordado en azul sobre algodón blanco",
+   "window": "Camiseta Love Above All en una mujer sentada junto a una ventana iluminada por el sol",
+   "friends": "Tres personas con la camiseta blanca Love Above All en unas escaleras al aire libre",
+   "street-back": "Vista trasera de la camiseta blanca Love Above All, con una cruz y letras azules, en una calle soleada",
+   "hanger": "Camiseta blanca Love Above All en una percha negra, con el pez bordado en azul y la etiqueta interior del cuello"
+  },
+  "embroidery-macro": "Detalle del pez bordado en azul sobre algodón blanco",
+  "window": "Camiseta Love Above All en una mujer sentada junto a una ventana iluminada por el sol",
+  "friends": "Tres personas con la camiseta blanca Love Above All en unas escaleras al aire libre",
+  "street-back": "Vista trasera de la camiseta blanca Love Above All, con una cruz y letras azules, en una calle soleada",
+  "hanger": "Camiseta blanca Love Above All en una percha negra, con el pez bordado en azul y la etiqueta interior del cuello"
  },
  "pt": {
   "shop": "Loja",
@@ -297,7 +333,19 @@
   "editionShort": "Edição de 333 peças",
   "sizeLabel": "Tamanho",
   "footerNote": "O pedido é combinado pelo Instagram.",
-  "detailsTitle": "Detalhes"
+  "detailsTitle": "Detalhes",
+  "photoAlts": {
+   "embroidery-macro": "Detalhe do peixe bordado em azul sobre algodão branco",
+   "window": "Camiseta Love Above All em uma mulher sentada junto a uma janela iluminada pelo sol",
+   "friends": "Três pessoas com a camiseta branca Love Above All em uma escadaria ao ar livre",
+   "street-back": "Vista das costas da camiseta branca Love Above All, com cruz e letras azuis, em uma rua ensolarada",
+   "hanger": "Camiseta branca Love Above All em um cabide preto, com o peixe bordado em azul e a identificação interna na gola"
+  },
+  "embroidery-macro": "Detalhe do peixe bordado em azul sobre algodão branco",
+  "window": "Camiseta Love Above All em uma mulher sentada junto a uma janela iluminada pelo sol",
+  "friends": "Três pessoas com a camiseta branca Love Above All em uma escadaria ao ar livre",
+  "street-back": "Vista das costas da camiseta branca Love Above All, com cruz e letras azuis, em uma rua ensolarada",
+  "hanger": "Camiseta branca Love Above All em um cabide preto, com o peixe bordado em azul e a identificação interna na gola"
  },
  "fr": {
   "shop": "Boutique",
@@ -372,7 +420,19 @@
   "editionShort": "Édition de 333 pièces",
   "sizeLabel": "Taille",
   "footerNote": "La commande se fait par message sur Instagram.",
-  "detailsTitle": "Détails"
+  "detailsTitle": "Détails",
+  "photoAlts": {
+   "embroidery-macro": "Gros plan du poisson brodé en bleu sur le coton blanc",
+   "window": "T-shirt Love Above All porté par une femme assise près d’une fenêtre ensoleillée",
+   "friends": "Trois personnes portant le T-shirt blanc Love Above All sur des marches en extérieur",
+   "street-back": "Dos du T-shirt blanc Love Above All, avec une croix et une inscription bleues, dans une rue ensoleillée",
+   "hanger": "T-shirt blanc Love Above All sur un cintre noir, avec le poisson brodé en bleu et le marquage intérieur du col"
+  },
+  "embroidery-macro": "Gros plan du poisson brodé en bleu sur le coton blanc",
+  "window": "T-shirt Love Above All porté par une femme assise près d’une fenêtre ensoleillée",
+  "friends": "Trois personnes portant le T-shirt blanc Love Above All sur des marches en extérieur",
+  "street-back": "Dos du T-shirt blanc Love Above All, avec une croix et une inscription bleues, dans une rue ensoleillée",
+  "hanger": "T-shirt blanc Love Above All sur un cintre noir, avec le poisson brodé en bleu et le marquage intérieur du col"
  },
  "fil": {
   "shop": "Tindahan",
@@ -447,6 +507,18 @@
   "editionShort": "Edisyon ng 333 piraso",
   "sizeLabel": "Size",
   "footerNote": "Sa Instagram pinag-uusapan ang order.",
-  "detailsTitle": "Mga detalye"
+  "detailsTitle": "Mga detalye",
+  "photoAlts": {
+   "embroidery-macro": "Malapitang kuha ng asul na burdang isda sa puting tela",
+   "window": "Love Above All T-shirt na suot ng babaeng nakaupo sa tabi ng bintanang nasisinagan ng araw",
+   "friends": "Tatlong taong nakasuot ng puting Love Above All T-shirt sa hagdan sa labas",
+   "street-back": "Likod ng puting Love Above All T-shirt na may asul na krus at mga salita, sa maaraw na kalye",
+   "hanger": "Puting Love Above All T-shirt sa itim na hanger, na kita ang asul na burdang isda at marka sa loob ng kuwelyo"
+  },
+  "embroidery-macro": "Malapitang kuha ng asul na burdang isda sa puting tela",
+  "window": "Love Above All T-shirt na suot ng babaeng nakaupo sa tabi ng bintanang nasisinagan ng araw",
+  "friends": "Tatlong taong nakasuot ng puting Love Above All T-shirt sa hagdan sa labas",
+  "street-back": "Likod ng puting Love Above All T-shirt na may asul na krus at mga salita, sa maaraw na kalye",
+  "hanger": "Puting Love Above All T-shirt sa itim na hanger, na kita ang asul na burdang isda at marka sa loob ng kuwelyo"
  }
 }

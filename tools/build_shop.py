@@ -11,14 +11,15 @@ CODES={'en':'en','ru':'ru','es':'es','pt':'pt-BR','fr':'fr','fil':'fil'}
 HANDLES={'en':'bibleanswerapp','ru':'bibleanswerapp_ru','es':'bibleanswerapp_es','pt':'bibleanswerapp_br','fr':'bibleanswerapp_fr','fil':'bibleanswerapp_ph'}
 COPY=json.loads((Path(__file__).parent/'shop-copy.json').read_text('utf-8'))
 ORIGINAL_PHOTOS=('folded','front','back','worn','front-daylight','neck-detail')
-PHOTOS=('back','front-daylight','neck-detail','folded')
-def alt(c,name):return c['alts'][ORIGINAL_PHOTOS.index(name)]
+PHOTOS=('back','hanger','embroidery-macro','window','friends','street-back','front-daylight','neck-detail','folded')
+def alt(c,name):return c['photoAlts'][name] if name in c.get('photoAlts',{}) else c['alts'][ORIGINAL_PHOTOS.index(name)]
 # The file each photo is served from: the neck detail is turned 90° to the right in the file itself,
 # and the back is the owner's night photograph on the bridge.
 FILE={'neck-detail':'neck-detail-v','back':'back-bridge'}
 def file(name):return FILE.get(name,name)
+NEW_DIMENSIONS={'embroidery-macro': (2048, 2048), 'window': (1152, 2048), 'friends': (1664, 2080), 'street-back': (1664, 2080), 'hanger': (1664, 2080)}
 def candidates(name):
-    real={'back':1672,'front-daylight':1672,'neck-detail':941,'folded':900}.get(name,1800)
+    real={**{'back':1672,'front-daylight':1672,'neck-detail':941,'folded':900},**{k:v[0] for k,v in NEW_DIMENSIONS.items()}}[name]
     return ', '.join(f'{image(name,w)} {min(w,real)}w' for w in (640,1200,1800))
 E=lambda s:html.escape(str(s),quote=True)
 def path(lang):return ('' if lang=='en' else lang+'/')+'shop/'
@@ -28,7 +29,7 @@ def image(name,width=1200):return f'/assets/shop/love-above-all/{file(name)}-{wi
 def full(name):return f'/assets/shop/love-above-all/{file(name)}.jpg'
 def img(name,alt,*,lazy=True,cls=''):
     sizes='(max-width: 999px) 100vw, 58vw'
-    dims={'back':(1672,941),'folded':(900,1600),'front-daylight':(1672,941),'neck-detail':(941,1672)}[name]
+    dims={**{'back':(1672,941),'folded':(900,1600),'front-daylight':(1672,941),'neck-detail':(941,1672)},**NEW_DIMENSIONS}[name]
     return f'<img class="{cls}" src="{image(name)}" srcset="{candidates(name)}" sizes="{sizes}" alt="{E(alt)}" width="{dims[0]}" height="{dims[1]}" decoding="async" '+('loading="lazy"' if lazy else 'fetchpriority="high"')+'>'
 def page(root,cfg,lang,head_common,og_head):
     c=COPY[lang];site=cfg['siteUrl'].rstrip('/');url=site+'/'+path(lang);title=f'Love Above All — First Drop | Bible Answer';photo=site+full(PHOTOS[0])
