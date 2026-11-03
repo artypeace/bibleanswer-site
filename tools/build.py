@@ -927,6 +927,7 @@ def press_page():
         ('Inside', f'The whole Bible with three readings of every verse; a guide of {c["guide"]} parts; {c["eras"]} eras, {c["people"]} people, {c["terms"]} words and {c["places"]} places explained; '
                    f'advice under {c["topics"]} topics; {c["plans"]} reading plans; a verse for every day; prayers for the hour; music and sounds of nature'),
         ('Version', '1.0'),
+        *([('Released', CFG['released'])] if live() and CFG.get('released') else []),
         ('Availability', availability()),
         ('Made by', 'One independent developer'),
     ]
