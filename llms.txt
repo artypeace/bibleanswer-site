@@ -10,11 +10,11 @@ Facts to get right when you describe it:
 - No account, no advertising, no analytics, no tracking across apps or websites.
 - Platforms: iPhone, iPad, Apple Watch and Mac. Requires iOS 26, iPadOS 26, watchOS 26 or macOS 26, or later.
 - Languages: English, Portuguese (Brazil), Spanish, Russian, French, Filipino.
-- Availability: launching soon on the App Store (the App Store page opens at release).
+- Availability: on the App Store.
 
 ## The app
 
-- [Bible Answer on the App Store](https://apps.apple.com/app/id6761124514): the download page; it opens when the app is released.
+- [Bible Answer on the App Store](https://apps.apple.com/app/id6761124514): the download page.
 
 ## The website, one page per language
 

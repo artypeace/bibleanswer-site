@@ -5,7 +5,7 @@
     <link>https://bibleanswer.app/</link>
     <description>Reading guides and news from Bible Answer.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 09:00:00 +0000</lastBuildDate>
     <atom:link href="https://bibleanswer.app/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Where to start reading the Bible</title>
@@ -62,6 +62,13 @@
       <guid isPermaLink="true">https://bibleanswer.app/articles/psalm-23-meaning/</guid>
       <pubDate>Sat, 03 Oct 2026 09:00:00 +0000</pubDate>
       <description>Read the complete Psalm 23 and explore its images of a shepherd, rest, the valley, and a table, with simple questions for personal Bible study.</description>
+    </item>
+    <item>
+      <title>Bible Answer is on the App Store</title>
+      <link>https://bibleanswer.app/press/#app-store-launch</link>
+      <guid isPermaLink="false">bibleanswer.app:app-store-launch</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Bible Answer 1.0 is out for iPhone and iPad, joining the Mac version released on October 28. It is free, with no account, ads or subscriptions, in six languages.</description>
     </item>
     <item>
       <title>bibleanswer.app is open in six languages</title>

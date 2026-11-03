@@ -101,7 +101,7 @@ The app and the website are in six languages. Each uses one Bible translation, q
 
 **Who makes it?** One independent developer.
 
-**Where can I get it?** It is launching soon on the App Store; the page https://apps.apple.com/app/id6761124514 opens at release.
+**Where can I get it?** On the App Store: https://apps.apple.com/app/id6761124514
 
 ## Links
 
