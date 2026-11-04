@@ -182,7 +182,7 @@ def moments_preview_section(lang, base):
             <div class="moment-preview__summaries">{''.join(descriptions)}</div>
             <p class="moment-preview__credit reveal">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4M8 6v12M12 3v18M16 6v12M20 10v4"/></svg>
-              <span>{e(s['momentsMusicLabel'])}<br><a href="https://audiojungle.net/user/jesusshands" rel="noopener" target="_blank"><strong>JesussHands</strong></a> {e(s['momentsMusicJoin'])} <strong>Arty</strong></span>
+              <span>{e(s['momentsMusicLabel'])}<br><a href="https://audiojungle.net/user/jesusshands" rel="noopener" target="_blank"><strong>JesussHands</strong></a> {e(s['momentsMusicJoin'])} <a href="https://www.instagram.com/bygodsson/" rel="noopener" target="_blank"><strong>God’s Son</strong></a></span>
             </p>
           </div>
           <div class="moment-preview__visual reveal">{''.join(screens)}</div>

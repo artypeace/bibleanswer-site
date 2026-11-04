@@ -1,10 +1,9 @@
 # Native Moments player previews
 
 All six Moments, each in six languages: anxious, lonely, no_strength,
-afraid_future, cant_cope, before_sleep. Captured from the installed Bible Answer
-app on the existing iPhone 17 Pro Max simulator (iOS 26.3) on 2026-10-04.
-The six cant_cope captures are reused from the earlier update the same day.
-No application build or source changes were made for these captures.
+afraid_future, cant_cope, before_sleep. Captured on 2026-11-04 from a Debug build
+of the app with the current credits, on the iPhone 17 Pro Max simulator (iOS 26.3),
+by tools/store-screenshots/shoot-moments.sh in the app repository.
 
 The full screens are proportionally downscaled to 720px wide and encoded as
 WebP. The surrounding iPhone housing is the existing original vector artwork.
@@ -15,7 +14,7 @@ Titles and initial introductory descriptions in tools/moments.json come from
 Moment in the app's MomentsView.swift. The website's anxious introduction now
 uses 'moment' in place of 'meditation' in all six languages, at the owner's
 request; the native screenshots and app source are unchanged.
-Music in Moments is by JesussHands and Arty;
+Music in Moments is by JesussHands and God’s Son;
 the collection credit is distinct from the music/voice credits of each recording.
 no_strength and afraid_future are music-only in the current app source.
 
