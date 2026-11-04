@@ -35,6 +35,13 @@
       "lang": "en",
       "handle": "bibleanswerapp",
       "url": "https://www.pinterest.com/bibleanswerapp/"
+    },
+    {
+      "platform": "ВКонтакте",
+      "lang": "ru",
+      "onlyLang": "ru",
+      "handle": "bibleanswerapp",
+      "url": "https://vk.ru/bibleanswerapp"
     }
   ],
   "socialNote": "Only accounts with a url are shown. Planned language accounts: @bibleanswerapp_ru, _es, _br, _fr, _ph - add {platform, lang, handle, url} here when they exist.",

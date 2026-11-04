@@ -227,15 +227,16 @@ def social_meta():
     return ''.join(f'<meta name="{n}" content="{e(CFG[k])}">\n' for n, k in tags if CFG.get(k))
 
 
-def social_accounts():
-    return [a for a in CFG.get('social', []) if a.get('url')]
+def social_accounts(lang=None):
+    """An account with "onlyLang" is shown on that language's pages alone."""
+    return [a for a in CFG.get('social', []) if a.get('url') and a.get('onlyLang', lang) == lang]
 
 
-def social_links(cls=''):
+def social_links(cls='', lang=None):
     """The accounts that exist, as links; a language other than English is marked (RU, ES, ...)."""
     out = []
-    for a in social_accounts():
-        mark = '' if a['lang'] == 'en' else f' <span class="soc__lang">{e(a["lang"].upper())}</span>'
+    for a in social_accounts(lang):
+        mark = '' if a['lang'] == 'en' or a.get('onlyLang') else f' <span class="soc__lang">{e(a["lang"].upper())}</span>'
         out.append(f'<a{cls} href="{e(a["url"])}" rel="me noopener" target="_blank">{e(a["platform"])}{mark}</a>')
     return out
 
@@ -371,7 +372,7 @@ def home(lang):
 
     shots = [shot_file(d, lang, n) for d, k in SHOTS.items() for n in range(1, k + 1)]
     ld_app = {
-        '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', **({'sameAs': [a['url'] for a in social_accounts()]} if social_accounts() else {}), 'description': s['metaDescription'],
+        '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', **({'sameAs': [a['url'] for a in social_accounts(lang)]} if social_accounts(lang) else {}), 'description': s['metaDescription'],
         'applicationCategory': 'ReferenceApplication', 'operatingSystem': 'iOS, iPadOS, watchOS' + (', macOS' if CFG.get('macAvailable') else ''), 'url': canonical, 'image': og,
         'inLanguage': [SITE[l]['hreflang'] for l in LANGS], 'downloadUrl': CFG['appStoreUrl'],
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
@@ -387,7 +388,7 @@ def home(lang):
         f'<li><a href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}"{current if l == lang else ""}>{e(APP[l]["name"])}</a></li>' for l in LANGS)
     lang_pills = ''.join(
         f'<a class="pill pill--lang" href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}"{current if l == lang else ""}>{e(APP[l]["name"])}</a>' for l in LANGS)
-    soc = social_links()
+    soc = social_links(lang=lang)
     foot_social = (f'<p class="foot__social">' + '<span class="dot">·</span><wbr>'.join(soc) + '</p>\n  ') if soc else ''
     foot_langs = '<span class="dot">·</span><wbr>'.join(
         f'<a href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}">{e(APP[l]["name"])}</a>' for l in LANGS)
