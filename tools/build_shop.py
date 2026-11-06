@@ -87,23 +87,10 @@ def page(root,cfg,lang,head_common,og_head):
    <a class="buy-cta" href="{instagram}" target="_blank" rel="noopener noreferrer" data-template="{E(c['chosen'])}"><span data-cta>{E(c['cta'])}</span><span aria-hidden="true">↗</span></a>
    <p class="buy-note">{E(c['order'])}</p>
    <div class="folds">
-    <details class="fold" open><summary>{E(c['detailsTitle'])}<span class="fold-mark" aria-hidden="true"></span></summary><ul class="specs">{specs}</ul></details>
+    <details class="fold" open><summary>{E(c['detailsTitle'])}<span class="fold-mark" aria-hidden="true"></span></summary><p>{E(c['storyText'])}</p><ul class="specs">{specs}</ul></details>
     {faq}
    </div>
   </div></div>
- </section>
- <section class="credo" aria-labelledby="credo-title">
-  <div class="credo-copy">
-  <h2 id="credo-title">{E(c['cityName'])}</h2>
-  <p class="credo-text">{E(c['storyText'])}</p>
-  </div>
-  <figure class="shop-city">
-   <video controls playsinline preload="none" width="720" height="1280" aria-label="{E(c['cityAlt'])}" poster="/assets/shop/love-above-all/petronas-poster.webp">
-    <source src="/assets/shop/love-above-all/petronas.mp4" type="video/mp4">
-    <img src="/assets/shop/love-above-all/petronas-poster.webp" alt="{E(c['cityAlt'])}" width="563" height="1000" loading="lazy">
-   </video>
-   <figcaption>{E(c['cityCaption'])}</figcaption>
-  </figure>
  </section>
  <details class="shop-lookbook fold">
   <summary>{E(c['lookbook'])}<span class="fold-mark" aria-hidden="true"></span></summary>

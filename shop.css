@@ -86,20 +86,12 @@
 .specs li{padding:3px 0}
 .specs li::before{content:"";display:inline-block;width:14px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px}
 
-/* ── The credo: one line on the night, then a few words ───────────────────── */
-.credo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);align-items:center;gap:clamp(36px,8vw,110px);
-  max-width:1280px;margin:0 auto;padding:clamp(55px,9vw,126px) clamp(20px,5vw,80px)}
-.shop-city{margin:0;min-width:0}
-.shop-city video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:var(--bg)}
-.shop-city figcaption{color:var(--muted);margin:10px 0 0;font-size:14px}
-.shop-lookbook{max-width:1120px;margin:0 auto clamp(45px,8vw,110px);padding:0 clamp(20px,5vw,80px)}
+/* ── The lookbook ───────────────────────────────────────────────────────────── */
+.shop-lookbook{max-width:1120px;margin:clamp(45px,8vw,110px) auto;padding:0 clamp(20px,5vw,80px)}
 .shop-lookbook summary{border-top:1px solid var(--glass-line)}
 .lookbook-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:8px;margin-bottom:12px}
 .lookbook-grid .look a{aspect-ratio:4/5}
 .lookbook-grid .look-img{object-fit:cover}
-.shop-site .credo h2{margin:0;font:300 clamp(46px,6.4vw,92px)/1 var(--serif);letter-spacing:-.015em;color:var(--text);
-  background:none;-webkit-text-fill-color:currentColor;text-wrap:balance}
-.credo-text{margin:28px 0 0;max-width:560px;font:400 19px/1.6 var(--serif);color:color-mix(in srgb,var(--text) 82%,transparent);text-wrap:pretty}
 
 /* ── Footer ───────────────────────────────────────────────────────────────── */
 .shop-footer{border-top:1px solid var(--glass-line);padding:46px 24px 120px;text-align:center;font-size:13px;color:var(--muted)}
@@ -135,8 +127,6 @@
   .buy-size{margin-top:16px;padding-top:12px}
   .sizes span{height:42px}
   .buy-cta{margin-top:10px;height:48px}
-  .credo{grid-template-columns:1fr;padding:64px 20px;max-width:600px}
-  .shop-city{width:min(100%,400px);margin:0 auto}
   .mobile-buy{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:16px;
     padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 92%,transparent);
     -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top:1px solid var(--glass-line)}
