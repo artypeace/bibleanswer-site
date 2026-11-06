@@ -11,20 +11,20 @@
       {
         "file": "embroidery-macro-640.webp",
         "width": 640,
-        "bytes": 60046
+        "bytes": 65142
       },
       {
         "file": "embroidery-macro-1200.webp",
         "width": 1200,
-        "bytes": 146856
+        "bytes": 153848
       },
       {
         "file": "embroidery-macro-1800.webp",
         "width": 1800,
-        "bytes": 244338
+        "bytes": 255492
       }
     ],
-    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+    "provenance": "Owner-supplied ElevenLabs image. Local color and light retouch, then web resizing and format conversion."
   },
   {
     "id": "window",
@@ -38,20 +38,20 @@
       {
         "file": "window-640.webp",
         "width": 640,
-        "bytes": 61122
+        "bytes": 65026
       },
       {
         "file": "window-1200.webp",
         "width": 1152,
-        "bytes": 143270
+        "bytes": 160526
       },
       {
         "file": "window-1800.webp",
         "width": 1152,
-        "bytes": 143270
+        "bytes": 160526
       }
     ],
-    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+    "provenance": "Owner-supplied ElevenLabs image. Local color and light retouch, then web resizing and format conversion."
   },
   {
     "id": "friends",
@@ -65,20 +65,20 @@
       {
         "file": "friends-640.webp",
         "width": 640,
-        "bytes": 90404
+        "bytes": 94332
       },
       {
         "file": "friends-1200.webp",
         "width": 1200,
-        "bytes": 216810
+        "bytes": 233870
       },
       {
         "file": "friends-1800.webp",
         "width": 1664,
-        "bytes": 338754
+        "bytes": 369066
       }
     ],
-    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+    "provenance": "Owner-supplied ElevenLabs image. Local color and light retouch, then web resizing and format conversion."
   },
   {
     "id": "street-back",
@@ -92,20 +92,20 @@
       {
         "file": "street-back-640.webp",
         "width": 640,
-        "bytes": 76814
+        "bytes": 82260
       },
       {
         "file": "street-back-1200.webp",
         "width": 1200,
-        "bytes": 167438
+        "bytes": 175394
       },
       {
         "file": "street-back-1800.webp",
         "width": 1664,
-        "bytes": 237386
+        "bytes": 260848
       }
     ],
-    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+    "provenance": "Owner-supplied ElevenLabs image. Local color and light retouch, then web resizing and format conversion."
   },
   {
     "id": "hanger",
@@ -119,19 +119,19 @@
       {
         "file": "hanger-640.webp",
         "width": 640,
-        "bytes": 28428
+        "bytes": 33218
       },
       {
         "file": "hanger-1200.webp",
         "width": 1200,
-        "bytes": 143672
+        "bytes": 163266
       },
       {
         "file": "hanger-1800.webp",
         "width": 1664,
-        "bytes": 299360
+        "bytes": 352424
       }
     ],
-    "provenance": "Owner-supplied ElevenLabs image. No generated changes, only web resizing and format conversion."
+    "provenance": "Owner-supplied ElevenLabs image. Local color and light retouch, then web resizing and format conversion."
   }
 ]

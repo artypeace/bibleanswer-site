@@ -6,18 +6,21 @@
   if (!looks) return;
   const photos = JSON.parse(looks.dataset.photos);
   const track = looks.querySelector('.looks-track');
-  const counter = looks.querySelector('[data-look]');
-  const dots = [...looks.querySelectorAll('.look-dot')];
-
-  // On a phone the photographs are a swipe: the counter and the dots follow it.
-  const onScroll = () => {
-    const step = track.firstElementChild ? track.firstElementChild.getBoundingClientRect().width : track.clientWidth;
-    const end = track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
-    const i = end ? dots.length - 1 : Math.round(track.scrollLeft / Math.max(step, 1));
-    if (counter) counter.textContent = String(i + 1);
-    dots.forEach((d, n) => d.toggleAttribute('data-on', n === i));
-  };
-  track.addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: true });
+  const thumbs = [...looks.querySelectorAll('.looks-thumbs button')];
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  let frame = 0;
+  track.addEventListener('scroll', () => {
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      const active = Math.round(track.scrollLeft / Math.max(track.clientWidth, 1));
+      thumbs.forEach((button, i) => button.setAttribute('aria-pressed', String(i === active)));
+    });
+  }, { passive: true });
+  thumbs.forEach(button => button.addEventListener('click', () => {
+    const slide = document.getElementById(button.getAttribute('aria-controls'));
+    track.scrollTo({ left: slide.offsetLeft, behavior: motion.matches ? 'instant' : 'smooth' });
+  }));
 
   // The size goes into the order button's words, so the message is clear before it is written.
   const cta = document.querySelector('.buy-cta');
@@ -60,7 +63,7 @@
   // A photograph, whole.
   if (!dialog || typeof dialog.showModal !== 'function') return;
   const img = dialog.querySelector('img');
-  looks.querySelectorAll('[data-zoom]').forEach(link => {
+  document.querySelectorAll('[data-zoom]').forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault();
       const p = photos[Number(link.dataset.zoom)];

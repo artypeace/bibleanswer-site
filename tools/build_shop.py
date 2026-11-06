@@ -11,16 +11,21 @@ CODES={'en':'en','ru':'ru','es':'es','pt':'pt-BR','fr':'fr','fil':'fil'}
 HANDLES={'en':'bibleanswerapp','ru':'bibleanswerapp_ru','es':'bibleanswerapp_es','pt':'bibleanswerapp_br','fr':'bibleanswerapp_fr','fil':'bibleanswerapp_ph'}
 COPY=json.loads((Path(__file__).parent/'shop-copy.json').read_text('utf-8'))
 ORIGINAL_PHOTOS=('folded','front','back','worn','front-daylight','neck-detail')
-PHOTOS=('back','hanger','embroidery-macro','window','friends','street-back','front-daylight','neck-detail','folded')
-def alt(c,name):return c['photoAlts'][name] if name in c.get('photoAlts',{}) else c['alts'][ORIGINAL_PHOTOS.index(name)]
-# The file each photo is served from: the neck detail is turned 90° to the right in the file itself,
-# and the back is the owner's night photograph on the bridge.
+PHOTOS=('front-daylight','back','folded','neck-detail','petronas')
+EDITORIAL_PHOTOS=('hanger','embroidery-macro','window','friends','street-back')
+def alt(c,name):
+    if name == 'petronas':
+        return c['cityAlt']
+    return c['photoAlts'][name] if name in c.get('photoAlts',{}) else c['alts'][ORIGINAL_PHOTOS.index(name)]
 FILE={'neck-detail':'neck-detail-v','back':'back-bridge'}
+DIMENSIONS={'front-daylight': (1672, 941), 'back': (1672, 941), 'folded': (900, 1488), 'neck-detail': (941, 1672), 'petronas': (1800, 3200), 'hanger': (1664, 2080), 'embroidery-macro': (2048, 2048), 'window': (1152, 2048), 'friends': (1664, 2080), 'street-back': (1664, 2080)}
 def file(name):return FILE.get(name,name)
-NEW_DIMENSIONS={'embroidery-macro': (2048, 2048), 'window': (1152, 2048), 'friends': (1664, 2080), 'street-back': (1664, 2080), 'hanger': (1664, 2080)}
 def candidates(name):
-    real={**{'back':1672,'front-daylight':1672,'neck-detail':941,'folded':900},**{k:v[0] for k,v in NEW_DIMENSIONS.items()}}[name]
-    return ', '.join(f'{image(name,w)} {min(w,real)}w' for w in (640,1200,1800))
+    real=DIMENSIONS[name][0]
+    widths={}
+    for target in (640,1200,1800):
+        widths.setdefault(min(target,real),target)
+    return ', '.join(f'{image(name,target)} {width}w' for width,target in widths.items())
 E=lambda s:html.escape(str(s),quote=True)
 def path(lang):return ('' if lang=='en' else lang+'/')+'shop/'
 def home(lang):return '/' if lang=='en' else '/'+lang+'/'
@@ -28,8 +33,8 @@ def version(root,name):return hashlib.sha256((root/name).read_bytes()).hexdigest
 def image(name,width=1200):return f'/assets/shop/love-above-all/{file(name)}-{width}.webp'
 def full(name):return f'/assets/shop/love-above-all/{file(name)}.jpg'
 def img(name,alt,*,lazy=True,cls=''):
-    sizes='(max-width: 999px) 100vw, 58vw'
-    dims={**{'back':(1672,941),'folded':(900,1600),'front-daylight':(1672,941),'neck-detail':(941,1672)},**NEW_DIMENSIONS}[name]
+    sizes='(max-width: 590px) calc(100vw - 32px), (max-width: 999px) 560px, (max-width: 1680px) 50vw, 830px'
+    dims=DIMENSIONS[name]
     return f'<img class="{cls}" src="{image(name)}" srcset="{candidates(name)}" sizes="{sizes}" alt="{E(alt)}" width="{dims[0]}" height="{dims[1]}" decoding="async" '+('loading="lazy"' if lazy else 'fetchpriority="high"')+'>'
 def page(root,cfg,lang,head_common,og_head):
     c=COPY[lang];site=cfg['siteUrl'].rstrip('/');url=site+'/'+path(lang);title=f'Love Above All — First Drop | Bible Answer';photo=site+full(PHOTOS[0])
@@ -40,10 +45,13 @@ def page(root,cfg,lang,head_common,og_head):
     head=head_common(None,title,c['description'],url,photo,'index,follow,max-image-preview:large','/',extra)+og_head(title,c['description'],url,photo,{'en':'en_US','ru':'ru_RU','es':'es_ES','pt':'pt_BR','fr':'fr_FR','fil':'fil_PH'}[lang])
     languages=''.join(f'<li><a href="/{path(l)}" hreflang="{CODES[l]}" lang="{CODES[l]}"'+(' aria-current="page"' if l==lang else '')+f'>{COPY[l]["lang"]}</a></li>' for l in LANGS)
     instagram=f'https://www.instagram.com/{HANDLES[lang]}/'
-    n=len(PHOTOS)
-    slides=''.join(f'<figure class="look" id="look-{i+1}"><a href="{full(p)}" data-zoom="{i}" aria-label="{E(c["zoom"])} — {E(c[p])}">{img(p,alt(c,p),lazy=i>0,cls="look-img look-"+p)}</a></figure>' for i,p in enumerate(PHOTOS))
-    dots=''.join(f'<span class="look-dot"{" data-on" if i==0 else ""}></span>' for i in range(n))
-    assets=json.dumps([{'full':full(p),'alt':alt(c,p)} for p in PHOTOS],ensure_ascii=False)
+    def slide(i,p):
+        label=c['front'] if p=='front-daylight' else c[p]
+        return f'<figure class="look" id="look-{i+1}"><a href="{full(p)}" data-zoom="{i}" aria-label="{E(c["zoom"])} — {E(label)}">{img(p,alt(c,p),lazy=i>0,cls="look-img")}</a></figure>'
+    slides=''.join(slide(i,p) for i,p in enumerate(PHOTOS))
+    editorial=''.join(slide(i,p) for i,p in enumerate(EDITORIAL_PHOTOS,len(PHOTOS)))
+    thumbs=''.join(f'<button type="button" aria-pressed="{str(i==0).lower()}" aria-controls="look-{i+1}"><img src="/assets/shop/love-above-all/{file(p)}-thumb.webp" width="240" height="160" alt=""><span>{E(c["front"] if p=="front-daylight" else c[p])}</span></button>' for i,p in enumerate(PHOTOS))
+    assets=json.dumps([{'full':full(p),'alt':alt(c,p)} for p in PHOTOS+EDITORIAL_PHOTOS],ensure_ascii=False)
     specs=''.join(f'<li>{E(x)}</li>' for x in (c['material'],c['silhouette'],c['craft'],c['colour']))
     faq=''.join(f'<details class="fold"><summary>{E(q)}<span class="fold-mark" aria-hidden="true"></span></summary><p>{E(a)}</p></details>' for q,a in c['questions'])
     sizes=''.join(f'<label><input type="radio" name="size" value="{sz}"><span>{sz}</span></label>' for sz in ('M','L','XL'))
@@ -64,12 +72,12 @@ def page(root,cfg,lang,head_common,og_head):
  <section class="product" aria-labelledby="product-title">
   <div class="looks" aria-label="{E(c['gallery'])}" data-photos="{E(assets)}">
    <div class="looks-track">{slides}</div>
-   <div class="looks-meta" aria-hidden="true"><span class="looks-count"><span data-look>1</span> / {n}</span><span class="looks-dots">{dots}</span></div>
+   <div class="looks-thumbs">{thumbs}</div>
   </div>
   <div class="buy"><div class="buy-in">
    <p class="buy-kicker"><span>First Drop</span> <i aria-hidden="true">·</i> <span>{E(c['editionShort'])}</span></p>
    <h1 id="product-title">Love Above All</h1>
-   <p class="buy-line">The Essential Tee</p>
+   <p class="buy-line">{E(c['type'])}</p>
    <p class="buy-price">$33 <span>USD</span></p>
    <p class="buy-ship">{E(c['shipping'])}</p>
    <div class="buy-size">
@@ -85,11 +93,22 @@ def page(root,cfg,lang,head_common,og_head):
   </div></div>
  </section>
  <section class="credo" aria-labelledby="credo-title">
-  <p class="credo-kicker">{E(c['craft'])}</p>
-  <h2 id="credo-title">Faith in <em>every detail.</em></h2>
-  <p class="credo-ref">The Ichthys <span aria-hidden="true">/</span> 1 Corinthians 13:4</p>
+  <div class="credo-copy">
+  <h2 id="credo-title">{E(c['cityName'])}</h2>
   <p class="credo-text">{E(c['storyText'])}</p>
+  </div>
+  <figure class="shop-city">
+   <video controls playsinline preload="none" width="720" height="1280" aria-label="{E(c['cityAlt'])}" poster="/assets/shop/love-above-all/petronas-poster.webp">
+    <source src="/assets/shop/love-above-all/petronas.mp4" type="video/mp4">
+    <img src="/assets/shop/love-above-all/petronas-poster.webp" alt="{E(c['cityAlt'])}" width="563" height="1000" loading="lazy">
+   </video>
+   <figcaption>{E(c['cityCaption'])}</figcaption>
+  </figure>
  </section>
+ <details class="shop-lookbook fold">
+  <summary>{E(c['lookbook'])}<span class="fold-mark" aria-hidden="true"></span></summary>
+  <div class="lookbook-grid">{editorial}</div>
+ </details>
 </main>
 <footer class="shop-footer">{branding.footer_brand(lang,home(lang))}<nav><a href="{home(lang)}">{E(c['backTo'])}</a><a href="/privacy#{lang}">{E(c['privacy'])}</a><a href="{instagram}" target="_blank" rel="noopener noreferrer">Instagram</a></nav><p class="shop-footer-note">{E(c['footerNote'])}</p></footer>
 <aside class="mobile-buy" hidden aria-label="{E(c['shop'])}"><span class="mobile-buy-price">$33</span><a href="#size-options" data-mobile-cta data-order="{instagram}" data-order-label="{E(c['cta'])}">{E(c['size'])}</a></aside>

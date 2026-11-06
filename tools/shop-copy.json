@@ -14,7 +14,7 @@
   "shipping": "Free worldwide shipping",
   "run": "333 pieces in the first drop",
   "price": "Price in US dollars",
-  "order": "Tell us your size and destination country. We’ll confirm the order details together.",
+  "order": "Send us your size and delivery country on Instagram.",
   "chosen": "Your choice: {size}",
   "details": "In the details",
   "front": "The front",
@@ -30,7 +30,7 @@
    "Neck detail: Bible Answer / 1 COR 13:4"
   ],
   "story": "Love, above all.",
-  "storyText": "The fish on the front. A cross and Love Above All on the back. Blue thread on white fabric: the first Bible Answer T-shirt, made to carry the message into everyday life.",
+  "storyText": "A blue fish is embroidered on the front. On the back are a cross and the words Love Above All. Inside the collar it reads 1 COR 13:4.",
   "caption": "Real photographs of the first drop. Colour may look different under evening lighting.",
   "faq": "Before you order",
   "questions": [
@@ -48,7 +48,7 @@
    ],
    [
     "What does 333 mean?",
-    "The first drop consists of 333 pieces in total. This is the edition size, not a live count of remaining stock."
+    "The first run is limited to 333 T-shirts."
    ]
   ],
   "zoom": "View full photograph",
@@ -73,6 +73,11 @@
   "sizeLabel": "Size",
   "footerNote": "Orders are arranged directly on Instagram.",
   "detailsTitle": "Details",
+  "petronas": "In the city",
+  "cityName": "Kuala Lumpur",
+  "cityCaption": "Petronas Towers",
+  "cityAlt": "A white Love Above All T-shirt seen from behind at the Petronas Towers",
+  "lookbook": "Lookbook",
   "photoAlts": {
    "embroidery-macro": "Close-up of the blue embroidered fish on white cotton",
    "window": "Love Above All T-shirt worn by a woman sitting beside a sunlit window",
@@ -101,7 +106,7 @@
   "shipping": "Бесплатная доставка по всему миру",
   "run": "333 штуки в первом дропе",
   "price": "Цена в долларах США",
-  "order": "Напишите размер и страну доставки. Детали заказа подтвердим в переписке.",
+  "order": "Напишите в Instagram размер и страну доставки.",
   "chosen": "Ваш выбор: {size}",
   "details": "Всё в деталях",
   "front": "Спереди",
@@ -117,7 +122,7 @@
    "Детали горловины: Bible Answer / 1 COR 13:4"
   ],
   "story": "Любовь — превыше всего.",
-  "storyText": "Рыбка спереди. Крест и Love Above All сзади. Синяя нить на белой ткани: первая футболка Bible Answer с напоминанием, которое можно взять с собой в обычный день.",
+  "storyText": "Спереди вышита синяя рыбка. На спине — крест и надпись «Love Above All». На внутренней стороне горловины — 1 COR 13:4.",
   "caption": "Настоящие фотографии первого дропа. Вечернее освещение может влиять на оттенки.",
   "faq": "Перед заказом",
   "questions": [
@@ -135,7 +140,7 @@
    ],
    [
     "Что означает 333?",
-    "В первом дропе всего 333 футболки. Это размер тиража, а не счётчик оставшегося товара."
+    "В первом тираже 333 футболки."
    ]
   ],
   "zoom": "Посмотреть полную фотографию",
@@ -148,7 +153,7 @@
   "gallery": "Фотографии футболки",
   "note": "Заказ оформляется в переписке в Instagram. На сайте оплата не принимается.",
   "material": "Плотный хлопок / 280 г/м²",
-  "silhouette": "Свободный крой boxy oversize",
+  "silhouette": "Свободный крой",
   "front-daylight": "Спереди · дневной свет",
   "neck-detail": "Детали горловины",
   "fabricLabel": "Ткань",
@@ -160,6 +165,11 @@
   "sizeLabel": "Размер",
   "footerNote": "Заказ оформляется в переписке в Instagram.",
   "detailsTitle": "Детали",
+  "petronas": "В городе",
+  "cityName": "Куала-Лумпур",
+  "cityCaption": "У башен Petronas",
+  "cityAlt": "Белая футболка Love Above All со спины на фоне башен Petronas",
+  "lookbook": "Лукбук",
   "photoAlts": {
    "embroidery-macro": "Синяя вышивка рыбы крупным планом на белом хлопке",
    "window": "Футболка Love Above All на девушке у освещённого солнцем окна",
@@ -188,7 +198,7 @@
   "shipping": "Envío gratis a todo el mundo",
   "run": "333 unidades en el primer lanzamiento",
   "price": "Precio en dólares estadounidenses",
-  "order": "Dinos tu talla y el país de entrega. Confirmaremos los detalles por mensaje.",
+  "order": "Dinos tu talla y el país de entrega por Instagram.",
   "chosen": "Tu elección: {size}",
   "details": "En los detalles",
   "front": "Por delante",
@@ -204,7 +214,7 @@
    "Detalle del cuello: Bible Answer / 1 COR 13:4"
   ],
   "story": "El amor, por encima de todo.",
-  "storyText": "El pez por delante. Una cruz y Love Above All por detrás. Hilo azul sobre tela blanca: la primera camiseta de Bible Answer, con un recordatorio para el día a día.",
+  "storyText": "Por delante lleva un pez bordado en azul. Por detrás, una cruz y la frase Love Above All. En el interior del cuello se lee 1 COR 13:4.",
   "caption": "Fotografías reales del primer lanzamiento. La luz nocturna puede cambiar la apariencia de los colores.",
   "faq": "Antes de pedir",
   "questions": [
@@ -222,7 +232,7 @@
    ],
    [
     "¿Qué significa 333?",
-    "El primer lanzamiento tiene 333 camisetas en total. Es el tamaño de la edición, no un contador de existencias."
+    "La primera tirada consta de 333 camisetas."
    ]
   ],
   "zoom": "Ver la fotografía completa",
@@ -235,7 +245,7 @@
   "gallery": "Fotografías del producto",
   "note": "El pedido se acuerda por Instagram. Esta web no acepta pagos.",
   "material": "Algodón de alto gramaje / 280 g/m²",
-  "silhouette": "Corte boxy oversize",
+  "silhouette": "Corte amplio y recto",
   "front-daylight": "Frente · luz natural",
   "neck-detail": "Detalle del cuello",
   "fabricLabel": "Tejido",
@@ -247,6 +257,11 @@
   "sizeLabel": "Talla",
   "footerNote": "El pedido se acuerda por Instagram.",
   "detailsTitle": "Detalles",
+  "petronas": "En la ciudad",
+  "cityName": "Kuala Lumpur",
+  "cityCaption": "Torres Petronas",
+  "cityAlt": "Camiseta blanca Love Above All vista de espaldas frente a las torres Petronas",
+  "lookbook": "Más imágenes de la colección",
   "photoAlts": {
    "embroidery-macro": "Detalle del pez bordado en azul sobre algodón blanco",
    "window": "Camiseta Love Above All en una mujer sentada junto a una ventana iluminada por el sol",
@@ -275,7 +290,7 @@
   "shipping": "Frete grátis para todo o mundo",
   "run": "333 peças no primeiro drop",
   "price": "Preço em dólares americanos",
-  "order": "Diga seu tamanho e o país de entrega. Confirmaremos os detalhes por mensagem.",
+  "order": "Mande seu tamanho e o país de entrega pelo Instagram.",
   "chosen": "Sua escolha: {size}",
   "details": "Nos detalhes",
   "front": "Frente",
@@ -291,7 +306,7 @@
    "Detalhe da gola: Bible Answer / 1 COR 13:4"
   ],
   "story": "O amor, acima de tudo.",
-  "storyText": "O peixe na frente. Uma cruz e Love Above All nas costas. Linha azul sobre tecido branco: a primeira camiseta Bible Answer, com um lembrete para levar ao dia a dia.",
+  "storyText": "Na frente, tem um peixe bordado em azul. Nas costas, uma cruz e a frase Love Above All. Na parte interna da gola, está escrito 1 COR 13:4.",
   "caption": "Fotos reais do primeiro drop. A iluminação noturna pode alterar a aparência das cores.",
   "faq": "Antes de pedir",
   "questions": [
@@ -309,7 +324,7 @@
    ],
    [
     "O que significa 333?",
-    "O primeiro drop tem 333 camisetas no total. Esse é o tamanho da edição, não um contador do estoque restante."
+    "O primeiro lote tem 333 camisetas."
    ]
   ],
   "zoom": "Ver a foto inteira",
@@ -322,7 +337,7 @@
   "gallery": "Fotos do produto",
   "note": "O pedido é combinado pelo Instagram. Este site não recebe pagamentos.",
   "material": "Algodão encorpado / 280 g/m²",
-  "silhouette": "Modelagem boxy oversized",
+  "silhouette": "Modelagem ampla e reta",
   "front-daylight": "Frente · luz natural",
   "neck-detail": "Detalhe da gola",
   "fabricLabel": "Tecido",
@@ -334,6 +349,11 @@
   "sizeLabel": "Tamanho",
   "footerNote": "O pedido é combinado pelo Instagram.",
   "detailsTitle": "Detalhes",
+  "petronas": "Na cidade",
+  "cityName": "Kuala Lumpur",
+  "cityCaption": "Torres Petronas",
+  "cityAlt": "Camiseta branca Love Above All vista de costas em frente às Torres Petronas",
+  "lookbook": "Mais imagens da coleção",
   "photoAlts": {
    "embroidery-macro": "Detalhe do peixe bordado em azul sobre algodão branco",
    "window": "Camiseta Love Above All em uma mulher sentada junto a uma janela iluminada pelo sol",
@@ -362,7 +382,7 @@
   "shipping": "Livraison offerte dans le monde entier",
   "run": "333 pièces pour la première édition",
   "price": "Prix en dollars américains",
-  "order": "Indique ta taille et le pays de livraison. Nous confirmerons les détails par message.",
+  "order": "Écris-nous sur Instagram avec ta taille et le pays de livraison.",
   "chosen": "Ton choix : {size}",
   "details": "Tout est dans les détails",
   "front": "Devant",
@@ -378,7 +398,7 @@
    "Détail du col: Bible Answer / 1 COR 13:4"
   ],
   "story": "L’amour, par-dessus tout.",
-  "storyText": "Le poisson devant. Une croix et Love Above All dans le dos. Du fil bleu sur du tissu blanc : le premier T-shirt Bible Answer, avec un rappel à emporter au quotidien.",
+  "storyText": "Un poisson bleu est brodé devant. Dans le dos, il y a une croix et les mots Love Above All. À l’intérieur du col, on lit 1 COR 13:4.",
   "caption": "Photos réelles de la première édition. L’éclairage nocturne peut modifier l’apparence des couleurs.",
   "faq": "Avant de commander",
   "questions": [
@@ -396,7 +416,7 @@
    ],
    [
     "Que signifie 333 ?",
-    "La première édition comprend 333 T-shirts au total. Il s’agit de la taille de l’édition, pas d’un compteur de stock restant."
+    "La première série compte 333 T-shirts."
    ]
   ],
   "zoom": "Voir la photo entière",
@@ -409,7 +429,7 @@
   "gallery": "Photos du produit",
   "note": "La commande se fait par message sur Instagram. Aucun paiement n’est effectué sur ce site.",
   "material": "Coton épais / 280 g/m²",
-  "silhouette": "Coupe boxy oversize",
+  "silhouette": "Coupe ample et droite",
   "front-daylight": "Devant · lumière naturelle",
   "neck-detail": "Détail du col",
   "fabricLabel": "Tissu",
@@ -421,6 +441,11 @@
   "sizeLabel": "Taille",
   "footerNote": "La commande se fait par message sur Instagram.",
   "detailsTitle": "Détails",
+  "petronas": "En ville",
+  "cityName": "Kuala Lumpur",
+  "cityCaption": "Tours Petronas",
+  "cityAlt": "T-shirt blanc Love Above All vu de dos devant les tours Petronas",
+  "lookbook": "Autres images de la collection",
   "photoAlts": {
    "embroidery-macro": "Gros plan du poisson brodé en bleu sur le coton blanc",
    "window": "T-shirt Love Above All porté par une femme assise près d’une fenêtre ensoleillée",
@@ -449,7 +474,7 @@
   "shipping": "Libreng shipping sa buong mundo",
   "run": "333 piraso sa unang drop",
   "price": "Presyo sa dolyar ng US",
-  "order": "Sabihin ang size mo at bansang padadalhan. Kukumpirmahin natin ang mga detalye sa mensahe.",
+  "order": "I-message sa amin sa Instagram ang size mo at ang bansang padadalhan.",
   "chosen": "Pinili mo: {size}",
   "details": "Nasa mga detalye",
   "front": "Harap",
@@ -465,7 +490,7 @@
    "Detalye ng kuwelyo: Bible Answer / 1 COR 13:4"
   ],
   "story": "Pag-ibig, higit sa lahat.",
-  "storyText": "Isda sa harap. Krus at Love Above All sa likod. Asul na sinulid sa puting tela: ang unang Bible Answer T-shirt, na may paalala para sa araw-araw.",
+  "storyText": "May burdang asul na isda sa harap. Nasa likod ang krus at ang mga salitang Love Above All. Nakasulat ang 1 COR 13:4 sa loob ng kuwelyo.",
   "caption": "Tunay na mga larawan ng unang drop. Maaaring mag-iba ang hitsura ng kulay dahil sa ilaw sa gabi.",
   "faq": "Bago umorder",
   "questions": [
@@ -483,7 +508,7 @@
    ],
    [
     "Ano ang ibig sabihin ng 333?",
-    "May kabuuang 333 T-shirt ang unang drop. Ito ang dami ng edisyon, hindi live na bilang ng natitirang stock."
+    "333 T-shirt ang nasa unang batch."
    ]
   ],
   "zoom": "Tingnan ang buong larawan",
@@ -508,6 +533,11 @@
   "sizeLabel": "Size",
   "footerNote": "Sa Instagram pinag-uusapan ang order.",
   "detailsTitle": "Mga detalye",
+  "petronas": "Sa lungsod",
+  "cityName": "Kuala Lumpur",
+  "cityCaption": "Petronas Towers",
+  "cityAlt": "Puting Love Above All na T-shirt, kuha mula sa likod sa harap ng Petronas Towers",
+  "lookbook": "Iba pang larawan ng koleksiyon",
   "photoAlts": {
    "embroidery-macro": "Malapitang kuha ng asul na burdang isda sa puting tela",
    "window": "Love Above All T-shirt na suot ng babaeng nakaupo sa tabi ng bintanang nasisinagan ng araw",
