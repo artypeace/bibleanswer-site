@@ -11,6 +11,7 @@ Static pages, published by GitHub Pages from `main` (root) under the custom doma
 | `/press/` | The press kit, in English: descriptions to copy, the facts, the app icon, news, contact. In the sitemap. |
 | `/articles/`, `/ru/articles/` | Reading-guide indexes and four original guides in English / Russian. Static HTML, matching language alternatives, Article / BreadcrumbList data and local share cards. |
 | `/feed.xml` | RSS 2.0 feed of English reading guides plus news in `tools/news.json` (the press page lists the news). |
+| `/connectors/`, `/ru/connectors/`, etc. | Setup instructions for Bible Answer in Claude, Grok, and Codex, in all six languages. |
 | `/llms.txt` `/llms-full.txt` | A short and a full description for AI assistants (llmstxt.org format), built from the same strings as the site. |
 | `/<key>.txt` | The IndexNow key file (see below). |
 | `/links` | The page behind "link in bio": language choice, the App Store, the social accounts. Not in the sitemap, `noindex`. |
@@ -32,6 +33,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/site-strings.json` | The website's own copy, titles, descriptions and the example answer, in all six languages. |
 | `tools/build.py` | Turns the files above into pages, `sitemap.xml`, `robots.txt`. |
 | `tools/articles.json`, `tools/build_articles.py` | Original guide content and the static page renderer. Dates belong to articles, not rebuilds. |
+| `tools/connector-copy.json`, `tools/build_connectors.py` | Localized connector instructions and their static page renderer. |
 | `tools/article-verses/` | Exact JSON stdout from the social workspace’s `tools/verse.py`; source quotations are never edited or translated by hand. |
 | `articles.css` | Styles loaded only by reading-guide pages; the landing page remains unchanged except for a footer link. |
 | `tools/make_article_og.py` | Regenerates the eight 1200×630 JPEG share cards from existing local artwork and fonts. Optional Pillow / fontTools; ordinary builds do not need them. |

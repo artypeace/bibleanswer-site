@@ -20,6 +20,7 @@ Optional website GA4 loads after consent when analyticsMeasurementId is configur
 """
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 import build_articles
+import build_connectors
 import build_shop
 import theme
 import branding
@@ -703,7 +704,7 @@ def home(lang):
 
 <footer class="foot">
   {branding.footer_brand(lang, rel(lang, lang))}
-  <p><a href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a><span class="dot">·</span><wbr><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
+  <p><a href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a><span class="dot">·</span><wbr><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="/{build_connectors.path(lang)}">{e(build_connectors.COPY[lang]["link"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
   <p>{foot_langs}</p>
   {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>
@@ -821,6 +822,7 @@ def sitemap(lastmod):
         rows.append(f'  <url>\n    <loc>{site}/{name}</loc>{stamp}\n  </url>')
     rows.append(f'  <url>\n    <loc>{site}/press/</loc>{stamp}\n  </url>')
     rows.extend(build_articles.sitemap_rows(ROOT, CFG))
+    rows.extend(build_connectors.sitemap_rows(CFG))
     rows.extend(build_shop.sitemap_rows(CFG))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
@@ -1056,6 +1058,9 @@ def llms_txt():
     out += [f'- [{LANG_EN[l] if l == "en" else LANG_EN[l] + " – " + APP[l]["name"]}]({site}/{SITE[l]["path"]}): {SITE[l]["metaDescription"]}' for l in LANGS]
     out += ['', '## Reading guides', '']
     out += [f'- [{LANG_EN[l]}]({site}/{build_articles.hub(l)})' for l in LANGS]
+    out += ['', '## Connect Bible Answer', '',
+            f'- [Setup for Claude, Grok, and Codex]({site}/{build_connectors.path("en")}): connect the published reading guides in chat.',
+            f'- [Connector documentation](https://mcp.bibleanswer.app/docs): supported topics, languages, and source links.']
     out += ['', '## About and policies', '',
             f'- [Press kit]({site}/press/): descriptions to copy, facts, the app icon, contact.',
             f'- [Privacy Policy]({site}/privacy#en): what leaves the device and what does not.',
@@ -1113,7 +1118,7 @@ def llms_full():
             '**Who makes it?** One independent developer.', '',
             f'**Where can I get it?** {"On the App Store: " + CFG["appStoreUrl"] if live() else "It is launching soon on the App Store; the page " + CFG["appStoreUrl"] + " opens at release."}', '',
             '## Links', '',
-            f'- Website: {site}/', f'- Reading guides: {site}/articles/', f'- Press kit: {site}/press/', f'- Support: {site}/support', f'- Contact: {CFG["contactEmail"]}', '']
+            f'- Website: {site}/', f'- Reading guides: {site}/articles/', f'- Connector setup: {site}/{build_connectors.path("en")}', f'- Press kit: {site}/press/', f'- Support: {site}/support', f'- Contact: {CFG["contactEmail"]}', '']
     return '\n'.join(out)
 
 
@@ -1164,6 +1169,7 @@ def main():
     write_legal()
     write_extras()
     build_articles.write(ROOT, CFG, head_common, og_head)
+    build_connectors.write(ROOT, CFG, head_common, og_head)
     build_shop.write(ROOT, CFG, head_common, og_head)
     version_stylesheets()
     (ROOT / 'sitemap.xml').write_text(sitemap(a.lastmod), encoding='utf-8')

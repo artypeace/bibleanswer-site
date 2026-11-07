@@ -677,6 +677,66 @@
     <lastmod>2026-10-03</lastmod>
   </url>
   <url>
+    <loc>https://bibleanswer.app/connectors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/connectors/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/ru/connectors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/connectors/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/es/connectors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/connectors/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/pt/connectors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/connectors/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fr/connectors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/connectors/"/>
+  </url>
+  <url>
+    <loc>https://bibleanswer.app/fil/connectors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibleanswer.app/es/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bibleanswer.app/pt/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibleanswer.app/fr/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bibleanswer.app/fil/connectors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibleanswer.app/connectors/"/>
+  </url>
+  <url>
     <loc>https://bibleanswer.app/shop/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bibleanswer.app/shop/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bibleanswer.app/ru/shop/"/>

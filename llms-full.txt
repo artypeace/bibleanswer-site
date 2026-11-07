@@ -107,6 +107,7 @@ The app and the website are in six languages. Each uses one Bible translation, q
 
 - Website: https://bibleanswer.app/
 - Reading guides: https://bibleanswer.app/articles/
+- Connector setup: https://bibleanswer.app/connectors/
 - Press kit: https://bibleanswer.app/press/
 - Support: https://bibleanswer.app/support
 - Contact: support@bibleanswer.app

@@ -30,9 +30,10 @@ def stamp(date,lang):
 def alternatives(cfg,pages,current):
  urls={a['lang']:cfg['siteUrl'].rstrip('/')+'/'+path(a) for a in pages}
  return ''.join(f'<link rel="alternate" hreflang="{LANG_CODE[lang]}" href="{E(url)}">\n' for lang,url in urls.items())+f'<link rel="alternate" hreflang="x-default" href="{E(urls["en"])}">\n'
-def navigation(lang,pages):
+def navigation(lang,pages,language_path=None):
  u=UI[lang]
- choices=''.join(f'<li><a href="/{path(a) if a.get("slug") else hub(a["lang"])}" lang="{LANG_CODE[a["lang"]]}" hreflang="{LANG_CODE[a["lang"]]}"'+(' aria-current="page"' if a['lang']==lang else '')+f'>{UI[a["lang"]]["label"]}</a></li>' for a in pages)
+ link_path=language_path or (lambda a:path(a) if a.get('slug') else hub(a['lang']))
+ choices=''.join(f'<li><a href="/{link_path(a)}" lang="{LANG_CODE[a["lang"]]}" hreflang="{LANG_CODE[a["lang"]]}"'+(' aria-current="page"' if a['lang']==lang else '')+f'>{UI[a["lang"]]["label"]}</a></li>' for a in pages)
  return (f'<a class="article-skip" href="#main">{u["skip"]}</a><header class="article-nav"><div class="article-nav__in">'
  '<a class="mark" href="'+home(lang)+'">Bible Answer'+(f'<span class="mark__local" lang="{LANG_CODE[lang]}">{E(branding.local_name(lang))}</span>' if branding.local_name(lang) else '')+'</a>'
  f'<nav aria-label="{u["hub"]}"><a href="{home(lang)}">{u["home"]}</a><a href="/{hub(lang)}">{u["hub"]}</a></nav>'

@@ -19,11 +19,13 @@ PATH = {'en': '', 'pt': 'pt', 'es': 'es', 'ru': 'ru', 'fr': 'fr', 'fil': 'fil'}
 PAGES = ['index.html'] + [f'{p}/index.html' for p in PATH.values() if p] + ['links/index.html', '404.html',
                                                                               'privacy.html', 'terms.html', 'support.html', 'press/index.html']
 import build_articles
+import build_connectors
 import build_shop
 ARTICLES = build_articles.load(ROOT)
 PAGES += [build_shop.path(l) + 'index.html' for l in LANGS]
 PAGES += [build_articles.hub(l) + 'index.html' for l in LANGS]
 PAGES += [build_articles.path(a) + 'index.html' for a in ARTICLES]
+PAGES += [build_connectors.path(l) + 'index.html' for l in LANGS]
 problems = []
 
 
@@ -203,6 +205,8 @@ for need in [f'{SITE}/' + (PATH[l] + '/' if PATH[l] else '') for l in LANGS] + [
 for lang in LANGS:
     if SITE + '/' + build_articles.hub(lang) not in locs:
         bad('sitemap.xml', f'{lang} reading guide index is not listed')
+    if SITE + '/' + build_connectors.path(lang) not in locs:
+        bad('sitemap.xml', f'{lang} connector setup is not listed')
 for lang in LANGS:
     name = build_articles.hub(lang) + 'index.html'
     expected = {build_articles.LANG_CODE[l]: SITE + '/' + build_articles.hub(l) for l in LANGS}

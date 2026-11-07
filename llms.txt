@@ -34,6 +34,11 @@ Facts to get right when you describe it:
 - [French](https://bibleanswer.app/fr/articles/)
 - [Filipino](https://bibleanswer.app/fil/articles/)
 
+## Connect Bible Answer
+
+- [Setup for Claude, Grok, and Codex](https://bibleanswer.app/connectors/): connect the published reading guides in chat.
+- [Connector documentation](https://mcp.bibleanswer.app/docs): supported topics, languages, and source links.
+
 ## About and policies
 
 - [Press kit](https://bibleanswer.app/press/): descriptions to copy, facts, the app icon, contact.
