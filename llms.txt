@@ -4,7 +4,7 @@
 
 Facts to get right when you describe it:
 
-- Free. An optional one-time tip supports the app; nothing is locked or unlocked by it.
+- Free, with no ads or subscriptions. The only in-app purchases are optional one-time tips. Every feature is available without a tip.
 - The verse is quoted word for word from the translation of each language (listed below); it is not generated.
 - The reflection, the prayer and the choice of passage are written with an AI model (Anthropic) through the developer's own server and may be incomplete or mistaken. The app says so.
 - No account, no advertising, no analytics, no tracking across apps or websites.
@@ -18,12 +18,21 @@ Facts to get right when you describe it:
 
 ## The website, one page per language
 
-- [English](https://bibleanswer.app/): Bible Answer is a Bible study app with verses for everyday life, explanations, reading plans and prayer. For iPhone, iPad, Mac and Apple Watch.
-- [Portuguese (Brazil) – Português](https://bibleanswer.app/pt/): Bible Answer é um app para ler e estudar a Bíblia, com versículos para o dia a dia, explicações, planos de leitura e oração. iPhone, iPad, Mac e Apple Watch.
-- [Spanish – Español](https://bibleanswer.app/es/): Bible Answer es una app para leer y estudiar la Biblia: versículos para la vida diaria, explicaciones, planes de lectura y oración. iPhone, iPad, Mac y Apple Watch.
-- [Russian – Русский](https://bibleanswer.app/ru/): Bible Answer — приложение для чтения и изучения Библии: стихи для жизненных ситуаций, объяснения, планы чтения и молитвы. iPhone, iPad, Mac и Apple Watch.
-- [French – Français](https://bibleanswer.app/fr/): Bible Answer est une app pour lire et étudier la Bible : versets pour le quotidien, explications, plans de lecture et prière. iPhone, iPad, Mac et Apple Watch.
-- [Filipino – Filipino](https://bibleanswer.app/fil/): Ang Bible Answer ay app para sa pag-aaral ng Bibliya, na may mga talata, paliwanag, plano sa pagbasa at panalangin. iPhone, iPad, Mac at Apple Watch.
+- [English](https://bibleanswer.app/): A free Bible app for iPhone, iPad, Mac and Apple Watch. Read Scripture with verse-by-verse explanations, plans and prayers. No ads or subscriptions.
+- [Portuguese (Brazil) – Português](https://bibleanswer.app/pt/): Uma Bíblia gratuita para iPhone, iPad, Mac e Apple Watch. Explicações de cada versículo, planos de leitura e orações. Sem anúncios nem assinaturas.
+- [Spanish – Español](https://bibleanswer.app/es/): Una Biblia gratis para iPhone, iPad, Mac y Apple Watch. Explicaciones de cada versículo, planes de lectura y oraciones. Sin anuncios ni suscripciones.
+- [Russian – Русский](https://bibleanswer.app/ru/): Бесплатная Библия на русском для iPhone, iPad, Mac и Apple Watch. Объяснения каждого стиха, планы чтения и молитвы. Без рекламы и подписки.
+- [French – Français](https://bibleanswer.app/fr/): Une Bible gratuite pour iPhone, iPad, Mac et Apple Watch. Explications de chaque verset, plans de lecture et prières. Sans publicité ni abonnement.
+- [Filipino – Filipino](https://bibleanswer.app/fil/): Libreng Biblia para sa iPhone, iPad, Mac at Apple Watch. May paliwanag sa bawat talata, mga plano sa pagbasa at panalangin. Walang ads o subscription.
+
+## Reading guides
+
+- [English](https://bibleanswer.app/articles/)
+- [Portuguese (Brazil)](https://bibleanswer.app/pt/articles/)
+- [Spanish](https://bibleanswer.app/es/articles/)
+- [Russian](https://bibleanswer.app/ru/articles/)
+- [French](https://bibleanswer.app/fr/articles/)
+- [Filipino](https://bibleanswer.app/fil/articles/)
 
 ## About and policies
 

@@ -371,12 +371,17 @@ def home(lang):
     store_nav = (f'<a class="btn btn--gold btn--small" href="{e(CFG["appStoreUrl"])}">{e(s["storeText"])}</a>')
 
     shots = [shot_file(d, lang, n) for d, k in SHOTS.items() for n in range(1, k + 1)]
+    app_profiles = [a['url'] for a in social_accounts(lang)]
+    if live():
+        app_profiles.insert(0, CFG['appStoreUrl'])
     ld_app = {
-        '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', **({'sameAs': [a['url'] for a in social_accounts(lang)]} if social_accounts(lang) else {}), 'description': s['metaDescription'],
+        '@type': 'SoftwareApplication', '@id': site + '/#app', 'name': 'Bible Answer', 'description': s['metaDescription'],
         'applicationCategory': 'ReferenceApplication', 'operatingSystem': 'iOS, iPadOS, watchOS' + (', macOS' if CFG.get('macAvailable') else ''), 'url': canonical, 'image': og,
         'inLanguage': [SITE[l]['hreflang'] for l in LANGS], 'downloadUrl': CFG['appStoreUrl'],
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
     }
+    if app_profiles:
+        ld_app['sameAs'] = app_profiles
     if any(shots):
         ld_app['screenshot'] = [f'{site}/{p}' for p in shots if p]
     ld = {'@context': 'https://schema.org', '@graph': [
@@ -591,7 +596,7 @@ def home(lang):
       <h1 id="h-hero" class="split split--hero grad">{split_words('Bible Answer')}</h1>
       {local_name_line(lang)}
       <p class="hero__tagline">{e(ap["tagline"])}</p>
-      <p class="hero__sub rise" style="--i:2">{e(ap["subtitle"])}</p>
+      <p class="hero__sub rise" style="--i:2">{e(s["heroDescription"])}</p>
       <div class="hero__cta rise" style="--i:3">
         {store}
         <a class="link" href="#ask">{e(s["seeHow"])}</a>
@@ -921,7 +926,7 @@ def press_page():
         ('What it is', 'A free Bible app: say what is on your heart, get a verse word for word, what it means and a short prayer'),
         ('Platforms', f'iPhone, iPad, Apple Watch and Mac. Requires {CFG.get("requirements", "")}'),
         ('Languages', ', '.join(LANG_EN[l] for l in LANGS)),
-        ('Price', 'Free. An optional one-time tip supports the app; nothing is locked or unlocked by it'),
+        ('Price', 'Free, with no ads or subscriptions. The only in-app purchases are optional one-time tips. Every feature is available without a tip'),
         ('Privacy', 'No account, no advertising, no analytics, no tracking across apps or websites'),
         ('How answers are made', 'The verse is quoted from the translation unchanged. The reflection and the prayer are written with an AI model through the '
                                  "app's own server, and the app says they may be incomplete or mistaken"),
@@ -1032,7 +1037,7 @@ def press_page():
 
 def llms_facts():
     return [
-        'Free. An optional one-time tip supports the app; nothing is locked or unlocked by it.',
+        'Free, with no ads or subscriptions. The only in-app purchases are optional one-time tips. Every feature is available without a tip.',
         'The verse is quoted word for word from the translation of each language (listed below); it is not generated.',
         'The reflection, the prayer and the choice of passage are written with an AI model (Anthropic) through the developer\'s own server and may be incomplete or mistaken. The app says so.',
         'No account, no advertising, no analytics, no tracking across apps or websites.',
@@ -1049,6 +1054,8 @@ def llms_txt():
     out.append(f'- [Bible Answer on the App Store]({CFG["appStoreUrl"]}): ' + ('the download page.' if live() else 'the download page; it opens when the app is released.'))
     out += ['', '## The website, one page per language', '']
     out += [f'- [{LANG_EN[l] if l == "en" else LANG_EN[l] + " – " + APP[l]["name"]}]({site}/{SITE[l]["path"]}): {SITE[l]["metaDescription"]}' for l in LANGS]
+    out += ['', '## Reading guides', '']
+    out += [f'- [{LANG_EN[l]}]({site}/{build_articles.hub(l)})' for l in LANGS]
     out += ['', '## About and policies', '',
             f'- [Press kit]({site}/press/): descriptions to copy, facts, the app icon, contact.',
             f'- [Privacy Policy]({site}/privacy#en): what leaves the device and what does not.',
@@ -1098,7 +1105,7 @@ def llms_full():
             '- A tip is made and verified by Apple (StoreKit); no third-party purchase service is involved. The app sends a random identifier it makes for itself, used only to count the day\'s questions.',
             f'- Full text: {site}/privacy#en', '',
             '## Questions and answers', '',
-            '**Is Bible Answer free?** Yes. If you wish to support it, you can leave a tip, once. Nothing is locked or unlocked by it.', '',
+            '**Is Bible Answer free?** Yes, with no ads or subscriptions. The only in-app purchases are optional one-time tips. Every feature is available without a tip.', '',
             '**Does it need an account?** No.', '',
             '**Are the verses written by AI?** No. Each verse is quoted word for word from the translation. The reflection, the prayer and the choice of passage are written with an AI model and may be incomplete or mistaken; the app says so.', '',
             '**Which devices?** iPhone, iPad, Apple Watch and Mac.', '',
@@ -1106,7 +1113,7 @@ def llms_full():
             '**Who makes it?** One independent developer.', '',
             f'**Where can I get it?** {"On the App Store: " + CFG["appStoreUrl"] if live() else "It is launching soon on the App Store; the page " + CFG["appStoreUrl"] + " opens at release."}', '',
             '## Links', '',
-            f'- Website: {site}/', f'- Press kit: {site}/press/', f'- Support: {site}/support', f'- Contact: {CFG["contactEmail"]}', '']
+            f'- Website: {site}/', f'- Reading guides: {site}/articles/', f'- Press kit: {site}/press/', f'- Support: {site}/support', f'- Contact: {CFG["contactEmail"]}', '']
     return '\n'.join(out)
 
 

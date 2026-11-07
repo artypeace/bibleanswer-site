@@ -64,7 +64,7 @@ Anger and Irritation, Anxiety, When You Feel Unable, Decisions, No Strength Left
 - iPad: Roomier pages, made for reading.
 - Apple Watch: The word for the day, the prayer for the hour and 5 minutes of quiet — without your phone.
 - Mac: The same Bible Answer in a window of its own: a sidebar, the keyboard and the menu bar.
-- Android: Coming in the next few weeks. Until then, follow us on Instagram to hear first.
+- Android: The Android version is in development. We’ll announce its release on Instagram.
 - Requires iOS 26, iPadOS 26, watchOS 26 or macOS 26, or later.
 
 ## Languages and Bible texts
@@ -89,7 +89,7 @@ The app and the website are in six languages. Each uses one Bible translation, q
 
 ## Questions and answers
 
-**Is Bible Answer free?** Yes. If you wish to support it, you can leave a tip, once. Nothing is locked or unlocked by it.
+**Is Bible Answer free?** Yes, with no ads or subscriptions. The only in-app purchases are optional one-time tips. Every feature is available without a tip.
 
 **Does it need an account?** No.
 
@@ -106,6 +106,7 @@ The app and the website are in six languages. Each uses one Bible translation, q
 ## Links
 
 - Website: https://bibleanswer.app/
+- Reading guides: https://bibleanswer.app/articles/
 - Press kit: https://bibleanswer.app/press/
 - Support: https://bibleanswer.app/support
 - Contact: support@bibleanswer.app

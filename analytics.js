@@ -87,7 +87,15 @@
   let loaded = false;
   function tag() { window.dataLayer = window.dataLayer || []; window.dataLayer.push(arguments); }
   const cleanLocation = () => location.origin + location.pathname;
-  const cleanReferrer = () => { try { const u = new URL(document.referrer); return u.origin + u.pathname; } catch (_) { return ''; } };
+  const cleanReferrer = () => {
+    try {
+      const referrer = new URL(document.referrer);
+      return referrer.hostname === 'chatgpt.com' ? referrer.origin : referrer.origin + referrer.pathname;
+    } catch (_) { return ''; }
+  };
+  const chatgptCampaign = () => new URLSearchParams(location.search).get('utm_source') === 'chatgpt.com'
+    ? { campaign_source: 'chatgpt.com', campaign_medium: 'referral' }
+    : {};
   function start() {
     if (loaded) return;
     loaded = true;
@@ -96,7 +104,7 @@
     tag('consent', 'default', denied);
     tag('consent', 'update', { ...denied, analytics_storage: 'granted' });
     tag('js', new Date());
-    tag('config', id, { allow_google_signals: false, allow_ad_personalization_signals: false, page_location: cleanLocation(), page_referrer: cleanReferrer(), cookie_expires: 15552000, cookie_update: false });
+    tag('config', id, { allow_google_signals: false, allow_ad_personalization_signals: false, page_location: cleanLocation(), page_referrer: cleanReferrer(), ...chatgptCampaign(), cookie_expires: 15552000, cookie_update: false });
     const google = document.createElement('script');
     google.async = true;
     google.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);

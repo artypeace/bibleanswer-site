@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
 const code = fs.readFileSync('analytics.js', 'utf8');
-function boot({saved=null, lang='en', id='G-P0ZK25PW9Q', brokenStorage=false}={}) {
+function boot({saved=null, lang='en', id='G-P0ZK25PW9Q', brokenStorage=false, search='', referrer='https://example.org/article?secret=value#fragment'}={}) {
   class Element {
     constructor(tag) { this.tagName=tag; this.children=[]; this.handlers={}; this.hidden=false; this.dataset={}; }
     append(...els) { this.children.push(...els); }
@@ -16,11 +16,11 @@ function boot({saved=null, lang='en', id='G-P0ZK25PW9Q', brokenStorage=false}={}
   }
   const state={storage:saved ? JSON.stringify(saved):null, cookies:[],focus:null,focusOptions:null,keyPrevented:false};
   const head=new Element('head'), body=new Element('body'), footer=new Element('footer');
-  const doc={currentScript:{dataset:{gaId:id}},documentElement:{lang}, referrer:'https://example.org/article?secret=value#fragment',head,body,querySelector:()=>footer,createElement:t=>new Element(t)};
+  const doc={currentScript:{dataset:{gaId:id}},documentElement:{lang}, referrer,head,body,querySelector:()=>footer,createElement:t=>new Element(t)};
   Object.defineProperty(doc,'cookie',{get:()=> '_ga=a; _ga_TEST=b; unrelated=yes',set:v=>state.cookies.push(v)});
   const window={};
   const storage={getItem(){if(brokenStorage)throw Error('blocked');return state.storage;},setItem(k,v){if(brokenStorage)throw Error('blocked');state.storage=v;}};
-  vm.runInNewContext(code,{document:doc,window,localStorage:storage,location:{origin:'https://bibleanswer.app',pathname:'/ru/',hostname:'bibleanswer.app'},URL,Date,encodeURIComponent});
+  vm.runInNewContext(code,{document:doc,window,localStorage:storage,location:{origin:'https://bibleanswer.app',pathname:'/ru/',hostname:'bibleanswer.app',search},URL,URLSearchParams,Date,encodeURIComponent});
   return {...state,state,head,body,footer,window,panel:body.children[0], settings:footer.children[0]};
 }
 function visibleText(element) {
@@ -85,6 +85,7 @@ for (const lang of ['en','ru','es','pt-BR','fr','fil']) {
   const config=b.window.dataLayer.find(x=>x[0]==='config')[2];
   assert.equal(config.page_location,'https://bibleanswer.app/ru/');
   assert.equal(config.page_referrer,'https://example.org/article');
+  assert.equal(config.campaign_source,undefined);
   assert.equal(config.allow_google_signals,false);
   assert.equal(config.allow_ad_personalization_signals,false);
   b.settings.click(); no.click(); assert.equal(b.window['ga-disable-G-P0ZK25PW9Q'],true);
@@ -115,4 +116,15 @@ assert.equal(blocked.head.children.length,0);
 controls(blocked).configure.click(); assert.equal(blocked.head.children.length,0);
 controls(blocked).yes.click(); assert.equal(blocked.head.children.length,1);
 blocked.settings.click(); controls(blocked).no.click(); assert.equal(blocked.window['ga-disable-G-P0ZK25PW9Q'],true);
-console.log('ok: 6 localized compact notices; configure/close/Escape never consent; saved choice and expiry; footer withdrawal; blocked storage; no Google before consent; advertising denied; no duplicate Google tag');
+const fromChatGPT=boot({search:'?utm_source=chatgpt.com&secret=value',referrer:'https://chatgpt.com/c/private?secret=value'});
+assert.equal(fromChatGPT.window.dataLayer,undefined);
+controls(fromChatGPT).yes.click();
+const chatgptConfig=fromChatGPT.window.dataLayer.find(x=>x[0]==='config')[2];
+assert.equal(chatgptConfig.campaign_source,'chatgpt.com');
+assert.equal(chatgptConfig.campaign_medium,'referral');
+assert.equal(chatgptConfig.page_location,'https://bibleanswer.app/ru/');
+assert.equal(chatgptConfig.page_referrer,'https://chatgpt.com');
+assert.ok(!JSON.stringify(chatgptConfig).includes('secret'));
+const fromOther=boot({search:'?utm_source=other&secret=value',saved:{value:'granted',time:Date.now()}});
+assert.equal(fromOther.window.dataLayer.find(x=>x[0]==='config')[2].campaign_source,undefined);
+console.log('ok: 6 localized compact notices; configure/close/Escape never consent; saved choice and expiry; footer withdrawal; blocked storage; no Google before consent; advertising denied; no duplicate Google tag; allowlisted ChatGPT attribution');
