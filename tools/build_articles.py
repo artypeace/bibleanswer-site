@@ -8,6 +8,34 @@ E=lambda text:html.escape(str(text),quote=True)
 LANGS = ('en', 'ru', 'es', 'pt', 'fr', 'fil')
 LANG_CODE = {'en':'en', 'ru':'ru', 'es':'es', 'pt':'pt-BR', 'fr':'fr', 'fil':'fil'}
 UI = json.loads((pathlib.Path(__file__).parent / 'article-ui.json').read_text('utf-8'))
+INDEX_ORDER = ('start','anxiety','morning','money','psalm23','forgiveness','gratitude','wisdom')
+RELATED_ORDER = ('anxiety','morning','money','psalm23','start','forgiveness','gratitude','wisdom')
+SEARCH = {
+ 'en': ('Search the guides', 'For example: loneliness or John 11:35', 'No guides match this search.'),
+ 'ru': ('Поиск по статьям', 'Например: одиночество или Иоанна 11:35', 'По этому запросу ничего не найдено.'),
+ 'es': ('Buscar en las guías', 'Por ejemplo: soledad o Juan 11:35', 'No encontramos guías para esta búsqueda.'),
+ 'pt': ('Buscar nos guias', 'Por exemplo: solidão ou João 11:35', 'Nenhum guia corresponde à busca.'),
+ 'fr': ('Rechercher dans les guides', 'Par exemple : solitude ou Jean 11:35', 'Aucun guide ne correspond à cette recherche.'),
+ 'fil': ('Maghanap sa mga gabay', 'Halimbawa: pag-iisa o Juan 11:35', 'Walang gabay na tumutugma sa paghahanap.'),
+}
+
+def guide_order(article, order):
+ key=article['key']
+ return (order.index(key), '') if key in order else (len(order), key)
+
+def search_text(root,a):
+ fields=[a[k] for k in ('title','seo_title','category','description','lead','slug')]
+ for section in a['sections']:
+  fields.append(section['title'])
+  for block in section['blocks']:
+   if block['type'] != 'passage':continue
+   passage=verse(root,block['source']);fields.append(passage['reference'])
+   match=re.fullmatch(r'([a-z]+)-([A-Z0-9]+)-(\d+)-(\d+)(?:-(\d+))?\.json',block['source'])
+   if match:
+    _,book,chapter,first,last=match.groups()
+    fields.append(book)
+    fields.extend(f'{chapter}:{n}' for n in range(int(first),int(last or first)+1))
+ return ' '.join(fields)
 def load(root):return json.loads((root/'tools/articles.json').read_text('utf-8'))
 def path(a):return f'{"" if a["lang"]=="en" else a["lang"]+"/"}articles/{a["slug"]}/'
 def hub(lang):return f'{"" if lang=="en" else lang+"/"}articles/'
@@ -43,9 +71,10 @@ def footer(cfg,lang):
  license_note = f'<p class="article-license"><a href="https://creativecommons.org/licenses/by-sa/4.0/">{u["article_license"]}</a></p>' if lang=='fil' else ''
  brand = branding.footer_brand(lang, home(lang)) if branding.local_name(lang) else ""
  return f'<footer class="foot article-footer">{brand}<p><a href="/{build_shop.path(lang)}">{E(build_shop.COPY[lang]["shop"])}</a><span class="dot">·</span><wbr><a href="/privacy#{lang}">{u["privacy"]}</a><span class="dot">·</span><wbr><a href="/terms#{lang}">{u["terms"]}</a></p><p><a href="mailto:{E(cfg["contactEmail"])}">{E(cfg["contactEmail"])}</a></p>{license_note}</footer>'
-def card(root,a):
+def card(root,a,search=False):
  u=UI[a['lang']]
- return (f'<a class="guide-card" href="/{path(a)}"><div class="guide-card__image"><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" loading="lazy" decoding="async"></div><div class="guide-card__body">'
+ index=f' data-guide-search="{E(search_text(root,a))}"' if search else ''
+ return (f'<a class="guide-card" href="/{path(a)}"{index}><div class="guide-card__image"><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" loading="lazy" decoding="async"></div><div class="guide-card__body">'
  f'<p class="article-kicker">{E(a["category"])} <span>· {duration(root,a)} {u["reading"]}</span></p><h2>{E(a["title"])}</h2><p>{E(a["lead"])}</p><span class="guide-card__arrow" aria-hidden="true">↗</span></div></a>')
 def app_card(lang,cfg=None,key=None):
  u=UI[lang];copy=u['feature_copy'].get(key,u['apptext'])
@@ -58,12 +87,14 @@ def shell(cfg,lang,title,description,url,image,extra,body,head_common,og_head,ar
  if article:meta=meta.replace('content="website"','content="article"')
  return f'<!doctype html>\n<html lang="{LANG_CODE[lang]}">\n<head>\n'+head_common(None,title,description,url,image,'index,follow,max-image-preview:large','/',extra)+meta+'<link rel="preload" href="/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>\n<link rel="stylesheet" href="/site.css">\n<link rel="stylesheet" href="/articles.css">\n</head>\n<body class="article-site"><div class="sky" aria-hidden="true"><div class="sky__img"></div><div class="sky__veil"></div></div>'+body+'</body>\n</html>\n'
 def index_page(root,cfg,lang,all_articles,head_common,og_head):
- u=UI[lang];site=cfg['siteUrl'].rstrip('/');mine=sorted([a for a in all_articles if a['lang']==lang],key=lambda a: ('start','anxiety','morning','money','psalm23','forgiveness','gratitude','wisdom').index(a['key']));url=site+'/'+hub(lang)
+ u=UI[lang];site=cfg['siteUrl'].rstrip('/');mine=sorted([a for a in all_articles if a['lang']==lang],key=lambda a:guide_order(a,INDEX_ORDER));url=site+'/'+hub(lang)
  pairs=[dict(lang=l) for l in LANGS]
  alt=''.join(f'<link rel="alternate" hreflang="{LANG_CODE[l]}" href="{site}/{hub(l)}">\n' for l in LANGS)+f'<link rel="alternate" hreflang="x-default" href="{site}/{hub("en")}">\n'
  data={'@context':'https://schema.org','@type':'CollectionPage','name':u['index_title'],'url':url,'inLanguage':LANG_CODE[lang],'description':u['description'],'hasPart':[{'@type':'Article','headline':a['title'],'url':site+'/'+path(a)} for a in mine]}
- extra=alt+'<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False)+'</script>\n'
- body=navigation(lang,pairs)+f'<main id="main" class="guide-index"><section class="guide-index__hero"><p class="article-kicker">Bible Answer · {u["hub"]}</p><h1>{u["title"]}</h1><p>{u["lead"]}</p></section><div class="guide-grid">'+''.join(card(root,a) for a in mine)+f'</div>{app_card(lang,cfg)}</main>'+footer(cfg,lang)
+ extra=alt+'<link rel="stylesheet" href="/guide-search.css">\n<script defer src="/guide-search.js"></script>\n<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False)+'</script>\n'
+ label,placeholder,empty=map(E,SEARCH[lang])
+ search=f'<div class="guide-search" hidden><label for="guide-search">{label}</label><input id="guide-search" type="search" placeholder="{placeholder}" autocomplete="off" aria-controls="guide-results"><p role="status" hidden>{empty}</p></div>'
+ body=navigation(lang,pairs)+f'<main id="main" class="guide-index"><section class="guide-index__hero"><p class="article-kicker">Bible Answer · {u["hub"]}</p><h1>{u["title"]}</h1><p>{u["lead"]}</p></section>{search}<div class="guide-grid" id="guide-results">'+''.join(card(root,a,search=True) for a in mine)+f'</div>{app_card(lang,cfg)}</main>'+footer(cfg,lang)
  return shell(cfg,lang,u['index_title'],u['description'],url,site+f'/assets/og/og-{lang}.jpg',extra,body,head_common,og_head)
 def edition(u):
  text=E(u['edition'])
@@ -88,7 +119,7 @@ def article_page(root,cfg,a,all_articles,head_common,og_head):
  data={'@context':'https://schema.org','@graph':[{'@type':'Article','headline':a['title'],'description':a['description'],'inLanguage':LANG_CODE[lang],'datePublished':a['date'],'dateModified':a['date'],'mainEntityOfPage':{'@type':'WebPage','@id':url},'image':[image],'author':{'@type':'Organization','name':'Bible Answer','url':site+'/'+hub(lang)},'publisher':organization,'wordCount':word_count(root,a)},{'@type':'BreadcrumbList','itemListElement':breadcrumbs}]}
  extra=alternatives(cfg,pair,lang)+'<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False)+'</script>\n'+f'<meta property="article:published_time" content="{a["date"]}">\n<meta property="article:modified_time" content="{a["date"]}">\n'
  toc=''.join(f'<a href="#{s["id"]}">{E(s["title"])}</a>' for s in a['sections'])
- body=navigation(lang,pair)+f'<main id="main" class="reading-guide"><nav class="article-breadcrumbs" aria-label="{u["hub"]}"><a href="/{hub(lang)}">{u["hub"]}</a><span aria-hidden="true">/</span><span>{E(a["category"])}</span></nav><header class="article-hero"><div><p class="article-kicker">{E(a["category"])}</p><h1>{E(a["title"])}</h1><p class="article-lead">{E(a["lead"])}</p><p class="article-byline">{u["byline"]} <span>·</span> <time datetime="{a["date"]}">{stamp(a["date"],lang)}</time> <span>·</span> {duration(root,a)} {u["reading"]}</p></div><figure><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" fetchpriority="high" decoding="async"></figure></header><div class="article-layout"><aside class="article-toc"><h2>{u["contents"]}</h2><nav aria-label="{u["contents"]}">{toc}</nav></aside><article class="article-prose">'+''.join(f'<section id="{s["id"]}"><h2>{E(s["title"])}</h2>'+''.join(render_block(root,b,u) for b in s['blocks'])+'</section>' for s in a['sections'])+f'<p class="article-method-note">{edition(u)} · <a href="/terms#{lang}">{u["terms"]}</a></p></article></div>{app_card(lang,cfg,a["key"])}<section class="article-related"><h2>{u["next"]}</h2><div class="guide-grid">'+''.join(card(root,b) for b in sorted([b for b in all_articles if b['lang']==lang and b['key']!=a['key']],key=lambda b: ('anxiety','morning','money','psalm23','start','forgiveness','gratitude','wisdom').index(b['key']))[:3])+'</div></section></main>'+footer(cfg,lang)
+ body=navigation(lang,pair)+f'<main id="main" class="reading-guide"><nav class="article-breadcrumbs" aria-label="{u["hub"]}"><a href="/{hub(lang)}">{u["hub"]}</a><span aria-hidden="true">/</span><span>{E(a["category"])}</span></nav><header class="article-hero"><div><p class="article-kicker">{E(a["category"])}</p><h1>{E(a["title"])}</h1><p class="article-lead">{E(a["lead"])}</p><p class="article-byline">{u["byline"]} <span>·</span> <time datetime="{a["date"]}">{stamp(a["date"],lang)}</time> <span>·</span> {duration(root,a)} {u["reading"]}</p></div><figure><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" fetchpriority="high" decoding="async"></figure></header><div class="article-layout"><aside class="article-toc"><h2>{u["contents"]}</h2><nav aria-label="{u["contents"]}">{toc}</nav></aside><article class="article-prose">'+''.join(f'<section id="{s["id"]}"><h2>{E(s["title"])}</h2>'+''.join(render_block(root,b,u) for b in s['blocks'])+'</section>' for s in a['sections'])+f'<p class="article-method-note">{edition(u)} · <a href="/terms#{lang}">{u["terms"]}</a></p></article></div>{app_card(lang,cfg,a["key"])}<section class="article-related"><h2>{u["next"]}</h2><div class="guide-grid">'+''.join(card(root,b) for b in sorted([b for b in all_articles if b['lang']==lang and b['key']!=a['key']],key=lambda b:guide_order(b,RELATED_ORDER))[:3])+'</div></section></main>'+footer(cfg,lang)
  return shell(cfg,lang,a['seo_title']+' — Bible Answer' if len(a['seo_title'])+15<=70 else a['seo_title'],a['description'],url,image,extra,body,head_common,og_head,True)
 def write(root,cfg,head_common,og_head):
  all_articles=load(root)

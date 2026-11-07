@@ -9,7 +9,7 @@ Static pages, published by GitHub Pages from `main` (root) under the custom doma
 | `/` `/ru/` `/es/` `/pt/` `/fr/` `/fil/` | The home page in six languages: a complete page each, with its own title, description, canonical address and `hreflang` links. |
 | `/privacy` `/terms` `/support` | The legal pages, with the language anchors `#en #ru #es #pt #fr #fil`. The text is a byte-for-byte copy of the pages the App Store and the app link to today (`artypeace.github.io/bible-answer/…`). |
 | `/press/` | The press kit, in English: descriptions to copy, the facts, the app icon, news, contact. In the sitemap. |
-| `/articles/`, `/ru/articles/` | Reading-guide indexes and four original guides in English / Russian. Static HTML, matching language alternatives, Article / BreadcrumbList data and local share cards. |
+| `/articles/`, `/ru/articles/`, etc. | Reading-guide indexes in six languages, with local search by topic and Bible reference. Guides are static HTML with language alternatives, Article / BreadcrumbList data and local share cards. |
 | `/feed.xml` | RSS 2.0 feed of English reading guides plus news in `tools/news.json` (the press page lists the news). |
 | `/connectors/`, `/ru/connectors/`, etc. | Setup instructions for Bible Answer in Claude, Grok, and Codex, in all six languages. |
 | `/llms.txt` `/llms-full.txt` | A short and a full description for AI assistants (llmstxt.org format), built from the same strings as the site. |
@@ -36,7 +36,7 @@ python3 tools/check.py      # tags, links, images, sitemap, anchors — the same
 | `tools/connector-copy.json`, `tools/build_connectors.py` | Localized connector instructions and their static page renderer. |
 | `tools/article-verses/` | Exact JSON stdout from the social workspace’s `tools/verse.py`; source quotations are never edited or translated by hand. |
 | `articles.css` | Styles loaded only by reading-guide pages; the landing page remains unchanged except for a footer link. |
-| `tools/make_article_og.py` | Regenerates the eight 1200×630 JPEG share cards from existing local artwork and fonts. Optional Pillow / fontTools; ordinary builds do not need them. |
+| `tools/make_article_og.py` | Regenerates 1200×630 JPEG share cards from existing local artwork and fonts. Optional Pillow / fontTools; ordinary builds do not need them. |
 | `tools/news.json` | The news items (id, date, title, summary). Add one and rebuild: it appears in `feed.xml` and on `/press/`. English reading guides from `tools/articles.json` are included in the same feed. |
 | `tools/indexnow.py` | Sends changed addresses to the IndexNow engines (Bing, Yandex, ...). Run by `.github/workflows/indexnow.yml` after each deploy; `--dry-run` shows what it would send. |
 | `tools/make_sky.py` | Rebuilds `assets/sky-night.svg`: a deterministic vector star field with soft navy glows. Sharp at every display density; no raster upscaling. Standard library only. |
@@ -132,12 +132,12 @@ Search engines: add the site in Google Search Console and Bing Webmaster Tools a
 
 ### Adding a reading guide
 
-The first set covers starting to read the Bible, forgiveness after an apology,
-gratitude on a hard day, and wisdom before a decision. Every guide has an English
-and Russian page. Other landing-page languages link to the English index, with
-EN visible in the label; no untranslated article pages are generated.
+Each guide is published in English, Russian, Spanish, Brazilian Portuguese,
+French, and Filipino. The index searches titles, section headings and Bible
+references, including verse numbers within a quoted range. It works locally in
+the browser, and all guides remain visible without JavaScript.
 
-Add one matching language pair to `tools/articles.json`, with a stable `key`, a
+Add one matching entry per language to `tools/articles.json`, with a stable `key`, a
 slug for each language, the actual publication date, title, description, lead,
 local plate and sections. Supported blocks are paragraph, passage, steps and
 practice. Passage blocks name a JSON file in `tools/article-verses/`. Obtain

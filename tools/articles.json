@@ -4756,5 +4756,977 @@
         ]
       }
     ]
+  },
+  {
+    "key": "loneliness",
+    "lang": "en",
+    "slug": "bible-verses-about-loneliness",
+    "title": "What does the Bible say about loneliness?",
+    "seo_title": "What does the Bible say about loneliness?",
+    "description": "Read John 14:16–18 and Hebrews 10:24–25 in context, with one small way to ask for company when you feel alone.",
+    "category": "Loneliness & belonging",
+    "lead": "Read John 14:16–18 and Hebrews 10:24–25 in context, with one small way to ask for company when you feel alone.",
+    "plate": "plate-plan-john",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "What Jesus says before leaving",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Jesus is preparing his disciples for his departure in John 14. He promises the Helper and tells them they will not be left as orphans. That promise belongs to a farewell: the disciples have a reason to be sad, and Jesus still speaks of presence."
+          },
+          {
+            "type": "passage",
+            "source": "en-JHN-14-16-18.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "What we can do for one another",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Hebrews asks readers to think about how they can encourage one another. The point is mutual care. If going to a gathering feels too hard today, start with a conversation with someone you trust."
+          },
+          {
+            "type": "passage",
+            "source": "en-HEB-10-24-25.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "A small step today",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Name what you miss: a voice, a familiar place, or someone who knows how your day went. Then try a specific invitation: “Could we talk for ten minutes this week?” If someone cannot make it, that does not tell you what you are worth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "loneliness",
+    "lang": "ru",
+    "slug": "chto-bibliya-govorit-ob-odinochestve",
+    "title": "Что Библия говорит об одиночестве?",
+    "seo_title": "Что Библия говорит об одиночестве?",
+    "description": "Прочитайте Иоанна 14:16–18 и Евреям 10:24–25 в контексте и найдите один посильный способ попросить о компании, если вам одиноко.",
+    "category": "Одиночество и общение",
+    "lead": "Прочитайте Иоанна 14:16–18 и Евреям 10:24–25 в контексте и найдите один посильный способ попросить о компании, если вам одиноко.",
+    "plate": "plate-plan-john",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Слова Иисуса перед разлукой",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В Иоанна 14 Иисус готовит учеников к Своему уходу. Он обещает Утешителя и говорит, что не оставит их сиротами. Это слова прощания: ученикам есть о чём печалиться, и именно в этот момент Иисус говорит о близости."
+          },
+          {
+            "type": "passage",
+            "source": "ru-JHN-14-16-18.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Что люди могут сделать друг для друга",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Послание к Евреям предлагает задуматься, как мы можем ободрять друг друга. Речь о взаимной заботе. Если сегодня трудно пойти на встречу, можно начать с разговора с тем, кому вы доверяете."
+          },
+          {
+            "type": "passage",
+            "source": "ru-HEB-10-24-25.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Небольшой шаг на сегодня",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Назовите, чего вам не хватает: голоса, знакомого места или человека, которому можно рассказать, как прошёл день. Попробуйте спросить прямо: «У тебя будет десять минут поговорить на этой неделе?» Если человек занят, это ничего не говорит о вашей ценности."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "loneliness",
+    "lang": "es",
+    "slug": "que-dice-la-biblia-sobre-la-soledad",
+    "title": "¿Qué dice la Biblia sobre la soledad?",
+    "seo_title": "¿Qué dice la Biblia sobre la soledad?",
+    "description": "Lee Juan 14:16–18 y Hebreos 10:24–25 en su contexto y encuentra una manera sencilla de pedir compañía cuando te sientas solo.",
+    "category": "Soledad y compañía",
+    "lead": "Lee Juan 14:16–18 y Hebreos 10:24–25 en su contexto y encuentra una manera sencilla de pedir compañía cuando te sientas solo.",
+    "plate": "plate-plan-john",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Lo que dice Jesús al despedirse",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "En Juan 14, Jesús prepara a sus discípulos para su partida. Les promete al Consolador y dice que no los dejará huérfanos. Sus palabras llegan en una despedida: hay motivos para estar tristes y, en medio de eso, Jesús habla de cercanía."
+          },
+          {
+            "type": "passage",
+            "source": "es-JHN-14-16-18.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Cómo acompañarnos unos a otros",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Hebreos invita a pensar cómo animarnos mutuamente. Si hoy te cuesta ir a una reunión, puedes empezar con una conversación con alguien de confianza."
+          },
+          {
+            "type": "passage",
+            "source": "es-HEB-10-24-25.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Un paso pequeño para hoy",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ponle nombre a lo que extrañas: una voz, un lugar conocido o alguien que te pregunte cómo te fue. Haz una invitación concreta: «¿Podemos hablar diez minutos esta semana?». Si la otra persona no puede, eso no define tu valor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "loneliness",
+    "lang": "pt",
+    "slug": "o-que-a-biblia-diz-sobre-a-solidao",
+    "title": "O que a Bíblia diz sobre a solidão?",
+    "seo_title": "O que a Bíblia diz sobre a solidão?",
+    "description": "Leia João 14:16–18 e Hebreus 10:24–25 no contexto e encontre uma forma simples de pedir companhia quando sentir solidão.",
+    "category": "Solidão e companhia",
+    "lead": "Leia João 14:16–18 e Hebreus 10:24–25 no contexto e encontre uma forma simples de pedir companhia quando sentir solidão.",
+    "plate": "plate-plan-john",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "O que Jesus diz na despedida",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Em João 14, Jesus prepara os discípulos para sua partida. Ele promete o Consolador e diz que não os deixará órfãos. É uma despedida: há motivo para tristeza, e é nesse momento que Jesus fala de presença."
+          },
+          {
+            "type": "passage",
+            "source": "pt-JHN-14-16-18.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Como podemos cuidar uns dos outros",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Hebreus convida os leitores a pensar em como encorajar uns aos outros. Se hoje for difícil participar de um encontro, comece com uma conversa com alguém em quem você confia."
+          },
+          {
+            "type": "passage",
+            "source": "pt-HEB-10-24-25.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Um passo pequeno para hoje",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dê nome ao que faz falta: uma voz, um lugar conhecido ou alguém a quem contar como foi o dia. Faça um convite simples: “Você tem dez minutos para conversar esta semana?” Se a pessoa não puder, isso não diz nada sobre seu valor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "loneliness",
+    "lang": "fr",
+    "slug": "que-dit-la-bible-sur-la-solitude",
+    "title": "Que dit la Bible sur la solitude ?",
+    "seo_title": "Que dit la Bible sur la solitude ?",
+    "description": "Lisez Jean 14:16–18 et Hébreux 10:24–25 dans leur contexte et trouvez une façon simple de demander de la compagnie quand vous vous sentez seul.",
+    "category": "Solitude et présence",
+    "lead": "Lisez Jean 14:16–18 et Hébreux 10:24–25 dans leur contexte et trouvez une façon simple de demander de la compagnie quand vous vous sentez seul.",
+    "plate": "plate-plan-john",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Les paroles de Jésus avant son départ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dans Jean 14, Jésus prépare ses disciples à son départ. Il leur promet le consolateur et leur dit qu’il ne les laissera pas orphelins. Ces paroles sont prononcées au moment des adieux : les disciples peuvent être tristes, et Jésus leur parle encore de présence."
+          },
+          {
+            "type": "passage",
+            "source": "fr-JHN-14-16-18.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Ce que nous pouvons faire les uns pour les autres",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "La lettre aux Hébreux invite ses lecteurs à réfléchir à la manière de s’encourager. Si participer à une rencontre paraît trop difficile aujourd’hui, vous pouvez commencer par un échange avec une personne de confiance."
+          },
+          {
+            "type": "passage",
+            "source": "fr-HEB-10-24-25.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Un petit pas aujourd’hui",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Nommez ce qui vous manque : une voix, un lieu familier ou quelqu’un à qui raconter votre journée. Essayez une invitation précise : « Est-ce qu’on pourrait se parler dix minutes cette semaine ? » Un refus ou un empêchement ne dit rien de votre valeur."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "loneliness",
+    "lang": "fil",
+    "slug": "ano-ang-sinasabi-ng-bibliya-sa-pag-iisa",
+    "title": "Ano ang sinasabi ng Bibliya tungkol sa pag-iisa?",
+    "seo_title": "Ano ang sinasabi ng Bibliya tungkol sa pag-iisa?",
+    "description": "Basahin ang Juan 14:16–18 at Hebreo 10:24–25 sa konteksto at humanap ng maliit na paraan para humingi ng kasama kapag nalulungkot ka.",
+    "category": "Pag-iisa at pakikisama",
+    "lead": "Basahin ang Juan 14:16–18 at Hebreo 10:24–25 sa konteksto at humanap ng maliit na paraan para humingi ng kasama kapag nalulungkot ka.",
+    "plate": "plate-plan-john",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Ang sinabi ni Jesus bago siya umalis",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa Juan 14, inihahanda ni Jesus ang mga alagad sa kanyang pag-alis. Ipinangako niya ang Tagatulong at sinabing hindi niya sila iiwang ulila. Mga salita ito sa pamamaalam: may dahilan silang malungkot, at doon mismo nagsalita si Jesus tungkol sa pananatili."
+          },
+          {
+            "type": "passage",
+            "source": "fil-JHN-14-16-18.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Kung paano tayo makapagpapalakas ng loob",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Inaanyayahan tayo ng Hebreo na isipin kung paano natin mahihikayat ang isa’t isa. Kung mahirap munang pumunta sa isang pagtitipon, puwedeng magsimula sa pakikipag-usap sa isang pinagkakatiwalaan mo."
+          },
+          {
+            "type": "passage",
+            "source": "fil-HEB-10-24-25.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Isang maliit na hakbang ngayong araw",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sabihin kung ano ang hinahanap mo: isang boses, pamilyar na lugar, o taong mapagkukuwentuhan ng araw mo. Subukan ang tiyak na paanyaya: “May sampung minuto ka bang makipag-usap ngayong linggo?” Kung hindi siya makasagot, hindi iyon sukatan ng halaga mo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "evening-prayer",
+    "lang": "en",
+    "slug": "evening-prayer-before-sleep",
+    "title": "An evening prayer before sleep",
+    "seo_title": "An evening prayer before sleep",
+    "description": "Read Matthew 11:28–30 and 1 Peter 5:6–7, then try a short evening prayer when your day is over and your thoughts are still busy.",
+    "category": "Evening prayer",
+    "lead": "Read Matthew 11:28–30 and 1 Peter 5:6–7, then try a short evening prayer when your day is over and your thoughts are still busy.",
+    "plate": "plate-hours",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "An invitation to the tired",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Jesus addresses weary people in Matthew 11. In the same passage he speaks about learning from him and taking his yoke. The image is about how we live as his disciples. It can shape an evening prayer without turning it into a formula for falling asleep."
+          },
+          {
+            "type": "passage",
+            "source": "en-MAT-11-28-30.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Bring one worry into prayer",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "First Peter links giving our cares to God with humility. You can name one unfinished matter without pretending it has been solved. If it needs action, decide when you will return to it. For tonight it can wait."
+          },
+          {
+            "type": "passage",
+            "source": "en-1PE-5-6-7.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "A short prayer before bed",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "“Jesus, I am tired. Thank you for one good thing I noticed today. You know what I am still carrying. Help me leave what can wait until morning and give me the courage to do what is mine to do.” Take a moment of silence, even if no words come."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "evening-prayer",
+    "lang": "ru",
+    "slug": "vechernyaya-molitva-pered-snom",
+    "title": "Короткая вечерняя молитва перед сном",
+    "seo_title": "Короткая вечерняя молитва перед сном",
+    "description": "Прочитайте Матфея 11:28–30 и 1 Петра 5:6–7 и попробуйте короткую вечернюю молитву, когда день уже закончился, а мысли всё ещё заняты.",
+    "category": "Вечерняя молитва",
+    "lead": "Прочитайте Матфея 11:28–30 и 1 Петра 5:6–7 и попробуйте короткую вечернюю молитву, когда день уже закончился, а мысли всё ещё заняты.",
+    "plate": "plate-hours",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Приглашение для уставших",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В Матфея 11 Иисус обращается к уставшим людям. В том же отрывке Он говорит о Своём иге и предлагает учиться у Него. Эти слова о том, как быть Его учениками. Они могут стать началом вечерней молитвы, даже если сон придёт не сразу."
+          },
+          {
+            "type": "passage",
+            "source": "ru-MAT-11-28-30.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Принесите в молитву одну заботу",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В Первом послании Петра доверие Богу связано со смирением. Можно назвать одно дело, которое осталось нерешённым. Если оно требует действий, решите, когда к нему вернётесь. На сегодня этого достаточно."
+          },
+          {
+            "type": "passage",
+            "source": "ru-1PE-5-6-7.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Молитва перед сном",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "«Иисус, я устал. Спасибо за то доброе, что удалось заметить сегодня. Ты знаешь, что ещё лежит у меня на сердце. Помоги оставить до утра то, что может подождать, и дай мне смелость сделать то, что зависит от меня». Можно просто помолчать, если слов нет."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "evening-prayer",
+    "lang": "es",
+    "slug": "oracion-de-la-noche-antes-de-dormir",
+    "title": "Una oración de la noche antes de dormir",
+    "seo_title": "Una oración de la noche antes de dormir",
+    "description": "Lee Mateo 11:28–30 y 1 Pedro 5:6–7 y prueba una oración breve al terminar el día, aunque tu mente siga ocupada.",
+    "category": "Oración de la noche",
+    "lead": "Lee Mateo 11:28–30 y 1 Pedro 5:6–7 y prueba una oración breve al terminar el día, aunque tu mente siga ocupada.",
+    "plate": "plate-hours",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Una invitación a quienes están cansados",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "En Mateo 11, Jesús habla a personas cansadas. En el mismo pasaje les habla de aprender de él y tomar su yugo. Sus palabras orientan la vida de sus discípulos y pueden acompañar una oración de la noche, aunque el sueño tarde."
+          },
+          {
+            "type": "passage",
+            "source": "es-MAT-11-28-30.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Presenta una preocupación",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Primera de Pedro vincula la humildad con confiar las preocupaciones a Dios. Puedes nombrar algo que sigue pendiente. Si requiere una acción, decide cuándo volverás a ello. Por esta noche puede esperar."
+          },
+          {
+            "type": "passage",
+            "source": "es-1PE-5-6-7.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Una oración breve antes de acostarte",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "«Jesús, estoy cansado. Gracias por algo bueno que pude ver hoy. Tú sabes qué peso todavía llevo. Ayúdame a dejar para mañana lo que puede esperar y dame valor para hacer lo que me toca». Quédate un momento en silencio si no encuentras palabras."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "evening-prayer",
+    "lang": "pt",
+    "slug": "oracao-da-noite-antes-de-dormir",
+    "title": "Uma oração da noite antes de dormir",
+    "seo_title": "Uma oração da noite antes de dormir",
+    "description": "Leia Mateus 11:28–30 e 1 Pedro 5:6–7 e experimente uma oração curta quando o dia já acabou, mas a cabeça continua cheia.",
+    "category": "Oração da noite",
+    "lead": "Leia Mateus 11:28–30 e 1 Pedro 5:6–7 e experimente uma oração curta quando o dia já acabou, mas a cabeça continua cheia.",
+    "plate": "plate-hours",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Um convite para quem está cansado",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Em Mateus 11, Jesus fala com pessoas cansadas. Na mesma passagem, ele as convida a aprender com ele e a tomar seu jugo. As palavras dizem respeito à vida de quem o segue e podem acompanhar uma oração da noite, mesmo que o sono demore."
+          },
+          {
+            "type": "passage",
+            "source": "pt-MAT-11-28-30.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Leve uma preocupação à oração",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A primeira carta de Pedro aproxima a humildade de entregar a Deus nossas preocupações. Você pode dar nome a uma pendência. Se ela exigir alguma ação, escolha quando voltar a pensar nela. Por hoje, pode esperar."
+          },
+          {
+            "type": "passage",
+            "source": "pt-1PE-5-6-7.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Uma oração curta antes de deitar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "“Jesus, cheguei ao fim do dia sem forças. Obrigado por uma coisa boa que consegui perceber hoje. Tu sabes o que ainda pesa. Ajuda-me a deixar para amanhã o que pode esperar e dá-me coragem para fazer a minha parte.” Se faltarem palavras, fique em silêncio por um momento."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "evening-prayer",
+    "lang": "fr",
+    "slug": "priere-du-soir-avant-de-dormir",
+    "title": "Une prière du soir avant de dormir",
+    "seo_title": "Une prière du soir avant de dormir",
+    "description": "Lisez Matthieu 11:28–30 et 1 Pierre 5:6–7, puis essayez une courte prière quand la journée est finie et que vos pensées s’agitent encore.",
+    "category": "Prière du soir",
+    "lead": "Lisez Matthieu 11:28–30 et 1 Pierre 5:6–7, puis essayez une courte prière quand la journée est finie et que vos pensées s’agitent encore.",
+    "plate": "plate-hours",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Une invitation aux personnes fatiguées",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dans Matthieu 11, Jésus s’adresse à des personnes fatiguées. Dans le même passage, il leur propose d’apprendre de lui et de prendre son joug. Ces paroles éclairent la vie de ses disciples. Elles peuvent ouvrir une prière du soir, même si le sommeil tarde."
+          },
+          {
+            "type": "passage",
+            "source": "fr-MAT-11-28-30.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Confier un souci dans la prière",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "La première lettre de Pierre relie l’humilité au fait de confier ses soucis à Dieu. Vous pouvez nommer une chose encore en suspens. Si elle demande une action, choisissez quand vous y reviendrez. Pour ce soir, elle peut attendre."
+          },
+          {
+            "type": "passage",
+            "source": "fr-1PE-5-6-7.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Une courte prière avant de se coucher",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "« Jésus, je suis fatigué. Merci pour une bonne chose que j’ai pu remarquer aujourd’hui. Tu sais ce qui me pèse encore. Aide-moi à laisser jusqu’à demain ce qui peut attendre et donne-moi le courage de faire ma part. » Si les mots ne viennent pas, restez un moment en silence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "evening-prayer",
+    "lang": "fil",
+    "slug": "maikling-panalangin-bago-matulog",
+    "title": "Maikling panalangin bago matulog",
+    "seo_title": "Maikling panalangin bago matulog",
+    "description": "Basahin ang Mateo 11:28–30 at 1 Pedro 5:6–7 at subukan ang isang maikling panalangin kapag tapos na ang araw pero marami ka pa ring iniisip.",
+    "category": "Panalangin sa gabi",
+    "lead": "Basahin ang Mateo 11:28–30 at 1 Pedro 5:6–7 at subukan ang isang maikling panalangin kapag tapos na ang araw pero marami ka pa ring iniisip.",
+    "plate": "plate-hours",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Paanyaya sa mga napapagod",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa Mateo 11, kinakausap ni Jesus ang mga napapagod. Sa talatang iyon, inaanyayahan din niya silang matuto sa kanya at tanggapin ang kanyang pamatok. Tungkol ito sa pagsunod sa kanya. Maaari mong dalhin ang mga salitang iyon sa panalangin kahit hindi agad dumating ang antok."
+          },
+          {
+            "type": "passage",
+            "source": "fil-MAT-11-28-30.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Dalhin ang isang alalahanin sa panalangin",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa unang liham ni Pedro, magkaugnay ang pagpapakumbaba at pagdadala ng mga alalahanin sa Diyos. Pangalanan ang isang bagay na hindi pa tapos. Kung may kailangan kang gawin, piliin kung kailan mo ito babalikan. Puwede muna itong maghintay ngayong gabi."
+          },
+          {
+            "type": "passage",
+            "source": "fil-1PE-5-6-7.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Maikling panalangin sa gabi",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "“Jesus, pagod na ako. Salamat sa isang mabuting bagay na napansin ko ngayong araw. Alam mo ang mabigat pa rin sa loob ko. Tulungan mo akong ipagpabukas ang puwedeng maghintay, at bigyan mo ako ng tapang na gawin ang bahagi ko.” Kung wala kang masabi, puwede kang manahimik sandali."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "grief",
+    "lang": "en",
+    "slug": "bible-verses-for-grief",
+    "title": "Bible passages for grief and loss",
+    "seo_title": "Bible passages for grief and loss",
+    "description": "Read John 11:32–36 and Romans 12:15 in context and find a gentle way to be present with grief after the death of someone you love.",
+    "category": "Grief & loss",
+    "lead": "Read John 11:32–36 and Romans 12:15 in context and find a gentle way to be present with grief after the death of someone you love.",
+    "plate": "plate-galilee",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Jesus weeps with the people at the tomb",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mary comes to Jesus after Lazarus has died. Jesus sees her and the people with her weeping. John tells us he is moved and that he weeps. Before anything changes at the tomb, grief already has a place in the story."
+          },
+          {
+            "type": "passage",
+            "source": "en-JHN-11-32-36.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Weep with those who weep",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In Romans 12, Paul describes what love looks like in ordinary relationships. Sharing sorrow can mean listening to the same memory again or sitting together without explaining the loss."
+          },
+          {
+            "type": "passage",
+            "source": "en-ROM-12-15.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "One act of presence",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "If you are grieving, you can tell someone what would help today: a meal, a walk, or a few minutes of silence together. If you are supporting someone, offer something specific and give them room to decline. A short prayer is enough if that is all you have."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "grief",
+    "lang": "ru",
+    "slug": "bibliya-o-gore-i-potere",
+    "title": "Что читать в Библии, когда умер близкий",
+    "seo_title": "Что читать в Библии, когда умер близкий",
+    "description": "Прочитайте Иоанна 11:32–36 и Римлянам 12:15 в контексте и найдите посильный способ пережить день или побыть рядом с горюющим.",
+    "category": "Горе и утрата",
+    "lead": "Прочитайте Иоанна 11:32–36 и Римлянам 12:15 в контексте и найдите посильный способ пережить день или побыть рядом с горюющим.",
+    "plate": "plate-galilee",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Иисус плачет у гробницы",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Мария приходит к Иисусу после смерти Лазаря. Он видит, как плачет она и как плачут люди рядом. Иоанн рассказывает, что Иисус скорбит и Сам плачет. Горе уже имеет место в этой истории, прежде чем что-либо меняется у гробницы."
+          },
+          {
+            "type": "passage",
+            "source": "ru-JHN-11-32-36.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Плакать с плачущими",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В Римлянам 12 Павел говорит о том, как любовь выглядит в обычной жизни. Разделить чью-то боль иногда значит выслушать знакомое воспоминание ещё раз или просто посидеть рядом, не объясняя, почему случилась потеря."
+          },
+          {
+            "type": "passage",
+            "source": "ru-ROM-12-15.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Как побыть рядом сегодня",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Если горюете вы, можно сказать близкому, что сегодня помогло бы: еда, прогулка или несколько минут вместе в тишине. Если вы поддерживаете другого человека, предложите конкретную помощь и оставьте ему право отказаться. Для молитвы может хватить нескольких слов."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "grief",
+    "lang": "es",
+    "slug": "pasajes-biblicos-para-el-duelo",
+    "title": "Pasajes bíblicos para el duelo y la pérdida",
+    "seo_title": "Pasajes bíblicos para el duelo y la pérdida",
+    "description": "Lee Juan 11:32–36 y Romanos 12:15 en su contexto y encuentra una forma sencilla de acompañar el dolor tras la muerte de un ser querido.",
+    "category": "Duelo y pérdida",
+    "lead": "Lee Juan 11:32–36 y Romanos 12:15 en su contexto y encuentra una forma sencilla de acompañar el dolor tras la muerte de un ser querido.",
+    "plate": "plate-galilee",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Jesús llora junto a la tumba",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "María llega a donde está Jesús después de la muerte de Lázaro. Jesús la ve llorar junto a quienes la acompañan. Juan cuenta que Jesús se conmueve y llora. Antes de que cambie nada en la tumba, el dolor ya tiene lugar en el relato."
+          },
+          {
+            "type": "passage",
+            "source": "es-JHN-11-32-36.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Llorar con quien llora",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "En Romanos 12, Pablo muestra cómo se expresa el amor en las relaciones cotidianas. Acompañar a alguien puede ser escuchar otra vez un recuerdo o sentarse juntos sin buscar una explicación para la pérdida."
+          },
+          {
+            "type": "passage",
+            "source": "es-ROM-12-15.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Una forma concreta de estar presente",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Si estás de duelo, puedes decir qué te ayudaría hoy: una comida, un paseo o unos minutos en silencio con alguien. Si acompañas a otra persona, ofrece una ayuda concreta y deja espacio para que diga que no. Una oración de pocas palabras basta."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "grief",
+    "lang": "pt",
+    "slug": "passagens-biblicas-para-o-luto",
+    "title": "Passagens bíblicas para o luto e a perda",
+    "seo_title": "Passagens bíblicas para o luto e a perda",
+    "description": "Leia João 11:32–36 e Romanos 12:15 no contexto e encontre um modo simples de atravessar o dia ou acompanhar alguém que está de luto.",
+    "category": "Luto e perda",
+    "lead": "Leia João 11:32–36 e Romanos 12:15 no contexto e encontre um modo simples de atravessar o dia ou acompanhar alguém que está de luto.",
+    "plate": "plate-galilee",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Jesus chora junto ao túmulo",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Maria vai até Jesus depois da morte de Lázaro. Jesus vê Maria e as pessoas ao seu lado chorando. João conta que ele se comove e chora. Antes de qualquer mudança no túmulo, o luto já tem lugar na história."
+          },
+          {
+            "type": "passage",
+            "source": "pt-JHN-11-32-36.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Chorar com quem chora",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Em Romanos 12, Paulo fala de como o amor aparece nas relações do dia a dia. Acompanhar alguém pode ser ouvir a mesma lembrança mais uma vez ou se sentar ao lado da pessoa sem tentar explicar a perda."
+          },
+          {
+            "type": "passage",
+            "source": "pt-ROM-12-15.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Um gesto de presença",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Se você está de luto, diga o que ajudaria hoje: uma refeição, uma caminhada ou alguns minutos de silêncio com alguém. Se estiver acompanhando outra pessoa, ofereça ajuda concreta e deixe espaço para ela recusar. Uma oração de poucas palavras já pode ser suficiente."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "grief",
+    "lang": "fr",
+    "slug": "passages-bibliques-pour-le-deuil",
+    "title": "Des passages bibliques pour le deuil",
+    "seo_title": "Des passages bibliques pour le deuil",
+    "description": "Lisez Jean 11:32–36 et Romains 12:15 dans leur contexte et trouvez une façon simple de traverser la journée ou d’accompagner une personne en deuil.",
+    "category": "Deuil et perte",
+    "lead": "Lisez Jean 11:32–36 et Romains 12:15 dans leur contexte et trouvez une façon simple de traverser la journée ou d’accompagner une personne en deuil.",
+    "plate": "plate-galilee",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Jésus pleure près du tombeau",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Marie vient trouver Jésus après la mort de Lazare. Jésus voit Marie et les personnes qui l’accompagnent en pleurs. Jean raconte qu’il est bouleversé et qu’il pleure. Avant que quoi que ce soit change au tombeau, le chagrin a déjà sa place dans le récit."
+          },
+          {
+            "type": "passage",
+            "source": "fr-JHN-11-32-36.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Pleurer avec ceux qui pleurent",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Dans Romains 12, Paul décrit l’amour dans les relations ordinaires. Partager le chagrin de quelqu’un peut vouloir dire écouter à nouveau un souvenir ou s’asseoir ensemble sans tenter d’expliquer la perte."
+          },
+          {
+            "type": "passage",
+            "source": "fr-ROM-12-15.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Un geste de présence",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Si vous êtes en deuil, vous pouvez dire ce qui vous aiderait aujourd’hui : un repas, une promenade ou quelques minutes ensemble en silence. Si vous accompagnez quelqu’un, offrez une aide précise et laissez-lui la liberté de refuser. Une prière de quelques mots peut suffire."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "grief",
+    "lang": "fil",
+    "slug": "mga-talata-sa-bibliya-para-sa-pagluluksa",
+    "title": "Mga talata sa Bibliya para sa pagluluksa",
+    "seo_title": "Mga talata sa Bibliya para sa pagluluksa",
+    "description": "Basahin ang Juan 11:32–36 at Roma 12:15 sa konteksto at humanap ng simpleng paraan para harapin ang lungkot o samahan ang isang nagluluksa.",
+    "category": "Pagluluksa at pagkawala",
+    "lead": "Basahin ang Juan 11:32–36 at Roma 12:15 sa konteksto at humanap ng simpleng paraan para harapin ang lungkot o samahan ang isang nagluluksa.",
+    "plate": "plate-galilee",
+    "date": "2026-11-07",
+    "sections": [
+      {
+        "id": "read-in-context",
+        "title": "Umiyak si Jesus sa tabi ng libingan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Lumapit si Maria kay Jesus pagkatapos mamatay ni Lazaro. Nakita ni Jesus na umiiyak siya at ang mga kasama niya. Isinalaysay ni Juan na nabagbag ang loob ni Jesus at umiyak siya. Bago pa magbago ang anumang bagay sa libingan, may puwang na sa kuwento para sa pagdadalamhati."
+          },
+          {
+            "type": "passage",
+            "source": "fil-JHN-11-32-36.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "another-passage",
+        "title": "Umiyak kasama ng mga umiiyak",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa Roma 12, inilalarawan ni Pablo ang pagmamahal sa pang-araw-araw na pakikitungo. Ang pakikiramay ay maaaring pakikinig muli sa isang alaala o pag-upo sa tabi ng tao nang hindi nagpapaliwanag kung bakit nangyari ang pagkawala."
+          },
+          {
+            "type": "passage",
+            "source": "fil-ROM-12-15.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "try-today",
+        "title": "Isang simpleng paraan ng pagsama",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Kung nagluluksa ka, sabihin kung ano ang makatutulong ngayon: pagkain, paglalakad, o ilang minutong tahimik na magkasama. Kung may sinasamahan ka, mag-alok ng tiyak na tulong at hayaan siyang tumanggi. Sapat na ang ilang salita sa panalangin kung iyon lamang ang kaya mo."
+          }
+        ]
+      }
+    ]
   }
 ]
