@@ -5728,5 +5728,317 @@
         ]
       }
     ]
+  },
+  {
+    "slug": "psalm-23-4-valley-of-the-shadow-of-death",
+    "title": "What does the valley of the shadow of death mean?",
+    "seo_title": "Psalm 23:4 and the valley of the shadow of death",
+    "description": "In Psalm 23:4, the valley is a place of real danger. The speaker finds courage in God’s presence while still walking through it.",
+    "lead": "In Psalm 23:4, the valley is a place of real danger. The speaker finds courage in God’s presence while still walking through it.",
+    "category": "Understanding a psalm",
+    "plate": "plate-plan-psalms",
+    "key": "psalm-valley",
+    "lang": "en",
+    "date": "2026-11-08",
+    "related_keys": [
+      "psalm23"
+    ],
+    "sections": [
+      {
+        "id": "valley",
+        "title": "A valley on the shepherd’s path",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "en-PSA-23-4.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "The opening verses of Psalm 23 describe rest, water, and good paths. Verse 4 takes us into a darker setting. The same person who has been led to water now walks through a valley where harm feels possible. The psalm leaves the danger unnamed, so the image can speak to grief, uncertainty, or a time when the way ahead is hard to see."
+          }
+        ]
+      },
+      {
+        "id": "presence",
+        "title": "Why the speaker turns to God",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Earlier, the speaker talks about what the shepherd does. In verse 4, the speaker addresses God directly. That change helps us hear where the courage comes from. The shepherd’s rod and staff make his care tangible. They belong to someone close enough to guide and protect the flock."
+          }
+        ]
+      },
+      {
+        "id": "prayer",
+        "title": "Reading the verse on a difficult day",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "If you are grieving or afraid, you can bring that feeling into the prayer. Try naming what feels hard to face, then say what kind of help you need for the next step. The same verse is Psalm 22:4 in the Russian Synodal Bible. The difference comes from how the psalms are numbered."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "psalom-22-4-dolina-smertnoy-teni",
+    "title": "Что значит «долина смертной тени»?",
+    "seo_title": "Долина смертной тени: смысл Псалма 22:4",
+    "description": "В Псалме 22:4 долина — образ настоящей опасности. Псалмопевец находит опору в Божьем присутствии, пока ещё идёт через неё.",
+    "lead": "В Псалме 22:4 долина — образ настоящей опасности. Псалмопевец находит опору в Божьем присутствии, пока ещё идёт через неё.",
+    "category": "Понимание псалма",
+    "plate": "plate-plan-psalms",
+    "key": "psalm-valley",
+    "lang": "ru",
+    "date": "2026-11-08",
+    "related_keys": [
+      "psalm23"
+    ],
+    "sections": [
+      {
+        "id": "valley",
+        "title": "Долина на пути, по которому ведёт пастырь",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "ru-PSA-22-4.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "В первых стихах псалма есть покой, вода и верный путь. В четвёртом стихе обстановка меняется: тот же человек идёт через место, где ему может грозить беда. Псалом оставляет эту опасность без названия. Образ долины помогает говорить о скорби, тревоге и времени, когда трудно увидеть дорогу впереди."
+          }
+        ]
+      },
+      {
+        "id": "presence",
+        "title": "Почему псалмопевец обращается к Богу",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В начале псалма автор говорит о том, что делает Пастырь. В четвёртом стихе он обращается к Нему напрямую. Именно здесь становится слышно, откуда приходит мужество. Жезл и посох делают заботу зримой: это принадлежности пастыря, который находится рядом со стадом, ведёт его и оберегает."
+          }
+        ]
+      },
+      {
+        "id": "prayer",
+        "title": "Как читать этот стих в трудный день",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Если вы переживаете горе или боитесь, скажите об этом в молитве своими словами. Можно назвать то, с чем сейчас тяжело справляться, и попросить помощи для ближайшего шага. В Синодальном переводе этот стих — Псалом 22:4. В изданиях с еврейской нумерацией он находится в Псалме 23:4."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "salmo-23-4-valle-de-sombra-de-muerte",
+    "title": "¿Qué significa el valle de sombra de muerte?",
+    "seo_title": "Salmo 23:4: qué significa el valle de sombra de muerte",
+    "description": "En Salmo 23:4, el valle representa un peligro real. El salmista encuentra ánimo en la presencia de Dios mientras lo atraviesa.",
+    "lead": "En Salmo 23:4, el valle representa un peligro real. El salmista encuentra ánimo en la presencia de Dios mientras lo atraviesa.",
+    "category": "Comprender un salmo",
+    "plate": "plate-plan-psalms",
+    "key": "psalm-valley",
+    "lang": "es",
+    "date": "2026-11-08",
+    "related_keys": [
+      "psalm23"
+    ],
+    "sections": [
+      {
+        "id": "valley",
+        "title": "Un valle en el camino del pastor",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "es-PSA-23-4.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "El salmo empieza con descanso, agua y caminos seguros. En el versículo 4, la escena cambia. La misma persona que ha sido guiada hacia el agua camina ahora por un lugar donde podría sufrir daño. El poema deja abierto qué peligro es. Por eso el valle puede evocar el duelo, la incertidumbre o una etapa en la que cuesta ver el camino por delante."
+          }
+        ]
+      },
+      {
+        "id": "presence",
+        "title": "Por qué el salmista se dirige a Dios",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Al principio, el salmista habla de lo que hace el pastor. En el valle le habla directamente a Dios. El cambio deja oír de dónde viene su ánimo. La vara y el cayado son objetos de un pastor que está cerca de su rebaño para guiarlo y cuidarlo."
+          }
+        ]
+      },
+      {
+        "id": "prayer",
+        "title": "Cómo leer el versículo en un día difícil",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Si estás de duelo o tienes miedo, puedes decirlo en tu oración. Nombra lo que hoy te cuesta afrontar y pide ayuda para dar el siguiente paso. En la Reina-Valera de 1909, esta línea está en Salmo 23:4. La Biblia sinodal rusa numera el mismo salmo como Salmo 22."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "salmo-23-4-vale-da-sombra-da-morte",
+    "title": "O que significa o vale da sombra da morte?",
+    "seo_title": "Salmo 23:4: o significado do vale da sombra da morte",
+    "description": "No Salmo 23:4, o vale representa um perigo real. O salmista encontra coragem na presença de Deus enquanto atravessa esse lugar.",
+    "lead": "No Salmo 23:4, o vale representa um perigo real. O salmista encontra coragem na presença de Deus enquanto atravessa esse lugar.",
+    "category": "Entender um salmo",
+    "plate": "plate-plan-psalms",
+    "key": "psalm-valley",
+    "lang": "pt",
+    "date": "2026-11-08",
+    "related_keys": [
+      "psalm23"
+    ],
+    "sections": [
+      {
+        "id": "valley",
+        "title": "Um vale no caminho do pastor",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "pt-PSA-23-4.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "O salmo começa com descanso, água e bons caminhos. No versículo 4, o cenário muda. A mesma pessoa que foi conduzida às águas agora passa por um lugar onde pode sofrer algum mal. O poema deixa o perigo em aberto. Por isso, o vale pode lembrar o luto, a incerteza ou um tempo em que é difícil enxergar o caminho adiante."
+          }
+        ]
+      },
+      {
+        "id": "presence",
+        "title": "Por que o salmista fala diretamente com Deus",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Nos primeiros versículos, o salmista descreve o que o pastor faz. No vale, ele se dirige a Deus. Essa mudança ajuda a perceber de onde vem sua coragem. A vara e o cajado lembram que o pastor está perto do rebanho para guiá-lo e protegê-lo."
+          }
+        ]
+      },
+      {
+        "id": "prayer",
+        "title": "Como ler o versículo num dia difícil",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Se você está de luto ou sente medo, pode falar disso em oração. Dê nome ao que hoje é difícil enfrentar e peça ajuda para dar o próximo passo. Na Bíblia Livre, esse versículo é Salmo 23:4. Na Bíblia sinodal russa, o mesmo salmo tem o número 22."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "psaume-23-4-vallee-de-l-ombre-de-la-mort",
+    "title": "Que signifie la vallée de l’ombre de la mort ?",
+    "seo_title": "Psaume 23, verset 4 : la vallée de l’ombre de la mort",
+    "description": "Au verset 4 du Psaume 23, la vallée évoque un danger réel. Le psalmiste puise son courage dans la présence de Dieu pendant qu’il la traverse.",
+    "lead": "Au verset 4 du Psaume 23, la vallée évoque un danger réel. Le psalmiste puise son courage dans la présence de Dieu pendant qu’il la traverse.",
+    "category": "Comprendre un psaume",
+    "plate": "plate-plan-psalms",
+    "key": "psalm-valley",
+    "lang": "fr",
+    "date": "2026-11-08",
+    "related_keys": [
+      "psalm23"
+    ],
+    "sections": [
+      {
+        "id": "valley",
+        "title": "Une vallée sur le chemin du berger",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "fr-PSA-23-4.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Le psaume commence par le repos, l’eau et les bons chemins. Au verset 4, le paysage change. La personne que le berger a conduite vers l’eau avance maintenant dans un lieu où le danger est possible. Le poème laisse ce danger sans nom. La vallée peut ainsi évoquer le deuil, l’incertitude ou un moment où la suite du chemin est difficile à voir."
+          }
+        ]
+      },
+      {
+        "id": "presence",
+        "title": "Pourquoi le psalmiste s’adresse à Dieu",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Au début, le psalmiste décrit ce que fait le berger. Dans la vallée, il parle directement à Dieu. Ce changement fait entendre d’où vient son courage. La houlette et le bâton sont les outils d’un berger assez proche de son troupeau pour le guider et le protéger."
+          }
+        ]
+      },
+      {
+        "id": "prayer",
+        "title": "Comment lire ce verset un jour difficile",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Si vous traversez un deuil ou si vous avez peur, vous pouvez le dire dans votre prière. Nommez ce qui est difficile à affronter et demandez de l’aide pour le prochain pas. Dans la traduction Louis Segond, ce verset se trouve en Psaume 23, verset 4. Dans la Bible synodale russe, le même psaume porte le numéro 22."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "awit-23-4-kahulugan-ng-madilim-na-lambak",
+    "title": "Ano ang ibig sabihin ng madilim na lambak?",
+    "seo_title": "Awit 23:4 at ang kahulugan ng madilim na lambak",
+    "description": "Sa Awit 23:4, inilalarawan ng lambak ang isang tunay na panganib. Habang tumatawid dito, humuhugot ng lakas ang sumulat sa piling ng Diyos.",
+    "lead": "Sa Awit 23:4, inilalarawan ng lambak ang isang tunay na panganib. Habang tumatawid dito, humuhugot ng lakas ang sumulat sa piling ng Diyos.",
+    "category": "Pag-unawa sa isang awit",
+    "plate": "plate-plan-psalms",
+    "key": "psalm-valley",
+    "lang": "fil",
+    "date": "2026-11-08",
+    "related_keys": [
+      "psalm23"
+    ],
+    "sections": [
+      {
+        "id": "valley",
+        "title": "Isang lambak sa daang tinatahak ng pastol",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "fil-PSA-23-4.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Nagsisimula ang awit sa pahinga, tubig, at matuwid na landas. Nagbabago ang tagpo sa ikaapat na talata. Ang taong inakay sa tubig ay naglalakad na ngayon sa isang lugar na maaaring may panganib. Hindi tinukoy sa awit kung ano ang panganib. Maaaring ipaalala ng lambak ang pagdadalamhati o ang panahong hindi pa malinaw kung saan ka tutungo."
+          }
+        ]
+      },
+      {
+        "id": "presence",
+        "title": "Bakit direktang kinakausap ng sumulat ang Diyos",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa simula, ikinukuwento ng sumulat kung ano ang ginagawa ng pastol. Sa lambak, direkta na siyang nakikipag-usap sa Diyos. Sa pagbabagong iyon, maririnig kung saan nanggagaling ang kanyang tapang. Ipinapaalala ng pamalo at tungkod na malapit ang pastol para gabayan at ingatan ang kawan."
+          }
+        ]
+      },
+      {
+        "id": "prayer",
+        "title": "Paano ito babasahin sa mahirap na araw",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Kung nagdadalamhati ka o natatakot, maaari mong sabihin iyon sa panalangin. Banggitin kung ano ang mahirap harapin ngayon at humingi ng tulong para sa susunod na hakbang. Sa Unlocked Literal Bible na Tagalog, nasa Awit 23:4 ito. Awit 22 naman ang bilang ng parehong awit sa Bibliyang Sinodal sa Ruso."
+          }
+        ]
+      }
+    ]
   }
 ]

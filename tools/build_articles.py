@@ -23,6 +23,14 @@ def guide_order(article, order):
  key=article['key']
  return (order.index(key), '') if key in order else (len(order), key)
 
+def related_guides(article, all_articles):
+ candidates=[a for a in all_articles if a['lang']==article['lang'] and a['key']!=article['key']]
+ related=article.get('related_keys', ())
+ def order(candidate):
+  linked=candidate['key'] in related or article['key'] in candidate.get('related_keys', ())
+  return (not linked, guide_order(candidate, RELATED_ORDER))
+ return sorted(candidates,key=order)[:3]
+
 def search_text(root,a):
  fields=[a[k] for k in ('title','seo_title','category','description','lead','slug')]
  for section in a['sections']:
@@ -119,7 +127,7 @@ def article_page(root,cfg,a,all_articles,head_common,og_head):
  data={'@context':'https://schema.org','@graph':[{'@type':'Article','headline':a['title'],'description':a['description'],'inLanguage':LANG_CODE[lang],'datePublished':a['date'],'dateModified':a['date'],'mainEntityOfPage':{'@type':'WebPage','@id':url},'image':[image],'author':{'@type':'Organization','name':'Bible Answer','url':site+'/'+hub(lang)},'publisher':organization,'wordCount':word_count(root,a)},{'@type':'BreadcrumbList','itemListElement':breadcrumbs}]}
  extra=alternatives(cfg,pair,lang)+'<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False)+'</script>\n'+f'<meta property="article:published_time" content="{a["date"]}">\n<meta property="article:modified_time" content="{a["date"]}">\n'
  toc=''.join(f'<a href="#{s["id"]}">{E(s["title"])}</a>' for s in a['sections'])
- body=navigation(lang,pair)+f'<main id="main" class="reading-guide"><nav class="article-breadcrumbs" aria-label="{u["hub"]}"><a href="/{hub(lang)}">{u["hub"]}</a><span aria-hidden="true">/</span><span>{E(a["category"])}</span></nav><header class="article-hero"><div><p class="article-kicker">{E(a["category"])}</p><h1>{E(a["title"])}</h1><p class="article-lead">{E(a["lead"])}</p><p class="article-byline">{u["byline"]} <span>·</span> <time datetime="{a["date"]}">{stamp(a["date"],lang)}</time> <span>·</span> {duration(root,a)} {u["reading"]}</p></div><figure><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" fetchpriority="high" decoding="async"></figure></header><div class="article-layout"><aside class="article-toc"><h2>{u["contents"]}</h2><nav aria-label="{u["contents"]}">{toc}</nav></aside><article class="article-prose">'+''.join(f'<section id="{s["id"]}"><h2>{E(s["title"])}</h2>'+''.join(render_block(root,b,u) for b in s['blocks'])+'</section>' for s in a['sections'])+f'<p class="article-method-note">{edition(u)} · <a href="/terms#{lang}">{u["terms"]}</a></p></article></div>{app_card(lang,cfg,a["key"])}<section class="article-related"><h2>{u["next"]}</h2><div class="guide-grid">'+''.join(card(root,b) for b in sorted([b for b in all_articles if b['lang']==lang and b['key']!=a['key']],key=lambda b:guide_order(b,RELATED_ORDER))[:3])+'</div></section></main>'+footer(cfg,lang)
+ body=navigation(lang,pair)+f'<main id="main" class="reading-guide"><nav class="article-breadcrumbs" aria-label="{u["hub"]}"><a href="/{hub(lang)}">{u["hub"]}</a><span aria-hidden="true">/</span><span>{E(a["category"])}</span></nav><header class="article-hero"><div><p class="article-kicker">{E(a["category"])}</p><h1>{E(a["title"])}</h1><p class="article-lead">{E(a["lead"])}</p><p class="article-byline">{u["byline"]} <span>·</span> <time datetime="{a["date"]}">{stamp(a["date"],lang)}</time> <span>·</span> {duration(root,a)} {u["reading"]}</p></div><figure><img src="/assets/plates/{a["plate"]}.webp" width="900" height="600" alt="" fetchpriority="high" decoding="async"></figure></header><div class="article-layout"><aside class="article-toc"><h2>{u["contents"]}</h2><nav aria-label="{u["contents"]}">{toc}</nav></aside><article class="article-prose">'+''.join(f'<section id="{s["id"]}"><h2>{E(s["title"])}</h2>'+''.join(render_block(root,b,u) for b in s['blocks'])+'</section>' for s in a['sections'])+f'<p class="article-method-note">{edition(u)} · <a href="/terms#{lang}">{u["terms"]}</a></p></article></div>{app_card(lang,cfg,a["key"])}<section class="article-related"><h2>{u["next"]}</h2><div class="guide-grid">'+''.join(card(root,b) for b in related_guides(a,all_articles))+'</div></section></main>'+footer(cfg,lang)
  return shell(cfg,lang,a['seo_title']+' — Bible Answer' if len(a['seo_title'])+15<=70 else a['seo_title'],a['description'],url,image,extra,body,head_common,og_head,True)
 def write(root,cfg,head_common,og_head):
  all_articles=load(root)
