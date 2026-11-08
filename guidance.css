@@ -1,0 +1,5 @@
+.guidance-page .article-prose{max-width:800px}
+.guidance-page .guidance-step{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,220px);gap:clamp(20px,5vw,60px);align-items:center;border-bottom:1px solid var(--glass-line);padding-block:32px}
+.guidance-step img{display:block;width:100%;height:auto;max-width:220px;margin-inline:auto;border-radius:20px}
+.guidance-page .article-prose>p:last-child{margin-top:24px}
+@media(max-width:600px){.guidance-page .guidance-step{grid-template-columns:1fr}}

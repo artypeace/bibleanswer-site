@@ -21,6 +21,7 @@ Optional website GA4 loads after consent when analyticsMeasurementId is configur
 import argparse, base64, datetime, email.utils, hashlib, html, json, pathlib, re
 import build_articles
 import build_connectors
+import build_guidance
 import build_shop
 import theme
 import branding
@@ -823,6 +824,7 @@ def sitemap(lastmod):
     rows.append(f'  <url>\n    <loc>{site}/press/</loc>{stamp}\n  </url>')
     rows.extend(build_articles.sitemap_rows(ROOT, CFG))
     rows.extend(build_connectors.sitemap_rows(CFG))
+    rows.extend(build_guidance.sitemap_rows(CFG))
     rows.extend(build_shop.sitemap_rows(CFG))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
@@ -1170,6 +1172,7 @@ def main():
     write_extras()
     build_articles.write(ROOT, CFG, head_common, og_head)
     build_connectors.write(ROOT, CFG, head_common, og_head)
+    build_guidance.write(ROOT, CFG, head_common, og_head)
     build_shop.write(ROOT, CFG, head_common, og_head)
     version_stylesheets()
     (ROOT / 'sitemap.xml').write_text(sitemap(a.lastmod), encoding='utf-8')

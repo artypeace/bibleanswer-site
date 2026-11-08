@@ -6706,5 +6706,287 @@
         ]
       }
     ]
+  },
+  {
+    "slug": "how-to-pray-when-you-have-no-words",
+    "title": "How to pray when you have no words",
+    "seo_title": "How to pray when you have no words",
+    "description": "Prayer can begin with a moment of silence or one honest sentence. Romans 8:26–27 describes the Spirit helping when we do not know how to pray.",
+    "lead": "Prayer can begin with a moment of silence or one honest sentence. Romans 8:26–27 describes the Spirit helping when we do not know how to pray.",
+    "category": "Evening prayer",
+    "plate": "plate-hours",
+    "key": "prayer-without-words",
+    "lang": "en",
+    "date": "2026-11-08",
+    "related_keys": [
+      "anxiety",
+      "evening-prayer"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "Why Paul talks about weakness",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "en-ROM-8-26-27.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "In the verses before this passage, Paul writes about waiting and hoping for what we cannot yet see. He includes himself when he says we do not know how to pray. The Spirit’s help meets people in that weakness. A pause in prayer can make room for what you cannot yet say."
+          }
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "A prayer for a quiet moment",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Take a moment to notice what you are carrying. If you can name it, tell God in ordinary words. If you can only manage one sentence, try this prayer."
+          },
+          {
+            "type": "paragraph",
+            "text": "God, I do not know what to say. Help me in my weakness and guide me through the next step."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kak-molitsya-esli-net-slov",
+    "title": "Как молиться, если нет слов?",
+    "seo_title": "Как молиться, если нет слов?",
+    "description": "Начать молитву можно с тишины или одной честной фразы. В Римлянам 8:26–27 Павел говорит, что Дух помогает нам, когда мы не знаем, о чём молиться.",
+    "lead": "Начать молитву можно с тишины или одной честной фразы. В Римлянам 8:26–27 Павел говорит, что Дух помогает нам, когда мы не знаем, о чём молиться.",
+    "category": "Вечерняя молитва",
+    "plate": "plate-hours",
+    "key": "prayer-without-words",
+    "lang": "ru",
+    "date": "2026-11-08",
+    "related_keys": [
+      "anxiety",
+      "evening-prayer"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "Почему Павел говорит о немощи",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "ru-ROM-8-26-27.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Перед этим отрывком Павел пишет об ожидании и надежде на то, чего мы пока не видим. Он говорит «мы» и включает себя в число тех, кто не знает, о чём молиться. Помощь Духа приходит именно в этой слабости. Пауза в молитве даёт место тому, что вы пока не можете выразить."
+          }
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Молитва для тихой минуты",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Остановитесь на минуту и прислушайтесь к тому, что сейчас вас тяготит. Если это можно назвать, скажите Богу простыми словами. Если получается произнести только одну фразу, попробуйте эту молитву."
+          },
+          {
+            "type": "paragraph",
+            "text": "Господи, я не знаю, что сказать. Помоги мне в моей слабости и покажи ближайший шаг."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "como-orar-cuando-no-tienes-palabras",
+    "title": "¿Cómo orar cuando no tienes palabras?",
+    "seo_title": "¿Cómo orar cuando no tienes palabras?",
+    "description": "Puedes empezar a orar con un momento de silencio o una frase sincera. Romanos 8:26–27 habla de la ayuda del Espíritu cuando no sabemos cómo orar.",
+    "lead": "Puedes empezar a orar con un momento de silencio o una frase sincera. Romanos 8:26–27 habla de la ayuda del Espíritu cuando no sabemos cómo orar.",
+    "category": "Oración de la noche",
+    "plate": "plate-hours",
+    "key": "prayer-without-words",
+    "lang": "es",
+    "date": "2026-11-08",
+    "related_keys": [
+      "anxiety",
+      "evening-prayer"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "Por qué Pablo habla de la debilidad",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "es-ROM-8-26-27.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Antes de este pasaje, Pablo escribe sobre la espera y la esperanza en lo que aún no vemos. Al decir que no sabemos cómo orar, se incluye a sí mismo. El Espíritu nos ayuda en esa debilidad. Una pausa en la oración puede dar cabida a lo que todavía no puedes expresar."
+          }
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Una oración para un momento de silencio",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Detente un momento y reconoce lo que te pesa. Si puedes ponerle un nombre, cuéntaselo a Dios con palabras sencillas. Si hoy solo te sale una frase, prueba esta oración."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dios, no sé qué decir. Ayúdame en mi debilidad y guíame en el siguiente paso."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "como-orar-quando-faltam-palavras",
+    "title": "Como orar quando faltam palavras?",
+    "seo_title": "Como orar quando faltam palavras?",
+    "description": "Você pode começar a orar com um momento de silêncio ou uma frase sincera. Romanos 8:26–27 fala da ajuda do Espírito quando não sabemos como orar.",
+    "lead": "Você pode começar a orar com um momento de silêncio ou uma frase sincera. Romanos 8:26–27 fala da ajuda do Espírito quando não sabemos como orar.",
+    "category": "Oração da noite",
+    "plate": "plate-hours",
+    "key": "prayer-without-words",
+    "lang": "pt",
+    "date": "2026-11-08",
+    "related_keys": [
+      "anxiety",
+      "evening-prayer"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "Por que Paulo fala da fraqueza",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "pt-ROM-8-26-27.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Antes dessa passagem, Paulo escreve sobre a espera e a esperança naquilo que ainda não vemos. Quando diz que não sabemos como orar, ele se inclui. O Espírito nos ajuda nessa fraqueza. Uma pausa na oração pode dar espaço ao que você ainda não consegue expressar."
+          }
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Uma oração para um momento de silêncio",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Pare por um momento e perceba o que está pesando. Se conseguir dar um nome a isso, conte a Deus com palavras simples. Se só conseguir dizer uma frase hoje, experimente esta oração."
+          },
+          {
+            "type": "paragraph",
+            "text": "Deus, não sei o que dizer. Ajude-me na minha fraqueza e guie meu próximo passo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "comment-prier-quand-les-mots-manquent",
+    "title": "Comment prier quand les mots manquent ?",
+    "seo_title": "Comment prier quand les mots manquent ?",
+    "description": "La prière peut commencer par un instant de silence ou une phrase sincère. Romains 8:26–27 parle de l’aide de l’Esprit quand nous ne savons pas comment prier.",
+    "lead": "La prière peut commencer par un instant de silence ou une phrase sincère. Romains 8:26–27 parle de l’aide de l’Esprit quand nous ne savons pas comment prier.",
+    "category": "Prière du soir",
+    "plate": "plate-hours",
+    "key": "prayer-without-words",
+    "lang": "fr",
+    "date": "2026-11-08",
+    "related_keys": [
+      "anxiety",
+      "evening-prayer"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "Pourquoi Paul parle de faiblesse",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "fr-ROM-8-26-27.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Juste avant ce passage, Paul évoque l’attente et l’espérance de ce que nous ne voyons pas encore. Il se compte parmi ceux qui ne savent pas comment prier. L’Esprit nous vient en aide dans cette faiblesse. Un temps de silence dans la prière peut faire place à ce que vous ne parvenez pas encore à dire."
+          }
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Une prière pour un moment de silence",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Prenez un instant pour reconnaître ce qui vous pèse. Si vous pouvez le nommer, dites-le à Dieu avec des mots simples. Si une seule phrase vous vient aujourd’hui, essayez cette prière."
+          },
+          {
+            "type": "paragraph",
+            "text": "Seigneur, je ne sais pas quoi dire. Aide-moi dans ma faiblesse et guide mon prochain pas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "paano-mananalangin-kung-walang-masabi",
+    "title": "Paano mananalangin kung wala kang masabi?",
+    "seo_title": "Paano mananalangin kung wala kang masabi?",
+    "description": "Paano manalangin kapag wala kang masabi? Basahin ang Roma 8:26–27 at subukan ang isang payak na panalangin.",
+    "lead": "Puwedeng magsimula ang panalangin sa sandaling katahimikan o isang tapat na pangungusap. Sa Roma 8:26–27, tumutulong ang Espiritu kapag hindi natin alam kung paano mananalangin.",
+    "category": "Panalangin sa gabi",
+    "plate": "plate-hours",
+    "key": "prayer-without-words",
+    "lang": "fil",
+    "date": "2026-11-08",
+    "related_keys": [
+      "anxiety",
+      "evening-prayer"
+    ],
+    "sections": [
+      {
+        "id": "context",
+        "title": "Bakit binanggit ni Pablo ang kahinaan",
+        "blocks": [
+          {
+            "type": "passage",
+            "source": "fil-ROM-8-26-27.json",
+            "expanded": false
+          },
+          {
+            "type": "paragraph",
+            "text": "Bago ang talatang ito, isinulat ni Pablo ang tungkol sa paghihintay at pag-asa sa hindi pa natin nakikita. Kasama siya sa mga taong hindi alam kung paano mananalangin. Tinutulungan tayo ng Espiritu sa kahinaang iyon. Sa isang sandaling katahimikan, puwede mong ilapit sa Diyos ang hirap na hindi mo pa maipahayag."
+          }
+        ]
+      },
+      {
+        "id": "practice",
+        "title": "Isang panalangin sa tahimik na sandali",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Huminto sandali at pansinin kung ano ang bumibigat sa loob mo. Kung kaya mo itong pangalanan, sabihin mo sa Diyos sa payak na salita. Kung isang pangungusap lang ang kaya mo ngayon, subukan ito."
+          },
+          {
+            "type": "paragraph",
+            "text": "Diyos, hindi ko alam ang sasabihin ko. Tulungan mo ako sa kahinaan ko at gabayan mo ang susunod kong hakbang."
+          }
+        ]
+      }
+    ]
   }
 ]
