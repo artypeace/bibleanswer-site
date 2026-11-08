@@ -6322,5 +6322,389 @@
         ]
       }
     ]
+  },
+  {
+    "slug": "which-gospel-to-read-first",
+    "title": "Which Gospel should you read first?",
+    "seo_title": "Which Gospel should you read first?",
+    "description": "Choose where to begin with Mark, Luke, or John and follow a seven-day plan through the Gospel of John.",
+    "lead": "Start with John if you want to explore who Jesus is. Choose Mark for a shorter, fast-moving account, or Luke if you prefer a story that begins with the events around Jesus’ birth.",
+    "category": "Getting started",
+    "plate": "plate-plan-john",
+    "key": "first-gospel",
+    "lang": "en",
+    "date": "2026-11-08",
+    "related_keys": [
+      "start"
+    ],
+    "sections": [
+      {
+        "id": "compare",
+        "title": "What Mark, Luke, and John each offer",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mark moves quickly into Jesus’ public ministry, with the call of the first disciples and scenes of teaching and healing in Mark 1. Luke explains why he is writing in Luke 1:1–4 and then tells the events leading up to Jesus’ birth. John opens with the Word and then follows people as they encounter Jesus and respond to him."
+          }
+        ]
+      },
+      {
+        "id": "john",
+        "title": "Why John is a good place to start",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Near the end of the book, John explains why he chose these signs. Read these verses before you begin. They give you a question to carry through the week: what does each scene show about Jesus?"
+          },
+          {
+            "type": "passage",
+            "source": "en-JHN-20-30-31.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "title": "Seven days in the Gospel of John",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "John 1:1–18. The Word and the light.",
+              "John 2:1–11. The wedding at Cana.",
+              "John 3:1–17. The conversation with Nicodemus.",
+              "John 4:4–26. The woman at the well.",
+              "John 9:1–12. A man born blind is healed.",
+              "John 11:17–44. Jesus and the family of Lazarus.",
+              "John 20:1–31. The resurrection and why John wrote."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Read one passage a day. Write down one thing you noticed and one question. These are selected readings. After the week, you can return to John 1 and read the whole Gospel in order."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kakoe-evangelie-chitat-pervym",
+    "title": "Какое Евангелие читать первым?",
+    "seo_title": "Какое Евангелие читать первым?",
+    "description": "Сравните Евангелия от Марка, Луки и Иоанна и начните чтение по плану на семь дней.",
+    "lead": "Начните с Иоанна, если хотите понять, кем Евангелие называет Иисуса. Марк подойдёт, если вам ближе короткое и динамичное повествование, а Лука — если хочется читать с событий, предшествующих рождению Иисуса.",
+    "category": "Первое чтение",
+    "plate": "plate-plan-john",
+    "key": "first-gospel",
+    "lang": "ru",
+    "date": "2026-11-08",
+    "related_keys": [
+      "start"
+    ],
+    "sections": [
+      {
+        "id": "compare",
+        "title": "Что вы найдёте у Марка, Луки и Иоанна",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "У Марка уже в первой главе Иисус призывает первых учеников, учит и исцеляет. Лука в первых четырёх стихах объясняет, зачем пишет, а затем рассказывает о событиях, предшествовавших рождению Иисуса. Иоанн начинает со Слова, а дальше показывает, как люди встречаются с Иисусом и отвечают на эту встречу."
+          }
+        ]
+      },
+      {
+        "id": "john",
+        "title": "Почему можно начать с Иоанна",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "В конце двадцатой главы Иоанн объясняет, для чего записал эти знамения. Прочитайте эти два стиха перед началом недели и возвращайтесь к одному вопросу: что этот эпизод открывает об Иисусе?"
+          },
+          {
+            "type": "passage",
+            "source": "ru-JHN-20-30-31.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "title": "Семь дней с Евангелием от Иоанна",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Иоанна 1:1–18. Слово и свет.",
+              "Иоанна 2:1–11. Свадьба в Кане.",
+              "Иоанна 3:1–17. Беседа с Никодимом.",
+              "Иоанна 4:4–26. Самарянка у колодца.",
+              "Иоанна 9:1–12. Исцеление слепого от рождения.",
+              "Иоанна 11:17–44. Иисус и семья Лазаря.",
+              "Иоанна 20:1–31. Воскресение и цель книги."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Читайте по одному отрывку в день. Записывайте одно наблюдение и один вопрос. После недели можно вернуться к первой главе и прочитать Евангелие от Иоанна целиком, по порядку."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "que-evangelio-leer-primero",
+    "title": "¿Qué Evangelio leer primero?",
+    "seo_title": "¿Qué Evangelio leer primero?",
+    "description": "Compara los Evangelios de Marcos, Lucas y Juan y empieza con un plan de siete días para leer pasajes de Juan.",
+    "lead": "Empieza por Juan si quieres descubrir quién es Jesús. Elige Marcos si prefieres un relato breve y ágil, o Lucas si quieres comenzar por los acontecimientos que rodean el nacimiento de Jesús.",
+    "category": "Primeros pasos",
+    "plate": "plate-plan-john",
+    "key": "first-gospel",
+    "lang": "es",
+    "date": "2026-11-08",
+    "related_keys": [
+      "start"
+    ],
+    "sections": [
+      {
+        "id": "compare",
+        "title": "Qué encontrarás en Marcos, Lucas y Juan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Marcos pasa enseguida al ministerio público de Jesús. En Marcos 1 ya aparecen el llamado de los primeros discípulos, la enseñanza y las curaciones. Lucas explica por qué escribe en Lucas 1:1–4 y después cuenta lo que precede al nacimiento de Jesús. Juan comienza con el Verbo y muestra cómo distintas personas se encuentran con Jesús y responden a él."
+          }
+        ]
+      },
+      {
+        "id": "john",
+        "title": "Por qué empezar por Juan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Hacia el final del libro, Juan explica para qué eligió estas señales. Lee estos versículos antes de empezar y lleva contigo esta pregunta: ¿qué muestra esta escena acerca de Jesús?"
+          },
+          {
+            "type": "passage",
+            "source": "es-JHN-20-30-31.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "title": "Siete días con el Evangelio de Juan",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Juan 1:1–18. El Verbo y la luz.",
+              "Juan 2:1–11. La boda en Caná.",
+              "Juan 3:1–17. La conversación con Nicodemo.",
+              "Juan 4:4–26. La mujer junto al pozo.",
+              "Juan 9:1–12. La curación de un ciego de nacimiento.",
+              "Juan 11:17–44. Jesús y la familia de Lázaro.",
+              "Juan 20:1–31. La resurrección y el propósito del libro."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Lee un pasaje al día. Anota algo que hayas observado y una pregunta. Después de esta selección, puedes volver al primer capítulo y leer todo el Evangelio de Juan en orden."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "qual-evangelho-ler-primeiro",
+    "title": "Qual Evangelho ler primeiro?",
+    "seo_title": "Qual Evangelho ler primeiro?",
+    "description": "Compare Marcos, Lucas e João e comece com um plano de sete dias de leitura de passagens do Evangelho de João.",
+    "lead": "Comece por João se você quer conhecer quem é Jesus. Escolha Marcos se prefere um relato curto e movimentado, ou Lucas se quer começar pelos acontecimentos em torno do nascimento de Jesus.",
+    "category": "Primeiros passos",
+    "plate": "plate-plan-john",
+    "key": "first-gospel",
+    "lang": "pt",
+    "date": "2026-11-08",
+    "related_keys": [
+      "start"
+    ],
+    "sections": [
+      {
+        "id": "compare",
+        "title": "O que você encontra em Marcos, Lucas e João",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Marcos entra logo no ministério público de Jesus. No primeiro capítulo, Jesus chama os primeiros discípulos, ensina e cura. Lucas explica por que escreve em Lucas 1:1–4 e então conta os acontecimentos que antecedem o nascimento de Jesus. João começa com a Palavra e mostra como diferentes pessoas se encontram com Jesus e respondem a ele."
+          }
+        ]
+      },
+      {
+        "id": "john",
+        "title": "Por que começar por João",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Perto do fim do livro, João explica por que registrou esses sinais. Leia esses versículos antes de começar a semana e leve esta pergunta com você: o que esta cena revela sobre Jesus?"
+          },
+          {
+            "type": "passage",
+            "source": "pt-JHN-20-30-31.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "title": "Sete dias com o Evangelho de João",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "João 1:1–18. A Palavra e a luz.",
+              "João 2:1–11. O casamento em Caná.",
+              "João 3:1–17. A conversa com Nicodemos.",
+              "João 4:4–26. A mulher junto ao poço.",
+              "João 9:1–12. A cura de um homem cego de nascença.",
+              "João 11:17–44. Jesus e a família de Lázaro.",
+              "João 20:1–31. A ressurreição e o propósito do livro."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Leia uma passagem por dia. Anote uma observação e uma pergunta. Depois dessa seleção, você pode voltar ao primeiro capítulo e ler o Evangelho de João inteiro, em ordem."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "quel-evangile-lire-en-premier",
+    "title": "Quel Évangile lire en premier ?",
+    "seo_title": "Quel Évangile lire en premier ?",
+    "description": "Comparez les Évangiles de Marc, Luc et Jean, puis découvrez des passages de Jean avec un parcours de sept jours.",
+    "lead": "Commencez par Jean si vous voulez découvrir qui est Jésus. Choisissez Marc si vous préférez un récit court et vivant, ou Luc si vous souhaitez partir des événements qui entourent la naissance de Jésus.",
+    "category": "Premiers pas",
+    "plate": "plate-plan-john",
+    "key": "first-gospel",
+    "lang": "fr",
+    "date": "2026-11-08",
+    "related_keys": [
+      "start"
+    ],
+    "sections": [
+      {
+        "id": "compare",
+        "title": "Ce que vous trouverez chez Marc, Luc et Jean",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Marc entre vite dans le ministère public de Jésus. Dès le premier chapitre, Jésus appelle ses premiers disciples, enseigne et guérit. Luc explique sa démarche en Luc 1:1–4, puis raconte les événements qui précèdent la naissance de Jésus. Jean commence par la Parole et suit plusieurs personnes dans leur rencontre avec Jésus."
+          }
+        ]
+      },
+      {
+        "id": "john",
+        "title": "Pourquoi commencer par Jean",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Vers la fin du livre, Jean explique pourquoi il a retenu ces signes. Lisez ces deux versets avant de commencer, puis gardez une question en tête : qu’est-ce que cette scène révèle de Jésus ?"
+          },
+          {
+            "type": "passage",
+            "source": "fr-JHN-20-30-31.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "title": "Sept jours avec l’Évangile de Jean",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Jean 1:1–18. La Parole et la lumière.",
+              "Jean 2:1–11. Les noces de Cana.",
+              "Jean 3:1–17. La rencontre avec Nicodème.",
+              "Jean 4:4–26. La femme près du puits.",
+              "Jean 9:1–12. La guérison d’un aveugle de naissance.",
+              "Jean 11:17–44. Jésus et la famille de Lazare.",
+              "Jean 20:1–31. La résurrection et le but du livre."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Lisez un passage par jour. Notez une observation et une question. Après cette sélection, vous pourrez revenir au premier chapitre et lire l’Évangile de Jean en entier, dans l’ordre."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "aling-ebanghelyo-ang-unang-basahin",
+    "title": "Aling Ebanghelyo ang unang basahin?",
+    "seo_title": "Aling Ebanghelyo ang unang basahin?",
+    "description": "Ihambing ang Marcos, Lucas, at Juan at subukan ang pitong araw na pagbasa sa mga piling bahagi ng Ebanghelyo ni Juan.",
+    "lead": "Magsimula sa Juan kung gusto mong makilala kung sino si Jesus. Piliin ang Marcos kung mas gusto mo ang maikli at mabilis na salaysay, o ang Lucas kung gusto mong magsimula sa mga pangyayari bago ipanganak si Jesus.",
+    "category": "Unang pagbabasa",
+    "plate": "plate-plan-john",
+    "key": "first-gospel",
+    "lang": "fil",
+    "date": "2026-11-08",
+    "related_keys": [
+      "start"
+    ],
+    "sections": [
+      {
+        "id": "compare",
+        "title": "Ano ang makikita sa Marcos, Lucas, at Juan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Sa unang kabanata pa lang ng Marcos, tumatawag na si Jesus ng mga alagad, nagtuturo, at nagpapagaling. Sa Lucas 1:1–4, ipinaliliwanag ng manunulat kung bakit siya sumulat. Kasunod nito ang mga pangyayaring humantong sa pagsilang ni Jesus. Nagsisimula ang Juan sa Salita, at ipinapakita kung paano nakilala ng iba’t ibang tao si Jesus at kung paano sila tumugon sa kaniya."
+          }
+        ]
+      },
+      {
+        "id": "john",
+        "title": "Bakit magandang magsimula sa Juan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Malapit sa katapusan ng aklat, ipinaliliwanag ni Juan kung bakit niya isinulat ang mga tandang ito. Basahin ang dalawang talata bago magsimula at itanong sa bawat tagpo: ano ang ipinakikita nito tungkol kay Jesus?"
+          },
+          {
+            "type": "passage",
+            "source": "fil-JHN-20-30-31.json",
+            "expanded": false
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "title": "Pitong araw sa Ebanghelyo ni Juan",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              "Juan 1:1–18. Ang Salita at ang liwanag.",
+              "Juan 2:1–11. Ang kasalan sa Cana.",
+              "Juan 3:1–17. Ang pag-uusap nila ni Nicodemo.",
+              "Juan 4:4–26. Ang babae sa balon.",
+              "Juan 9:1–12. Ang pagpapagaling sa lalaking ipinanganak na bulag.",
+              "Juan 11:17–44. Si Jesus at ang pamilya ni Lazaro.",
+              "Juan 20:1–31. Ang muling pagkabuhay at ang layunin ng aklat."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Magbasa ng isang bahagi bawat araw. Isulat ang isang napansin mo at isang tanong. Pagkatapos ng linggong ito, puwede kang bumalik sa unang kabanata at basahin nang sunod-sunod ang buong Ebanghelyo ni Juan."
+          }
+        ]
+      }
+    ]
   }
 ]
