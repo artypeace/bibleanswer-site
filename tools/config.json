@@ -42,6 +42,13 @@
       "onlyLang": "ru",
       "handle": "bibleanswerapp",
       "url": "https://vk.ru/bibleanswerapp"
+    },
+    {
+      "platform": "Дзен",
+      "lang": "ru",
+      "onlyLang": "ru",
+      "handle": "id/6aefff4a8c4f2d1ca5a34d71",
+      "url": "https://dzen.ru/id/6aefff4a8c4f2d1ca5a34d71"
     }
   ],
   "socialNote": "Only accounts with a url are shown. Planned language accounts: @bibleanswerapp_ru, _es, _br, _fr, _ph - add {platform, lang, handle, url} here when they exist.",
