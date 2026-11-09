@@ -40,10 +40,9 @@ SKY = ('<div class="sky" aria-hidden="true"><div class="sky__disc">'
        + '<div class="sky__veil"></div></div>')
 
 
-def local_name_line(lang):
-    """The name in the page's language under the hero's "Bible Answer", as the app calls itself there."""
+def hero_local_name(lang):
     name = branding.local_name(lang)
-    return f'<p class="hero__localname rise" style="--i:1" lang="{branding.COPY[lang]["htmlLang"]}">{e(name)}</p>' if name else ''
+    return f'<span class="hero__localname" lang="{SITE[lang]["htmlLang"]}">{e(name)}</span>' if name else ''
 
 
 def mark_local(lang):
@@ -330,11 +329,10 @@ def screens_section(lang, base):
 
 
 
-def reading_guides_section(lang, base):
+def reading_guides_section(lang, base, articles):
     s = SITE[lang]
     article_lang = lang
-    mine = {a['key']: a for a in build_articles.load(ROOT) if a['lang'] == article_lang}
-    guides = [mine[k] for k in ('start', 'anxiety', 'morning')]
+    guides = [articles[k] for k in ('start', 'anxiety', 'morning')]
     mark = ''
     cards = ''.join(f'<a class="home-guide reveal" href="/{build_articles.path(a)}"><div class="home-guide__image"><img src="{base}assets/plates/{a["plate"]}.webp" alt="" width="900" height="600" loading="lazy" decoding="async"></div><div class="home-guide__body"><p class="home-guide__meta">{e(a["category"])} · {build_articles.duration(ROOT,a)} {build_articles.UI[article_lang]["reading"]} {mark}</p><h3>{e(a["title"])}</h3><p>{e(a["lead"])}</p><span class="home-guide__arrow" aria-hidden="true">↗</span></div></a>' for a in guides)
     return f'<section class="section reading-guides" id="reading-guides" aria-labelledby="h-reading-guides"><div class="wrap">{h2(s["readingGuidesH"], "", "h-reading-guides")}<p class="lede reveal">{e(s["readingGuidesP"])}</p><div class="home-guides">{cards}</div><p class="reading-guides__all"><a class="btn btn--ghost" href="/{build_articles.hub(article_lang)}">{e(s["readingGuidesAll"])}</a></p></div></section>'
@@ -370,7 +368,12 @@ def home(lang):
     sample, feelings = s['sample'], ap['feelings']
     query = s['demoQuery']
     store = store_link(lang, base)
-    store_nav = (f'<a class="btn btn--gold btn--small" href="{e(CFG["appStoreUrl"])}">{e(s["storeText"])}</a>')
+    store_nav = (f'<a class="btn btn--gold btn--small" href="{e(CFG["appStoreUrl"])}">{e(s["storeText"])}</a>'
+                 if live() else '')
+    articles_url = '/' + build_articles.hub(lang)
+    shop_url = '/' + build_shop.path(lang)
+    articles = {a['key']: a for a in build_articles.load(ROOT) if a['lang'] == lang}
+    beginner_guide = articles['start']
 
     shots = [shot_file(d, lang, n) for d, k in SHOTS.items() for n in range(1, k + 1)]
     app_profiles = [a['url'] for a in social_accounts(lang)]
@@ -396,9 +399,9 @@ def home(lang):
     lang_pills = ''.join(
         f'<a class="pill pill--lang" href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}"{current if l == lang else ""}>{e(APP[l]["name"])}</a>' for l in LANGS)
     soc = social_links(lang=lang)
-    foot_social = (f'<p class="foot__social">' + '<span class="dot">·</span><wbr>'.join(soc) + '</p>\n  ') if soc else ''
-    foot_langs = '<span class="dot">·</span><wbr>'.join(
-        f'<a href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}">{e(APP[l]["name"])}</a>' for l in LANGS)
+    foot_social = f'<p class="foot__social">{"".join(soc)}</p>' if soc else ''
+    foot_langs = ''.join(
+        f'<a href="{rel(lang, l)}" lang="{e(SITE[l]["htmlLang"])}" hreflang="{e(SITE[l]["hreflang"])}"{current if l == lang else ""}>{e(APP[l]["name"])}</a>' for l in LANGS)
 
     featured = ''.join(
         f'<div class="chip-lg{" first" if i == DEMO_FEELING else ""}"><span class="disc">{icon(ICONS[i], base)}</span><span>{e(feelings[i]["label"])}</span></div>' for i in FEATURED)
@@ -577,13 +580,12 @@ def home(lang):
       <a href="#read">{e(s["navRead"])}</a>
       <a href="#guide">{e(s["navGuide"])}</a>
       <a href="#devices">{e(s["navDevices"])}</a>
-      <a href="#reading-guides">{e(s["readingGuidesLabel"])}</a>
-      <a class="nav__shop" href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a>
+      <a class="nav__shop" href="{shop_url}">{e(build_shop.COPY[lang]["shop"])}</a>
     </nav>
     <div class="nav__tools">
+      <a class="nav__reading" href="{articles_url}">{e(s["readingGuidesLabel"])}</a>
       <details class="langmenu"><summary aria-label="{e(ap["name"])}">{e(ap["name"])}</summary><ul>{lang_items}</ul></details>
       {theme.control(lang)}
-      <a class="nav__reading nav__reading--shop" href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a>
       {store_nav}
     </div>
   </div>
@@ -594,14 +596,15 @@ def home(lang):
     <div class="hero__fx" aria-hidden="true"><div class="hero__glow"></div></div>
     <div class="hero__in" id="heroIn">
       <div class="hero__copy">
-      <div class="hero__identity"><img class="hero__icon" src="{base}assets/icon.png" width="64" height="64" alt=""></div>
-      <h1 id="h-hero" class="split split--hero grad">{split_words('Bible Answer')}</h1>
-      {local_name_line(lang)}
-      <p class="hero__tagline">{e(ap["tagline"])}</p>
-      <p class="hero__sub rise" style="--i:2">{e(s["heroDescription"])}</p>
-      <div class="hero__cta rise" style="--i:3">
+      <div class="hero__identity">
+        <img class="hero__icon" src="{base}assets/icon.png" width="52" height="52" alt="">
+        <p class="hero__brand"><span lang="en">Bible Answer</span>{hero_local_name(lang)}</p>
+      </div>
+      <h1 id="h-hero" class="hero__title">{e(s["heroTitle"])}</h1>
+      <p class="hero__sub">{e(s["heroDescription"])}</p>
+      <div class="hero__cta">
         {store}
-        <a class="link" href="#ask">{e(s["seeHow"])}</a>
+        <a class="link hero__read" href="{articles_url}">{e(s["heroRead"])}</a>
       </div>
       <p class="hero__devices">iPhone <span>·</span> iPad <span>·</span> Mac <span>·</span> Apple Watch</p>
       </div>
@@ -653,7 +656,7 @@ def home(lang):
 
   {inside_html}
 
-  {reading_guides_section(lang, base)}
+  {reading_guides_section(lang, base, articles)}
 
   <section class="section today" id="today" aria-labelledby="h-today">
     <div class="wrap">
@@ -703,11 +706,42 @@ def home(lang):
   </section>
 </main>
 
-<footer class="foot">
+<footer class="foot foot--home">
   {branding.footer_brand(lang, rel(lang, lang))}
-  <p><a href="/{build_shop.path(lang)}">{e(build_shop.COPY[lang]["shop"])}</a><span class="dot">·</span><wbr><a href="{'/' + build_articles.hub(lang)}" lang="{SITE[lang]['htmlLang']}">{e(s["readingGuides"])}</a><span class="dot">·</span><wbr><a href="/{build_connectors.path(lang)}">{e(build_connectors.COPY[lang]["link"])}</a><span class="dot">·</span><wbr><a href="{base}support">{e(s["footSupport"])}</a><span class="dot">·</span><wbr><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a><span class="dot">·</span><wbr><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a><span class="dot">·</span><wbr><a href="{base}press/" lang="en">Press</a><span class="dot">·</span><wbr><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></p>
-  <p>{foot_langs}</p>
-  {foot_social}<p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
+  <div class="foot__groups">
+    <div>
+      <h2>{e(s["navRead"])}</h2>
+      <ul>
+        <li><a href="{articles_url}">{e(s["readingGuides"])}</a></li>
+        <li><a href="/{build_articles.path(beginner_guide)}">{e(beginner_guide["title"])}</a></li>
+        <li>{build_articles.guidance_link(lang, 'editorial')}</li>
+      </ul>
+    </div>
+    <div>
+      <h2>{e(s["footApp"])}</h2>
+      <ul>
+        <li><a href="#ask">{e(s["seeHow"])}</a></li>
+        <li><a href="#devices">{e(s["navDevices"])}</a></li>
+        <li><a href="/{build_connectors.path(lang)}">{e(build_connectors.COPY[lang]["link"])}</a></li>
+        <li><a href="{shop_url}">{e(build_shop.COPY[lang]["shop"])}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>{e(s["footAbout"])}</h2>
+      <ul>
+        <li><a href="{base}support#{e(lang)}">{e(s["footSupport"])}</a></li>
+        <li><a href="mailto:{e(CFG["contactEmail"])}">{e(CFG["contactEmail"])}</a></li>
+        <li><a href="{base}privacy#{e(lang)}">{e(s["privacy"])}</a></li>
+        <li><a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></li>
+        <li><a href="{base}press/" lang="en">Press</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot__utility">
+    <p class="foot__languages">{foot_langs}</p>
+    {foot_social}
+  </div>
+  <p class="foot__fine">{e(s["creditArt"])} <a href="{base}terms#{e(lang)}">{e(s["terms"])}</a></p>
 </footer>
 <script src="{base}app.js" defer></script>
 </body>
